@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("node_modules/ngx-spinner/animations/timer.css");
+@import url("node_modules/driver.js/dist/driver.css");
+
+a{
+    cursor: pointer;
+}
+
+.cursor{
+    cursor: pointer;
+}

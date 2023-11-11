@@ -1,0 +1,16 @@
+div {
+  font-family: arial;
+  font-size: 18px;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.myActive {
+  border: 1px solid blue;
+}
+
+.myPassive {
+  border: 5px solid red;
+}/*# sourceMappingURL=mixin.css.map */

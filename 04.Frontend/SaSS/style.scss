@@ -1,0 +1,67 @@
+:root{
+    --font-size: 18px;
+}
+
+$fontSize: 18px;
+
+ul li, ul li a{
+    //font-size: var(--font-size); css yöntemi
+    font-size: $fontSize; //scss yöntemi
+    $fontSize: 20px;
+}
+
+//sass less 
+//Sass stands for Syntactically Awesome Stylesheet
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+div{
+    width: 200px;
+    height: 100px;
+    // background-color: green;
+    // color: green;
+}
+
+
+@mixin font-size{
+    font-size: 150px;
+    color: red;
+}
+
+ul{
+    list-style: none;
+    @include font-size;
+    :first-child{
+        color: green;
+    }
+    li{
+        list-style: none;
+        width: 100%;
+        @include font-size;
+        a{
+            text-decoration: none;
+            @include font-size;
+        }
+        div{
+            
+        }
+    }
+}
+
+
+div{
+    > span {
+        color: red;
+    }
+
+    span{
+        display: block;
+        color: green;
+    }
+}

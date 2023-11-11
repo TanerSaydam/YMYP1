@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="auth-style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>Login Page</h1>
+        </div>
+
+        <div class="body">
+            <div>
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="mt">
+                <label for="password">
+                    Password
+                </label>
+                <input type="password" id="password">
+            </div>
+
+            <div class="mt checkbox">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">
+                    Remember Me
+                </label>
+            </div>
+
+            <div class="mt">
+                <button onclick="signIn()" class="btn">
+                    Sign In
+                </button>
+            </div>
+
+            <div class="mt-2 signup">
+                <a href="./register.html">Haven't you're account? Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function signIn(){
+            window.location.href = "./index.html"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button onclick="changePages('first')">1.Sayfayı Yükle</button>
+    <button onclick="changePages('second')">2.Sayfayı Yükle</button>
+    <div id="root"></div>
+
+    <script> //bundle.js
+        function changePages(pageName){
+            const root = document.getElementById("root");
+            if(pageName === "first"){
+                fetch("./first.html")
+                .then(res=> res.text())
+                .then(data=> root.innerHTML = data);
+            }else if(pageName === "second"){
+                fetch("./second.html")
+                .then(res=> res.text())
+                .then(data=> root.innerHTML = data);
+            }
+        }
+
+        function show(){
+            console.log("çalıştım!");   
+        }
+    </script>
+</body>
+</html>

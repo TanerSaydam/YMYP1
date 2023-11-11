@@ -1,0 +1,117 @@
+<h1 class="text-center mt-1">{{'orders' | translate}}</h1>
+@for (o of orders; track o) {
+  <div class="card mt-1 position-relative">
+    <div class="row">
+        <div class="col-2 text-center card-image-div">
+            <img class="card-image" [src]="o.book.coverImageUrl" alt="">
+        </div>
+        <div class="col-lg-4 col-10">
+            <div class="form-group">
+                <b>{{'bookName' | translate}}</b>: {{o.book.title}}
+            </div>
+            <div class="form-group">
+                <b>{{'author' | translate}}</b>: {{o.book.author}}
+            </div>
+            <div class="form-group">
+                <b>{{'price' | translate}}</b>:
+                @if (language=='tr') {
+<span>
+                    {{o.price.value}} {{o.price.currency}}
+                </span>
+}
+                @if (language!='tr') {
+<span>
+                    {{o.price.value | currency: '':'':'1.2-2'}} {{o.price.currency}}
+                </span>
+}
+            </div>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h6 class="card-title">Order Status</h6>
+                                <div id="content">
+                                    @for (orderStatus of o.orderStatuses; track orderStatus) {
+  <ul class="timeline">
+                                        <li class="event">
+                                            <p>{{orderStatus.statusDate | date: 'dd.MM.yyyy HH:mm'}}</p>
+                                            <h3>{{translateOrderStatus(orderStatusEnum[orderStatus.status]) | async}}
+                                            </h3>
+                                            @if (orderStatus.status == 3) {
+<div>
+                                                <button (click)="selectedOrderForComment(o)" data-bs-toggle="modal"
+                                                    data-bs-target="#commentModal" class="btn btn-primary">
+                                                    {{'doComment' | translate}}
+                                                </button>
+                                                @if (hasTheReturnPeriodPassed(orderStatus.statusDate)) {
+<button
+                                                    class="btn btn-danger ms-1">
+                                                    {{'return' | translate}}
+                                                </button>
+}
+                                            </div>
+}
+                                        </li>
+                                    </ul>
+}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="commentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="commentModalLabel">{{'doComment' | translate}}</h1>
+                <button type="button" id="commentModalCloseBtn" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <form #commentForm="ngForm" (ngSubmit)="saveComment()">
+                <div class="modal-body">
+                    <!-- Comment -->
+                    <div class="form-group">
+                        <label for="comment">{{'comment' | translate}}</label>
+                        <textarea name="comment" class="form-control" [(ngModel)]="selectedOrder.comment" id="comment"
+                            cols="30" rows="10" placeholder="{{'doComment' | translate}}"></textarea>
+                    </div>
+                    <!-- Raiting -->
+                    <div class="form-group mt-1">
+                        <label for="raiting">{{'raiting' | translate}}</label>
+                        <div>
+                            <i (click)="selectedOrder.raiting = 1" class="fa-star cursor font-size-lg"
+                                [ngClass]="selectedOrder.raiting >= 1 ? 'fa-solid text-warning': 'fa-regular'"></i>
+                            <i (click)="selectedOrder.raiting = 2" class="fa-star cursor font-size-lg"
+                                [ngClass]="(selectedOrder.raiting >= 2) ? 'fa-solid text-warning': 'fa-regular'"></i>
+                            <i (click)="selectedOrder.raiting = 3" class="fa-star cursor font-size-lg"
+                                [ngClass]="(selectedOrder.raiting >= 3) ? 'fa-solid text-warning': 'fa-regular'"></i>
+                            <i (click)="selectedOrder.raiting = 4" class="fa-star cursor font-size-lg"
+                                [ngClass]="(selectedOrder.raiting >= 4) ? 'fa-solid text-warning': 'fa-regular'"></i>
+                            <i (click)="selectedOrder.raiting = 5" class="fa-star cursor font-size-lg"
+                                [ngClass]="(selectedOrder.raiting == 5) ? 'fa-solid text-warning': 'fa-regular'"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Buttons -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        {{'close' | translate}}
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        {{'save' | translate}}
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

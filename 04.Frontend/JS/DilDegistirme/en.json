@@ -1,0 +1,12 @@
+{
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",    
+    "description": "adasdasdasd",
+    "contactTitle":"Contact Page",
+    "nameLabel": "Name Lastname",
+    "emailLabel":"Email",
+    "subjectLabel":"Subject",
+    "contentLabel":"Content",
+    "sendBtn":"Send"
+}

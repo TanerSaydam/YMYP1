@@ -1,0 +1,14 @@
+* {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  color: red;
+}
+
+#container {
+  width: 680px;
+  font-size: 20px;
+}/*# sourceMappingURL=variables.css.map */

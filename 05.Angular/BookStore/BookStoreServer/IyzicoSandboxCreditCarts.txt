@@ -1,0 +1,3 @@
+5890040000000016	Akbank	Master Card (Debit)
+5526080000000006	Akbank	Master Card (Credit)
+4766620000000001	Denizbank	Visa (Debit)

@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BookStoreServer.WebApi",
+    "\\BookStoreServer.WebApi\\Context",
+    "\\BookStoreServer.WebApi\\Controllers"
+  ],
+  "SelectedNode": "\\BookStoreServer.WebApi\\Controllers\\AuthController.cs",
+  "PreviewInSolutionExplorer": false
+}

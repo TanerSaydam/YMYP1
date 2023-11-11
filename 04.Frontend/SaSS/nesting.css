@@ -1,0 +1,66 @@
+:root {
+  --font-size: 18px;
+}
+
+ul li, ul li a {
+  font-size: 18px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+div {
+  width: 200px;
+  height: 100px;
+}
+
+ul {
+  list-style: none;
+  font-size: 150px;
+  color: red;
+}
+ul :first-child {
+  color: green;
+}
+ul li {
+  list-style: none;
+  width: 100%;
+  font-size: 150px;
+  color: red;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 150px;
+  color: red;
+}
+
+div > span {
+  color: red;
+}
+div span {
+  display: block;
+  color: green;
+}
+
+.nav {
+  color: aqua;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav #ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav #ul li {
+  display: block;
+}
+.nav #ul li .link {
+  display: block;
+}/*# sourceMappingURL=nesting.css.map */

@@ -1,0 +1,43 @@
+<div class="login">
+    <div class="login__content">
+        <div class="login__img">
+            <img src="/assets/image/img-login.svg">
+        </div>
+
+        <div class="login__forms">
+            <form #loginForm="ngForm" autocomplete="off" (ngSubmit)="signIn(loginForm)" class="login__registre"
+                id="login-in">
+                <h1 class="login__title">
+                    {{'signIn.title' | translate}}
+                </h1>
+
+                <div class="login__box form-group">
+                    <i class="fa-regular fa-user login__icon"></i>
+                    <input type="text" ngModel name="usernameOrEmail" class="form-control"
+                        placeholder="{{'signIn.usernameOrEmail' | translate}}" class="login__input">
+                    <label for="usernameOrEmail"></label>
+                </div>
+
+                <div class="login__box form-group">
+                    <i class="fa-solid fa-lock login__icon"></i>
+                    <input type="password" ngModel name="password" class="form-control" placeholder="{{'signIn.password' | translate}}"
+                        class="login__input">
+                    <label for="password"></label>
+                </div>
+                
+                <a href="#" class="login__forgot">{{'signIn.forgotPassword' | translate}}</a>
+
+                <div class="form-group mt-1">
+                    <button class="btn w-100 login__button">
+                        <a >{{'signIn.signInBtn' | translate}}</a>
+                    </button>
+                </div>
+ 
+                <div class="form-group">
+                    <span class="login__account">{{'signIn.dontHaveAnAccount' | translate}}</span>
+                    <span routerLink="/register" class="login__signin" id="sign-up">{{'signIn.gotoRegisterBtn' | translate}}</span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

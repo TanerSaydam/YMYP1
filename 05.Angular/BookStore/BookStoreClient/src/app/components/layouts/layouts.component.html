@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+@if (popup.isPopupShow && !popup.notShowThisPopup) {
+<div class="popup">
+    <p>{{'howWeCanUseThisWebSite' | translate}}</p>
+    <p>{{'wouldYouLikeToDiscover' | translate}}</p>
+    <button class="btn btn-warning">
+        <i class="fa-solid fa-info"></i>
+        {{'discover' | translate}}
+    </button>
+    <div class="progress mt-1" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar" [ngStyle]="{width: popup.processBar + '%'}"></div>
+    </div>
+
+      <div class="mt-1">
+        <div class="form-check">
+            <input (click)="popup.notShowAgain()" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              {{'notShowAgain' | translate}}
+            </label>
+          </div>
+      </div>
+</div>
+}

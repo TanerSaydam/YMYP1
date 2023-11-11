@@ -1,0 +1,63 @@
+<div class="login">
+    <div class="login__content">
+        <div class="login__img">
+            <img src="/assets/image/img-login.svg">
+        </div>
+
+        <div class="login__forms">
+            <form #registerForm="ngForm" autocomplete="off" (ngSubmit)="signUp(registerForm)" class="login__create" id="login-up">
+                <h1 class="login__title">
+                    {{'signUp.title' | translate}}
+                </h1>
+
+                <div class="login__box form-group">
+                    <i class="fa-regular fa-user login__icon"></i>
+                    <input type="text" ngModel name="name" class="form-control" placeholder="{{'signUp.name' | translate}}" class="login__input">
+                    <label for="nameLastname"></label>
+                </div>
+
+                <div class="login__box form-group">
+                    <i class="fa-regular fa-user login__icon"></i>
+                    <input type="text" ngModel name="lastname" class="form-control" placeholder="{{'signUp.lastname' | translate}}" class="login__input">
+                    <label for="lastname"></label>
+                </div>
+
+                <div class="login__box form-group">
+                    <i class="fa-solid fa-at login__icon"></i>
+                    <input type="text" ngModel name="username" class="form-control" placeholder="{{'signUp.username' | translate}}" class="login__input">
+                    <label for="username"></label>
+                </div>
+
+                <div class="login__box form-group">
+                    <i class="fa-regular fa-envelope login__icon"></i>
+                    <input type="text" ngModel name="email" class="form-control" placeholder="{{'signUp.email' | translate}}" class="login__input">
+                    <label for="email"></label>
+                </div>
+
+                <div class="login__box form-group">
+                    <i class="fa-solid fa-lock login__icon"></i>
+                    <input type="password" ngModel name="password" class="form-control" placeholder="{{'signUp.password' | translate}}" class="login__input">
+                    <label for="password"></label>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn w-100 login__button">
+                        <a>{{'signUp.signUpBtn' | translate}}</a>
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <span class="login__account">{{'signUp.alreadyHaveAnAccount' | translate}}</span>
+                    <span routerLink="/login" class="login__signup" id="sign-in">{{'signUp.gotoLoginBtn' | translate}}</span>
+                </div>
+                
+
+                <div class="login__social">
+                    <a href="#" class="login__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="login__social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="login__social-icon"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<main class="main grid">
+    <div class="home">
+        <!-- ===== PRODUCT ===== -->
+        <div class="product">            
+            <img [src]="book.coverImageUrl" class="product__img shows" alt="...">
+        </div>
+
+        <!-- ===== INFORMATION ===== -->
+        <div class="info">
+            <!-- ===== DATA ===== -->
+            <div class="data">
+                <span class="data__subtitle">{{book.author}}</span>
+                <h1 class="data__title">{{book.title}}</h1>
+                <p class="data__description">
+                    {{book.summary}}
+                </p>
+                <span>
+                    <div>
+                        <span class="data__subtitle">ISBN:</span>
+                        <span>{{book.isbn}}</span>
+                    </div>
+                </span>
+
+            </div>
+
+            <!-- ===== ACTIONS ===== -->
+            <div class="actions">
+                <!-- ===== QUANTITY ===== -->
+                <div class="quantity">
+                    <h3 class="quantity__title">Qty.</h3>
+                    <div class="quantity-container">
+                        <button class="quantity-btn button">
+                            <i class="fa-solid fa-minus quantity-icon"></i>
+                        </button>
+                        <input class="quantity-input" type="number" value="1" id="quantityInput" />
+                        <button class="quantity-btn button">
+                            <i class="fa-solid fa-plus quantity-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== PRICE ===== -->
+            <div class="price">
+                <span class="price__title">{{book.price.value}} {{book.price.currency}}</span>
+                <a (click)="addShoppingCart()" class="price__button">ADD TO CART</a>
+            </div>
+        </div>
+    </div>
+</main>

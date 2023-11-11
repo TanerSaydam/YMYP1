@@ -1,0 +1,10 @@
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    @extend .d-flex;
+    font-size: 18px;
+}

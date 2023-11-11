@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row:after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .col{
+            float: left;
+            border: 1px solid white;
+            width: 25%;
+            background-color: red;
+            height: 150px;
+        }
+
+        h1:after{
+            content: ' Taner';
+        }
+
+        @media screen and (max-width: 900px) {
+            .col{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+         .col{
+            width: 100%;
+         }   
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Merhaba</h1>  
+    <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum ab, necessitatibus iste, odio placeat voluptates id dignissimos distinctio nihil saepe consectetur incidunt nesciunt asperiores! Aliquid repellendus consectetur consequatur excepturi architecto?</p>
+</body>
+</html>

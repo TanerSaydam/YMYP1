@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+</head>
+<body>
+    <select id="language" onchange="changeLanguage()">
+        <option value="tr">Türkçe</option>
+        <option value="en">İngilizce</option>
+    </select>
+
+    <nav>
+        <h1>Logo</h1>
+        <ul>
+            <li>
+                <a id="home" class="lang" href="./home.html"></a>
+            </li>
+            <li>
+                <a id="contact" class="lang" href="./contact.html"></a>
+            </li>
+        </ul>
+    </nav>
+
+    <h1 id="contactTitle" class="lang"></h1>
+    <form>
+        <div>
+            <label for="name" class="lang" id="nameLabel"></label>
+            <input type="text" id="name">
+        </div>
+        <div>
+            <label for="email" class="lang" id="emailLabel"></label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="subject" class="lang" id="subjectLabel"></label>
+            <input type="text" id="subject">
+        </div>
+        <div>
+            <label for="content" class="lang" id="contentLabel"></label>
+            <textarea id="content" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <button id="sendBtn" class="lang"></button>
+        </div>
+    </form>
+
+    <script src="./new.js"></script>
+</body>
+</html>

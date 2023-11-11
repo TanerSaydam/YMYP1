@@ -1,0 +1,28 @@
+- Müþteri Kýsmý Ýçin
+-- Sipariþi Ýptal Etme
+-- Profilim Sayfasý var
+-- Not: Api Çalýþmadýðýnda Eðer hata sayfasýna düþerse kendi kendine sayfayý yenilenip duruyor. Bu hataya bak!
+Buraya Not: Bu hata0 hatasý aldýðýmýzda location ile sayfaya atladýðýmýz için oluyor. Roting ile yapýnca da modal lar kapanmýyor! Bun bak...
+-- Google Login 
+-- Þifremi Unuttum
+-- Mail Onayý
+
+- Admin Kýsmý için
+-- Kitap CRUD Ýþlemleri
+-- Sipariþ Durum Yönetimi
+-- Detaylý Rapor Ekraný
+
+- Müþteri Temsilcisi
+-- Müþteri Temsilcisi Register Login
+-- Müþteri Ýle Sohbet Ekraný
+
+- Tema Giydirme
+
+- Payment Ekranýnda Timeout
+- Payment 3D Onaylý Yapmalýyýz!!
+
+- Backend Hatalarýný Dil Desteðine Göre Çevirme
+
+- Backendi Clean Architecture Mimarisine Çevirme
+- FrontEnd StandAlone Yapma
+- Generic HTTP Metodu

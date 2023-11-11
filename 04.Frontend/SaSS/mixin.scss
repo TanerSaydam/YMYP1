@@ -1,0 +1,33 @@
+@mixin name {
+    font: {
+        family: arial;
+        size: 18px;        
+    }
+    width: 100px;
+    height: 100px;
+}
+
+@mixin image {
+    object-fit: contain;
+}
+
+@mixin mix{
+    @include name;
+    @include image;
+}
+
+div{
+    @include mix;
+}
+
+@mixin bordered($color: blue, $width:1px){
+    border: $width solid $color;
+}
+
+.myActive{
+    @include bordered(blue,1px)
+}
+
+.myPassive{
+    @include bordered($width: 5px, $color: red)
+}

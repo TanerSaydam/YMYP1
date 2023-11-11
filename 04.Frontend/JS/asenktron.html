@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Asenkron</title>
+</head>
+<body>
+    <script>
+       for (let i = 0; i < 10; i++) {
+        if(i === 5){
+            setTimeout(() => {
+                console.log(i)
+            }, 1000);
+        }else{
+            console.log(i)
+        }
+        
+        
+       }
+    </script>
+</body>
+</html>

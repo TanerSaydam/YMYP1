@@ -1,0 +1,66 @@
+<section>
+    <nav>
+        <a routerLink="/" data-after="home">
+            <li>
+                <div class="logo" data-after="home">
+                    <img src="/assets/image/logo.png">
+                    <h4 style="color:black">{{'navbar.myBookStore' | translate}}</h4>
+                </div>
+            </li>
+        </a>
+        <div id="search" class>
+            <input id="search-input" type="text" name="search_keyword" autocomplete="off" value
+                placeholder="{{'navbar.searchBookAuthor' | translate}}" class>
+            <div class="seach-tools">
+            </div>
+            <div id="search-btn">
+                <span class="fa-solid fa-magnifying-glass" style="margin-left: 10px;"></span>
+            </div>
+            <div class="search-panel-container.show" style="display: none;" id="search-panel-cr">
+                <div class="search-panel">
+                    <span class="close-button">
+                        <a><i class="fa-solid fa-xmark"></i></a>
+                    </span>
+                </div>
+                <div class="search-panel">
+                    <ul>
+                        <li class="fast-type-0.fast-type-multi"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="custom-select" style="height:50px; display: flex; align-items: center;" (click)="toggleSelect()">
+                <div class="selected-option" style="background-color: transparent;">
+                    <span>{{ selectedOption }}</span>
+                </div>
+                <div class="select-box" *ngIf="showOptions">
+                    <div class="select-option" *ngFor="let option of options" (click)="selectOption(option)">
+                        <img [src]="option.image" alt="language">
+                        <span>{{ option.text }} </span>
+                    </div>
+                </div>
+            </div>
+
+            <div routerLink="/login" class="user-button" style="border-radius: 50%; transition: 0.5s; padding: 10px;">
+                <div class="burger-menu" style="padding: 5px;">
+                    <i class="fa-regular fa-user" style="font-size: 1.6em; cursor: pointer; font-weight: 550;"></i>
+                </div>
+            </div>
+            <div routerLink="/orders" class="user-button" style="border-radius: 50%; transition: 0.5s; padding: 10px;">
+                <div class="burger-menu" style="padding: 5px;">
+                    <i class="fa-regular fa-user" style="font-size: 1.6em; cursor: pointer; font-weight: 550;"></i>
+                </div>
+            </div>
+            <div routerLink="/shopping-cart" class="user-button" style="border-radius: 50%; transition: 0.5s; padding:10px;">
+                <div class="burger-menu" style="padding: 5px;">
+                    <i class="fa-solid fa-cart-shopping"
+                        style="font-size: 1.6em; cursor: pointer; font-weight: 550;"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+</section>

@@ -1,0 +1,20 @@
+.container {
+  font-family: Helvetica, sans-serif;
+}
+.container .header {
+  background-color: blue;
+}
+.container .header h1 {
+  color: white;
+}
+.container .main p {
+  border-radius: 50px;
+  padding: 10px;
+  border: 1px solid blue;
+}
+.container .main .btn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}/*# sourceMappingURL=example.css.map */

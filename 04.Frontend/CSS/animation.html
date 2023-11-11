@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Animation</title>
+    <style>
+        div{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            border: 8px solid red;
+            background-color: white;
+            position: relative;
+            animation-name: example;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            border-left-color: white;
+            animation-iteration-count: infinite;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .primary{
+            border-color: blue;
+            border-left-color: transparent;
+        }
+
+        .info{
+            border-color: rgb(92, 92, 155);
+            border-left-color: transparent;
+        }
+
+        .green{
+            border-color: green;
+            border-left-color: transparent;
+        }
+
+        .yellow{
+            border-color: yellow;
+            border-left-color: transparent;
+        }
+
+        .dark{
+            border-color: black;
+            border-left-color: transparent;
+        }
+
+        @keyframes example {
+            0% {transform: rotate(0deg);}           
+
+            100% {transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="primary"></div>
+    <div class="info"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="dark"></div>
+</body>
+</html>

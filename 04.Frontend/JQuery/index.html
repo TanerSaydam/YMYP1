@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQuery</title>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;            
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <button id="show">Göster</button>
+    <button id="hide">Gizle</button>
+    <h1 id="hello">Merhaba</h1>
+    <h1>13:02 görüşelim</h1>
+    <div>
+        <p>lorem</p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            //tüm jquery kodları buraya yazılmalı
+
+            // $("div").animate({left: '200px', width: '200px'},3000);
+
+            //$("div p").text("Deneme"); //innerText
+            //$("div p").html("Deneme"); //innerHTML
+            $("input").val("adsasdasd"); //value
+            $("div").attr({"name":"asdasdasd", "id":"denemeId"});
+
+            function myFunction(){
+                $("div").animate({left: '200px'},2000)
+            }
+
+            myFunction();
+
+
+            // $("#show").on("click",function(){
+            //     $("#hello").show();
+            //     $("div p").show();
+            // });
+
+            // $("#hide").on("click",function(){
+            //     $("h1").hide();
+            //     $("div p").hide();
+            // });
+
+
+            //$("#contanier").action();
+
+            // $("button").click(function(){
+            //     alert("Tıklandım!");
+            // });
+
+            // $("input").on("keyup",function(e){
+            //     console.log(e.target.value);
+            // })
+        });        
+    
+        function myFunction2(){
+            console.log("adasdasd")
+            $("p").html("ben değiştim!");
+        }
+
+        $("p").html("ben değiştim!");
+    
+    </script>
+    
+
+</body>
+</html>

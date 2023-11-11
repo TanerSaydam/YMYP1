@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example KeyPress</title>
+    <style>
+        input{
+            width: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <input onkeyup="moveToNextInput(event)" maxlength="1" id="i1">
+    <input onkeyup="moveToNextInput(event)" maxlength="1"  id="i2">
+    <input onkeyup="moveToNextInput(event)" maxlength="1"  id="i3">
+    <input onkeyup="moveToNextInput(event)" maxlength="1"  id="i4">
+    <input onkeyup="moveToNextInput(event)" maxlength="1"  id="i5">
+
+    <script>
+        document.getElementById("i1").focus().select();
+        function moveToNextInput(event){
+            let id = event.target.id; //i1
+            id = +id.toString().replace("i",""); //i1 => 1
+            id++; // 1 + 1 => 2
+
+            if(id === 6) id = 1;
+            const el = document.getElementById("i" + id); //i5
+            el.focus();
+            el.select();
+
+            // if(id === "i1"){
+            //     const el = document.getElementById("i2");
+            //     el.focus();
+            //     el.select();
+            // }else if(id === "i2"){
+            //     const el = document.getElementById("i3");
+            //     el.focus();
+            //     el.select();
+            // }else if(id === "i3"){
+            //     const el = document.getElementById("i4");
+            //     el.focus();
+            //     el.select();
+            // }else if(id === "i4"){
+            //     const el = document.getElementById("i5");
+            //     el.focus();
+            //     el.select();
+            // }else if(id === "i5"){
+            //     const el = document.getElementById("i1");
+            //     el.focus();
+            //     el.select();
+            // }
+            
+        }
+    </script>
+</body>
+</html>

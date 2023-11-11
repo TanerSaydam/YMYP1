@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Curriculum Vitae</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div id="edit-form" class="edit-form">
+        <h1 class="center">Edit Form</h1>
+        <h1>Personel Information</h1>
+        <div class="form-group">
+            <label for="nameInput">Name</label>
+            <input onkeyup="keyupInputAndSetValue('name',event)" type="text" id="nameInput">
+        </div>
+        <div class="form-group">
+            <label for="subTitleInput">Sub Title</label>
+            <input onkeyup="keyupInputAndSetValue('title',event)" type="text" id="subTitleInput">
+        </div>
+        <!-- <div class="form-group">
+            <label for="avatarInput">Avatar</label>
+            <input type="file" id="avatarInput">
+        </div> -->
+        <div class="form-group">
+            <label for="dateOfBirthInput">Avatar</label>
+            <input onchange="changeBirthDateAndSetValue(event)" type="date" id="dateOfBirthInput">
+        </div>
+        <div class="form-group">
+            <label for="phoneInput">Phone</label>
+            <input onkeyup="keyupInputAndSetValue('phone',event)" type="text" id="phoneInput">
+        </div>
+        <div class="form-group">
+            <label for="emailInput">Email</label>
+            <input onkeyup="keyupInputAndSetValue('email',event)" type="text" id="emailInput">
+        </div>
+        <div class="form-group">
+            <label for="addressInput">Address</label>
+            <input onkeyup="keyupInputAndSetValue('address',event)" type="text" id="addressInput">
+        </div>
+        <div class="form-group">
+            <label for="aboutMeInput">Address</label>
+            <textarea rows="10" onkeyup="keyupInputAndSetValue('aboutMe',event)" type="text" id="aboutMeInput">
+            </textarea>
+        </div>
+        <hr>
+        <h1>Skill
+            <button onclick="createSkillEditFormDivField()" class="btn-3">+</button>
+        </h1>
+        <div id="skill-div">
+
+        </div>        
+        <div class="form-group">
+            <button class="btn-2" onclick="save()">Save</button>
+            <button class="btn-2" onclick="hideEditForm()">Cancel</button>
+        </div>
+    </div>
+
+    <div id="blog" class="print-area" style="display: none;">
+        <div class="header">           
+            <div class="header-text">
+                <img id="avatar">
+                <h1 id="name"></h1>
+                <p id="title"></p>
+            </div>                        
+            <div class="print">
+                <a href="#">
+                    <i class="fa fa-print"></i>
+                </a>                
+            </div>
+            <div class="print">
+                <a onclick="showEditForm()" class="cursor">
+                    <i class="fa fa-edit"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-area">
+                <div class="contact">
+                    <h1 class="content-head">CONTACT</h1>              
+                    <ul class="information-ul">
+                        <li>
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span id="dateOfBirth">
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span id="phone">
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span id="email">
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-location-dot"></i>
+                            <span id="address">
+                                
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <span class="line"></span>
+                <div class="skills">
+                    <h1 class="content-head">SKILLS</h1>
+                    <ul id="skills" class="skill-bars-ul">
+                        <!-- <button onclick="addSkill()">+</button> -->  
+                    </ul>
+                </div>
+
+                <div class="follow">
+                    <h1 class="content-head">FOLLOW ME</h1>
+                    <ul id="social-medias" class="social-media-ul">                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-area">
+                <div class="about">
+                    <h1 class="content-head"><span><i class="fa fa-user"></i></span>ABOUT ME</h1>
+                    <div id="aboutMe"></div>
+                </div>
+                <div class="work mt" id="work-experiences">
+                    
+                    
+                </div>
+                <div class="education mt" id="educations">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>     
+    
+    <div id="blog-loading" class="print-area" style="display: none; border-radius: 20px;">
+        <div class="header" style="background-color: rgb(87, 86, 86);">           
+            <div style="width: 200px; height: 200px; background-color: gainsboro; top: 50px;
+                left: 65px; border-radius: 150px; position: relative;  "></div>
+            <div class="header-text">
+                
+                <h1 id="name" style="background-color: gainsboro; width: 350px; height: 50px; border-radius: 20px;"></h1>
+                <p id="title" style="background-color: gainsboro; width: 200px; height: 20px; text-align: center; margin-top: 5px; border-radius: 10px;"></p>
+            </div>            
+            <div class="print">
+                <a href="#">
+                    <i class="fa fa-print"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left-area">
+                <div class="contact">
+                    <h1 class="content-head"
+                    style="background-color: gainsboro; width: 150px; height: 50px; border-radius: 20px;"></h1>              
+                    <ul class="information-ul">
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            <span id="phone" style="width: 100px; height: 20px; background-color: gainsboro; display: inline-block; border-radius: 20px;">
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <span id="email" style="width: 100px; height: 20px; background-color: gainsboro; display: inline-block; border-radius: 20px;">
+                                
+                            </span>
+                        </li>
+                        <li>
+                            <i class="fa fa-location-dot"></i>
+                            <span id="address" style="width: 100px; height: 20px; background-color: gainsboro; display: inline-block; border-radius: 20px;">
+                                
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <span class="line"></span>
+                <div>
+                    <h1 class="content-head"
+                    style="background-color: gainsboro; width: 150px; height: 50px; border-radius: 20px;"></h1>
+                    <ul id="skills" class="skill-bars-ul">
+                        <!-- <button onclick="addSkill()">+</button> -->  
+                        <li style="width: 100px; height: 20px; background-color: gainsboro; display: inline-block; border-radius: 20px;"></li>
+                        <li style="width: 100px; height: 20px; background-color: gainsboro; display: inline-block; border-radius: 20px;"></li>
+                    </ul>
+                </div>
+
+                <div class="follow">
+                    <h1 class="content-head" style="background-color: gainsboro; width: 150px; height: 50px; border-radius: 20px;"></h1>
+                    <ul id="social-medias" class="social-media-ul">  
+                        <li style="width: 100px; height: 20px; background-color: gainsboro; display: inline-block; border-radius: 20px;"></li>                                              
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-area">
+                <div class="about">
+                    <h1 class="content-head"><span><i class="fa fa-user"></i></span><span style="background-color: gainsboro; width: 150px; height: 50px; display: inline-block; border-radius: 20px;"></span></h1>
+                    <div id="aboutMe"></div>
+                </div>
+                <div class="work mt" id="work-experiences">
+                    <p style="background-color: gainsboro; width: 100%; height: 250px; border-radius: 20px;"></p>
+                    
+                </div>
+                <div class="about" style="margin-top: 30px;">
+                    <h1 class="content-head"><span><i class="fas fa-suitcase-rolling" aria-hidden="true"></i></span><span style="background-color: gainsboro; width: 150px; height: 50px; display: inline-block;border-radius: 20px;"></span></h1>
+                    <div id="aboutMe border-radius: 20px;"></div>
+                </div>
+                <div class="work mt" id="work-experiences">
+                    <p style="background-color: gainsboro; width: 100%; height: 250px; border-radius: 20px;"></p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex" id="spinner" style="display: none;">
+        <h1>Sayfa yükleniyor...</h1>
+        <div class="spinner"></div>
+    </div>
+
+    <div class="d-flex" id="error" style="display: none;">
+        <h2>Opps! Bir hatayla karşılaştık. İlgileniyoruz.</h2>
+        <button onclick="tryAgain()">Tekrar dene</button>
+    </div>
+
+    <!-- FontAwesome CSS -->
+    <!-- <script src="all.min.js"></script> -->
+    <script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

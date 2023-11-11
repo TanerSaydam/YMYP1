@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <style>
+        a {
+            cursor: pointer;
+        }
+    </style>
+
+<style>
+    p{
+        color: red;
+    }
+</style>
+
+<script src="https://kit.fontawesome.com/dc59d75dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>    
+    <nav>
+        <h1>logo</h1>
+        <ul id="navigation"></ul>
+    </nav>
+
+    <script>
+        // let blog;
+        // async function getBlogPage() {
+        //     if (blog === undefined) {
+        //         const result = await axios.get("./blog.html");
+        //         console.log(result);
+        //         blog = result.data;
+        //     }
+
+        //     document.getElementById("root").innerHTML = blog;
+        // }
+
+        // let home;
+        // async function getHomePage() {
+        //     if(home === undefined){
+        //         const result = await axios.get("./home.html");
+        //         home =result.data;
+        //     }
+        //     document.getElementById("root").innerHTML = home;
+            
+        // }
+
+        // let contact;
+        // async function getContactPage() {            
+        //     if(contact === undefined){
+        //         const result = await axios.get("./contact.html");
+        //         contact = result.data;
+        //     }
+        //     document.getElementById("root").innerHTML = contact;                
+        // }            
+        const pages = [
+            {
+                id: "home",
+                name: "Home Page",
+                value: "",
+                icon: "fa fa-home"
+            },
+            {
+                id: "blog",
+                name: "Blog Page",
+                value: "",
+                icon: "fa fa-blog"
+            },
+            {
+                id: "contact",
+                name: "Contact Page",
+                value: "",
+                icon: "fa fa-file"
+            },
+            {
+                id: "aboutMe",
+                name: "About Me Page",
+                value: "",
+                icon: "fa fa-file"
+            },
+            {
+                id: "todo",
+                name: "Todo Page",
+                value: "",
+                icon: "fa fa-file"
+            }
+        ]
+
+            function setNavigation(){
+                const el = document.getElementById("navigation");
+                for(let i in pages){
+                    el.innerHTML += `
+                    <li>
+                        <a onclick="getPage('${i}')">
+                            <i class="${pages[i].icon}"></i>
+                            ${pages[i].name}
+                        </a>
+                    </li>
+                    `
+                }
+            }
+
+            setNavigation();
+
+
+        async function getPage(pageIndex){ //home about contact blog
+            const i = +pageIndex;
+            if(pages[i].value === ""){
+                const result = await axios.get("./" + pages[i].id +".html");
+                pages[i].value = result.data
+            }
+
+            document.getElementById("root").innerHTML = pages[i].value;            
+        }
+
+        const user = {
+            name: "Taner",
+            lastName: "Saydam"
+        }
+
+        console.log(user.name);
+        console.log(user["name"]);
+        
+        async function callTodoApi(){
+        const result = await axios.get("https://jsonplaceholder.typicode.com/todos");
+        for(let x of result.data){
+            document.getElementById("todoUl").innerHTML += `
+                <li>
+                    ${x.title}
+                </li>
+            `
+        }
+    }
+
+    </script>
+
+    <div id="root">
+
+    </div>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, temporibus?</p>
+    </footer>
+</body>
+
+</html>

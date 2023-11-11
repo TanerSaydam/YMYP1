@@ -1,0 +1,9 @@
+.d-flex, .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  font-size: 18px;
+}/*# sourceMappingURL=extend.css.map */

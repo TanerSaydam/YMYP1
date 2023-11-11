@@ -1,0 +1,12 @@
+﻿@model Blog
+@{
+}
+
+
+<div class="text-center">
+<h1>@Model.Title</h1>
+<img src="@Model.CoverImageUrl" class="mt-1" style="object-fit:contain"/>
+<hr/>
+@Html.Raw(Model.Content)
+</div>
+

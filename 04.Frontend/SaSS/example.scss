@@ -1,0 +1,29 @@
+$primary-color: blue;
+$font-stack: Helvetica, sans-serif;
+
+@mixin rounded($radius){
+    border-radius: $radius;
+}
+
+.container{
+    font-family: $font-stack;
+    .header{        
+        background-color: $primary-color;
+        h1{
+            color: white;
+        }
+    }
+    .main{
+        p{
+            @include rounded(50px);
+            padding: 10px;
+            border: 1px solid $primary-color;
+        }
+        .btn{
+            background-color: $primary-color;
+            color: white;
+            padding: 10px;
+            @include rounded(5px);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "home": "Anasayfa",
+    "about": "Hakkımda",
+    "contact": "İletişim",
+    "description": "adasdasdasd",
+    "contactTitle":"İletişim Sayfası",
+    "nameLabel": "Ad Soyad",
+    "emailLabel":"Mail Adresi",
+    "subjectLabel":"Konu",
+    "contentLabel":"İçerik",
+    "sendBtn":"Gönder"
+}

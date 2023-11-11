@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="create()">Create Element</button>
+    <div>
+        <p>Lorem ipsum, dolor sit<span id="root"></span>amet consectetur adipisicing elit. Velit odio consequatur, autem voluptates tempore porro perspiciatis ea consectetur, repudiandae, voluptatum aliquam? Officiis est quas praesentium sunt pariatur magni, rerum dolorem.
+            
+        </p>
+    </div>
+    <script>
+        function create(){
+            const h1Element = document.createElement("h1");
+            const h2Element = document.createElement("h2");
+            h1Element.name = "name";
+            h1Element.className = "bold";
+            h1Element.style.fontSize = "20px";
+            h1Element.innerHTML = "Merhaba Dünya!";
+            h2Element.innerHTML = "Merhaba Dünya!";
+
+            const rootElement = document.getElementById("root");
+            rootElement.append(h1Element,h2Element);
+
+
+            //rootElement.innerHTML += `<h1 name="name" class="bold" style="font-size:20px">Merhaba Dünya2</h1>`
+            console.log(h1Element.ENTITY_REFERENCE_NODE);
+            rootElement.innerHTML = h1Element.DOCUMENT_NODE
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+    <h1>Todo App With JQuery</h1>
+    <input>
+    <button>Save</button>
+    <ul>
+
+    </ul>
+    <script>
+        $(document).ready(function(){
+            getAll();
+            function getAll(){
+                $.ajax({
+                    url: "http://localhost:3200/api/getAll",
+                    method: "GET",
+                    success: function(res){
+                        let text = "";
+                        for(let r of res){
+                            text += `<li>${r?.id} ${r.title}</li>`
+                        }
+
+                        $("ul").html(text);
+                    },
+                    error: function(err){
+                        console.log(err);
+                    }
+                })
+            }
+
+            $("button").on("click",function() {
+                const value = $("input").val();
+                const obj = {
+                    id: 0,
+                    title: value
+                };
+
+                const data = JSON.stringify(obj);
+                
+                $.ajax({
+                    url: "http://localhost:3200/api/create",
+                    data: data,
+                    method: "POST",
+                    headers: {
+                        "Content-type": "application/json"
+                    },
+                    // success: function(){                        
+                    //     getAll();
+                    //     $("input").val("");
+                    // }
+                })
+                .done(function(){
+                    getAll();
+                    $("input").val("");
+                })
+                .fail(function(jqXHR, textStatus, errorTrown){
+                    console.log(jqXHR)
+                    console.log("Request failed: " + textStatus + ", " + errorTrown)
+                })
+            })
+        })
+    </script>
+</body>
+</html>

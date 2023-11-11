@@ -1,0 +1,90 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 91, 9, 1) 35%, rgba(0, 134, 255, 1) 100%);
+}
+
+.container {    
+    padding: 30px;
+    border: 1px solid #525255;
+    border-radius: 8px;
+    box-shadow: 1px 4px 50px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+}
+
+label, a, h1{
+    color: #cdccda;
+}
+
+a{    
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.head {
+    text-align: center;
+    /* background-color: red; */
+    padding: 15px;
+    border-radius: 8px;
+    border-bottom: 1px solid;
+}
+
+.body {
+    padding: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 8px;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+.mt {
+    margin-top: 8px;
+}
+
+.mt-2{
+    margin-top: 16px;
+}
+
+.btn{
+    width: 100%;
+    padding: 7px;
+    border-radius: 8px;
+    background-color: cadetblue;
+    border-color: cadetblue;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.signup a {
+    float: right;
+}

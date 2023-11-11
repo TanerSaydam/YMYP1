@@ -1,0 +1,22 @@
+//$variablename: value;
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+$myPadding: 10px 20px;
+
+*{
+    font-size: $myFontSize;
+}
+
+body{
+    $myFontSize: 20px !global;
+    font-family: $myFont;
+    font-size: $myFontSize;
+    color: $myColor;
+}
+
+#container{
+    width: $myWidth;
+    font-size: $myFontSize;
+}

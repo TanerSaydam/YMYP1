@@ -1,0 +1,67 @@
+ul{
+    margin-top: 10px;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover{
+    color: blue;
+}
+
+.card{
+    padding: 10px;
+}
+
+.col-lg-9{  
+    width: 74.5%;  
+    margin-right: 5px;
+}
+
+.card-image{
+    max-height: 150px;    
+    border: 1px solid #cccc;
+    padding: 10px;    
+}
+
+.trash{
+    position: absolute; 
+    right: 20px; 
+    cursor: pointer;    
+}
+
+.trash:hover{
+    color: #dc3545;
+}
+
+@media screen and (max-width:1400px) {
+    h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .col-lg-9{
+        width: 74%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:990px) {
+    h1{
+        font-size: 2rem;
+    }
+
+    .col-lg-9{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

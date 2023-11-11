@@ -1,0 +1,164 @@
+@if (isLoading) {
+
+}
+@else {
+    <section class="header">
+        <div class="main">
+            <div class="main_tag">
+                <h1>{{'welcomeTo' | translate}}<br><span>{{'bookStore' | translate}}</span></h1>
+                <p>
+                    {{'welcomeToDescription' | translate}}
+                </p>
+            </div>
+            <div class="main_img">
+                <img src="/assets/image/table.png">
+            </div>
+        </div>
+    </section>
+
+
+<!--Banner Sales-->
+<div class="banner_sales">
+</div>
+
+<!--Bestseller-->
+
+<div id="bestseller" class="bestseller">
+    <h1>{{'bestseller' | translate}}</h1>
+    <div class="arrivals_box">
+        @for (bestseller of bestsellers; track bestseller) {
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img [src]="bestseller.coverImageUrl">
+                </div>
+                <div class="arrivals_tag">
+                    <p>{{ bestseller.title }}</p>
+                    <div class="arrivals_rating">
+                        <i class="fa-solid fa-star" *ngIf="bestseller.raiting >= 1"></i>
+                        <i class="fa-solid fa-star" *ngIf="bestseller.raiting >= 2"></i>
+                        <i class="fa-solid fa-star" *ngIf="bestseller.raiting >= 3"></i>
+                        <i class="fa-solid fa-star" *ngIf="bestseller.raiting >= 4"></i>
+                        <i class="fa-solid fa-star" *ngIf="bestseller.raiting >= 5"></i>
+                    </div>
+                    <a routerLink="/book-detail/{{bestseller.id}}" class="arrivals_btn">{{'learnMoreBtn' | translate}}</a>
+                </div>
+            </div> 
+        }
+    </div>
+</div>
+
+
+<!--Books-->
+
+<div id="books" class="featured_books">
+    <h1>{{'newBooks' |translate}}</h1>
+    <div class="work-container">
+        <div class="slider-button" (click)="leftSlider()">&#9664;</div>
+        <div class="work-list">
+            @for (book of newBooks; track book) {
+                <div class="work">
+                    <img class="cover-image" [src]="book.coverImageUrl">
+                    <div class="layer">
+                        <h3>
+                            {{book.title}}
+                        </h3>
+                        <br>
+                        <p class="author">{{book.author}}</p>
+                        <br>
+                        <div class="categories">
+                            @for (category of book.categories; track category) {
+                                <span>{{category}} </span>
+                            }
+                            
+                        </div>
+                        <br>
+                        <p class="description">{{book.summary}}</p>
+                        <a routerLink="/book-detail/{{book.id}}" class="btn">{{'showDetail' | translate }}</a>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="slider-button" (click)="rightSlider()">&#9654;</div>
+    </div>
+</div>
+
+<!--Banner-->
+
+<div class="banner">
+
+</div>
+
+<!--reviews-->
+
+<div id="reviews" class="reviews">
+    <h1>
+        {{'reviews' | translate}}
+        <i class="fa-regular fa-comments"></i>
+    </h1>
+
+    <div class="review_box">
+
+        @for (comment of lastComments; track comment) {
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="/assets/image/review_1.png">
+                </div>
+                <div class="card">
+                    <h2>John Deo</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+        }
+        @empty {
+            <h1>{{'notCommentsYet' | translate}}</h1>
+        }
+        
+      
+    </div>
+</div>
+
+<!--Services-->
+
+<div class="services">
+    <div class="services_box">
+        <div class="services_card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>{{'fastDelivery' |translate}}</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="services_card">
+            <i class="fa-solid fa-headset"></i>
+            <h3>{{'24x7Services' | translate}}</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="services_card">
+            <i class="fa-solid fa-tag"></i>
+            <h3>{{'bestDeal' | translate}}</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="services_card">
+            <i class="fa-solid fa-lock"></i>
+            <h3>{{'securePayment' | translate}}</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+        </div>
+    </div>
+</div>
+
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+    <style>        
+    </style>
+
+    <script>
+        function yuzdeyiCalistir(){
+            const el = document.querySelector(".progress-bar");
+            let count = 0;
+            setInterval(()=> {
+                    count +=1;
+                    el.style.width = count + "%";
+            },500)
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Bootstrap</h1>
+
+        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar" style="width: 10%"></div>
+          </div>
+
+          <form action="/file-upload"
+      class="dropzone"
+      id="my-awesome-dropzone"></form>
+      
+          <button class="btn btn-outline-primary w-100 mt-3" onclick="yuzdeyiCalistir()">Çalıştır</button>
+
+          <div style="margin-bottom: 2000px;"></div>
+
+        <h1 class="alert alert-warning text-center">Lorem, ipsum dolor.</h1>
+        
+        <nav class="d-flex justify-content-between border border-1 align-items-center p-2">
+            <h1>Logo</h1>
+            <ul class="d-flex justify-content-around gap-2 list-inline align-items-center">
+                <li>Ana Sayfa</li>
+                <li>Hakkımda</li>
+                <li>İletişim</li>
+            </ul>
+        </nav>
+
+        <input type="text" class="form-control">
+        <div class="mt-2">
+        <button class="btn btn-dark">Button dark</button>
+        <button class="btn btn-primary">Button primary</button>
+        <button class="btn btn-secondary">Button secondary</button>
+        <button class="btn btn-success">Button success</button>
+        <button class="btn btn-info">Button info</button>
+        <button class="btn btn-danger">Button danger</button>
+    </div>
+    <div class="mt-2">
+        <button class="btn btn-outline-dark">Button outline dark</button>
+        <button class="btn btn-outline-primary">Button outline primary</button>
+        <button class="btn btn-outline-secondary">Button outline secondary</button>
+        <button class="btn btn-outline-success">Button outline success</button>
+        <button class="btn btn-outline-info">Button outline info</button>
+        <button class="btn btn-outline-danger">Button outline danger</button>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Domates</h1>
+                    <img src="https://adrossen.com/wp-content/uploads/2022/12/adrossen-katalog-fotolar_raptor-scaled.jpg" alt="" class="w-100">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident reiciendis enim natus? A, debitis distinctio quisquam fugiat magnam tempora quae placeat eaque nesciunt commodi deserunt cumque! Eligendi, accusamus autem.</p>
+                    <button class="btn btn-success w-100">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Domates</h1>
+                    <img src="https://adrossen.com/wp-content/uploads/2022/12/adrossen-katalog-fotolar_raptor-scaled.jpg" alt="" class="w-100">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident reiciendis enim natus? A, debitis distinctio quisquam fugiat magnam tempora quae placeat eaque nesciunt commodi deserunt cumque! Eligendi, accusamus autem.</p>
+                    <button class="btn btn-success w-100">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Domates</h1>
+                    <img src="https://adrossen.com/wp-content/uploads/2022/12/adrossen-katalog-fotolar_raptor-scaled.jpg" alt="" class="w-100">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident reiciendis enim natus? A, debitis distinctio quisquam fugiat magnam tempora quae placeat eaque nesciunt commodi deserunt cumque! Eligendi, accusamus autem.</p>
+                    <button class="btn btn-success w-100">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Domates</h1>
+                    <img src="https://adrossen.com/wp-content/uploads/2022/12/adrossen-katalog-fotolar_raptor-scaled.jpg" alt="" class="img-thumbnail">
+                </div>
+                <div class="card-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas provident reiciendis enim natus? A, debitis distinctio quisquam fugiat magnam tempora quae placeat eaque nesciunt commodi deserunt cumque! Eligendi, accusamus autem.</p>
+                    <button data-bs-target="#myExampleModal" data-bs-toggle="modal" class="btn btn-success w-100">
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="modal" id="myExampleModal"  data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Başlık</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>İçerik</p>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+        <!-- <div class="row">
+            <div 
+            class="
+                col-lg-3 
+                col-md-6 
+                col-sm-6 
+                col-12
+                overflow-auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatem alias quis sunt, impedit repellat distinctio hic velit, aspernatur illum, totam et enim rerum ipsa modi quam aut ab fugiat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sint odit vel rem. Sapiente sint commodi tempora. Laboriosam temporibus assumenda autem quidem hic veniam perferendis ab consequuntur, iste quasi velit.</p>
+            </div>
+            <div class="
+            col-lg-3 
+            col-md-6 
+            col-sm-6 
+            col-12 
+            overflow-auto">
+               <table class="table table-hover table-bordered">
+                <thead>
+                    <tr class="table-primary">
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>LastName</th>
+                        <th>Profession</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Taner</td>
+                        <td>Saydam</td>
+                        <td>Software</td>
+                        <td>
+                            <button>Update</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Taner</td>
+                        <td>Saydam</td>
+                        <td>Software</td>
+                        <td>
+                            <button>Update</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Taner</td>
+                        <td>Saydam</td>
+                        <td>Software</td>
+                        <td>
+                            <button>Update</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Taner</td>
+                        <td>Saydam</td>
+                        <td>Software</td>
+                        <td>
+                            <button>Update</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+               </table>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <p cl>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatem alias quis sunt, impedit repellat distinctio hic velit, aspernatur illum, totam et enim rerum ipsa modi quam aut ab fugiat.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus voluptatem alias quis sunt, impedit repellat distinctio hic velit, aspernatur illum, totam et enim rerum ipsa modi quam aut ab fugiat.</p>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="./script.js"></script>
+
+
+   
+</body>
+</html>

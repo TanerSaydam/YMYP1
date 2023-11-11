@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Todo App</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script> 
+</head>
+<body>
+    <div id="addForm">
+        <input id="work" type="text" placeholder="Some work...">
+        <button onclick="save()">Save</button>
+    </div>
+    <div id="updateForm">
+        <input id="updateWork" type="text" placeholder="Some work...">
+        <button onclick="update()">Update</button>
+        <button onclick="cancel()">Cancel</button>
+    </div>
+    <hr>
+    <ul id="todo-list">
+    </ul>
+
+    <!-- 
+        Api isteği yöntemleri
+        1) Fetch => JavaScript tarafından verilen default Api isteği yöntemidir
+        2) Axios => Ekstra bir kütüphane ile kullanabileceğimiz Api isteği yöntemidir
+        3) JQuery Ajax => Ekstra bir kütüphane ile kullanabileceğimiz Api isteği yöntemidir
+     -->
+
+    <script>
+        let todos = [];
+        let isUpdateFormActive = true;
+        let index = 0;
+        let id = 0;
+
+        showTrueForm();
+        getTodoListFromApi();
+
+        function getTodoListFromApi(){
+            // fetch("http://localhost:5000/api/todos")
+            //     .then(res=> res.json())
+            //     .then(data => {
+            //         console.log(data);
+            //         todos = data;
+            //         setULList();
+            //     });
+
+            axios.get("http://localhost:5000/api/todos")
+            .then(res=> {
+                todos = res.data;
+                setULList();
+            });
+        }
+
+        function deleteTodoFromApi(id){
+            // fetch("http://localhost:5000/api/todos/remove/" + id,{
+            //     method: "DELETE",                
+            // })
+            // .then(res=> res.json())
+            // .then(data=> {
+            //     console.log(data);
+            //     getTodoListFromApi();
+            // })
+
+            axios.get("http://localhost:5000/api/todos/remove/" + id)
+            .then(data => {
+                getTodoListFromApi();
+            })
+        }       
+
+        function showTrueForm(){
+            isUpdateFormActive = !isUpdateFormActive;
+
+            const addFormEl = document.getElementById("addForm");
+            const updateFormEl = document.getElementById("updateForm");
+            const operationsEl = document.querySelectorAll(".operations");
+
+            if(isUpdateFormActive){
+                addFormEl.style.display = "none";
+                updateFormEl.style.display = "block";
+
+                for(let el of operationsEl){
+                    el.style.display = "none"
+                }
+
+            }else{
+                addFormEl.style.display = "block";
+                updateFormEl.style.display = "none";
+                
+                for(let el of operationsEl){
+                    el.style.display = "block"
+                }
+            }
+        }
+
+        function save(){
+            const inputElement = document.getElementById("work");
+            const value = inputElement.value;
+
+            // fetch("http://localhost:5000/api/todos/create",{
+            //     headers: {
+            //         "Content-Type":"application/json"
+            //     },
+            //     method: "POST",
+            //     body: JSON.stringify({title: value})
+            // })
+            // .then(res=> res.json())
+            // .then(data => {
+            //     getTodoListFromApi();
+                
+            //     inputElement.value = "";
+            //     inputElement.focus();
+            // });
+
+            axios.post("http://localhost:5000/api/todos/create",{title: value})
+            .then(res=> {
+                getTodoListFromApi();
+                inputElement.value = "";
+                inputElement.focus();
+            });
+    }
+
+        const deleteTodo = (index) =>{
+            todos.splice(index,1);
+            setULList();
+        }
+
+        function setULList(){
+            let text = "";
+            for(let i in todos){
+                const value = todos[i];
+                text += `
+                <li>${value.title}</li>
+                <div class="operations">
+                <button onclick="get(${i})">Update</button>
+                <button onclick="deleteTodoFromApi(${value.id})">Delete</button>
+                </div>`
+            }
+
+            const ulElement = document.getElementById("todo-list");
+            ulElement.innerHTML = text;
+        }
+
+        const updateWorkEl = document.querySelector("#updateWork");
+
+        function get(i){
+            showTrueForm();
+            updateWorkEl.value = todos[i].title;
+            index = i;
+            id = todos[i].id;
+        }
+
+        function update(){
+            const value = updateWorkEl.value;
+            axios.post("http://localhost:5000/api/todos/update",{id: id, title: value})
+            .then(res=> {
+                showTrueForm();
+                getTodoListFromApi();
+            });
+        }
+
+        function cancel(){
+            showTrueForm();
+        }
+    </script>
+</body>
+</html>

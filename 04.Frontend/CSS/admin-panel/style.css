@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: blueviolet;
+    align-items: center;
+}
+
+.div-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    width: 80px;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+.profile-img{
+    width: 50px;
+    border-radius: 50px
+}
+
+.sidebar{
+    width: 15%;
+    float: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 90vh;
+}
+
+.sidebar-header{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar ul li{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover{
+    background-color: aquamarine;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+}
+
+.content{
+    width: 85%;
+    float: right;
+    padding: 10px;
+}
+
+.content-header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.content-body{
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    height: 0px;
+    position: absolute;
+    padding: 0px 16px;
+    top:55px;
+    background-color: black;
+    transition: height 1s;
+}
+
+.dropdown-content a{
+    color: transparent;
+    transition: color 1s ease;
+}
+
+.dropdown:hover .dropdown-content{    
+    height: 100px;
+}
+
+.dropdown:hover .dropdown-content a{
+    color: white;
+}
+
+.dropdown-content a:hover{
+    background-color: #ccc;
+    color: black !important;
+}
+
+@media screen and (max-width:1080px) {
+    nav label:after{
+        content: '\2630';
+        font-size: 30px;
+    }
+
+    .sidebar{
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .head{
+        display: none;
+    }
+
+    nav ul{
+        display: none
+    }
+}

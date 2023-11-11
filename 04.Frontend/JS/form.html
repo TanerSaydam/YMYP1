@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Form</title>
+</head>
+<body>
+    <form onsubmit="save(event)">
+        <input required minlength="3">
+        <button 
+            type="submit">
+            Save
+        </button>
+    </form>
+
+    <hr>
+    <ul id="list">
+        
+    </ul>
+    
+
+    <script>
+
+        const liste = [];
+        let number = 0;
+
+        function deleteElement(id){
+            document.getElementById(id).remove();
+        }
+
+        function changeElementColor(id){
+            const element = document.getElementById(id);
+            const elementColor = element.style.color;
+            //bunu referans bağlantısı yapmadığımız için kullanmayız
+            if(element.style.color === "red"){
+                element.style.color = "black"
+            }else{
+                element.style.color = "red"
+            }            
+        }
+
+        function save(event){
+            event.preventDefault();
+            const inputElement = document.querySelector("input");
+
+            //liste.push(inputElement.value);
+
+        const ulElement = document.getElementById("list");
+        ulElement.innerHTML += `
+        <li id='li${number}'>
+            ${inputElement.value}
+            <button onclick='changeElementColor("li${number}")'>
+                Rengi değiştir
+            </button>
+            <button onclick='deleteElement("li${number}")'>
+            Sil
+            </button>
+        </li>
+            `
+            number++;
+            
+            // const liElement = document.createElement("li");
+            // liElement.innerText = inputElement.value
+
+            // ulElement.append(liElement);
+
+            
+           
+
+
+            inputElement.value = "";
+            inputElement.focus();
+        }
+
+        function writeToConsoleInputeValue(event){
+            event.preventDefault(); //form elementine özgü. Formun tetiklenmes esnasında yenilenemesini engeller.
+            //console.log(event)
+            const element = document.querySelector("input")
+            console.log(element.value);
+        }
+    </script>
+</body>
+</html>
