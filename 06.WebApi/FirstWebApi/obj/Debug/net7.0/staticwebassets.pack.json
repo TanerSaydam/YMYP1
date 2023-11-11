@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\YMYP1\\06.WebApi\\FirstWebApi\\wwwroot\\files\\31b11440-2a81-412a-9ec7-3f42e2a26a09.png",
+      "PackagePath": "staticwebassets\\files\\31b11440-2a81-412a-9ec7-3f42e2a26a09.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.FirstWebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.FirstWebApi.props",
+      "PackagePath": "build\\FirstWebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.FirstWebApi.props",
+      "PackagePath": "buildMultiTargeting\\FirstWebApi.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.FirstWebApi.props",
+      "PackagePath": "buildTransitive\\FirstWebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
