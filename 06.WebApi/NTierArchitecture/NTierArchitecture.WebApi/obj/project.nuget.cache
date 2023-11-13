@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "3eNo2Rmb6BHcUI5ORKmxo2MfaJS4CDQtbzAE/2s0VJRLcB3hxdWdRAwpVC58mqg/HYGSOyDCoj+Ljuty79ufbg==",
+  "success": true,
+  "projectFilePath": "C:\\YMYP1\\06.WebApi\\NTierArchitecture\\NTierArchitecture.WebApi\\NTierArchitecture.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,98 @@
+/* zeynepjs menu styles */
+
+.zeynep {
+	background-color: $white;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	overflow-y: auto;
+	top: 0;
+	transform: translateX(0) !important;
+	z-index: 1011;
+	width: 100% !important;
+	-webkit-overflow-scrolling: touch;
+}
+
+html:not(.no-transition) body,
+.zeynep:not(.no-transition),
+.zeynep .submenu:not(.no-transition) {
+	transition: all 375ms;
+	transition-property: left, right, transform;
+}
+
+.zeynep ul {
+	list-style: none;
+	padding: 0;
+}
+
+.zeynep ul > li {
+	display: block;
+}
+
+.zeynep ul > li > a:not(.btn) {
+	color: inherit;
+	display: block;
+	padding: 14px 30px;
+	text-decoration: none;
+	transition: all 150ms;
+}
+
+.zeynep ul > li > a:not(.btn):hover {
+	background-color: rgba($primary, .04);
+}
+
+.zeynep ul > li.has-submenu > a,
+.zeynep .submenu-header > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.zeynep .submenu-header > a:before,
+.zeynep ul > li.has-submenu > a:after {
+    font-family: $font-family-font-awesome-icon;
+    font-weight: $font-weight-bold;
+    font-size: 0.75rem;
+}
+
+.zeynep .submenu-header > a:before {
+    content: "\f053";
+    margin-right: 0.75rem;
+}
+
+.zeynep ul > li.has-submenu > a {
+    &::after {
+        content: "\f054";
+    }
+}
+
+/* zeynepjs submenu styles */
+.zeynep .submenu {
+	background-color: $white;
+	bottom: 0;
+	left: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	overflow-y: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.zeynep .submenu.opened {
+	left: 0;
+}
+
+.zeynep .submenu-header {
+	background-color: rgba($primary, .1);
+	cursor: pointer;
+	position: relative;
+}
+
+.zeynep .submenu-header > a {
+	color: inherit;
+	display: block;
+    margin-bottom: 1rem;
+	padding: 14px 30px;
+	text-decoration: none;
+}

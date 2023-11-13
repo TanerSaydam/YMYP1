@@ -1,0 +1,113 @@
+/*------------------------------------
+  Text Colors
+------------------------------------*/
+
+.text-gray-700 {
+	color: $gray-700;
+}
+
+.text-gray-400 {
+    color: $gray-400;
+}
+
+.text-white-60 {
+	color: rgba($white, .6) !important;
+}
+
+.text-gray-450 {
+	color: $gray-450 !important;
+}
+
+.text-gray-500 {
+	color: $gray-500 !important;
+}
+
+.text-gray-600 {
+	color: $gray-600 !important;
+}
+
+.h-dark {
+	a:hover {
+		color: $dark;
+	}
+}
+
+.h-dark-white {
+	color: $dark;
+
+	&:hover {
+		color: $white !important;
+	}
+}
+
+.h-primary {
+	color: $dark;
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+.h-white {
+	a:hover {
+		color: $white !important;
+	}
+}
+
+.h-border-bottom-white {
+	&:hover {
+		border-bottom: 1px solid $white;
+	}
+}
+
+.text-gray-260 {
+	color: $gray-260;
+}
+
+.text-gray-360 {
+	color: $gray-360 !important;
+}
+
+.text-gray-705 {
+	color: $gray-705;
+}
+
+.text-tangerine__1 {
+	color: rgba($tangerine, .2);
+}
+
+.text-chili__1 {
+	color: rgba($chili, .2);
+}
+
+.text-carolina__1 {
+	color: rgba($carolina, .2);
+}
+
+/*------------------------------------
+  Placeholder Text Colors
+------------------------------------*/
+.placeholder-color-1::placeholder {
+	color: $gray-450;
+}
+
+.placeholder-color-2::placeholder {
+	color: $white;
+}
+
+.placeholder-color-3::placeholder {
+	color: $gray-600;
+}
+
+
+.fill-primary {
+    fill: $primary;
+}
+
+.fill-primary-green {
+    fill: $primary-green;
+}
+
+.fill-tangerine {
+	fill: $tangerine;
+}

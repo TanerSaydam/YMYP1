@@ -1,0 +1,538 @@
+//
+// Bookworm Variables
+// =========================================================
+
+//
+// Front Variables
+// =========================================================
+
+$root-path:                                                 "../";
+
+// Breakpoints
+// =========================================================
+
+$xs:                                                        0;
+$sm:                                                        576px;
+$md:                                                        768px;
+$lg:                                                        992px;
+$xl:                                                        1200px;
+$wd:                                                        1480px;
+
+$grid-breakpoints: (
+    xs:                                                     $xs,
+    sm:                                                     $sm,
+    md:                                                     $md,
+    lg:                                                     $lg,
+    xl:                                                     $xl,
+    wd:                                                     $wd /* EOC */
+);
+
+// Grid containers
+// =========================================================
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1200px,
+    wd: 1430px /* EOC */
+) ;
+
+// Color System
+// =========================================================
+
+// stylelint-disable
+// Grays
+$gray-200:                                                  #fff6f6 !default;
+$gray-210:                                                  #ffe3e3 !default;
+$gray-220:                                                  #fde5e5 !default;
+$gray-250:                                                  #fce5e5 !default;
+$gray-260:                                                  #e6c7b0 !default;
+$gray-300:                                                  #eae8e4 !default;
+$gray-310:                                                  #dd4f43 !default;
+$gray-350:                                                  #dccccc !default;
+$gray-360:                                                  #c1bdb5 !default;
+$gray-400:                                                  #beb4b4 !default;
+$gray-450:                                                  #9ca6ad !default;
+$gray-500:                                                  #838889 !default;
+$gray-600:                                                  #7f7f83 !default;
+$gray-700:                                                  #7c6e65 !default;
+$gray-705:                                                  #777777 !default;
+$gray-710:                                                  #445059 !default;
+$gray-750:                                                  #393e44 !default;
+$gray-760:                                                  #306199 !default;
+$gray-770:                                                  #26c4f1 !default;
+$gray-780:                                                  #26597f !default;
+$gray-800:                                                  #232f3e !default;
+$gray-810:                                                  #232328 !default;
+$gray-850:                                                  #1c2633 !default;
+$gray-900:                                                  #161619 !default;
+$gray-950:                                                  #041e42 !default;
+$gray-1000:                                                 #dfdcd7 !default;
+$gray-1050:                                                 #f7f7f7 !default;
+$gray-1060:                                                 #faecec !default;
+$gray-1080:                                                 #cccccc !default;
+$gray-1090:                                                 #7e7e7e !default;
+
+// Blacks
+$black-100:                                                 #19110b !default;
+$black-200:                                                 #1c2633 !default;
+
+// White
+$white-100:                                                 #f6f5f3 !default;
+// Colors
+$white:                                                     #fff !default;
+$dark:                                                      $gray-900 !default;
+$dark-1:                                                    #2d3942 !default;
+$red:                                                       #f75454 !default;
+$red-1:                                                     #ff7160 !default;
+$green:                                                     #88cf00 !default;
+$yellow:                                                    #fced70 !default;
+$yellow-darker:                                             #ffbd00 !default;
+$yellow-1:                                                  #ffc574 !default;
+$indigo:                                                    #a200fc !default;
+$indigo-light:                                              #faf1ff !default;
+$tangerine:                                                 #f79400 !default;
+$tangerine-light:                                           #faf4eb !default;
+$chili:                                                     #f01000 !default;
+$chili-light:                                               #f4e6e5 !default;
+$carolina:                                                  #00cdef !default;
+$carolina-light:                                            #e6f2f4 !default;
+$punch:                                                     #ff8e8e !default;
+$punch-light:                                               #fff6f6 !default;
+$blue:                                                      #3259ea !default;
+
+// Theme Colors
+$primary:                                                   $red !default;
+$secondary:                                                 $gray-900 !default;
+$primary-green:                                             $green !default;
+$primary-yellow:                                            $yellow !default;
+$primary-indigo:                                            $indigo !default;
+$secondary-gray-700:                                        $gray-700 !default;
+$secondary-gray-800:                                        $gray-800 !default;
+$secondary-gray-800-darker:                                 $gray-850 !default;
+$secondary-gray-1080:                                       $gray-1080 !default;
+$secondary-gray-1090:                                       $gray-1090 !default;
+$secondary-black-100:                                       $black-100 !default;
+$secondary-black-200:                                       $black-200 !default;
+
+$theme-colors: (
+    "primary":    $primary,
+    "primary-green": $primary-green,
+    "primary-yellow": $primary-yellow,
+    "yellow-darker": $yellow-darker,
+    "primary-home-v3": $gray-950,
+    "primary-indigo": $primary-indigo,
+    "indigo-light": $indigo-light,
+    "tangerine": $tangerine,
+    "tangerine-light": $tangerine-light,
+    "chili": $chili,
+    "chili-light": $chili-light,
+    "carolina": $carolina,
+    "carolina-light": $carolina-light,
+    "punch": $punch,
+    "punch-light": $punch-light,
+    "secondary-gray-700": $secondary-gray-700,
+    "secondary-gray-800": $secondary-gray-800,
+    "secondary-gray-1080": $secondary-gray-1080,
+    "secondary-gray-1090": $secondary-gray-1090,
+    "secondary-black-100": $secondary-black-100,
+    "secondary-black-200": $secondary-black-200,
+    "dark-1": $dark-1,
+    "red-1": $red-1
+);
+
+// Spacing
+//
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  0d62: ($spacer * .062),
+  1: ($spacer * .25),
+  1d3: ($spacer * .3),
+  2: ($spacer * .5),
+  2d62: ($spacer * .562),
+  2d75: ( $spacer * .75 ),
+  3: $spacer,
+  3d2: ( $spacer * 1.2),
+  3d25: ( $spacer * 1.25),
+  4: ($spacer * 1.5),
+  4d75: ( $spacer * 1.75),
+  4d875: ( $spacer * 1.875),
+  5: ($spacer * 2),
+  5d25: ( $spacer * 2.25 ),
+  6: ($spacer * 2.5),
+  7: ($spacer * 3),
+  8: ($spacer * 3.5),
+  8d75: ( $spacer * 3.75 ),
+  9: ($spacer * 4),
+  10: ($spacer * 4.5),
+  10d75: ( $spacer * 4.75 ),
+  11: ($spacer * 5),
+  12: ($spacer * 6),
+  13: ($spacer * 7),
+  14: ($spacer * 8.29)
+), $spacers);
+
+// Content Space
+//
+// padding top and padding bottom size of a content
+$content-space: 1rem !default;
+$content-spacers: () !default;
+$content-spacers: map-merge((
+  0: 0,
+  1: ($content-space * 2),
+  1d625: ( $content-space * 2.625 ),
+  2: ($content-space * 4),
+  2d625: ( $content-space * 4.625 ),
+  3: ($content-space * 6),
+  4: ($content-space * 8),
+  5: ($content-space * 12.5),
+  6: ($content-space * 15)
+), $content-spacers);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge((
+  15: 15%,
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  35: 35%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  65: 65%,
+  75: 75%,
+  80: 80%,
+  85: 85%,
+  90: 90%,
+  100: 100%,
+  auto: auto
+), $sizes);
+// stylelint-enable
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:                                    "Inter", "Cerebri Sans", Helvetica, Arial, sans-serif !default;
+$font-family-font-awesome-icon:                             "Font Awesome 5 Free" !default;
+
+$font-size-base:                                            1rem !default; // Assumes the browser default, typically 16px
+$font-size-xs:                                              ($font-size-base * .75) !default;
+
+$font-weight-light:                                         300 !default;
+$font-weight-regular:                                       400 !default;
+$font-weight-medium:                                        500 !default;
+$font-weight-semi-bold:                                     600 !default;
+$font-weight-bold:                                          700 !default;
+
+$h1-font-size:                                              $font-size-base * 2.5 !default;
+$h2-font-size:                                              $font-size-base * 2 !default;
+$h3-font-size:                                              $font-size-base * 1.75 !default;
+$h4-font-size:                                              $font-size-base * 1.5 !default;
+$h5-font-size:                                              $font-size-base * 1.25 !default;
+$h6-font-size:                                              $font-size-base !default;
+
+// Links
+//
+// Style anchor elements.
+$headings-link-color:                                       $dark !default;
+$headings-white-link-color:                                 $white !default;
+$link-hover-decoration:                                     none !default;
+$text:                                                      $gray-900 !default;
+
+// Progress Bar
+$progress-border-radius:                                    8px !default;
+$progress-bg:                                               $gray-250 !default;
+
+// Transitions
+
+$transition-timing:                                         .3s !default;
+$transition-timing-sm:                                      .2s !default;
+$transition-timing-md:                                      .4s !default;
+$transition-function:                                       ease-in-out !default;
+
+
+$input-border-color:                                        $gray-1000 !default;
+$input-font-size:                                           0.875rem !default; //14px
+$input-placeholder-color:                                   $dark !default;
+$input-focus-border-color:                                  $dark !default;
+$input-box-shadow:                                          none !default;
+$input-focus-box-shadow:                                    $input-box-shadow !default;
+$custom-checkbox-indicator-border-radius:                   0 !default;
+$input-padding-y:                                           .844rem !default;
+$input-padding-x:                                           1rem !default;
+$custom-control-indicator-border-color:                     $gray-1000 !default;
+$input-border-radius:                                       0 !default;
+$input-placeholder-color:                                   $gray-600;
+//$input-focus-bg:                                            inherit !default;
+
+// Header
+// =========================================================
+// Z-indexes
+$header-z-index:                                            1001 !default;
+
+// Borders
+// =========================================================
+$border-radius-rounded:                                     50% !default;
+$border-colors: () !default;
+$border-colors: map-merge( (
+  "white-100": $white-100,
+  "gray-210": $gray-210,
+  "gray-300": $gray-300,
+  "gray-450": $gray-450,
+  "gray-710": $gray-710,
+  "gray-750": $gray-750,
+  "gray-810": $gray-810,
+  "gray-900": $gray-900
+),$border-colors);
+
+// Slick
+// =========================================================
+
+// Colors
+$slick-arrow-color:                                         #eae8e4 !default;
+$slick-arrow-flat-white-color:                              $dark !default;
+$slick-arrow-flat-white-hover-color:                        $primary !default;
+$slick-arrow-hover-color:                                   $white !default;
+$slick-arrow-classic-color:                                 $white !default;
+$slick-arrow-classic-hover-color:                           $white !default;
+$slick-arrow-flat-color:                                    $white !default;
+$slick-arrow-border-white-color:                            $white !default;
+$slick-arrow-border-white-bg-hover-color:                   $white !default;
+
+// Background Colors
+$slick-arrow-bg-color:                                      $white !default;
+$slick-arrow-flat-white-bg-color:                           $white !default;
+$slick-arrow-flat-white-bg-hover-color:                     $white !default;
+$slick-arrow-hover-bg-color:                                $dark !default;
+$slick-arrow-classic-bg-color:                              rgba($white, .1) !default;
+$slick-arrow-classic-hover-bg-color:                        $dark !default;
+$slick-arrow-flat-bg-color:                                 rgba($primary, .8) !default;
+$slick-pagination-dot-bg-color:                             $gray-350 !default;
+$slick-pagination-dot-bg-active-color:                      $dark !default;
+$slick-pagination-white-dot-bg-color:                       $gray-250 !default;
+$slick-pagination-dark-dot-bg-active-color:                 $gray-300 !default;
+$slick-pagination-white-dot-bg-active-color:                $white !default;
+$slick-arrow-border-bg-color:                               transparent;
+
+// Text
+$slick-arrow-font-size:                                     ($font-size-base * .875) !default;
+$slick-arrow-classic-font-size:                             ($font-size-base * .875) !default;
+
+// Width & Heights
+$slick-arrow-width:                                         2.813rem !default;
+$slick-arrow-height:                                        $slick-arrow-width !default;
+$slick-arrow-classic-width:                                 3.125rem !default;
+$slick-arrow-classic-height:                                $slick-arrow-classic-width !default;
+$slick-pagination-modern-max-width:                         12.5rem !default;
+$slick-pagination-dot-width:                                0.375rem !default;
+$slick-pagination-dot-height:                               $slick-pagination-dot-width !default;
+
+// Borders
+$slick-pagination-dot-border-width:                         0 !default;
+$slick-pagination-dot-border-style:                         solid !default;
+$slick-pagination-dot-border-color:                         transparent !default;
+$slick-pagination-dot-border-active-color:                  $primary !default;
+$slick-pagination-white-dot-border-color:                   $white !default;
+$slick-pagination-dot-border-radius:                        $border-radius-rounded !default;
+
+// Transitions
+$slick-arrow-transition:                                    $transition-timing !default;
+$slick-arrow-classic-transition:                            $transition-timing !default;
+$slick-pagination-modern-scale:                             scale(.7) !default;
+$slick-pagination-modern-scale-hover:                       scale(1) !default;
+$slick-pagination-modern-transition:                        $transition-timing !default;
+$slick-pagination-dot-transition:                           $transition-timing !default;
+$slick-pagination-dot-transform:                            scale(1) !default;
+$slick-pagination-dot-transform-active:                     scale(1) !default;
+
+// Others
+$slick-pagination-modern-opacity:                           .7 !default;
+$slick-pagination-modern-opacity-hover:                     1 !default;
+
+$pagination-v1-arrow:                                       $gray-200 !default;
+
+// Dropdown
+$enable-caret:                                              false;
+$dropdown-min-width:                                        16.25rem !default;
+$dropdown-padding-y:                                        1.75rem !default;
+
+$dropdown-item-padding-y:                                   .375rem !default;
+$dropdown-item-padding-x:                                   1.875rem !default;
+
+// Badge
+// =========================================================
+
+// Type
+$badge-font-size-md:                                        ($font-size-base * .625) !default;
+$badge-font-size-lg:                                        ($font-size-base * .625) !default;
+$badge-font-weight:                                         $font-weight-medium !default;
+
+$badge-border-line-height-md:                               1.3 !default;
+$badge-border-line-height-lg:                               1.3 !default;
+
+// Z-Index
+$badge-z-index:                                             3 !default;
+
+// Width & Heights
+$badge-width-md:                                            ($font-size-base * 2.812) !default;
+$badge-width-lg:                                            ($font-size-base * 6.25) !default;
+$badge-height-md:                                           $badge-width-md !default;
+$badge-height-lg:                                           $badge-width-lg !default;
+
+// Default Sidebar Elements
+// =========================================================
+$close-font-size:                                           1rem !default;
+$close-font-weight:                                         $font-weight-regular;
+
+// Background Color
+$sidebar-bg-color:                                          $white !default;
+
+// Width & Heights
+$sidebar-width:                                             18.75rem !default; //300px
+$sidebar-width-md:                                          25rem !default; //400px
+$sidebar-width-lg:                                          31.25rem !default; //500px
+$sidebar-width-xl:                                          37.5rem !default; //600px
+
+// Z-Index
+$sidebar-z-index:                                           $header-z-index + 1 !default;
+
+// Offset
+$sidebar-open-close-left-offset:                            $sidebar-width !default;
+$sidebar-open-close-left-offset-negative:                   $sidebar-width + 1.5625rem !default;
+
+$sidebar-open-close-right-offset:                           $sidebar-width !default;
+$sidebar-open-close-right-offset-negative:                  $sidebar-width + 1.5625rem !default;
+
+// Box Shadow
+$sidebar-right-box-shadow:                                  -13px 0 20px rgba($gray-700, .08) !default;
+$sidebar-left-box-shadow:                                   13px 0 20px rgba($gray-700, .08) !default;
+
+$dropdown-link-hover-bg:                                    $gray-1050 !default;
+$dropdown-link-active-bg:                                   $dropdown-link-hover-bg !default;
+$dropdown-link-active-color:                                $dark !default;
+
+$dropdown-toggle-pseudo-content:                            "\f107" !default;
+
+
+// Navs
+// =========================================================
+
+// Colors
+$nav-classic-nav-link-color:                                $dark !default;
+$nav-classic-nav-link-state-color:                          $primary !default;
+
+
+// Background Colors
+
+// Borders
+$nav-classic-border-width:                                  1px !default;
+$nav-classic-border-type:                                   solid !default;
+$nav-classic-border-color:                                  $gray-300 !default;
+$nav-classic-nav-link-border-width:                         3px !default;
+$nav-classic-nav-link-border-type:                          solid !default;
+$nav-classic-nav-link-border-color:                         transparent !default;
+
+// Transitions
+$nav-classic-nav-link-transition-timing:                    $transition-timing !default;
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+$input-btn-padding-y:         .75rem !default;
+$input-btn-padding-x:         .375rem !default;
+$btn-padding-x:               1.2rem;
+
+$dropdown-toggle-right-pseudo-content:                      "\f105" !default;
+
+// Media Player
+// =========================================================
+
+// Colors
+$media-player-color:                                        $dark !default;
+$media-player-icon-color:                                   $dark !default;
+$media-viewer-icon-color:                                   $white !default;
+
+// Background Colors
+$media-player-icon-bg-color:                                $white !default;
+$media-viewer-icon-bg-color:                                $primary !default;
+
+// Text
+$media-player-icon-font-size:                               ($font-size-base * .8125) !default;
+$media-player-icon-lg-font-size:                            ($font-size-base * 1) !default;
+$media-player-icon-xl-font-size:                            ($font-size-base * 1) !default;
+$media-viewer-icon-font-size:                               ($font-size-base * .75) !default;
+
+// Width & Heights
+$media-player-icon-width:                                   3.75rem !default;
+$media-player-icon-height:                                  $media-player-icon-width !default;
+$media-player-icon-lg-width:                                5rem !default;
+$media-player-icon-lg-height:                               $media-player-icon-lg-width !default;
+$media-player-icon-xl-width:                                6.25rem !default;
+$media-player-icon-xl-height:                               $media-player-icon-xl-width !default;
+$media-viewer-icon-width:                                   2.25rem !default;
+$media-viewer-icon-height:                                  $media-viewer-icon-width !default;
+
+// Borders
+$media-player-border-radius:                                $border-radius-rounded !default;
+$media-viewer-border-radius:                                $border-radius-rounded !default;
+
+// Box Shadows
+$media-player-icon-box-shadow:                              0 0 2.5rem rgba($gray-600, .3) !default;
+
+// Transition
+$media-player-transition:                                   all $transition-timing-sm $transition-function !default;
+$media-player-icon-transition:                              all $transition-timing $transition-function !default;
+$media-viewer-icon-transition:                              $transition-timing $transition-function !default;
+
+// List Group
+// =========================================================
+$white-color-70:                                            rgba($white, .7) !default;
+// Colors
+$list-group-action-hover-color:                             $primary !default;
+$list-group-action-active-color:                            $list-group-action-hover-color !default;
+$list-group-icon-color:                                     $dark !default;
+
+// Background Colors
+$list-group-hover-bg:                                       transparent !default;
+$list-group-action-active-bg:                               $list-group-hover-bg !default;
+
+// Border Colors
+$list-group-border-color:                                   $gray-300 !default;
+
+// Font Sizes
+$list-group-item-font-size:                                 ($font-size-base * .875) !default;
+
+// Width & Heights
+$list-group-icon-min-width:                                 ($font-size-base * 1) !default;
+$list-group-icon-max-width:                                 $list-group-icon-min-width !default;
+
+// Padding Spaces
+$list-group-item-padding-y:                                 .425rem !default;
+
+// Avatar
+// =========================================================
+
+// Width & Heights
+$avatar:                                                    ($font-size-base * 3.125) !default;
+$avatar-xs:                                                 ($font-size-base * 1.375) !default;
+$avatar-sm:                                                 ($font-size-base * 2) !default;
+$avatar-lg:                                                 ($font-size-base * 5) !default;
+$avatar-xl:                                                 ($font-size-base * 10) !default;
+
+// Border
+$avatar-sm-border-width:                                    2px !default;
+$avatar-sm-border-type:                                     solid !default;
+$avatar-sm-border-color:                                    $white !default;
+$avatar-xl-border-width:                                    7px !default;
+$avatar-xl-border-type:                                     solid !default;
+$avatar-xl-border-color:                                    $white !default;

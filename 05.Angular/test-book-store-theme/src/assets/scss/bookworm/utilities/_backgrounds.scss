@@ -1,0 +1,129 @@
+/*------------------------------------
+  Background Colors
+------------------------------------*/
+
+.bg-gray-200 {
+    background-color: $gray-200;
+}
+
+.bg-gray-220 {
+	background-color: $gray-220;
+}
+
+.bg-gray-810 {
+	background-color: $gray-810 !important;
+}
+
+.bg-gray-850 {
+    background-color: $gray-850;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-white-100 {
+    background-color: $white-100 !important;
+}
+
+.bg-gray-1060 {
+	background-color: $gray-1060 !important;
+}
+
+.bg-focus__1 {
+	&:focus {
+		background-color: $gray-200 !important;
+	}
+}
+
+.bg-gradient-primary {
+	position: relative;
+
+	&::before{
+		content: "";
+	    display: block;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: rgb(247, 84, 84);
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0.8;
+	}
+}
+
+.bg-facebook {
+	background-color: $gray-760;
+}
+
+.bg-twitter {
+	background-color: $gray-770;
+}
+
+.bg-pinterest {
+	background-color: $gray-310;
+}
+
+.bg-gray-780 {
+	background-color: $gray-780;
+}
+
+.bg-gradient-dark-1 {
+	position: relative;
+
+	&::before{
+		content: "";
+	    display: block;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: rgb(45, 57, 66);
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0.6;
+	}
+}
+
+.bg-blue {
+	background-color: $blue !important;
+}
+
+.bg-yellow-1 {
+	background-color: $yellow-1 !important;
+}
+
+.bg-hover-white {
+	&:hover {
+		background-color: $white;
+
+        .product__body {
+            background-color: $white;
+        }
+	}
+}
+
+.bg-gradient-gray-780 {
+	position: relative;
+
+	&::before{
+		content: "";
+	    display: block;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    background-color: $gray-780;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    opacity: 0.6;
+	}
+}
+/*------------------------------------
+  Background Image Style
+------------------------------------*/
+
+.bg-img-hero {
+  @include background-cover(cover, no-repeat, top, center);
+}

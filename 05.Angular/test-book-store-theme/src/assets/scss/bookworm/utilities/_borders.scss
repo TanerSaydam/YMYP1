@@ -1,0 +1,106 @@
+/*------------------------------------
+  Borders
+------------------------------------*/
+.rounded-xs {
+    border-radius: 0.3125rem !important;
+}
+
+.rounded-md {
+    border-radius: 0.5rem !important;
+}
+
+.border-width-2 {
+    border-width: 2px !important;
+}
+
+@each $color, $value in $border-colors {
+    .border-#{$color} {
+        border-color: $value !important;
+    }
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+    .border-lg-0        { border: 0 !important; }
+    .border-lg-top-0    { border-top: 0 !important; }
+    .border-lg-right-0  { border-right: 0 !important; }
+    .border-lg-left-0   { border-left: 0 !important; }
+    .border-lg-bottom-0 { border-bottom: 0 !important; }
+}
+
+.border-bottom__1 {
+    border-bottom: 1px solid rgba(234, 232, 228, .1);
+}
+
+.border__1 {
+    border: 1px solid rgba(234, 232, 228, .4) !important;
+}
+
+// Custom options
+.rounded-left-0 {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rounded-left-1 {
+    border-top-left-radius: $border-radius !important;
+    border-bottom-left-radius: $border-radius !important;
+}
+
+.rounded-left-xl-0 {
+    @include media-breakpoint-up(xl) {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+}
+
+.rounded-right-0 {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.rounded-right-1 {
+    border-top-right-radius: $border-radius !important;
+    border-bottom-right-radius: $border-radius !important;
+}
+
+.border-left-xl-0 {
+     @include media-breakpoint-only(xl) {
+        border-left: 0 !important;
+    }
+}
+
+.border-sh-hover {
+    &:hover{
+        border-color: $dark !important;
+        box-shadow: 0px 0px 40px 0px rgba(22, 22, 25, 0.1);
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.border-xl-left {
+    @include media-breakpoint-up(xl) {
+        border-left: 1px solid #eae8e4;
+    }
+}
+
+.rounded-top-pill {
+	@include border-top-radius(0.5rem);
+}
+
+.rounded-bottom-pill {
+	@include border-bottom-radius(0.5rem);
+}
+
+.rounded-right-pill {
+	@include border-right-radius(0.5rem);
+}
+
+.rounded-left-pill {
+	@include border-left-radius(4px);
+}
+
+.border-color-white-o {
+    border-color: rgba(#fff, .2) !important;
+}

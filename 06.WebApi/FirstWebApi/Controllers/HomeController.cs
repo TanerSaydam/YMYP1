@@ -5,8 +5,7 @@ namespace FirstWebApi.Controllers;
 [ApiController]
 [Route("api/[controller]/[action]")] ///www.taner.com/home/Get
 public sealed class HomeController : ControllerBase
-{
-    //13:25 
+{   
 
     private readonly Test _test;
 

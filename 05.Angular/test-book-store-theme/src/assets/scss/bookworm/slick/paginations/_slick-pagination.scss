@@ -1,0 +1,135 @@
+/*------------------------------------
+Slick Pagination
+------------------------------------*/
+
+.u-slick__pagination {
+    padding-left: 0;
+
+    &:not(.u-slick__pagination--block) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    li {
+        display: flex;
+        pointer-events: all;
+        margin: .45rem;
+        cursor: pointer;
+        padding-left: 0;
+
+        span {
+            display: inline-block;
+            width: $slick-pagination-dot-width;
+            height: $slick-pagination-dot-height;
+            box-sizing: border-box;
+            background-color: $slick-pagination-dot-bg-color;
+            border: $slick-pagination-dot-border-width $slick-pagination-dot-border-style $slick-pagination-dot-border-color;
+            @include border-radius($slick-pagination-dot-border-radius);
+            transform: $slick-pagination-dot-transform;
+        }
+
+        &.slick-active {
+            border:2px solid $dark !important;
+            border-radius: $border-radius-rounded;
+
+            span {
+                background-color: $slick-pagination-dot-bg-active-color;
+                margin: 0.25rem;
+            }
+        }
+    }
+
+    &--v1 {
+
+        li {
+            @include media-breakpoint-up (md) {
+                margin: 0 1.5rem;
+            }
+            @include media-breakpoint-up (lg) {
+                margin: 0 6.3rem 0 0;
+            }
+            @include media-breakpoint-up (xl) {
+                margin: 0 18.45rem 0 0;
+            }
+            span {
+                border-radius: 0;
+                width: 0;
+                height: 0;
+            }
+
+            &.slick-active {
+                border: none !important;
+                border-radius: 0;
+                span {
+                    background-color: $slick-pagination-dot-bg-active-color;
+                    width: 18.75rem;
+                    height: 0.375rem;
+                    margin-bottom: 0;
+
+                }
+
+            }
+        }
+    }
+
+    &--v2 {
+
+        li {
+            &.slick-active {
+                border:2px solid $white !important;
+                border-radius: $border-radius-rounded;
+
+                span {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}
+
+/* Block */
+.u-slick__pagination--block {
+    li {
+        display: block;
+    }
+}
+
+/* Vertical Center Alignment */
+.u-slick__pagination-centered--y {
+  @include content-centered(false, true);
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+    /* Vertical Option */
+    .u-slick__pagination--vertical-lg {
+        li {
+            display: block;
+            margin: .25rem 0;
+        }
+    }
+
+    /* Vertical Option Positions */
+    .u-slick__pagination--vertical-pos-v1-lg {
+        position: absolute;
+        top: 50%;
+        left: -15.7%;
+        transform: translateY(-50%);
+    }
+}
+
+.slick-vertical {
+    .u-slick__pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        flex-direction: column;
+
+        li {
+            display: flex;
+        }
+    }
+}

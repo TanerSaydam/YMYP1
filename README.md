@@ -1,5 +1,13 @@
 # YMYP 1.Eğitim
 
+## 13.11.2023
+- IT Desk Uygulamasına Başladık
+- Katmanlı Mimari Nedir?
+- Neden İhtiyaç Duyarız
+- WebApi Proje Oluşturma
+- User Class'ı Oluşturma
+- Password Hashleme ve Password Saltlama
+
 ## 11.11.2023 
 - Book Store Projesi için Tema Alındı ve Ödev Verildi
 - WebApi Nedir ve Nasıl Çalışır Gösterildi,

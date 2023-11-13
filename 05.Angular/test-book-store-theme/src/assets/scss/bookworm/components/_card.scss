@@ -1,0 +1,333 @@
+/*-------------------------------------------*\
+    Card
+\*-------------------------------------------*/
+
+.products .product:not(.product__card):not(.product__no-border):not(.product__list):not(.product__space) {
+    position: relative;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+    }
+
+    &::after {
+        width: 1px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    &::before {
+        height: 1px;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+        &:hover {
+            border-color: $dark;
+
+            &::after,
+            &::before {
+                background-color: $dark;
+            }
+        }
+    }
+}
+
+.products .product:not(.product__card):not(.product__list):not(.product__space) {
+    @include media-breakpoint-down (xs) {
+        @include make-col(6);
+    }
+}
+
+@include media-breakpoint-up(xl) {
+    .products .product:not(.product__card-v2):not(.product__no-border) {
+        &:hover {
+            box-shadow: 0px 0px 40px 0px rgba(22, 22, 25, 0.1);
+        }
+    }
+}
+
+.products .product {
+    transition: all $transition-timing-sm $transition-function;
+
+    &__center {
+        text-align: center;
+
+        .price,
+        .product__hover {
+            justify-content: center;
+        }
+
+        .product__hover .mr-auto {
+            margin-right: 0.75rem !important;
+        }
+    }
+
+    &__space {
+        &:hover {
+            border-color: $dark !important;
+        }
+
+        &-primary {
+            &:hover {
+                border-color: $primary !important;
+            }
+        }
+    }
+
+    &__add-to-cart-icon {
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+    }
+
+    &__body {
+        transition: all $transition-timing-sm $transition-function;
+        position: relative;
+        z-index: 1;
+    }
+
+    @include media-breakpoint-up(xl) {
+        &__hover {
+            transition: all $transition-timing-sm $transition-function;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+
+        &:hover {
+            .product__body {
+                transform: translateY(-44px);
+            }
+
+            .product__title {
+                color: $dark;
+            }
+
+            .product__hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.product.product__list {
+    border: 1px solid $border-color;
+
+    & + .product__list {
+        margin-top: -1px;
+    }
+
+    &:hover {
+        border-color: $dark;
+        position: relative;
+
+        .product__body {
+            transform: translateY(0);
+        }
+    }
+}
+
+.h-p-bg {
+    color: $dark;
+    font-size: 1.125rem; //18px
+    width: 2.1875rem; //35px
+    height: 2.1875rem; //35px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    @include border-radius (50%);
+    transition: all $transition-timing-sm $transition-function;
+
+    &:hover {
+        color: $white;
+        //background-color: $primary;
+    }
+}
+
+.product__video {
+    transition: all $transition-timing-sm $transition-function;
+
+    .position-absolute-center {
+        opacity: 0;
+    }
+
+    &:hover {
+        .hover-area {
+            opacity: .3;
+        }
+
+        .position-absolute-center {
+            opacity: 1;
+        }
+    }
+
+    & + .product__video {
+        margin-left: -1px;
+    }
+}
+
+.product__add-to-cart {
+    position: relative;
+    display: none;
+
+    @include media-breakpoint-up(xl) {
+        display: block;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        right: 0;
+        left: 0;
+        height: 1px;
+        width: 0;
+        background-color: $dark;
+        opacity: 0;
+        transition: all $transition-timing-sm $transition-function;
+    }
+
+    &:hover::after {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+.product-with-banner {
+    .row-cols-xl-4 {
+        @include media-breakpoint-up(wd) {
+            .product__add-to-cart {
+                display: none;
+            }
+
+            .product__add-to-cart-icon {
+                display: block;
+            }
+        }
+    }
+}
+
+.row-cols-wd-6,
+.products[data-slides-show="6"] {
+    @include media-breakpoint-up(wd) {
+        .product__add-to-cart {
+            display: none;
+        }
+
+        .product__add-to-cart-icon {
+            display: block;
+        }
+    }
+}
+
+.left-sidebar,
+.right-sidebar {
+    #primary {
+        .products:not(.row-cols-lg-3) {
+            @include media-breakpoint-up(xl) {
+                .product__add-to-cart {
+                    display: none;
+                }
+
+                .product__add-to-cart-icon {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.deal-with-product,
+.banner-with-product-carousel,
+.product-4-1-4 {
+    .products {
+        @include media-breakpoint-only(xl) {
+            .product__add-to-cart {
+                display: none;
+            }
+
+            .product__add-to-cart-icon {
+                display: block;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-only(xl) {
+    #primary {
+        .row-cols-xl-5 {
+            .product__add-to-cart {
+                display: none;
+            }
+
+            .product__add-to-cart-icon {
+                display: block;
+            }
+        }
+    }
+}
+
+.sidebar-with-product,
+.product-2-1-6 .product-2,
+.product-8-1 .product-8,
+.banner-with-product {
+    .products {
+        @include media-breakpoint-up(wd) {
+            .product__add-to-cart {
+                display: none;
+            }
+
+            .product__add-to-cart-icon {
+                display: block;
+            }
+        }
+    }
+}
+
+.product-8-1 .product-1,
+.product-4-1-4 .product-1,
+.product-single {
+    .product {
+        @include media-breakpoint-up(xl) {
+            .product__add-to-cart-icon {
+                display: none;
+            }
+        }
+    }
+}
+
+.slider-product {
+    @include media-breakpoint-up(xl) {
+        .product__add-to-cart-icon {
+            display: none;
+        }
+    }
+}
+
+.product-editors-choice,
+.product-with-banner,
+.product-with-sidebar,
+.product-4-1-4 .product-4 {
+    .products {
+        @include media-breakpoint-up(xl) {
+            .product__add-to-cart {
+                display: none;
+            }
+
+            .product__add-to-cart-icon {
+                display: block;
+            }
+        }
+    }
+}

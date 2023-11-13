@@ -1,0 +1,36 @@
+/*------------------------------------
+  Links
+------------------------------------*/
+.link-black-100 {
+    color: $black-100;
+}
+
+/* Collapse */
+.collapse-link[aria-expanded="false"] {
+  .plus {
+    display: inline-block;
+  }
+
+  .minus {
+    display: none;
+  }
+}
+
+.collapse-link[aria-expanded="true"] {
+  .plus {
+    display: none;
+  }
+
+  .minus {
+    display: inline-block;
+  }
+}
+
+.collapse-link.border[aria-expanded="true"] {
+  border: 1px solid $dark !important;
+}
+
+.cbp-l-filters-alignRight__custom .cbp-filter-item.cbp-filter-item-active {
+  display: inline-block;
+  border-bottom: 1px solid $dark !important;
+}

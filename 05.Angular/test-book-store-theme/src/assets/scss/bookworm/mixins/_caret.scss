@@ -1,0 +1,14 @@
+@mixin fa-caret( $direction: down ) {
+    &::after {
+        content: "\f107";
+        margin-left: 0.5rem;
+        font-family: "Font Awesome 5 Free";
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+}

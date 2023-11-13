@@ -1,0 +1,16 @@
+.btn-wide {
+    padding: 0.75rem 3rem;
+}
+
+@each $color, $value in $theme-colors {
+  .bg-soft-#{$color} {
+    background-color: rgba($value, .1);
+  }
+}
+
+.btn-position {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(15px, 60px);
+}

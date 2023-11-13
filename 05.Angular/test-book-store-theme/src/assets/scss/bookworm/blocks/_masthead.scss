@@ -1,0 +1,11 @@
+.site-header {
+    &__white-text {
+        .site-title a {
+            color: $white;
+        }
+
+        .nav-link {
+            color: $white;
+        }
+    }
+}

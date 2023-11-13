@@ -1,0 +1,22 @@
+/*------------------------------------
+  Shadows
+------------------------------------*/
+.box-shadow-1 {
+	box-shadow: 0px 0px 40px 0px rgba(22, 22, 25, 0.1);
+}
+
+.outline-none,
+.btn.outline-none {
+	outline: none !important;
+}
+
+.box-shadow-focus-none {
+	&:focus {
+		box-shadow: none;
+	}
+
+}
+
+.shadow-soft {
+	box-shadow: 0 3px 6px 0 rgba(140, 152, 164, 0.25) !important;
+}

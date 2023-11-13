@@ -1,0 +1,35 @@
+/*------------------------------------
+  Content Centered
+------------------------------------*/
+
+.content-centered-y {
+  @include content-centered(false, true);
+}
+
+// Large Devices
+@include media-breakpoint-up(md) {
+	.content-centered-y--md {
+	  @include content-centered(false, true);
+	}
+}
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+	.content-centered-y--lg {
+	  @include content-centered(false, true);
+	}
+}
+
+.position-absolute-center {
+	@include content-centered(true, true);
+}
+
+/* Content horizontal Center Alignment */
+.position-absolute-x-center {
+	@include content-centered(true, false);
+}
+
+/* Content vertical Center Alignment */
+.position-absolute-y-center {
+	@include content-centered(false, true);
+}

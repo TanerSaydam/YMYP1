@@ -1,0 +1,234 @@
+/*------------------------------------
+  Typography Font Size
+------------------------------------*/
+.font-size-1 {
+    font-size: ($font-size-base * .75);
+}
+
+.font-size-2 {
+    font-size: ($font-size-base * .875) !important;
+}
+
+.font-size-3 {
+    font-size: ($font-size-base * 1.125);
+}
+
+.font-size-4 {
+    font-size: ($font-size-base * 1.25);
+}
+
+.font-size-5 {
+    font-size: ($font-size-base * 1.5);
+}
+
+.font-size-6 {
+    font-size: ($font-size-base * 1.75);
+}
+
+.font-size-7 {
+    font-size: ($font-size-base * 1.875);
+}
+
+.font-size-9 {
+    font-size: ($font-size-base * 2);
+}
+
+.font-size-n9 {
+    font-size: ($font-size-base * .562);
+}
+
+.font-size-10 {
+    font-size: ($font-size-base * 2.5);
+}
+
+.font-size-11 {
+    font-size: ($font-size-base * 3);
+}
+
+.font-size-12 {
+    font-size: ($font-size-base * 3.125);
+}
+
+.font-size-14 {
+    font-size: ($font-size-base * 3.25);
+}
+
+.font-size-14 {
+    font-size: ($font-size-base * 3.5);
+}
+
+.font-size-15 {
+    font-size: ($font-size-base * 3.75);
+}
+
+.font-size-16 {
+    font-size: ($font-size-base * 15.265);
+}
+
+.font-size-17 {
+    font-size: ($font-size-base * 5);
+}
+
+.font-size-200 {
+    font-size: ($font-size-base * 12.5)
+}
+
+.font-size-22 {
+    font-size: 1.375rem; //22px
+}
+
+.font-size-26 {
+    font-size: 1.625rem; //26px
+}
+
+.font-size-46 {
+    font-size: 2.875rem; //46px
+}
+
+.font-size-xs-25 {
+    @include media-breakpoint-only(xs) {
+        font-size: 1.5625rem !important; //25px
+    }
+}
+
+.font-size-xl-160 {
+    @include media-breakpoint-up(md) {
+        font-size: 5.625rem; //90px
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 8.125rem; //130px
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: 9rem; //144px
+    }
+
+    @include media-breakpoint-up(wd) {
+        font-size: 11.875rem; //190px
+    }
+}
+
+.font-size-xs-170 {
+    @include media-breakpoint-only(xs) {
+        font-size: 10.625rem !important; //170px
+    }
+}
+
+/*------------------------------------
+  Font Weight
+------------------------------------*/
+.font-weight-medium {
+    font-weight: $font-weight-medium !important;
+}
+
+.font-weight-regular {
+    font-weight: $font-weight-regular !important;
+}
+
+.font-weight-semi-bold {
+    font-weight: $font-weight-regular !important;
+}
+
+/*------------------------------------
+  Line Height
+------------------------------------*/
+.text-lh-xs {
+    line-height: 1;
+}
+
+.text-lh-sm {
+    line-height: 1.2;
+
+    &.text-height-2 {
+        height: 2.4rem;
+    }
+}
+
+.text-lh-md {
+    line-height: 1.5;
+
+    &.text-height-2 {
+        height: 3rem;
+    }
+}
+
+.text-lh-lg {
+    line-height: 1.8;
+
+    &.text-height-2 {
+        height: 3.6rem;
+    }
+}
+
+.text-lh-1dot72 {
+    line-height: 1.72;
+}
+
+.text-lh-1dot4 {
+    line-height: 1.4;
+}
+
+.text-lh-2 {
+    line-height: 2;
+}
+
+/*------------------------------------
+  Crop Text
+------------------------------------*/
+
+.crop-text-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.crop-text-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+/*------------------------------------
+  Text Stroke
+------------------------------------*/
+
+.text-stroke-1 {
+    -webkit-text-fill-color: $gray-200;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(247, 0, 0, .06);
+}
+
+.t-d-u,
+.t-d-u:hover {
+    text-decoration: underline;
+}
+
+.widgets-hover {
+    &:hover {
+        padding-left: 12px;
+    }
+}
+
+.select-hover {
+    &:hover {
+        color: $primary !important ;
+        padding-left: 25px !important;
+    }
+}
+
+.no-gutters-xl {
+    @include media-breakpoint-up( xl ) {
+        margin-left: 0;
+        margin-right: 0;
+
+        > [class*="col"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

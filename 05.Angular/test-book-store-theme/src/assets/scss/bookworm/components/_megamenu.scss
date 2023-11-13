@@ -1,0 +1,12 @@
+/*------------------------------------
+  Mega Menu
+------------------------------------*/
+
+.megamenu {
+    left: auto !important;
+    right: 0;
+
+    @include media-breakpoint-up(wd) {
+        width: 90% !important;
+    }
+}

@@ -1,0 +1,28 @@
+/*------------------------------------
+  Default Styles
+------------------------------------*/
+
+main {
+    position: relative;
+}
+
+:focus,
+a:focus,
+button:focus {
+  outline: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    > a {
+        color: $headings-link-color;
+
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+
+    &.text-white > a {
+        color: $headings-white-link-color;
+    }
+}
