@@ -1,4 +1,7 @@
 # YMYP 1.Eğitim
+## 15.11.2023
+- PasswordService Yazdık
+- Porfolio Sitesinin WebApi Kısmını Tasarladık ve Ödev Verdik
 
 ## 13.11.2023
 - IT Desk Uygulamasına Başladık

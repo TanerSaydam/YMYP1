@@ -31,3 +31,4 @@ C:\YMYP1\06.WebApi\NTierArchitecture\NTierArchitecture.WebApi\obj\Debug\net7.0\r
 C:\YMYP1\06.WebApi\NTierArchitecture\NTierArchitecture.WebApi\obj\Debug\net7.0\NTierArchitecture.WebApi.pdb
 C:\YMYP1\06.WebApi\NTierArchitecture\NTierArchitecture.WebApi\obj\Debug\net7.0\NTierArchitecture.WebApi.genruntimeconfig.cache
 C:\YMYP1\06.WebApi\NTierArchitecture\NTierArchitecture.WebApi\obj\Debug\net7.0\ref\NTierArchitecture.WebApi.dll
+C:\YMYP1\06.WebApi\NTierArchitecture\NTierArchitecture.WebApi\obj\Debug\net7.0\NTierArchitecture.WebApi.sourcelink.json
