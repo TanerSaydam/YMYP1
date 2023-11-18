@@ -1,0 +1,32 @@
+﻿@model List<Product>;
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <div class="row">
+        @foreach(var product in Model)
+        {
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        @product.Name
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            @product.Description
+                        </p>
+                        <p>Fiyatı: ₺@product.Price.ToString("#,##0.00")</p>
+                        <p>Adet: @product.Quantity</p>
+                    </div>
+
+                </div>
+            </div>
+        }       
+    </div>
+</div>

@@ -1,4 +1,13 @@
 # YMYP 1.Eğitim
+## 18.11.2023
+- CSharp Temel Seviye
+- Class Nedir? 
+- Instance Nasıl ve Neden Oluşturulur?
+- Property Nedir?
+- Constructor
+- Birden Fazla Constructor Oluşturma
+- MVC Proje Oluşturma
+
 ## 15.11.2023
 - PasswordService Yazdık
 - Porfolio Sitesinin WebApi Kısmını Tasarladık ve Ödev Verdik
