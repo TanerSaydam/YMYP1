@@ -1,4 +1,8 @@
 # YMYP 1.Eğitim
+## 20.11.2023
+- BenchMark ile Performans Ölçümü
+- Dapper Kurulumu ve Sorgulama
+
 ## 18.11.2023
 - CSharp Temel Seviye
 - Class Nedir? 
