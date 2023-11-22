@@ -1,4 +1,9 @@
 # YMYP 1.Eğitim
+## 22.11.2023
+- Angular 17 Güncellemesi Yaptık
+- PrimenG ile IT Desk Projesi için Client Projesi Oluşturduk
+- Ana Sayfa Tasarımı Yaptık
+
 ## 20.11.2023
 - BenchMark ile Performans Ölçümü
 - Dapper Kurulumu ve Sorgulama
