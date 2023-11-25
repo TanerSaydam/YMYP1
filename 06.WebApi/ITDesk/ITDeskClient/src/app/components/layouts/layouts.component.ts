@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
 import { MenuItem } from 'primeng/api';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 
@@ -17,6 +17,10 @@ import { ButtonModule } from 'primeng/button';
 export class LayoutsComponent implements OnInit {
   items: MenuItem[] | undefined;
 
+  constructor(
+    private router: Router
+  ){}
+
   ngOnInit() {
       this.items = [
           {
@@ -28,7 +32,7 @@ export class LayoutsComponent implements OnInit {
   }
 
   logout(){
-    alert("Çıkış yapıldı!");
+    this.router.navigateByUrl("/login");
   }
 }
 

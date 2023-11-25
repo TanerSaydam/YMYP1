@@ -1,1 +1,32 @@
-<p>login works!</p>
+<p-toast position="bottom-right" [life]="3000"></p-toast>
+<div class="card flex justify-content-center align-items-center h100">
+    <p-card header="Giriş Sayfası" subheader="Giriş yapmak için bilgilerinizi doldurun" [style]="{ width: '360px' }">
+        <ng-template pTemplate="header">
+            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+        </ng-template>
+        <div>
+            <input [(ngModel)]="userNameOrEmail" pInputText placeholder="Username" [style]="{width: '100%'}"/>
+        </div>
+        <div class="mt-2">           
+            <p-password [(ngModel)]="password" placeholder="******" [inputStyle]="{width: '325px'}">
+                <ng-template pTemplate="header">
+                    <h6>Şifre girin</h6>
+                </ng-template>
+                <ng-template pTemplate="footer">
+                    <p-divider></p-divider>
+                    <p class="mt-2">Öneriler</p>
+                    <ul class="pl-2 ml-2 mt-0" style="line-height: 1.5">
+                        <li>En az 1 büyük karakter</li>
+                        <li>En az 1 küçük karakter</li>
+                        <li>En az 1 numeratic değer</li>
+                        <li>En az 1 özel karakter</li>
+                        <li>Minimum 6 karakter</li>
+                    </ul>
+                </ng-template>
+            </p-password>
+        </div>
+        <ng-template pTemplate="footer">
+            <p-button (onClick)="signIn()" [style]="{width:'100%'}" label="Giriş Yap" icon="pi pi-user"></p-button>            
+        </ng-template>
+    </p-card>
+</div>

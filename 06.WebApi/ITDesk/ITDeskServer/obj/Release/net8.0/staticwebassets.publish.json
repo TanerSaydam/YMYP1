@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0X95cJnHTAbefBaxVb/QTCNUcroEMTOXk2iRPatp44w=",
+  "Source": "ITDeskServer",
+  "BasePath": "_content/ITDeskServer",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

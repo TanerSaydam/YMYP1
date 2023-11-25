@@ -24,4 +24,24 @@ body {
     border-radius: 10px;
     margin-bottom: 1rem;
 }
+
+.flex{
+    display: flex;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.h100{
+    height: 93vh;
+}
+
+.w100{
+    width: 100%;
+}
    

@@ -3,10 +3,16 @@
     <input pInputText placeholder="Konu" [(ngModel)]="subject" style="width: 100%;" />
 </div>
 
+<div class="card" style="margin-top: 30px;">
+    <span class="p-float-label">
+        <textarea id="float-input" rows="5" cols="30" pInputTextarea style="width: 100%;"></textarea>
+        <label for="float-input">Summary</label>
+    </span>
+</div>
 
-<div class="card">
+<div class="card" style="margin-top: 20px;">
     <p-toast></p-toast>
-    <p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload($event)" [multiple]="true" accept="image/*" [maxFileSize]="1000000000" [showUploadButton]="false" chooseLabel="Dosya Seçin" cancelLabel="Vazgeç">
+    <p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload($event)" [multiple]="true" accept="image/*" [maxFileSize]="100000000">
         <ng-template pTemplate="content">
             <ul *ngIf="uploadedFiles.length">
                 <li *ngFor="let file of uploadedFiles">{{ file.name }} - {{ file.size }} bytes</li>
@@ -15,15 +21,6 @@
     </p-fileUpload>
 </div>
 
-
-
 <div class="card">
-    <span class="p-float-label">
-        <textarea id="float-input" rows="5" cols="30" pInputTextarea style="width: 100%;"></textarea>
-        <label for="float-input">Summary</label>
-    </span>
-</div>
-
-<div class="card">
-    <p-button label="Oluştur" [style]="{width: '100%'}" icon="pi pi-plus" [raised]="true" severity="success"></p-button>
+    <p-button (click)="create()" label="Oluştur" [style]="{width: '100%'}" icon="pi pi-plus" [raised]="true" severity="success"></p-button>
 </div>

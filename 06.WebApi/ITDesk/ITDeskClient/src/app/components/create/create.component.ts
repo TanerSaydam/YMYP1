@@ -28,11 +28,15 @@ uploadedFiles: any[] = [];
 
     constructor(private messageService: MessageService) {}
 
-    onUpload(event:any) {
+    onUpload(event:any) {      
         for(let file of event.files) {
             this.uploadedFiles.push(file);
         }
 
         this.messageService.add({severity: 'info', summary: 'File Uploaded', detail: ''});
+    }
+
+    create(){
+      console.log(this.uploadedFiles);
     }
 }

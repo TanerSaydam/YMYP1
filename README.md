@@ -1,4 +1,11 @@
 # YMYP 1.Eğitim
+## 25.11.2023
+- Identity Kütüphanesini Kurduk
+- User ve Role için Tablo Oluşturduk
+- IoC Container da Middleware içine Auto Migration ve Create First User Metotları Yazdık
+- Login Metodu Yazdık
+- Login İşleminde Şifre Yanlış ise Sayaç ile Kontrol Ettirdik
+
 ## 22.11.2023
 - Angular 17 Güncellemesi Yaptık
 - PrimenG ile IT Desk Projesi için Client Projesi Oluşturduk
