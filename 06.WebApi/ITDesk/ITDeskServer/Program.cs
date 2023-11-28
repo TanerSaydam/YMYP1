@@ -8,11 +8,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer("Data Source=DESKTOP-3BJ5GK9\\SQLEXPRESS;Initial Catalog=YMYP1ITDeskDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+    options.UseSqlServer("Data Source=TUGAY\\SQLEXPRESS;Initial Catalog=YMYP1ITDeskDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
 });
-builder.Services.AddIdentityCore<AppUser>(opt=>
+builder.Services.AddIdentity<AppUser,AppRole>(opt=>
 {
     opt.Password.RequiredLength = 6;
+    opt.SignIn.RequireConfirmedEmail = true;
+    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    opt.Lockout.MaxFailedAccessAttempts = 2;
+    opt.Lockout.AllowedForNewUsers = true;
 
 }).AddEntityFrameworkStores<ApplicationDbContext>();
 
@@ -27,6 +31,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//app.UseAuthentication();
 
 app.UseHttpsRedirection();
 

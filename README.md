@@ -1,4 +1,8 @@
 # YMYP 1.Eğitim
+## 26.11.2023
+- Alioth Portfolio Temasının Angular'a Giyridilmesi
+- Login İşlemi için SignInManager Kullanımı
+
 ## 25.11.2023
 - Identity Kütüphanesini Kurduk
 - User ve Role için Tablo Oluşturduk

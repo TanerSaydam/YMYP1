@@ -10,11 +10,15 @@
         "projectUniqueName": "C:\\YMYP1\\06.WebApi\\ITDesk\\ITDeskServer\\ITDeskServer.csproj",
         "projectName": "ITDeskServer",
         "projectPath": "C:\\YMYP1\\06.WebApi\\ITDesk\\ITDeskServer\\ITDeskServer.csproj",
-        "packagesPath": "C:\\Users\\taner\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\tugay\\.nuget\\packages\\",
         "outputPath": "C:\\YMYP1\\06.WebApi\\ITDesk\\ITDeskServer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\taner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tugay\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

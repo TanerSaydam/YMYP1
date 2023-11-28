@@ -13,10 +13,15 @@ public sealed class ApplicationDbContext :IdentityDbContext<AppUser,AppRole,Guid
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
+        builder.Entity<IdentityUserLogin<Guid>>().HasKey(x => x.UserId);
+        builder.Entity<IdentityUserToken<Guid>>().HasKey(x => x.UserId);
+        builder.Entity<IdentityUserClaim<Guid>>().HasKey(x => x.Id);
+
         builder.Ignore<IdentityRoleClaim<Guid>>();
-        builder.Ignore<IdentityUserClaim<Guid>>();
-        builder.Ignore<IdentityUserLogin<Guid>>();
-        builder.Ignore<IdentityUserToken<Guid>>();
+        //builder.Ignore<IdentityUserClaim<Guid>>();
+        //builder.Ignore<IdentityUserLogin<Guid>>();
+        //builder.Ignore<IdentityUserToken<Guid>>();
         builder.Ignore<IdentityUserRole<Guid>>();
     }
 }
+
