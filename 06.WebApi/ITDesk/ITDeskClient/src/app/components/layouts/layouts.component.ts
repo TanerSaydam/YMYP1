@@ -5,6 +5,7 @@ import { MenuItem } from 'primeng/api';
 import { Router, RouterOutlet } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-layouts',
@@ -18,6 +19,7 @@ export class LayoutsComponent implements OnInit {
   items: MenuItem[] | undefined;
 
   constructor(
+    public auth: AuthService,
     private router: Router
   ){}
 
@@ -32,6 +34,7 @@ export class LayoutsComponent implements OnInit {
   }
 
   logout(){
+    localStorage.removeItem("response");
     this.router.navigateByUrl("/login");
   }
 }

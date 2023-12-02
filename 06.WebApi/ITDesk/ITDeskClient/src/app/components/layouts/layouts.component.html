@@ -5,7 +5,7 @@
             <img src="/assets/Asset 5@300x.png" height="40" class="mr-2" />
         </ng-template>
         <ng-template pTemplate="end">
-            <p-button label="Çıkış Yap" icon="pi pi-fw pi-power-off" [text]="true" severity="secondary" (click)="logout()"></p-button>
+            <p-button [label]="auth.token.name" icon="pi pi-fw pi-power-off" [text]="true" severity="secondary" (click)="logout()"></p-button>
         </ng-template>
     </p-menubar>
 </div>

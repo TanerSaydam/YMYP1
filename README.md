@@ -1,4 +1,12 @@
 # YMYP 1.Eğitim
+## 27.11.2023
+- SignInManager ile Token Üretip Kullanım Şeklini Araştırdık
+- Token Üretmenin Sebebi
+- Json Web Token Üretme ve Kontrolü
+- Girişte Token Dönderme
+- Angular'da Token Yakalama ve İşleme
+- Token'ı Decode Etme ve Expires Kontrolü
+
 ## 26.11.2023
 - Alioth Portfolio Temasının Angular'a Giyridilmesi
 - Login İşlemi için SignInManager Kullanımı

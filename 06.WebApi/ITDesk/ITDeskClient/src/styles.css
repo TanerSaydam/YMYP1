@@ -45,3 +45,10 @@ body {
     width: 100%;
 }
    
+.ms-1{
+    margin-left: 5px;
+}
+
+.gap-1{
+    gap:5px;
+}
