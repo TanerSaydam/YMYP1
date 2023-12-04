@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UqZlrcmR9/PQh8sgG7RBRAXdxRn/YtCKfzY+yriRXHQWKg/rF6d1c3kzmtfYr1O6vZNssz2Y7JUD+wNFR6U2MA==",
+  "dgSpecHash": "tbLcQjc67SiSQJLEp2bjDywGf1cLaW6B3vGhA2uWhRly6G8BXbKfyyAV8phFhpz3GPvShuIDfpGL5KO1DwJ0lA==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\06.WebApi\\ITDesk\\ITDeskServer\\ITDeskServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation\\11.8.1\\fluentvalidation.11.8.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.0\\microsoft.aspnetcore.cryptography.internal.8.0.0.nupkg.sha512",

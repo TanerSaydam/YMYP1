@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { DividerModule } from 'primeng/divider';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { LoginModel } from '../../models/login.model';
 import { CheckboxModule } from 'primeng/checkbox';
@@ -50,9 +50,25 @@ export default class LoginComponent {
     }    
 
     this.http.post("https://localhost:7232/api/Auth/Login",this.request)
-    .subscribe(res=> {
-      localStorage.setItem("response", JSON.stringify(res));
-      this.router.navigateByUrl("/");
+    .subscribe({
+      next: res=> {
+        localStorage.setItem("response", JSON.stringify(res));
+        this.router.navigateByUrl("/");
+      },
+      error: (err: HttpErrorResponse) => {
+        console.log(err);
+        switch (err.status) {
+          case 400:
+            this.message.add({severity: 'error', summary: "Hata!", detail: err.error.message});
+            break;
+
+          case 422:
+            for(let e of err.error){
+              this.message.add({severity: 'error', summary: "Validation Hatası!", detail: e});
+            }
+            break; 
+        }
+      }
     })
   }
 }
