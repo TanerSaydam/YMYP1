@@ -1,4 +1,10 @@
 # YMYP 1.Eğitim
+## 04.12.2023
+- Fluent Validation ile Validation Yapma
+- Ticket ve Detal için Model Oluşturduk
+- Google Login İşlemi Yaptık
+- Error Messagelarını İşledik
+
 ## 02.12.2023
 - SignInManager ile Token Üretip Kullanım Şeklini Araştırdık
 - Token Üretmenin Sebebi

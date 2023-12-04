@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
 
+//22:27 görüþelim
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddCors(configure =>

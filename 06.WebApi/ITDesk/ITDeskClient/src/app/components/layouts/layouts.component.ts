@@ -35,7 +35,7 @@ export class LayoutsComponent implements OnInit {
 
   logout(){
     localStorage.removeItem("response");
-    this.router.navigateByUrl("/login");
+    location.href = "/login";
   }
 }
 
