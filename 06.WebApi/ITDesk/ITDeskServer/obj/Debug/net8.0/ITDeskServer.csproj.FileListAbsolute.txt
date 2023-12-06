@@ -138,3 +138,4 @@ C:\YMYP1\06.WebApi\ITDesk\ITDeskServer\bin\Debug\net8.0\runtimes\win\lib\net6.0\
 C:\YMYP1\06.WebApi\ITDesk\ITDeskServer\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\YMYP1\06.WebApi\ITDesk\ITDeskServer\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\YMYP1\06.WebApi\ITDesk\ITDeskServer\bin\Debug\net8.0\FluentValidation.dll
+C:\YMYP1\06.WebApi\ITDesk\ITDeskServer\bin\Debug\net8.0\GenericFileService.dll

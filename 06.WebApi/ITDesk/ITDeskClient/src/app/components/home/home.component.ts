@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 import { TableModule } from 'primeng/table';
@@ -8,45 +8,39 @@ import { ButtonModule } from 'primeng/button';
 import { DialogService, DynamicDialogModule, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { MessageService } from 'primeng/api';
 import { CreateComponent } from '../create/create.component';
-import { customers } from '../../constants/customer';
 import { DialogModule } from 'primeng/dialog';
+import { TicketModel } from '../../models/ticket.model';
+import { HttpService } from '../../services/http.service';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, BreadcrumbModule,TableModule,TagModule,InputTextModule, ButtonModule, DynamicDialogModule, DialogModule],
-  providers: [DialogService, MessageService],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    standalone: true,
+    imports: [CommonModule, BreadcrumbModule, TableModule, TagModule, InputTextModule, ButtonModule, DynamicDialogModule, DialogModule],
+    providers: [DialogService],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
-export default class HomeComponent {
+export default class HomeComponent implements OnInit {
 
-    customers = customers;
+    tickets: TicketModel[] = [];
     ref: DynamicDialogRef | undefined;
-    selectedCustomers!: any;
-    
-    constructor(public dialogService: DialogService, public messageService: MessageService) {}
+    selectedSubject!: any;
 
-    getSeverity(status: string) {
-        switch (status) {
-            case 'unqualified':
-                return 'danger';
+    constructor(
+        public dialogService: DialogService,
+        public messageService: MessageService,
+        private http: HttpService) {
 
-            case 'qualified':
-                return 'success';
+    }
 
-            case 'new':
-                return 'info';
+    ngOnInit(): void {
+        this.getAll();
+    }
 
-            case 'negotiation':
-                return 'warning';
-
-            case 'renewal':
-                return "danger";
-
-            default:
-                return "danger";
-        }
+    getAll() {
+        this.http.get("Tickets/GetAll",(res)=> {
+            this.tickets = res
+        });
     }
 
     show() {
@@ -58,9 +52,14 @@ export default class HomeComponent {
             maximizable: false,
         });
 
-        this.ref.onClose.subscribe((data:any) => {
+        this.ref.onClose.subscribe((data: any) => {
+            
             if (data) {
-                this.messageService.add({ severity: 'info', summary: 'Product Selected', detail: data });
+                this.http.post("Tickets/Add", data, (res)=> {
+                    this.getAll();
+                    this.messageService.add({ severity: 'success', summary: 'Destek talebi başarıyla açıldı', detail: '' });
+                })
+                
             }
         });
 

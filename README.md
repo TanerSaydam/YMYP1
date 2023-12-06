@@ -1,4 +1,9 @@
 # YMYP 1.Eğitim
+## 06.12.2023
+- Ticket Create ve List İşlemleri Yaptık
+- Http Errorleri için Angular Tarafında Generic Yapı Kurduk
+- Http İşlemleri için Angular Tarafında Generic Yapı Kurduk
+
 ## 04.12.2023
 - Fluent Validation ile Validation Yapma
 - Ticket ve Detal için Model Oluşturduk
