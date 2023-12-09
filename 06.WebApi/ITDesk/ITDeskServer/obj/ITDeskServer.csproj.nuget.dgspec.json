@@ -58,6 +58,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.AspNetCore.OData": {
+              "target": "Package",
+              "version": "[8.2.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0, )"

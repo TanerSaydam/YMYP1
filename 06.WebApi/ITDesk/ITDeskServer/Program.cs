@@ -4,6 +4,7 @@ using ITDeskServer.Models;
 using ITDeskServer.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.IdentityModel.Tokens;
@@ -62,7 +63,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 #endregion
 
 #region Presentation
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddOData(options=> options.EnableQueryFeatures());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(setup =>
 {

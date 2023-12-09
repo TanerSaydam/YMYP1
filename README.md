@@ -1,4 +1,10 @@
 # YMYP 1.Eğitim
+## 09.12.2023
+- Angular Data Grid İncelemesi
+- Örnek Proje Üzerinde Deneme
+- OData Yapısı ve Denemesi
+- Ticket Projesine AG Data Grid'i Ekleme
+
 ## 06.12.2023
 - Ticket Create ve List İşlemleri Yaptık
 - Http Errorleri için Angular Tarafında Generic Yapı Kurduk

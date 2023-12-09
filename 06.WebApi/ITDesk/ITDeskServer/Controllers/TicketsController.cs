@@ -4,6 +4,7 @@ using ITDeskServer.DTOs;
 using ITDeskServer.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Microsoft.EntityFrameworkCore;
 
 namespace ITDeskServer.Controllers;
@@ -78,6 +79,7 @@ public class TicketsController : ApiController
     }
 
     [HttpGet]
+    [EnableQuery]
     public IActionResult GetAll()
     {
         string? userId = HttpContext.User.Claims.Where(p => p.Type == "UserId").Select(s => s.Value).FirstOrDefault();
@@ -86,12 +88,24 @@ public class TicketsController : ApiController
             return BadRequest(new { Message = "Kullanıcı bulunmadı!" });
         }
 
-        List<TicketResponseDto> tickets = 
+        IQueryable<TicketResponseDto> tickets = 
             _context.Tickets
             .Where(p=> p.AppUserId == Guid.Parse(userId))
-            .Select(s=> new TicketResponseDto(s.Id, s.Subject, s.CreatedDate,s.IsOpen))
-            .ToList();
+            .Select(s=> new TicketResponseDto
+            {
+                Id = s.Id,
+                CreatedDate = s.CreatedDate.ToString("o"),
+                IsOpen = s.IsOpen,
+                Subject = s.Subject
+            })
+            .AsQueryable();
 
         return Ok(tickets);
+    }
+
+    private string DateTimeToString(DateTime value)
+    {
+        return value.ToString("yyyy-MM-dd HH:mm:ss");
+        
     }
 }

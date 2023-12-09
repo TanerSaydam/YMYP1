@@ -1,6 +1,6 @@
 @ITDeskServer_HostAddress = http://localhost:5207
 
-GET {{ITDeskServer_HostAddress}}/weatherforecast/
+GET {{ITDeskServer_HostAddress}}/api/Tickets/GetAll
 Accept: application/json
 
 ###

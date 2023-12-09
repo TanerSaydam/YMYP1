@@ -3,34 +3,14 @@
 </div>
 
 <div class="card mt-2">
-    <p-table #dt1 [value]="tickets" selectionMode="single" [(selection)]="selectedSubject" dataKey="id" [tableStyle]="{'min-width': '50rem'}"
-    [rows]="10" [paginator]="true" stateStorage="session" stateKey="statedemo-session">
-        <ng-template pTemplate="header">
-            <tr>
-                <th pSortableColumn="name" style="width:25%">Created Date</th>
-                <th pSortableColumn="country.name" style="width:25%">Subject</th>
-                <th pSortableColumn="status" style="width:25%">Is Open</th>
-            </tr>
-        </ng-template>
-        <ng-template pTemplate="body" let-ticket>
-            <tr [pSelectableRow]="ticket">
-                <td>
-                    <span class="p-column-title">Created Date</span>
-                    {{ticket.createdDate}}
-                </td>
-                <td>
-                    <span class="p-column-title">Subject</span>
-                    {{ticket.subject}}
-                </td>
-                <td>                    
-                    <p-tag [value]="ticket.isOpen ? 'Open' : 'Closed'" [severity]="ticket.isOpen ? 'success' : 'error'"></p-tag>
-                </td>
-            </tr>
-        </ng-template>
-        <ng-template pTemplate="emptymessage">
-            <tr>
-                <td colspan="4">No customers found.</td>
-            </tr>
-        </ng-template>
-    </p-table>
+    <ag-grid-angular 
+        class="ag-theme-quartz" 
+        style="width: 100%; height: 750px;" 
+        [rowData]="tickets"
+        [columnDefs]="colDefs"
+        [pagination]="true"
+        [paginationPageSize]="20"
+        [defaultColDef]="defaultColDef"
+        [autoSizeStrategy]="autoSizeStrategy">
+    </ag-grid-angular>
 </div>

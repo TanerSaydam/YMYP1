@@ -1,0 +1,9 @@
+@AngularDataGridServer_HostAddress = http://localhost:5140
+
+GET {{AngularDataGridServer_HostAddress}}/api/Values/SeedData
+Accept: application/json
+
+###
+GET {{AngularDataGridServer_HostAddress}}/api/Values/GetAll
+
+###
