@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AngularDataGridServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78f97cb880d67d93f6153235cc9d47fabbb53282")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aad0bb25d1c5e91e3b725141b2f1118d77a713d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AngularDataGridServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AngularDataGridServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,6 +4,6 @@ GET {{AngularDataGridServer_HostAddress}}/api/Values/SeedData
 Accept: application/json
 
 ###
-GET {{AngularDataGridServer_HostAddress}}/api/Values/GetAll
+GET {{AngularDataGridServer_HostAddress}}/api/Values/GetAll?skip=5&top=10
 
 ###

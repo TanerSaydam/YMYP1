@@ -2,25 +2,33 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule, DatePipe } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AgGridModule, ICellRendererAngularComp } from 'ag-grid-angular';
+import { GetContextMenuItemsParams,MenuItemDef, ColDef } from 'ag-grid-community'
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { ButtonRendererComponent } from './button-renderer.component';
+import 'ag-grid-enterprise';
+import { GridApi, MenuItemLeafDef, RowModelType } from 'ag-grid-enterprise';
+import { ServerSideComponent } from './server-side/server-side.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, AgGridModule],
+  imports: [CommonModule, RouterOutlet, AgGridModule, ServerSideComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   rowData: any = [];
+  frameworkComponents: any;
+  gridApi: any;
+  rowModelType: RowModelType | undefined = "serverSide";
 
-  colDefs: any[] = [
+  colDefs: ColDef[] = [
     {
       headerName: "#",
       valueGetter: (params: any) => params.node.rowIndex + 1,
       width: 30,
-      floatingFilter: false,
-      sort: false
+      floatingFilter: false
     },
     { field: "name" },
     { field: "author" },
@@ -29,6 +37,14 @@ export class AppComponent {
       valueFormatter: (params: any) => {
         return new Date(params.value).toLocaleDateString('tr-TR', { day: '2-digit', month: '2-digit', year: 'numeric' });
       },
+    },
+    {
+      headerName: "Operations",
+      cellRenderer: "buttonRenderer",
+      cellRendererParams: {
+        onClick: this.remove.bind(this),
+        label: 'Remove'
+      }
     }
   ];
 
@@ -51,11 +67,60 @@ export class AppComponent {
     floatingFilter: true,
   }
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+    this.frameworkComponents = {
+      buttonRenderer: ButtonRendererComponent
+    }
+  }
 
   onGridReady(params: any) {
+    this.gridApi = params.api;
     params.api.showLoadingOverlay();
     this.getAll(params);
+  }
+
+  remove(event: any){
+    console.log(event.rowData);    
+  }
+
+  getContextMenuItems(params: GetContextMenuItemsParams): (string | MenuItemDef)[] {
+    var result: (string | MenuItemDef)[]  = [
+      {
+        name: "Example Action",
+        action: () => {
+          console.log("Örnek aksiyon çalıştırıldı...");
+          console.log(params?.node?.data);
+        }
+      },
+      {
+        name:"Export",
+        icon: `<i class="fa-solid fa-download"></i>`,
+        subMenu: [
+          {
+            name: "Excel Export",
+            action: () => {
+              params.api.exportDataAsExcel();          
+            }
+          }
+        ]
+      },
+      'copy',
+      'seperator',
+      'paste'
+    ]
+
+    return result;
+  }
+
+  onFilterTextBoxChanged() {
+    this.gridApi!.setGridOption(
+      'quickFilterText',
+      (document.getElementById('filter-text-box') as HTMLInputElement).value
+    );
+  }
+
+  onRowDoubleCliced(event:any){
+    console.log(event.data);    
   }
 
   checkAuthorization(){

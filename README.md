@@ -1,4 +1,14 @@
 # YMYP 1.Eğitim
+### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 11.12.2023
+- Angular Data Grid İncelemesi
+- Grid'e Button Ekleme
+- Grid'e Context Menü Ekleme
+- Grid'e Çift Tıklama ile Event Ekleme
+- Enterprise Kurulumu
+- Excel Export
+- Server Side ile OData'nın Entegre Kullanımı
+
 ## 09.12.2023
 - Angular Data Grid İncelemesi
 - Örnek Proje Üzerinde Deneme
