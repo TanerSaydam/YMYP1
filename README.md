@@ -1,5 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 13.12.2023
+- Sonar Qube ile Uygulama Analizi
+- Ticket Projemizde Ticket Detail Sayfası
+- Ticket Detail da Mesaj Gönderme
+- Admin Rolü Atama
+- Admin Rolü Tüm Ticketları Görme
+
 ## 11.12.2023
 - Angular Data Grid İncelemesi
 - Grid'e Button Ekleme

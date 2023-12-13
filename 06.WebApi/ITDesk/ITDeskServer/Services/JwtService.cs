@@ -8,7 +8,7 @@ namespace ITDeskServer.Services;
 
 public sealed class JwtService
 {
-    public string CreateToken(AppUser appUser, bool rememberMe)
+    public string CreateToken(AppUser appUser, List<string?>? roles, bool rememberMe)
     {
         string token = string.Empty;
 
@@ -17,6 +17,7 @@ public sealed class JwtService
         claims.Add(new("Name", appUser.GetName()));
         claims.Add(new("Email", appUser.Email ?? string.Empty));        
         claims.Add(new("UserName", appUser.UserName ?? string.Empty));
+        if(roles is not null) claims.Add(new("Roles", string.Join(",", roles)));
 
         DateTime expires = rememberMe ? DateTime.Now.AddMonths(1) : DateTime.Now.AddDays(1);
 

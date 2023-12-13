@@ -26,7 +26,14 @@ public class TicketsController : ApiController
         if(userId is null)
         {
             return BadRequest(new { Message = "Kullanıcı bulunmadı!" });
-        }       
+        }
+
+        AppUser? appUser = _context.Users.Where(p => p.Id == Guid.Parse(userId)).FirstOrDefault();
+
+        if(appUser is null)
+        {
+            return BadRequest(new { Message = "Kullanıcı bulunmadı!" });
+        }
         
         Ticket ticket = new()
         {
@@ -64,23 +71,61 @@ public class TicketsController : ApiController
         TicketDetail ticketDetail = new()
         {
             Id = Guid.NewGuid(),
-            UserId = Guid.Parse(userId),
+            AppUserId = Guid.Parse(userId),
             TicketId = ticket.Id,
             Content = request.Summary,
             CreatedDate = ticket.CreatedDate
         };
         
-        _context.Add(ticket);
-        _context.Add(ticketDetail);
+        _context.Tickets.Add(ticket);
+        _context.TicketDetails.Add(ticketDetail);
         _context.SaveChanges();
 
 
         return NoContent();
     }
 
+    [HttpGet("{ticketId}")]
+    public IActionResult GetDetails(Guid ticketId)
+    {
+        var details = 
+            _context.TicketDetails
+            .Where(p=> p.TicketId == ticketId)
+            .Include(p=> p.AppUser)
+            .OrderBy(p=> p.CreatedDate).ToList();
+        return Ok(details);
+    }
+
     [HttpGet]
-    [EnableQuery]
-    public IActionResult GetAll()
+    public IActionResult GetById(Guid ticketId)
+    {
+        var details =
+            _context.Tickets
+            .Where(p => p.Id == ticketId)
+            .Include(p => p.AppUser)
+            .FirstOrDefault();
+        return Ok(details);
+    }
+
+    [HttpPost]
+    public IActionResult AddDetailContent(TicketDetailDto request)
+    {
+        TicketDetail ticketDetail = new()
+        {
+            AppUserId = request.AppUserId,
+            Content = request.Content,
+            CreatedDate = DateTime.Now,
+            TicketId = request.TicketId
+        };
+
+        _context.Add(ticketDetail);
+        _context.SaveChanges();
+
+        return NoContent();
+    }
+
+    [HttpPost]    
+    public IActionResult GetAll(GetAllTicketDto request)
     {
         string? userId = HttpContext.User.Claims.Where(p => p.Type == "UserId").Select(s => s.Value).FirstOrDefault();
         if (userId is null)
@@ -88,24 +133,26 @@ public class TicketsController : ApiController
             return BadRequest(new { Message = "Kullanıcı bulunmadı!" });
         }
 
-        IQueryable<TicketResponseDto> tickets = 
+        IQueryable<TicketResponseDto> tickets =
             _context.Tickets
-            .Where(p=> p.AppUserId == Guid.Parse(userId))
-            .Select(s=> new TicketResponseDto
+            .Include(p=> p.AppUser)
+            .Select(s => new TicketResponseDto
             {
                 Id = s.Id,
+                AppUserId = s.AppUserId,
+                AppUser = s.AppUser,
+                UserName = s.AppUser!.GetName(),
                 CreatedDate = s.CreatedDate.ToString("o"),
                 IsOpen = s.IsOpen,
                 Subject = s.Subject
             })
             .AsQueryable();
 
-        return Ok(tickets);
-    }
+        if (!request.Roles.Contains("Admin"))
+        {
+            tickets = tickets.Where(p => p.AppUserId == Guid.Parse(userId));
+        }
 
-    private string DateTimeToString(DateTime value)
-    {
-        return value.ToString("yyyy-MM-dd HH:mm:ss");
-        
+        return Ok(tickets.ToList());
     }
 }

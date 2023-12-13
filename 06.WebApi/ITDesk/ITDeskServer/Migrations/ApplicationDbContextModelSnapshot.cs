@@ -103,6 +103,19 @@ namespace ITDeskServer.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("ITDeskServer.Models.AppUserRole", b =>
+                {
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("RoleId", "UserId");
+
+                    b.ToTable("AppUserRoles");
+                });
+
             modelBuilder.Entity("ITDeskServer.Models.Ticket", b =>
                 {
                     b.Property<Guid>("Id")
@@ -148,9 +161,6 @@ namespace ITDeskServer.Migrations
                     b.Property<Guid>("TicketId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");
@@ -176,6 +186,17 @@ namespace ITDeskServer.Migrations
                     b.HasIndex("TicketId");
 
                     b.ToTable("TicketFiles");
+                });
+
+            modelBuilder.Entity("ITDeskServer.Models.AppUserRole", b =>
+                {
+                    b.HasOne("ITDeskServer.Models.AppRole", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("ITDeskServer.Models.Ticket", b =>

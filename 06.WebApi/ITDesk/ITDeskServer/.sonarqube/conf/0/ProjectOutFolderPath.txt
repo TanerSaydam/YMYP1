@@ -1,0 +1,1 @@
+C:\YMYP1\06.WebApi\ITDesk\ITDeskServer\.sonarqube\out\0

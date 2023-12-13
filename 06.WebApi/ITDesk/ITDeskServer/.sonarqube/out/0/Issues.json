@@ -1,0 +1,369 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Derleyicisi",
+        "version": "4.8.0.0",
+        "fileVersion": "4.8.0-3.23524.11 (f43cd10b)",
+        "semanticVersion": "4.8.0",
+        "language": "tr-TR"
+      },
+      "results": [
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'Tickets', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 12,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 26,
+                  "endLine": 14,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TicketFiles', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 12,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 30,
+                  "endLine": 15,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Null atanamaz özellik 'TicketDetails', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 12,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 32,
+                  "endLine": 16,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private method 'DateTimeToString'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 20,
+                  "endLine": 106,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1186",
+          "level": "warning",
+          "message": "Add a nested comment explaining why this method is empty, throw a 'NotSupportedException' or complete the implementation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Migrations/20231206191501_mg2.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 33,
+                  "endLine": 17,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S5122",
+          "level": "warning",
+          "message": "Make sure this permissive CORS policy is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Program.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 9,
+                  "endLine": 22,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4581",
+          "level": "warning",
+          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Migrations/20231206183023_user_classinda_userid_alaninin_ismi_degistirildi.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 31,
+                  "endLine": 27,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 59,
+                  "endLine": 48,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1822",
+          "level": "note",
+          "message": "'DateTimeToString' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 20,
+                  "endLine": 106,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1822": {
+          "id": "CA1822",
+          "shortDescription": "Üyeleri statik olarak işaretleyin",
+          "fullDescription": "Örnek verilerine erişmeyen veya örnek yöntemlerini çağırmayan üyeler statik olarak işaretlenebilir. Yöntemleri statik olarak işaretledikten sonra, derleyici bu üyelere yönelik sanal olmayan çağrı konumlarını gösterir. Bu, performans açısından duyarlı kod için önemli ölçüde performans kazanımı sağlar.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Null atanamaz alan, oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. Alanı null atanabilir olarak bildirmeyi düşünün.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1075": {
+          "id": "S1075",
+          "shortDescription": "URIs should not be hardcoded",
+          "fullDescription": "Hard-coding a URI makes it difficult to test a program for a variety of reasons:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1075",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "This rule raises an issue when a private/internal type or member is never referenced in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1186": {
+          "id": "S1186",
+          "shortDescription": "Methods should not be empty",
+          "fullDescription": "An empty method is generally considered bad practice and can lead to confusion, readability, and maintenance issues. Empty methods bring no functionality and are misleading to others as they might think the method implementation fulfills a specific and identified requirement.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1186",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4581": {
+          "id": "S4581",
+          "shortDescription": "\"new Guid()\" should not be used",
+          "fullDescription": "When the syntax new Guid() (i.e. parameterless instantiation) is used, it must be that one of three things is wanted:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4581",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S5122": {
+          "id": "S5122",
+          "shortDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive",
+          "fullDescription": "Having a permissive Cross-Origin Resource Sharing policy is security-sensitive. It has led in the past to the following vulnerabilities:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-5122",
+          "properties": {
+            "category": "Minor Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

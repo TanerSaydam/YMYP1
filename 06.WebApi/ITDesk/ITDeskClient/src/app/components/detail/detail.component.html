@@ -1,1 +1,60 @@
-<p>detail works!</p>
+<div class="container p-0">
+
+    <h1 class="h3 mb-3">Messages</h1>
+
+    <div class="card">
+        <div class="row g-0">            
+            <div class="col-12 col-lg-12 col-xl-12">
+                <div class="py-2 px-4 border-bottom d-none d-lg-block">
+                    <div class="d-flex justify-content-between py-1">
+                        <b>
+                            Who Is Owner: {{ticket.appUser.firstName}} {{ticket.appUser.lastName}}
+                        </b>
+                        <b>
+                            Subject: {{ticket.subject}}
+                        </b>
+                        <b>
+                            Created Date: {{ticket.createdDate | date: 'dd/MM/yyyy HH:mm:ss'}}
+                        </b>                        
+                    </div>
+                </div>
+
+                <div class="position-relative">
+                    <div class="chat-messages p-4">
+                        @for(detail of details; track detail){
+                            <div class="pb-4" [ngClass]="auth.token.userId === detail.appUserId ? 'chat-message-right' : 'chat-message-left'">
+                                <div class="ms-2 me-2">
+                                    <img src="https://st5.depositphotos.com/81614282/67104/v/450/depositphotos_671048078-stock-illustration-bussines-icon-people-black-color.jpg" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                                    
+                                    <div class="text-muted small text-nowrap mt-2">
+                                        
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3" 
+                                style="width: 50%;">
+                                    <div class="font-weight-bold mb-1">
+                                        {{detail.appUser.firstName}} {{detail.appUser.lastName}}
+                                    </div>
+                                    <p>
+                                        {{detail.createdDate | date: 'dd/MM/yyyy HH:mm:ss'}}
+                                    </p>
+                                    <p style="word-break: break-all;">
+                                        {{detail.content}}
+                                    </p>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <div class="flex-grow-0 py-3 px-4 border-top">
+                    <div class="input-group">
+                        <input [(ngModel)]="content" type="text" class="form-control input" placeholder="Type your message">
+                        <button (click)="addDetailContent()" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

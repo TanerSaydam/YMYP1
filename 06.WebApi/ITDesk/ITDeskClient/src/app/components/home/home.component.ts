@@ -13,6 +13,9 @@ import { TicketModel } from '../../models/ticket.model';
 import { HttpService } from '../../services/http.service';
 import { AgGridModule } from 'ag-grid-angular';
 import { BadgeModule } from 'primeng/badge';
+import { ButtonRendererComponent } from '../../common/components/button.renderer.component';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
     selector: 'app-home',
@@ -23,10 +26,11 @@ import { BadgeModule } from 'primeng/badge';
     styleUrl: './home.component.css'
 })
 export default class HomeComponent implements OnInit {
-
+    frameworkComponents: any;
     tickets: TicketModel[] = [];
     ref: DynamicDialogRef | undefined;
     selectedSubject!: any;
+    isAdmin: boolean = false;
 
     defaultColDef: any = {
         filter: true,
@@ -40,13 +44,21 @@ export default class HomeComponent implements OnInit {
       };
 
     colDefs: any[] = [
-        { headerName: "#", valueGetter: (params: any) => params.node.rowIndex + 1, width:30, filter:false},
-        { 
-            field: "subject",
-            cellRenderer: (params: any)=> {
-                return `<a href="/ticket-details/${params.data.id}">${params.value}</a>`
+        {
+            headerName: "Detay", 
+            width: '40px',
+            filter: false,
+            cellRenderer: "buttonRenderer",
+            cellRendererParams: {
+                onClick: this.gotoDetail.bind(this),
+                label: 'Goto Detail'
             }
-
+        },
+        {
+            field: "userName"
+        },
+        { 
+            field: "subject"
          },
         { 
             field: "createdDate",
@@ -54,7 +66,7 @@ export default class HomeComponent implements OnInit {
                 return new Date(params.value).toLocaleDateString('tr-TR', { day: '2-digit', month: '2-digit', year: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' });
             }, },
         { 
-            field: "isOpen",
+            field: "isOpen",            
             cellRenderer: (params: any) => {
                 if (params.value) {
                 return `
@@ -70,14 +82,29 @@ export default class HomeComponent implements OnInit {
     constructor(
         public dialogService: DialogService,
         public messageService: MessageService,
-        private http: HttpService) {}
+        private http: HttpService,
+        private router: Router,
+        private auth: AuthService) {
+            this.frameworkComponents = {
+                buttonRenderer: ButtonRendererComponent
+              }
+        }
 
     ngOnInit(): void {
         this.getAll();
     }
 
+    gotoDetail(event: any){
+        const id = event.rowData.id;
+        this.router.navigateByUrl("/ticket-details/" + id)
+    }
+
     getAll() {
-        this.http.get("Tickets/GetAll",(res)=> {
+        const data = {
+            roles: this.auth.token.roles
+        };
+
+        this.http.post("Tickets/GetAll",data,(res)=> {
             this.tickets = [];
 
             for(let r of res){
@@ -85,9 +112,12 @@ export default class HomeComponent implements OnInit {
                 ticket.id = r.id;
                 ticket.subject = r.subject;
                 ticket.isOpen = r.isOpen;
-                ticket.createdDate = new Date(r.createdDate);
+                ticket.userName = r.userName;
+                ticket.createdDate = r.createdDate;
                 this.tickets.push(ticket)
             }
+
+            this.isAdmin = this.auth.token.roles.includes("Admin");
         });
     }
 

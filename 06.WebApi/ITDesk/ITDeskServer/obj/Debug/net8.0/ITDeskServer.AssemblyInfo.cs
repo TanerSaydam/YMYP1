@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ITDeskServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78f97cb880d67d93f6153235cc9d47fabbb53282")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4b990f98be4b387277ce70e6b220242f4d268a6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ITDeskServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ITDeskServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

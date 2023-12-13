@@ -1,5 +1,6 @@
 ﻿using FluentValidation.Results;
 using ITDeskServer.Abstractions;
+using ITDeskServer.Context;
 using ITDeskServer.DTOs;
 using ITDeskServer.Models;
 using ITDeskServer.Services;
@@ -7,10 +8,12 @@ using ITDeskServer.Validator;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ITDeskServer.Controllers;
 [AllowAnonymous]
 public class AuthController(
+    ApplicationDbContext context,
     UserManager<AppUser> userManager,
     SignInManager<AppUser> signInManager,
     JwtService jwtService) : ApiController
@@ -61,7 +64,14 @@ public class AuthController(
             return BadRequest(new { Message = "Şifreniz yanlış" });
         }
 
-        string token = jwtService.CreateToken(appUser, request.RememberMe);
+        var roles = 
+            context.AppUserRoles
+            .Where(p=> p.UserId == appUser.Id)
+            .Include(p=> p.Role)
+            .Select(s=> s.Role!.Name)
+            .ToList();
+
+        string token = jwtService.CreateToken(appUser, roles, request.RememberMe);
         return Ok(new { AccessToken = token });
     }
 
@@ -71,7 +81,14 @@ public class AuthController(
         AppUser? appUser = await userManager.FindByEmailAsync(request.Email);
         if (appUser is not null)
         {
-            string token = jwtService.CreateToken(appUser, true);
+            var roles =
+            context.AppUserRoles
+            .Where(p => p.UserId == appUser.Id)
+            .Include(p => p.Role)
+            .Select(s => s.Role!.Name)
+            .ToList();
+
+            string token = jwtService.CreateToken(appUser, roles, true);
             return Ok(new { AccessToken = token });
         }
 
@@ -90,7 +107,7 @@ public class AuthController(
 
         if (result.Succeeded)
         {
-            string token = jwtService.CreateToken(appUser, true);
+            string token = jwtService.CreateToken(appUser, new(), true);
             return Ok(new { AccessToken = token });
         }
 
