@@ -1,14 +1,19 @@
 <div class="container p-0">
 
     <h1 class="h3 mb-3">Messages</h1>
+    @if(ticket.isOpen){
+        <button class="btn btn-danger" (click)="closeTicket()"> Close Ticket</button>
+    }@else {
+        <h3 class="text-danger">Ticket is closed!</h3>
+    }
 
-    <div class="card">
+    <div class="card mt-2">
         <div class="row g-0">            
             <div class="col-12 col-lg-12 col-xl-12">
                 <div class="py-2 px-4 border-bottom d-none d-lg-block">
                     <div class="d-flex justify-content-between py-1">
                         <b>
-                            Who Is Owner: {{ticket.appUser.firstName}} {{ticket.appUser.lastName}}
+                            Who Is Owner: {{ticket.appUser?.firstName}} {{ticket.appUser?.lastName}}
                         </b>
                         <b>
                             Subject: {{ticket.subject}}
@@ -18,6 +23,21 @@
                         </b>                        
                     </div>
                 </div>
+
+                <div class="py-2 px-4 border-bottom d-none d-lg-block">
+                    <ul class="d-flex py-1" style="gap: 20px; list-style: none;">
+                        @for(file of ticket.fileUrls; track file){
+                            <li>
+                                <a [href]="'/assets/files/' + file.fileUrl" target="_blank">
+                                    <img [src]="'/assets/files/' + file.fileUrl" width="200" alt="">                                        
+                                </a>
+                            </li>
+                        }@empty {
+                            <p>Attached file not found!</p>
+                        }                          
+                    </ul> 
+                </div>
+
 
                 <div class="position-relative">
                     <div class="chat-messages p-4">

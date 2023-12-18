@@ -7,7 +7,7 @@
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
   <SonarQubeVersion>10.3.0.82913</SonarQubeVersion>
-  <SonarProjectKey>Test1</SonarProjectKey>
+  <SonarProjectKey>test</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
@@ -128,8 +128,8 @@
     <Property Name="sonar.auth.gitlab.url">https://gitlab.com</Property>
     <Property Name="sonaranalyzer-vbnet.pluginKey">vbnet</Property>
     <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
-    <Property Name="sonar.core.startTime">13.12.2023 20:14:10</Property>
-    <Property Name="sonar.core.id">147B411E-AYxkK_ZIlH4nF5p0XUwA</Property>
+    <Property Name="sonar.core.startTime">18.12.2023 22:15:54</Property>
+    <Property Name="sonar.core.id">147B411E-AYx-WzYImgVWAyfIwppT</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>

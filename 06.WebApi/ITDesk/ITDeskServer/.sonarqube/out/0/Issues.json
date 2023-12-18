@@ -123,18 +123,34 @@
           }
         },
         {
-          "ruleId": "S1144",
+          "ruleId": "CS8618",
           "level": "warning",
-          "message": "Remove the unused private method 'DateTimeToString'.",
+          "message": "Null atanamaz özellik 'AppUserRoles', oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. özellik alanını null atanabilir olarak bildirmeyi düşünün.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
                 "region": {
-                  "startLine": 106,
-                  "startColumn": 20,
-                  "endLine": 106,
-                  "endColumn": 36
+                  "startLine": 10,
+                  "startColumn": 12,
+                  "endLine": 10,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Context/ApplicationDbContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 31,
+                  "endLine": 17,
+                  "endColumn": 43
                 }
               }
             }
@@ -150,12 +166,33 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Migrations/20231206191501_mg2.cs",
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Migrations/20231213193806_mg2.cs",
                 "region": {
                   "startLine": 17,
                   "startColumn": 33,
                   "endLine": 17,
                   "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 59,
+                  "endLine": 55,
+                  "endColumn": 118
                 }
               }
             }
@@ -184,88 +221,9 @@
           "properties": {
             "warningLevel": 1
           }
-        },
-        {
-          "ruleId": "S4581",
-          "level": "warning",
-          "message": "Use 'Guid.NewGuid()' or 'Guid.Empty' or add arguments to this GUID instantiation.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Migrations/20231206183023_user_classinda_userid_alaninin_ismi_degistirildi.cs",
-                "region": {
-                  "startLine": 27,
-                  "startColumn": 31,
-                  "endLine": 27,
-                  "endColumn": 79
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S1075",
-          "level": "warning",
-          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
-                "region": {
-                  "startLine": 48,
-                  "startColumn": 59,
-                  "endLine": 48,
-                  "endColumn": 118
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1822",
-          "level": "note",
-          "message": "'DateTimeToString' adlı üye örnek verilerine erişmiyor ve statik olarak işaretlenebilir",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/YMYP1/06.WebApi/ITDesk/ITDeskServer/Controllers/TicketsController.cs",
-                "region": {
-                  "startLine": 106,
-                  "startColumn": 20,
-                  "endLine": 106,
-                  "endColumn": 36
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
         }
       ],
       "rules": {
-        "CA1822": {
-          "id": "CA1822",
-          "shortDescription": "Üyeleri statik olarak işaretleyin",
-          "fullDescription": "Örnek verilerine erişmeyen veya örnek yöntemlerini çağırmayan üyeler statik olarak işaretlenebilir. Yöntemleri statik olarak işaretledikten sonra, derleyici bu üyelere yönelik sanal olmayan çağrı konumlarını gösterir. Bu, performans açısından duyarlı kod için önemli ölçüde performans kazanımı sağlar.",
-          "defaultLevel": "note",
-          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1822",
-          "properties": {
-            "category": "Performance",
-            "isEnabledByDefault": true,
-            "tags": [
-              "PortedFromFxCop",
-              "Telemetry",
-              "EnabledRuleInAggressiveMode"
-            ]
-          }
-        },
         "CS8618": {
           "id": "CS8618",
           "shortDescription": "Null atanamaz alan, oluşturucudan çıkış yaparken null olmayan bir değer içermelidir. Alanı null atanabilir olarak bildirmeyi düşünün.",
@@ -296,23 +254,6 @@
             ]
           }
         },
-        "S1144": {
-          "id": "S1144",
-          "shortDescription": "Unused private types or members should be removed",
-          "fullDescription": "This rule raises an issue when a private/internal type or member is never referenced in the code.",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
-          "properties": {
-            "category": "Major Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
         "S1186": {
           "id": "S1186",
           "shortDescription": "Methods should not be empty",
@@ -321,23 +262,6 @@
           "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1186",
           "properties": {
             "category": "Critical Code Smell",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "TestSourceScope",
-              "SonarWay"
-            ]
-          }
-        },
-        "S4581": {
-          "id": "S4581",
-          "shortDescription": "\"new Guid()\" should not be used",
-          "fullDescription": "When the syntax new Guid() (i.e. parameterless instantiation) is used, it must be that one of three things is wanted:",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4581",
-          "properties": {
-            "category": "Major Code Smell",
             "isEnabledByDefault": true,
             "tags": [
               "C#",

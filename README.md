@@ -1,5 +1,9 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 18.12.2023
+- IT Projesini Tamamladık
+- SonerQube ile Kod Kalitesini Kontrol Ettik
+
 ## 13.12.2023
 - Sonar Qube ile Uygulama Analizi
 - Ticket Projemizde Ticket Detail Sayfası

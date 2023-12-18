@@ -47,7 +47,7 @@ builder.Services.AddAuthentication().AddJwtBearer(options =>
 #region DbContext ve Identity
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer("Data Source=DESKTOP-3BJ5GK9\\SQLEXPRESS;Initial Catalog=YMYP1ITDeskDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+    options.UseSqlServer("Data Source=TANER\\SQLEXPRESS;Initial Catalog=YMYP1ITDeskDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
 });
 builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 {

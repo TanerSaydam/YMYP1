@@ -5,6 +5,7 @@ export class TicketModel{
     userName: string = "";
     createdDate: Date = new Date();
     isOpen: boolean = false;
+    fileUrls: TicketFileUrlModel[] = [];
 }
 
 export class TicketDetailModel{
@@ -13,4 +14,10 @@ export class TicketDetailModel{
     appUserId: string = "";
     appUser: any;
     createdDate: string = "";
+}
+
+export class TicketFileUrlModel{
+    id: string = "";
+    ticketId: string = "";
+    fileUrl: string = "";
 }

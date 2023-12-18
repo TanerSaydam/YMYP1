@@ -103,6 +103,7 @@ public class TicketsController : ApiController
             _context.Tickets
             .Where(p => p.Id == ticketId)
             .Include(p => p.AppUser)
+            .Include(p=> p.FileUrls)
             .FirstOrDefault();
         return Ok(details);
     }
@@ -110,6 +111,17 @@ public class TicketsController : ApiController
     [HttpPost]
     public IActionResult AddDetailContent(TicketDetailDto request)
     {
+        Ticket? ticket = 
+            _context.Tickets
+                .Where(p => p.Id == request.TicketId)               
+                .FirstOrDefault();
+
+        if(ticket is not null)
+        {
+            ticket.IsOpen = true;
+        }
+
+
         TicketDetail ticketDetail = new()
         {
             AppUserId = request.AppUserId,
@@ -154,5 +166,18 @@ public class TicketsController : ApiController
         }
 
         return Ok(tickets.ToList());
+    }
+
+    [HttpGet]
+    public IActionResult CloseTicketByTicketId(Guid ticketId)
+    {
+        Ticket? ticket = _context.Tickets.Find(ticketId);
+        if(ticket is not null)
+        {
+            ticket.IsOpen = false;
+            _context.SaveChanges();
+        }
+
+        return NoContent();
     }
 }

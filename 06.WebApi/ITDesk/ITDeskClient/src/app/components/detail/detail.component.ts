@@ -54,6 +54,13 @@ export default class DetailComponent {
     this.http.post(`Tickets/AddDetailContent`, data, ()=> {
       this.content = "";
       this.getDetail();
+      this.getTicket();
     })
+  }
+
+  closeTicket(){
+    this.http.get(`Tickets/CloseTicketByTicketId?ticketId=${this.ticket.id}`,()=> {
+      this.getTicket();
+    });
   }
 }
