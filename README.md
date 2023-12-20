@@ -1,5 +1,8 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 20.12.2023
+- Uçak Bileti Rezervasyon Uygulamasını MVC ile Yazmaya Başladık
+
 ## 18.12.2023
 - IT Projesini Tamamladık
 - SonerQube ile Kod Kalitesini Kontrol Ettik
