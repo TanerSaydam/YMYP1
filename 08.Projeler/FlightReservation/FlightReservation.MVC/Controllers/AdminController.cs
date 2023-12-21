@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-
-namespace FlightReservation.MVC.Controllers;
+﻿namespace FlightReservation.MVC.Controllers;
 
 [Authorize]
 public class AdminController : Controller

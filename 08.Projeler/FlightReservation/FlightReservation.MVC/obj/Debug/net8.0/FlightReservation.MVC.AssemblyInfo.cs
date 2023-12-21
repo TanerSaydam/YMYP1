@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlightReservation.MVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c314dd8aa353a8343c2aeb49b9a689f3fb0be10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aac0e60166a792dad6512d0b76cf858399705714")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlightReservation.MVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlightReservation.MVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

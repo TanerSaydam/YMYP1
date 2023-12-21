@@ -1,5 +1,72 @@
 ﻿@{
     Layout = null;
 }
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<h1>Register Page</h1>
+<div class="d-flex justify-content-center align-items-center" style="height:97vh">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">
+                <h1>@localization.Getkey("RegisterForm").Value</h1>
+                <p>@localization.Getkey("RegisterFormDescription").Value</p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        @if (ViewBag.SelectedLanguage == "en-US")
+                        {
+                            @localization.Getkey("English").Value
+                        }else{
+                            @localization.Getkey("Turkish").Value
+                        }
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a asp-controller="Shared"
+                               asp-action="ChangeLanguage"
+                               asp-route-culture="en-US"
+                               class="dropdown-item">
+                                English
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Shared"
+                               asp-action="ChangeLanguage"
+                               asp-route-culture="tr-TR"
+                               class="dropdown-item">
+                                Türkçe
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="card-body">
+                <form asp-controller="Account" asp-action="Register" method="post" autocomplete="off">
+                    <div class="form-group">
+                        <label>@localization.Getkey("FirstName").Value</label>
+                        <input class="form-control" name="firstName" required minlenght="3"/>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>@localization.Getkey("LastName").Value</label>
+                        <input class="form-control" name="lastName" required minlenght="3" />
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>@localization.Getkey("Email").Value</label>
+                        <input type="email" class="form-control" name="email" required minlenght="3"/>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>@localization.Getkey("Password").Value</label>
+                        <input type="password" class="form-control" name="password" required minlenght="6" maxlength="6"/>
+                    </div>
+                    <div class="form-group mt-2">
+                        <button type="submit" class="btn btn-dark w-100">@localization.Getkey("SignUp").Value</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-header">
+                <a asp-controller="Account" asp-action="Login">@localization.Getkey("GoToLoginPage").Value</a>
+            </div>
+        </div>
+
+    </div>
+</div>

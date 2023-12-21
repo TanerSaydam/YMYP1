@@ -1,5 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 21.12.2023
+- MVC de Language Desteği Ekleme
+- Uçak Bileti Rezervasyon Uygulamasına Register ve Login Page Ekledik
+- Giriş ve Çıkış İşlemlerini HttpContex.SignInAsync ve SignOutAsync ile Cookie Üzerinden Yazdık
+
 ## 20.12.2023
 - Uçak Bileti Rezervasyon Uygulamasını MVC ile Yazmaya Başladık
 

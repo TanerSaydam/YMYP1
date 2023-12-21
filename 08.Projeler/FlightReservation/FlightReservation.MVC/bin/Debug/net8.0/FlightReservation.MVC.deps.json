@@ -13,6 +13,14 @@
         },
         "runtime": {
           "FlightReservation.MVC.dll": {}
+        },
+        "resources": {
+          "en-US/FlightReservation.MVC.resources.dll": {
+            "locale": "en-US"
+          },
+          "tr-TR/FlightReservation.MVC.resources.dll": {
+            "locale": "tr-TR"
+          }
         }
       },
       "Azure.Core/1.25.0": {

@@ -136,3 +136,10 @@ C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\bin\Debug\net8.0\ru
 C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\FlightReservation.MVC.csproj.AssemblyReference.cache
 C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\FlightReservation.MVC.csproj.CopyComplete
 C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_AdminLayout.cshtml.rz.scp.css
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\FlightReservation.MVC.csproj.GenerateResource.cache
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\bin\Debug\net8.0\en-US\FlightReservation.MVC.resources.dll
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\en-US\FlightReservation.MVC.resources.dll
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\bin\Debug\net8.0\tr-TR\FlightReservation.MVC.resources.dll
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\tr-TR\FlightReservation.MVC.resources.dll
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\FlightReservation.MVC.Resources.SharedResource.en-US.resources
+C:\YMYP1\08.Projeler\FlightReservation\FlightReservation.MVC\obj\Debug\net8.0\FlightReservation.MVC.Resources.SharedResource.tr-TR.resources
