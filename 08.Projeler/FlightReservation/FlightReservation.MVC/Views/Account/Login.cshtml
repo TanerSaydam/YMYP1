@@ -46,16 +46,17 @@
                 <form asp-controller="Account" asp-action="Login" method="post" autocomplete="off">                   
                     <div class="form-group">
                         <label>@localization.Getkey("Email").Value</label>
-                        <input type="email" class="form-control" name="email" required minlenght="3" />
+                        <input type="email" class="form-control" name="email" required minlenght="3" value="@ViewBag.Email" />
                     </div>
                     <div class="form-group mt-2">
                         <label>@localization.Getkey("Password").Value</label>
-                        <input type="password" class="form-control" name="password" required minlenght="6" maxlength="6" />
+                        <input type="password" class="form-control" name="password" required minlenght="6" maxlength="6" value="@ViewBag.Password" />
                     </div>
                     <div class="form-group mt-2">
                         <button type="submit" class="btn btn-dark w-100">@localization.Getkey("SignIn").Value</button>
                     </div>
                 </form>
+                <p class="text-danger">@ViewBag.Error</p>
             </div>
             <div class="card-header">
                 <a asp-controller="Account" asp-action="Register">@localization.Getkey("GoToRegisterPage").Value</a>

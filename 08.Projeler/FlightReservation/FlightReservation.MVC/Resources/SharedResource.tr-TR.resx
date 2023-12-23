@@ -117,8 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="AddForm" xml:space="preserve">
+    <value>Ekleme Formu</value>
+  </data>
+  <data name="Arrival" xml:space="preserve">
+    <value>Varış Yeri</value>
+  </data>
+  <data name="ArrivalTime" xml:space="preserve">
+    <value>Varış Zamanı</value>
+  </data>
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Dili Değiştir</value>
+  </data>
+  <data name="Departure" xml:space="preserve">
+    <value>Kalkış Yeri</value>
+  </data>
+  <data name="DepartureTime" xml:space="preserve">
+    <value>Kalkış Zamanı</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
@@ -129,11 +147,17 @@
   <data name="FirstName" xml:space="preserve">
     <value>Ad</value>
   </data>
+  <data name="FlightReservation" xml:space="preserve">
+    <value>Uçuş Rezervasyonu</value>
+  </data>
   <data name="GoToLoginPage" xml:space="preserve">
     <value>Zaten hesabınız var mı?</value>
   </data>
   <data name="GoToRegisterPage" xml:space="preserve">
     <value>Ücretsiz kayıt ol</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Ana Sayfa</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Soyad</value>
@@ -147,8 +171,23 @@
   <data name="LogOut" xml:space="preserve">
     <value>Çıkış Yap</value>
   </data>
+  <data name="Operations" xml:space="preserve">
+    <value>İşlemler</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Şifre</value>
+  </data>
+  <data name="PlaneList" xml:space="preserve">
+    <value>Uçak Listesi</value>
+  </data>
+  <data name="PlaneName" xml:space="preserve">
+    <value>Uçak Adı</value>
+  </data>
+  <data name="Planes" xml:space="preserve">
+    <value>Uçaklar</value>
+  </data>
+  <data name="PlaneTailNumber" xml:space="preserve">
+    <value>Uçak Kuyruk Numarası</value>
   </data>
   <data name="RegisterForm" xml:space="preserve">
     <value>Kayıt Formu</value>
@@ -156,11 +195,29 @@
   <data name="RegisterFormDescription" xml:space="preserve">
     <value>Kaydolmak için bilgilerinizi doldurun</value>
   </data>
+  <data name="RouteList" xml:space="preserve">
+    <value>Güzergah Listesi</value>
+  </data>
+  <data name="Routes" xml:space="preserve">
+    <value>Rotalar</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Kaydet</value>
+  </data>
+  <data name="SeatConfiguration" xml:space="preserve">
+    <value>Koltuk Düzeni</value>
+  </data>
   <data name="SignIn" xml:space="preserve">
     <value>Giriş Yap</value>
   </data>
   <data name="SignUp" xml:space="preserve">
     <value>Kayıt Ol</value>
+  </data>
+  <data name="TailNumber" xml:space="preserve">
+    <value>Kuyruk Numarası</value>
+  </data>
+  <data name="TotalSeats" xml:space="preserve">
+    <value>Toplam Koltuk Sayısı</value>
   </data>
   <data name="Turkish" xml:space="preserve">
     <value>Türkçe</value>

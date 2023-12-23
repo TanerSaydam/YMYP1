@@ -1,5 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 23.12.2023
+- Uçak Bileti Rezervasyonu Uygulamasına Devam Ediyoruz
+- Admin LTE Temasını Admin Sayfasına Girdik
+- Admin Sayfasında Route ve Plane Sayfaları Yaptık
+
 ## 21.12.2023
 - MVC de Language Desteği Ekleme
 - Uçak Bileti Rezervasyon Uygulamasına Register ve Login Page Ekledik

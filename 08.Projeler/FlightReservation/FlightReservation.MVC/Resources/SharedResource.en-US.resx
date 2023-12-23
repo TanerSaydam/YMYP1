@@ -117,8 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddForm" xml:space="preserve">
+    <value>Ekleme Formu</value>
+  </data>
+  <data name="Arrival" xml:space="preserve">
+    <value>Arrival</value>
+  </data>
+  <data name="ArrivalTime" xml:space="preserve">
+    <value>Arrival Time</value>
+  </data>
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Change Language</value>
+  </data>
+  <data name="Departure" xml:space="preserve">
+    <value>Departure</value>
+  </data>
+  <data name="DepartureTime" xml:space="preserve">
+    <value>Departure Time</value>
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
@@ -129,11 +147,17 @@
   <data name="FirstName" xml:space="preserve">
     <value>First Name</value>
   </data>
+  <data name="FlightReservation" xml:space="preserve">
+    <value>Flight Reservation</value>
+  </data>
   <data name="GoToLoginPage" xml:space="preserve">
     <value>Already have an account?</value>
   </data>
   <data name="GoToRegisterPage" xml:space="preserve">
     <value>Free register</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Last Name</value>
@@ -147,8 +171,23 @@
   <data name="LogOut" xml:space="preserve">
     <value>Log Out</value>
   </data>
+  <data name="Operations" xml:space="preserve">
+    <value>Operations</value>
+  </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="PlaneList" xml:space="preserve">
+    <value>Plane List</value>
+  </data>
+  <data name="PlaneName" xml:space="preserve">
+    <value>Plane Name</value>
+  </data>
+  <data name="Planes" xml:space="preserve">
+    <value>Planes</value>
+  </data>
+  <data name="PlaneTailNumber" xml:space="preserve">
+    <value>Plane Tail Number</value>
   </data>
   <data name="RegisterForm" xml:space="preserve">
     <value>Register Form</value>
@@ -156,11 +195,29 @@
   <data name="RegisterFormDescription" xml:space="preserve">
     <value>Please fill your information to register</value>
   </data>
+  <data name="RouteList" xml:space="preserve">
+    <value>Route List</value>
+  </data>
+  <data name="Routes" xml:space="preserve">
+    <value>Routes</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SeatConfiguration" xml:space="preserve">
+    <value>Seat Configuration</value>
+  </data>
   <data name="SignIn" xml:space="preserve">
     <value>Sign In</value>
   </data>
   <data name="SignUp" xml:space="preserve">
     <value>Sign Up</value>
+  </data>
+  <data name="TailNumber" xml:space="preserve">
+    <value>Tail Number</value>
+  </data>
+  <data name="TotalSeats" xml:space="preserve">
+    <value>Total Seats</value>
   </data>
   <data name="Turkish" xml:space="preserve">
     <value>Turkish</value>

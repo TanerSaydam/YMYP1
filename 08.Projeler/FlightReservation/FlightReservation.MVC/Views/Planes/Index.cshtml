@@ -1,0 +1,130 @@
+﻿@using FlightReservation.MVC.Models
+@model IEnumerable<Plane>
+@{
+    int index = 0;
+    Layout = "../Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@localization.Getkey("Planes").Value</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a asp-controller="Admin" asp-action="Index">@localization.Getkey("Home").Value</a></li>
+                    <li class="breadcrumb-item active">@localization.Getkey("Planes").Value</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">@localization.Getkey("PlaneList").Value</h3>
+
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <button data-toggle="modal" data-target="#addModal" class="btn btn-dark">
+                    <i class="fa fa-plus me-1"></i>
+                    @localization.Getkey("Add").Value
+                </button>
+            </div>
+            
+            <div class="form-group mt-2">
+                <p class="text-danger">@TempData["Error"]</p>
+
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>@localization.Getkey("PlaneName").Value</th>
+                            <th>@localization.Getkey("TailNumber").Value</th>
+                            <th>@localization.Getkey("TotalSeats").Value</th>
+                            <th>@localization.Getkey("SeatConfiguration").Value</th>
+                            <th>@localization.Getkey("Operations").Value</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var plane in Model)
+                        {
+                            index++;
+                            <tr>
+                                <td>@index</td>
+                                <td>@plane.Name</td>
+                                <td>@plane.TailNumber</td>
+                                <td>@plane.TotalSeats</td>
+                                <td>@plane.SeatConfiguration</td>
+                                <td>
+                                    <a href="/Planes/RemoveById?id=@plane.Id" class="btn btn-sm btn-outline-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="card-footer">
+        </div>
+    </div>
+</section>
+
+
+
+<div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">@localization.Getkey("AddForm").Value</h1>
+                <i class="fa fa-x" data-bs-dismiss="modal"></i>
+            </div>            
+            <form asp-controller="Planes" asp-action="Add" method="post" autocomplete="off">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>@localization.Getkey("PlaneName").Value</label>
+                        <input required minLength="3" class="form-control" name="name" placeholder="Boeing 737" />
+                    </div>
+                    <div class="form-group mt-1">
+                        <label>@localization.Getkey("TailNumber").Value</label>
+                        <input required minLength="3" class="form-control" name="tailNumber" placeholder="N144S" />
+                    </div>
+                    <div class="form-group mt-1">
+                        <label>@localization.Getkey("TotalSeats").Value</label>
+                        <input required min="100" class="form-control" name="totalSeats" placeholder="300" />
+                    </div>
+                    <div class="form-group mt-1">
+                        <label>@localization.Getkey("SeatConfiguration").Value</label>
+                        <select required class="form-control" name="seatConfiguration">
+                            <option>3-3</option>
+                            <option>3-4-3</option>
+                            <option>2-5-2</option>
+                            <option>2-4-2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-dark w-100">@localization.Getkey("Save").Value</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

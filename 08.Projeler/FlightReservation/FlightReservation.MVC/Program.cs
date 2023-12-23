@@ -1,5 +1,6 @@
 using FlightReservation.MVC.Context;
 using FlightReservation.MVC.Models;
+using FlightReservation.MVC.Repositories;
 using FlightReservation.MVC.Services;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -10,6 +11,10 @@ using System.Reflection;
 
 #region DI
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<PlaneRepository>();
+builder.Services.AddScoped<RouteRepository>();
 
 #region Localization
 builder.Services.AddSingleton<LanguageService>();
@@ -85,7 +90,8 @@ app.UseAuthorization();
 using (var scope = app.Services.CreateScope())
 {
     var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    if (!context.Set<User>().Any(p => p.Email == "y225012058@sakarya.edu.tr"))
+    var result = context.Set<User>().Any(p => p.Email == "y225012058@sakarya.edu.tr");
+    if (!result)
     {
         User user = new()
         {
@@ -113,6 +119,8 @@ using (var scope = app.Services.CreateScope())
             RoleId = role.Id,
             UserId = user.Id
         });
+
+        context.SaveChanges();
     }
 }
 
