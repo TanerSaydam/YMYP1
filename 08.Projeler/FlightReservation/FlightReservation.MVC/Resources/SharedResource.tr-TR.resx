@@ -132,6 +132,9 @@
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Dili Değiştir</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Tarih</value>
+  </data>
   <data name="Departure" xml:space="preserve">
     <value>Kalkış Yeri</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="GoToRegisterPage" xml:space="preserve">
     <value>Ücretsiz kayıt ol</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hoşgeldiniz</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Ana Sayfa</value>
@@ -203,6 +209,9 @@
   </data>
   <data name="Save" xml:space="preserve">
     <value>Kaydet</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Ara</value>
   </data>
   <data name="SeatConfiguration" xml:space="preserve">
     <value>Koltuk Düzeni</value>

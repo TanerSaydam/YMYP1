@@ -1,5 +1,8 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 25.12.2023
+- Uçak Bileti Rezervasyonu Uygulamasını Tamamladık
+
 ## 23.12.2023
 - Uçak Bileti Rezervasyonu Uygulamasına Devam Ediyoruz
 - Admin LTE Temasını Admin Sayfasına Girdik

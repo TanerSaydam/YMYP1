@@ -3,7 +3,6 @@ using FlightReservation.MVC.Models;
 using FlightReservation.MVC.Repositories;
 using FlightReservation.MVC.Services;
 using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System.Globalization;
@@ -15,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<PlaneRepository>();
 builder.Services.AddScoped<RouteRepository>();
+builder.Services.AddScoped<TicketRepository>();
 
 #region Localization
 builder.Services.AddSingleton<LanguageService>();

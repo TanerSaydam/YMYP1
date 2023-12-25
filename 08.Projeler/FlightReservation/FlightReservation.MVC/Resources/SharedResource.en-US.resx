@@ -132,6 +132,9 @@
   <data name="ChangeLanguage" xml:space="preserve">
     <value>Change Language</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
   <data name="Departure" xml:space="preserve">
     <value>Departure</value>
   </data>
@@ -155,6 +158,9 @@
   </data>
   <data name="GoToRegisterPage" xml:space="preserve">
     <value>Free register</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello!</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -203,6 +209,9 @@
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
   </data>
   <data name="SeatConfiguration" xml:space="preserve">
     <value>Seat Configuration</value>

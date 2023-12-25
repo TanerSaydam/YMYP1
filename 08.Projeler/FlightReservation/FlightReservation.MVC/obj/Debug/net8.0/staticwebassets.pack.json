@@ -465,6 +465,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\YMYP1\\08.Projeler\\FlightReservation\\FlightReservation.MVC\\wwwroot\\css\\ticket.css",
+      "PackagePath": "staticwebassets\\css\\ticket.css"
+    },
+    {
       "Id": "C:\\YMYP1\\08.Projeler\\FlightReservation\\FlightReservation.MVC\\wwwroot\\dist\\css\\adminlte.css",
       "PackagePath": "staticwebassets\\dist\\css\\adminlte.css"
     },

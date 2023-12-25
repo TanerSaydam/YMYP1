@@ -1,8 +1,89 @@
-﻿@{
+﻿@model IEnumerable<Route>
+@{
     ViewData["Title"] = "Home Page";
-}
+    int index = 0;
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    var date = (DateTime)ViewBag.Date;
+}
+<h1>@localization.Getkey("Hello").Value</h1>
+<form asp-controller="Home" asp-action="Index" method="post" autocomplete="off">
+    <div class="d-flex" style="gap:20px">
+        <div class="form-group w-100">
+            <label>@localization.Getkey("Departure").Value</label>
+            <select class="form-control" name="departure" value="@ViewBag.Departure">
+                <option>Kayseri</option>
+                <option>Ankara</option>
+                <option>İstanbul</option>
+                <option>Bursa</option>
+            </select>
+        </div>
+
+        <div class="form-group w-100">
+            <label>@localization.Getkey("Arrival").Value</label>
+            <select class="form-control" name="arrival" value="@ViewBag.Arrival">
+                <option>Kayseri</option>
+                <option>Ankara</option>
+                <option>İstanbul</option>
+                <option>Bursa</option>
+            </select>
+        </div>
+
+        <div class="form-group w-100">
+            <label>@localization.Getkey("Date").Value</label>
+            <input class="form-control" type="date" name="date" value="@date.ToString("yyyy-MM-dd")" />
+        </div>
+
+        <div class="form-group w-100">
+            <label>@localization.Getkey("Operations").Value</label>
+            <button type="submit" class="btn btn-dark w-100">
+                @localization.Getkey("Search").Value
+            </button>
+        </div>
+    </div>
+</form>
+
+<hr />
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>@localization.Getkey("Departure").Value</th>
+            <th>@localization.Getkey("Arrival").Value</th>
+            <th>@localization.Getkey("DepartureTime").Value</th>
+            <th>@localization.Getkey("ArrivalTime").Value</th>
+            <th>@localization.Getkey("PlaneName").Value</th>
+            <th>@localization.Getkey("PlaneTailNumber").Value</th>
+            <th>@localization.Getkey("SeatNumber").Value</th>
+            <th>@localization.Getkey("Operations").Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            index++;
+            <form asp-controller="Home" asp-action="AddTicket" method="post">
+                <tr>
+                    <td>@index</td>
+                    <td>@item.Departure</td>
+                    <td>@item.Arrival</td>
+                    <td>@item.DepartureTime</td>
+                    <td>@item.ArrivalTime</td>
+                    <td>@item.Plane!.Name</td>
+                    <td>@item.Plane.TailNumber</td>
+                    <td>
+                        <input hidden="hidden" name="routeId" value="@item.Id"/>
+                        <select class="form-control" name="seatNumber">
+                            @for (int i = 1; i <= item.Plane.TotalSeats; i++)
+                            {
+                                <option>@i</option>                            
+                            }
+                        </select>
+                    </td>
+                    <td>
+                        <button type="submit" class="btn btn-dark">@localization.Getkey("Select").Value</button>
+                    </td>
+                </tr>
+            </form>
+        }
+    </tbody>
+</table>

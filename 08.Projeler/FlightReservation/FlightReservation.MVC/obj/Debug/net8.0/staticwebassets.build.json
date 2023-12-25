@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rjO8/w8ef39lc2vIiEclTZicnwpbtu1yW9MaZjy8MUg=",
+  "Hash": "Ata5/ce8z2fNn2m8qqrrVaNaq5YY0BKdyom7vFvRWc4=",
   "Source": "FlightReservation.MVC",
   "BasePath": "_content/FlightReservation.MVC",
   "Mode": "Default",
@@ -2238,6 +2238,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\YMYP1\\08.Projeler\\FlightReservation\\FlightReservation.MVC\\wwwroot\\css\\ticket.css",
+      "SourceId": "FlightReservation.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\YMYP1\\08.Projeler\\FlightReservation\\FlightReservation.MVC\\wwwroot\\",
+      "BasePath": "_content/FlightReservation.MVC",
+      "RelativePath": "css/ticket.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\ticket.css"
     },
     {
       "Identity": "C:\\YMYP1\\08.Projeler\\FlightReservation\\FlightReservation.MVC\\wwwroot\\dist\\css\\adminlte.css",
