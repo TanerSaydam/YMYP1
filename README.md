@@ -1,5 +1,9 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 27.12.2023
+- Dependency Injection
+- Using
+
 ## 25.12.2023
 - Uçak Bileti Rezervasyonu Uygulamasını Tamamladık
 
