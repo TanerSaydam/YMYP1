@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore.First.WebApi", "EntityFrameworkCore.First.WebApi\EntityFrameworkCore.First.WebApi.csproj", "{5331B5D1-4853-4640-BCFD-64453703C63E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5331B5D1-4853-4640-BCFD-64453703C63E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5331B5D1-4853-4640-BCFD-64453703C63E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5331B5D1-4853-4640-BCFD-64453703C63E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5331B5D1-4853-4640-BCFD-64453703C63E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7D468ED-B4B0-4D06-BE9C-9E4F04BDC19A}
+	EndGlobalSection
+EndGlobal

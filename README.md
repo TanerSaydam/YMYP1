@@ -1,5 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 01.01.2024
+- ORM Nedir?
+- ORM Kütüphaneleri
+- Entity Framework Core Nedir?
+- DbContext Nedir?
+- CodeFirst ve DbFirst Yaklaşımları
+- DbFirst Örnek
+
 ## 27.12.2023
 - Dependency Injection
 - Using

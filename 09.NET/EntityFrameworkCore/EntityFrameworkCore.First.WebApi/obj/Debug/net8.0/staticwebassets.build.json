@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "S70d103fzKp3YHUqPcn08tb2tkqhjeTeoJQaj1Uw9zs=",
+  "Source": "EntityFrameworkCore.First.WebApi",
+  "BasePath": "_content/EntityFrameworkCore.First.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
