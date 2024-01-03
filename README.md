@@ -1,5 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 03.01.2024
+- EF Core Crud İşlemleri
+- HTTP Metotları
+- Post ve Get Metotları Arasındaki Farklar
+- Put Ve Delete Metotları Nedir Neden Kullanılmaz
+- Refactoring Giriş
+- Primary Constructor
+
 ## 01.01.2024
 - ORM Nedir?
 - ORM Kütüphaneleri

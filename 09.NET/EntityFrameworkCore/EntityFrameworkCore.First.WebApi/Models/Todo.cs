@@ -2,7 +2,7 @@
 
 namespace EntityFrameworkCore.First.WebApi.Models;
 
-public class Todo
+public sealed class Todo
 {
     [Key]
     public int Id { get; set; }
