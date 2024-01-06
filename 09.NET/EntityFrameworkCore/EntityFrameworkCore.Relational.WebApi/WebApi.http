@@ -1,0 +1,16 @@
+@EntityFrameworkCore.Relational.WebApi_HostAddress = http://localhost:5084
+
+GET http://localhost:5084/api/Values/GetAll
+Accept: application/json
+
+###
+
+POST http://localhost:5084/api/Values/Add
+Content-Type: application/json
+
+{
+  "productName": "Elma",
+  "productDescription": "",
+  "productPrice": 10,
+  "categoryName": "Meyve"
+}

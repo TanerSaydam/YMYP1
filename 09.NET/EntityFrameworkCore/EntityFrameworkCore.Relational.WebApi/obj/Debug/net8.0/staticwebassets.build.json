@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "jSIOwnBLuPUjNaAAm7ZmWuqjEMdRyF4UbGQsihM8bjc=",
+  "Source": "EntityFrameworkCore.Relational.WebApi",
+  "BasePath": "_content/EntityFrameworkCore.Relational.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

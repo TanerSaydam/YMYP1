@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ogfsby52otSGaXtpRlsYYHtE8ETPQpapvkJlijXj3VQ=",
+  "Source": "EntityFrameworkCore.Auth.WebApi",
+  "BasePath": "_content/EntityFrameworkCore.Auth.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

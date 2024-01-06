@@ -1,6 +1,5 @@
 ﻿using EntityFrameworkCore.First.WebApi.Context;
 using EntityFrameworkCore.First.WebApi.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 
@@ -35,7 +34,7 @@ public class TodosController(ApplicationDbContext context) : ControllerBase //pr
         return Ok(todos);
     }
 
-    [HttpGet("{id}")] //Read
+    [HttpGet] //Read
     public IActionResult GetById(int id)
     {
         Todo? todo = context.Todos.Find(id);
@@ -85,7 +84,7 @@ public class TodosController(ApplicationDbContext context) : ControllerBase //pr
         return Ok(new {Id = todo.Id});
     }
 
-    [HttpGet("{id}")] // Update
+    [HttpGet] // Update
     public IActionResult ChangeCompletedStatus(int id)
     {
         Todo? todo = context.Todos.Find(id);
