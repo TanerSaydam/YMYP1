@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace EntityFrameworkCore.Relational.WebApi.Models;
 
 [Index("Name", IsUnique=true)]
-public sealed class Product
+public class Product
 {
     public Guid Id { get; set; }
     [Column(TypeName = "varchar(50)")]

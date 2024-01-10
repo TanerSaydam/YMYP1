@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "b1HSIwq7nkVkMlaAtwjshQ25jaOB2PuLwpw0/lvVMZU=",
+  "Source": "EntityFrameworkCore.OnModelCreating.WebApi",
+  "BasePath": "_content/EntityFrameworkCore.OnModelCreating.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -5,9 +5,11 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.First.WebApi", "EntityFrameworkCore.First.WebApi\EntityFrameworkCore.First.WebApi.csproj", "{5331B5D1-4853-4640-BCFD-64453703C63E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore.Auth.WebApi", "EntityFrameworkCore.Auth.WebApi\EntityFrameworkCore.Auth.WebApi.csproj", "{9F59D409-4430-4776-8314-5C6111094419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Auth.WebApi", "EntityFrameworkCore.Auth.WebApi\EntityFrameworkCore.Auth.WebApi.csproj", "{9F59D409-4430-4776-8314-5C6111094419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore.Relational.WebApi", "EntityFrameworkCore.Relational.WebApi\EntityFrameworkCore.Relational.WebApi.csproj", "{93ECA726-D027-45E2-814B-9A40B5E0780C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Relational.WebApi", "EntityFrameworkCore.Relational.WebApi\EntityFrameworkCore.Relational.WebApi.csproj", "{93ECA726-D027-45E2-814B-9A40B5E0780C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore.OnModelCreating.WebApi", "EntityFrameworkCore.OnModelCreating.WebApi\EntityFrameworkCore.OnModelCreating.WebApi.csproj", "{FF288421-3D1F-4EC4-9124-330061EA7BFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{93ECA726-D027-45E2-814B-9A40B5E0780C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93ECA726-D027-45E2-814B-9A40B5E0780C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93ECA726-D027-45E2-814B-9A40B5E0780C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

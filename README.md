@@ -1,9 +1,17 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 10.01.2024
+- EF Core Bire-bir İlişki
+- EF Core Bire-çok İlişki
+- EF Core Çoka-çok İlişki
+- DataAnnotations
+- OnModelCreatin Metotları
+- Required Keywordü
+
 ## 06.01.2024
 - EF Core Connection Dipendency Injection İle Yapılışı
-- EF Core Birebir İlişki
-- EF Core Bireçok İlişki
+- EF Core Bire-bir İlişki
+- EF Core Bire-çok İlişki
 - EF Core İlişkilerde Kayıt İşlemi
 - EF Core İlişkilerde Sorgulama İşlemi
 

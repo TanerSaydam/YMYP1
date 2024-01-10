@@ -79,15 +79,64 @@ namespace EntityFrameworkCore.Relational.WebApi.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.Role", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Roles");
+                });
+
+            modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.User", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.UserRole", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserRoles");
+                });
+
             modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.AdditionalProduct", b =>
                 {
-                    b.HasOne("EntityFrameworkCore.Relational.WebApi.Models.Product", "Product")
+                    b.HasOne("EntityFrameworkCore.Relational.WebApi.Models.Product", null)
                         .WithOne("AdditionalProduct")
                         .HasForeignKey("EntityFrameworkCore.Relational.WebApi.Models.AdditionalProduct", "ProductId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.Product", b =>
@@ -99,6 +148,25 @@ namespace EntityFrameworkCore.Relational.WebApi.Migrations
                         .IsRequired();
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.UserRole", b =>
+                {
+                    b.HasOne("EntityFrameworkCore.Relational.WebApi.Models.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityFrameworkCore.Relational.WebApi.Models.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("EntityFrameworkCore.Relational.WebApi.Models.Category", b =>
