@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RickAndMorty.WebApi.props" />
+</Project>

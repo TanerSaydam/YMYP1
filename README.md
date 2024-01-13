@@ -1,5 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 13.01.2024
+- Task Çözümü
+- HttpClient ile .NET Tarafında API İsteği Yapma
+- EF Core Configuration Yapısı ile ModelCreating'i Temizleme
+
 ## 10.01.2024
 - EF Core Bire-bir İlişki
 - EF Core Bire-çok İlişki

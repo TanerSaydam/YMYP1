@@ -1,0 +1,16 @@
+@RickAndMorty.WebApi_HostAddress = http://localhost:5003
+
+GET {{RickAndMorty.WebApi_HostAddress}}/api/Values/GetAllUsingRickAndMortyAPI
+Accept: application/json
+
+###
+
+GET {{RickAndMorty.WebApi_HostAddress}}/api/Values/GetAllEpisode
+Accept: application/json
+
+###
+
+GET {{RickAndMorty.WebApi_HostAddress}}/api/Values/GetAllCharacter
+Accept: application/json
+
+###
