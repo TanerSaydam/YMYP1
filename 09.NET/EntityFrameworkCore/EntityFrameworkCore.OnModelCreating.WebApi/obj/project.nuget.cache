@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VJRdQS1FnLGS89LJuYWFiz2l0rpZTEDimOCIQyEGjVttJziX4QheRLrYXs/3ZsLuriCuUR+fnzceVwsOKjB/cg==",
+  "dgSpecHash": "6KTdvLGtIx2P3XcaLw5/ExOx2UfvsbjK3IvRPTSiF2C0pz5HCP1g6DiEMmhCW7naDPdjcS3EuzDYxYV/CFwaQA==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\EntityFrameworkCore\\EntityFrameworkCore.OnModelCreating.WebApi\\EntityFrameworkCore.OnModelCreating.WebApi.csproj",
   "expectedPackageFiles": [

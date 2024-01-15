@@ -1,0 +1,6 @@
+@EntityFrameworkCore.IEntityTypeConfiguration.WebApi_HostAddress = http://localhost:5163
+
+GET https://localhost:7095/api/Values/GetAllProduct
+Accept: application/json
+
+###

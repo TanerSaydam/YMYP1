@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Auth.We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.Relational.WebApi", "EntityFrameworkCore.Relational.WebApi\EntityFrameworkCore.Relational.WebApi.csproj", "{93ECA726-D027-45E2-814B-9A40B5E0780C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore.OnModelCreating.WebApi", "EntityFrameworkCore.OnModelCreating.WebApi\EntityFrameworkCore.OnModelCreating.WebApi.csproj", "{FF288421-3D1F-4EC4-9124-330061EA7BFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCore.OnModelCreating.WebApi", "EntityFrameworkCore.OnModelCreating.WebApi\EntityFrameworkCore.OnModelCreating.WebApi.csproj", "{FF288421-3D1F-4EC4-9124-330061EA7BFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCore.IEntityTypeConfiguration.WebApi", "EntityFrameworkCore.IEntityTypeConfiguration.WebApi\EntityFrameworkCore.IEntityTypeConfiguration.WebApi.csproj", "{28756B8B-F1C5-4ACC-A257-5F693E2E9681}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF288421-3D1F-4EC4-9124-330061EA7BFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28756B8B-F1C5-4ACC-A257-5F693E2E9681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28756B8B-F1C5-4ACC-A257-5F693E2E9681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28756B8B-F1C5-4ACC-A257-5F693E2E9681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28756B8B-F1C5-4ACC-A257-5F693E2E9681}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

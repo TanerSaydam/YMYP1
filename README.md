@@ -1,5 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 15.01.2024
+- EF Core IEntityTypeConfiguration ile Configuration
+- İlişki Yapılarında CYCle Hatası ve Çözümü
+- EF Core ile Direkt SQL Query yazma
+
 ## 13.01.2024
 - Task Çözümü
 - HttpClient ile .NET Tarafında API İsteği Yapma
