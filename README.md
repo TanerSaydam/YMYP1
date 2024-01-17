@@ -1,5 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 17.01.2024
+- EFCore Transaction
+- EFCore SaveChanges
+- EFCore Repository Pattern
+- EFCore Generic Repository Pattern
+- EFCore Repository Pattern da Interface ile Bağımlılığı Azaltma
+
 ## 15.01.2024
 - EF Core IEntityTypeConfiguration ile Configuration
 - İlişki Yapılarında CYCle Hatası ve Çözümü

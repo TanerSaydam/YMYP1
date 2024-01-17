@@ -1,0 +1,21 @@
+@EntityFrameworkCore.RepositoryPattern.WebApi_HostAddress = http://localhost:5043
+
+GET http://localhost:5043/api/Products/Add?name=Salatalýk
+Accept: application/json
+
+###
+
+GET http://localhost:5043/api/Products/GetAll
+Accept: application/json
+
+###
+
+GET http://localhost:5043/api/Users/Add?name=Harun
+Accept: application/json
+
+###
+
+GET http://localhost:5043/api/Users/GetAll
+Accept: application/json
+
+###

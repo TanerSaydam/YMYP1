@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EntityFrameworkCore.RepositoryPattern.WebApi.props" />
+</Project>

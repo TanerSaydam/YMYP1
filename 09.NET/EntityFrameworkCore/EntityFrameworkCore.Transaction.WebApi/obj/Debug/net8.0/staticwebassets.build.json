@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "uo0iF1o/8gz3h0SMR2BQd56r//H6jd5gkL073vNhg1M=",
+  "Source": "EntityFrameworkCore.Transaction.WebApi",
+  "BasePath": "_content/EntityFrameworkCore.Transaction.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
