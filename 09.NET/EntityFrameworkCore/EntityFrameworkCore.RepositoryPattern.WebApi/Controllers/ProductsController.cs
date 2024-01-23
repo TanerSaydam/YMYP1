@@ -25,9 +25,9 @@ public sealed class ProductsController(IProductRepository productRepository) : C
     
 
     [HttpGet]
-    public IActionResult GetAll()
+    public async Task<IActionResult> GetAll()
     {
-        return Ok(productRepository.GetAll());
+        return Ok(await productRepository.GetAllAsync());
     }
 }
 

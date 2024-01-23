@@ -10,9 +10,9 @@ namespace EntityFrameworkCore.RepositoryPattern.WebApi.Controllers;
 public sealed class OrdersController(OrderRepository orderRepository) : ControllerBase
 {
     [HttpGet]
-    public IActionResult GetAll()
+    public async Task<IActionResult> GetAll()
     {
-        List<Order> orders = orderRepository.GetAll();
+        List<Order> orders = await orderRepository.GetAllAsync();
 
         return Ok(orders);
     }

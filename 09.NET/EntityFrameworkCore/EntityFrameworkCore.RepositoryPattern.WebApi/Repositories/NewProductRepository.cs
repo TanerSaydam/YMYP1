@@ -2,7 +2,7 @@
 
 namespace EntityFrameworkCore.RepositoryPattern.WebApi.Repositories;
 
-public class NewProductRepository : IProductRepository
+public class NewProductRepository
 {
     public int Add(Product entity)
     {
@@ -10,7 +10,7 @@ public class NewProductRepository : IProductRepository
         return entity.Id;
     }
 
-    public Task<int> AddAsync(Product entity)
+    public Task<int> AddAsync(Product entity, CancellationToken cancellationToken = default)
     {
         throw new NotImplementedException();
     }
@@ -20,13 +20,18 @@ public class NewProductRepository : IProductRepository
         //MongoDbRemove Kodları
     }
 
-    public List<Product> GetAll()
+    public List<Product> GetAll(CancellationToken cancellationToken = default)
     {
         //MongoDbList Kodları
         return new List<Product>();
     }
 
-    public int SaveChanges()
+    public Task<List<Product>> GetAllAsync(CancellationToken cancellationToken = default)
+    {
+        throw new NotImplementedException();
+    }
+
+    public int SaveChanges(CancellationToken cancellationToken = default)
     {
         return 0;
     }

@@ -23,9 +23,9 @@ public sealed class UsersController(UserRepository userRepository) : ControllerB
     }
 
     [HttpGet]
-    public IActionResult GetAll()
+    public async Task<IActionResult> GetAll()
     {
-        List<User> users = userRepository.GetAll();
+        List<User> users = await userRepository.GetAllAsync();
 
         return Ok(users);
     }

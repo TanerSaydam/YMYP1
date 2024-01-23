@@ -1,0 +1,6 @@
+@EntityFrameworkCore.NSayidaAltKategori.WebApi_HostAddress = http://localhost:5204
+
+GET {{EntityFrameworkCore.NSayidaAltKategori.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

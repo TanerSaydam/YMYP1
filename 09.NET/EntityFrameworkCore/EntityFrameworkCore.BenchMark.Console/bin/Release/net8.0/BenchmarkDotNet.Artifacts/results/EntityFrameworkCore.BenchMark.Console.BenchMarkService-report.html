@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>EntityFrameworkCore.BenchMark.Console.BenchMarkService-20240123-215858</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.12, Windows 11 (10.0.22631.3007/23H2/2023Update/SunValley3)
+AMD Ryzen 5 3600X, 1 CPU, 12 logical and 6 physical cores
+.NET SDK 8.0.101
+  [Host]     : .NET 8.0.1 (8.0.123.58001), X64 RyuJIT AVX2
+  DefaultJob : .NET 8.0.1 (8.0.123.58001), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method               </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Ratio</th><th>RatioSD</th>
+</tr>
+</thead><tbody><tr><td>ToListAsyncWithAsNoTracking</td><td>175.9 &mu;s</td><td>3.42 &mu;s</td><td>4.32 &mu;s</td><td>1.00</td><td>0.00</td>
+</tr><tr><td>ToListAsync</td><td>182.8 &mu;s</td><td>3.73 &mu;s</td><td>10.83 &mu;s</td><td>1.05</td><td>0.10</td>
+</tr></tbody></table>
+</body>
+</html>

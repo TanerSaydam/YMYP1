@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EntityFrameworkCore.Auth.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f75c7aa8847fa36ae13b0994f1c086047c78dd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a839badbe52a80c365a90878e332c7b5fc2651b0")]
 [assembly: System.Reflection.AssemblyProductAttribute("EntityFrameworkCore.Auth.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EntityFrameworkCore.Auth.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

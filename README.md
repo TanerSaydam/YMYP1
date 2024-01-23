@@ -1,5 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 23.01.2024
+- EFCore Asenkron Yapılar
+- BenchMark ile Performans Farkı
+- Cancellation Token
+- N Sayıda Kategori Altında N Sayıda Alt Kategori
+- IQueryable
+
 ## 22.01.2024
 - EFCore Repository Pattern ile Transaction
 - EFCore UnitOfWork Pattern
