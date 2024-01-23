@@ -1,5 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 22.01.2024
+- EFCore Repository Pattern ile Transaction
+- EFCore UnitOfWork Pattern
+- Asenkron Yapılar / Senkron Yapılar
+
 ## 17.01.2024
 - EFCore Transaction
 - EFCore SaveChanges

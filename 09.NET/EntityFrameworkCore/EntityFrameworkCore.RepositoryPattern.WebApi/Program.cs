@@ -11,6 +11,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(option =>
 
 builder.Services.AddScoped<IProductRepository,ProductRepository>();
 builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<ShoppingCartRepository>();
+builder.Services.AddScoped<OrderRepository>();
+builder.Services.AddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

@@ -10,6 +10,11 @@ public class NewProductRepository : IProductRepository
         return entity.Id;
     }
 
+    public Task<int> AddAsync(Product entity)
+    {
+        throw new NotImplementedException();
+    }
+
     public void DeleteById(int id)
     {
         //MongoDbRemove Kodları
@@ -19,6 +24,11 @@ public class NewProductRepository : IProductRepository
     {
         //MongoDbList Kodları
         return new List<Product>();
+    }
+
+    public int SaveChanges()
+    {
+        return 0;
     }
 
     public void Update(Product entity)

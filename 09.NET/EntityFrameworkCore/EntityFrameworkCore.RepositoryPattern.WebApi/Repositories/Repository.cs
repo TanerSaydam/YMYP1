@@ -1,43 +1,52 @@
 ﻿using EntityFrameworkCore.RepositoryPattern.WebApi.Abstractions;
 using EntityFrameworkCore.RepositoryPattern.WebApi.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace EntityFrameworkCore.RepositoryPattern.WebApi.Repositories;
 
 public class Repository<T> : IRepository<T>
     where T: Entity
 {
-    public readonly ApplicationDbContext context;
-
+    public readonly ApplicationDbContext _context;
+    private DbSet<T> Entity;
     public Repository(ApplicationDbContext context)
     {
-        this.context = context;
+        _context = context;
+        Entity = context.Set<T>();
     }
 
-    public int Add(T entity)
+    public async Task<int> AddAsync(T entity) //1000
     {
-        context.Set<T>().Add(entity);
-        context.SaveChanges();
+        await Entity.AddAsync(entity);
+        return entity.Id;
+    }
+
+    public int Add(T entity) //100
+    {
+        Entity.Add(entity);
         return entity.Id;
     }
 
     public void Update(T entity)
     {
-        context.Set<T>().Update(entity);
-        context.SaveChanges();
+        Entity.Update(entity);
+        //_context.SaveChanges();
     }
 
     public void DeleteById(int id)
     {
-        T? entity = context.Set<T>().Find(id);
+        T? entity = Entity.Find(id);
         if(entity is not null)
         {
-            context.Remove(entity);
-            context.SaveChanges();
+            _context.Remove(entity);
+            //_context.SaveChanges();
         }
     }
 
     public List<T> GetAll()
     {
-        return context.Set<T>().ToList();
+        return Entity.ToList();
     }
+
+   
 }

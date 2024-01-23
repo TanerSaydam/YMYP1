@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EntityFrameworkCore.RepositoryPattern.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f75c7aa8847fa36ae13b0994f1c086047c78dd1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8e6d29799733fc5aa387f436f4ae25ba0db9258c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EntityFrameworkCore.RepositoryPattern.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EntityFrameworkCore.RepositoryPattern.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

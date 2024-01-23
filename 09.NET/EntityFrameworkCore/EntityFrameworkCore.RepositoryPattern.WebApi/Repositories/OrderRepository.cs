@@ -3,14 +3,9 @@ using EntityFrameworkCore.RepositoryPattern.WebApi.Models;
 
 namespace EntityFrameworkCore.RepositoryPattern.WebApi.Repositories;
 
-public sealed class UserRepository : Repository<User>
+public sealed class OrderRepository : Repository<Order>
 {
-    public UserRepository(ApplicationDbContext context) : base(context)
+    public OrderRepository(ApplicationDbContext context) : base(context)
     {
-    }
-
-    public int GetUserCount()
-    {
-        return _context.Users.Count();
     }
 }
