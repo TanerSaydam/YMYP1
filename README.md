@@ -1,5 +1,17 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 24.01.2024
+- REST Nedir?
+- RESTWebApi Nedir?
+- Asp.NET Nedir?
+- NET core ve NET Framework Arasındaki Fark
+- NET Nedir?
+- Asp.NET WebApi Projesi Oluşturma
+- Proje Yapısı
+- HTTP Protokolü
+- End Point Oluşturma
+- GET / POST metotları Arasındaki Fark
+
 ## 23.01.2024
 - EFCore Asenkron Yapılar
 - BenchMark ile Performans Farkı

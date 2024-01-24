@@ -1,4 +1,11 @@
 # Mülakatta Sorulabilecek Sorular
+## RESTFull API ve .NET WebAPI
+- REST API Nedir?
+- RESTFull API'da hangi HTTP metodları kullanılır?
+- Stateless (Durumsuz) olmak REST API için neden önemlidir?
+- NET Web API Nedir?
+- WebAPI ve WCF arasındaki fark nedir?
+- NET WebAPI'da rouiting nasıl çalışır?
 
 ## Dependency Injection 
 - DI Container (veya IoC Container) nedir ve hangi sorunları çözer?
