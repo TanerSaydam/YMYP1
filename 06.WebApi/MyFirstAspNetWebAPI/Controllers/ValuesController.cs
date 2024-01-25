@@ -31,6 +31,25 @@ public class ValuesController : ControllerBase
     {
         return Ok(new { Message = "Baban zengin gözüküyor!" });
     }
+
+    [HttpPut("Update")]
+    public IActionResult Update(EnesinEli enesinEli)
+    {
+        return Ok(new { Message = "Update edeceğim..." });
+    }
+
+    [HttpDelete("[action]")]
+    public IActionResult Delete(int id)
+    {
+        EnesinEli enesinEli = new()
+        {
+            ElinCizgileri = ""
+        };
+
+        //databade kayıt işlemi
+
+        return Ok(new { Message = "Delete edeceğim..." });
+    }
 }
 
 public class EnesinEliRequestDto

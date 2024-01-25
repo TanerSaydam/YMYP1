@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png",
+      "PackagePath": "staticwebassets\\5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PersonelApp.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PersonelApp.WebAPI.props",
+      "PackagePath": "build\\PersonelApp.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PersonelApp.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\PersonelApp.WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PersonelApp.WebAPI.props",
+      "PackagePath": "buildTransitive\\PersonelApp.WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

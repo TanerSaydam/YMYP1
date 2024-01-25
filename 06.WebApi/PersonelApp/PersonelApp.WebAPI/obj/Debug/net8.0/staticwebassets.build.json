@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "oFdeV+dpDO71f3aOfjLWlAmqM9czer5Lf6eslrpLOo8=",
+  "Source": "PersonelApp.WebAPI",
+  "BasePath": "_content/PersonelApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PersonelApp.WebAPI\\wwwroot",
+      "Source": "PersonelApp.WebAPI",
+      "ContentRoot": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PersonelApp.WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png",
+      "SourceId": "PersonelApp.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PersonelApp.WebAPI",
+      "RelativePath": "5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png"
+    }
+  ]
+}

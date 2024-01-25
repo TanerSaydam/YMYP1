@@ -31,5 +31,5 @@ C:\YMYP1\06.WebApi\FirstWebApi\obj\Debug\net7.0\refint\FirstWebApi.dll
 C:\YMYP1\06.WebApi\FirstWebApi\obj\Debug\net7.0\FirstWebApi.pdb
 C:\YMYP1\06.WebApi\FirstWebApi\obj\Debug\net7.0\FirstWebApi.genruntimeconfig.cache
 C:\YMYP1\06.WebApi\FirstWebApi\obj\Debug\net7.0\ref\FirstWebApi.dll
-C:\YMYP1\06.WebApi\FirstWebApi\bin\Debug\net7.0\FirstWebApi.staticwebassets.runtime.json
 C:\YMYP1\06.WebApi\FirstWebApi\bin\Debug\net7.0\GenericFileService.dll
+C:\YMYP1\06.WebApi\FirstWebApi\obj\Debug\net7.0\FirstWebApi.sourcelink.json

@@ -1,4 +1,5 @@
 //service registration - dependency injection
+using FirstWebApi;
 using FirstWebApi.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,7 +21,7 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 //Middleware
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

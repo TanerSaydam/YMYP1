@@ -1,5 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 25.01.2024
+- PUT / DELETE Metotları
+- Uygulamayı Canlıya Alma
+- Canlıda PUT / DELETE Metotları Testi
+- Örnek Personel API Projesi
+- Dosya İşlemleri
+
 ## 24.01.2024
 - REST Nedir?
 - RESTWebApi Nedir?

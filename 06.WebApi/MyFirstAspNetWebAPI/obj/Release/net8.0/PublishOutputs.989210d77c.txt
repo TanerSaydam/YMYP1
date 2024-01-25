@@ -1,0 +1,11 @@
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\MyFirstAspNetWebAPI.exe
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\MyFirstAspNetWebAPI.dll
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\MyFirstAspNetWebAPI.deps.json
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\MyFirstAspNetWebAPI.runtimeconfig.json
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\MyFirstAspNetWebAPI.pdb
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\YMYP1\06.WebApi\MyFirstAspNetWebAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

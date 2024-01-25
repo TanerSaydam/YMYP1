@@ -1,37 +1,11 @@
 {
   "Version": 1,
-  "Hash": "DdW/8+mTTUOiiU4xU8HNlYcBqdWmWsJ9I1W1GamC0Ko=",
+  "Hash": "1XyL0z7WASOEKgCdEw7y0saffVj3bUAQPR5aDUyHKxI=",
   "Source": "FirstWebApi",
   "BasePath": "_content/FirstWebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [
-    {
-      "Name": "FirstWebApi\\wwwroot",
-      "Source": "FirstWebApi",
-      "ContentRoot": "C:\\YMYP1\\06.WebApi\\FirstWebApi\\wwwroot\\",
-      "BasePath": "_content/FirstWebApi",
-      "Pattern": "**"
-    }
-  ],
-  "Assets": [
-    {
-      "Identity": "C:\\YMYP1\\06.WebApi\\FirstWebApi\\wwwroot\\files\\31b11440-2a81-412a-9ec7-3f42e2a26a09.png",
-      "SourceId": "FirstWebApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\YMYP1\\06.WebApi\\FirstWebApi\\wwwroot\\",
-      "BasePath": "_content/FirstWebApi",
-      "RelativePath": "files/31b11440-2a81-412a-9ec7-3f42e2a26a09.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\31b11440-2a81-412a-9ec7-3f42e2a26a09.png"
-    }
-  ]
+  "DiscoveryPatterns": [],
+  "Assets": []
 }
