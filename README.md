@@ -1,5 +1,8 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 28.01.2024
+- Bu Ders 2 Tane Gerçek Hayat Taskı Çözdük
+
 ## 25.01.2024
 - PUT / DELETE Metotları
 - Uygulamayı Canlıya Alma
