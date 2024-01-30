@@ -1,5 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+## 30.01.2024
+- Static Yapılar ile Normal Yapılar Arasındaki Fark
+- Dosya İşlemleri
+- PUT/Delete Http metotları
+- AutoMapper Kütüphanesi
+- Fluent Validation Kütüphanesi
+
 ## 28.01.2024
 - Bu Ders 2 Tane Gerçek Hayat Taskı Çözdük
 

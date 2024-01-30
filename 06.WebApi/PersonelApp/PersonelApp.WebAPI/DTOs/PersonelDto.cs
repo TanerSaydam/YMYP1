@@ -2,8 +2,8 @@
 
 public class PersonelDto
 {
-    public string Name1 { get; set; }
-    public string Name2 { get; set; }
-    public string Email { get; set; }
-    public IFormFile File { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
+    public IFormFile? File { get; set; }
 }

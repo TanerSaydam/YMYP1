@@ -33,3 +33,8 @@ C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\obj\Debug\net8.0\PersonelApp.W
 C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\obj\Debug\net8.0\ref\PersonelApp.WebAPI.dll
 C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\PersonelApp.WebAPI.staticwebassets.runtime.json
 C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\GenericFileService.dll
+C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\YMYP1\06.WebApi\PersonelApp\PersonelApp.WebAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

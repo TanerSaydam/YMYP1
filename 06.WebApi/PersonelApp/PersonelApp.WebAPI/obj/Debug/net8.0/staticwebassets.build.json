@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oFdeV+dpDO71f3aOfjLWlAmqM9czer5Lf6eslrpLOo8=",
+  "Hash": "ZH/w4ynuSeAI+KwKWSokJBDPXcqU2NVbSD/sCYIufI4=",
   "Source": "PersonelApp.WebAPI",
   "BasePath": "_content/PersonelApp.WebAPI",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png",
+      "Identity": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\2796a5c9-ab63-4da8-9d4b-66d7499f7e53.png",
       "SourceId": "PersonelApp.WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\",
       "BasePath": "_content/PersonelApp.WebAPI",
-      "RelativePath": "5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png",
+      "RelativePath": "2796a5c9-ab63-4da8-9d4b-66d7499f7e53.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,7 +33,64 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\5a341ad1-3c4b-4d44-b24d-eb10b89a4d71.png"
+      "OriginalItemSpec": "wwwroot\\2796a5c9-ab63-4da8-9d4b-66d7499f7e53.png"
+    },
+    {
+      "Identity": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\5d110906-976c-4412-b5e2-9165c0f5ff5f.png",
+      "SourceId": "PersonelApp.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PersonelApp.WebAPI",
+      "RelativePath": "5d110906-976c-4412-b5e2-9165c0f5ff5f.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\5d110906-976c-4412-b5e2-9165c0f5ff5f.png"
+    },
+    {
+      "Identity": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\c9536934-11cc-4bda-b478-dd93d49c5f3a.png",
+      "SourceId": "PersonelApp.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PersonelApp.WebAPI",
+      "RelativePath": "c9536934-11cc-4bda-b478-dd93d49c5f3a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\c9536934-11cc-4bda-b478-dd93d49c5f3a.png"
+    },
+    {
+      "Identity": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\cd31e986-bd6f-48a3-b5b6-e559a85df745.png",
+      "SourceId": "PersonelApp.WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\YMYP1\\06.WebApi\\PersonelApp\\PersonelApp.WebAPI\\wwwroot\\",
+      "BasePath": "_content/PersonelApp.WebAPI",
+      "RelativePath": "cd31e986-bd6f-48a3-b5b6-e559a85df745.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cd31e986-bd6f-48a3-b5b6-e559a85df745.png"
     }
   ]
 }
