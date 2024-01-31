@@ -1,5 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
+
+## 31.01.2024 
+- Class Yapısı
+- Constructor 
+- Polymorphism (Çok biçimlilik)
+- Result Pattern
+- Service
+
 ## 30.01.2024
 - Static Yapılar ile Normal Yapılar Arasındaki Fark
 - Dosya İşlemleri

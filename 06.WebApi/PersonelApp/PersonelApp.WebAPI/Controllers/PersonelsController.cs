@@ -33,6 +33,7 @@ public class PersonelsController : ControllerBase
     {
         string fileName = "";
 
+
         if (request.File is not null)
         {
             fileName = FileService.FileSaveToServer(request.File, "wwwroot/");
@@ -43,7 +44,9 @@ public class PersonelsController : ControllerBase
         //if (!result.IsValid)
         //{
         //    return BadRequest(result.Errors.Select(s=> s.ErrorMessage));
-        //}       
+        //}
+        //
+        //db Kayıt İşlemi
 
         Personel personel = _mapper.Map<Personel>(request);
         personel.Avatar = fileName;

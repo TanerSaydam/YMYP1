@@ -1,0 +1,6 @@
+@ClassYapilariApp.WebAPI_HostAddress = http://localhost:5124
+
+GET {{ClassYapilariApp.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
