@@ -10,7 +10,7 @@ public class ProductService
 
     public Result<List<Product>> GetAll()
     {
-        return new(products);
+        return products;
     }
 
     public Result<Guid> Add(AddProductDto request)
@@ -22,7 +22,7 @@ public class ProductService
 
         products.Add(product);
 
-        return new("Ürün ekleme işlemi başarılı");
+        return "Ürün ekleme işlemi başarılı";
     }
 
     public Result<Guid> Selling(Guid productId, int quantity)
@@ -30,7 +30,7 @@ public class ProductService
         Product? product = products.FirstOrDefault(p => p.Id == productId);
         if (product is null)
         {
-            return new(500, "Ürün bulunamadı!");
+            return (500, "Ürün bulunamadı!");
         }
 
         product.Quantity -= quantity;
@@ -40,10 +40,10 @@ public class ProductService
             product.Quantity += quantity;
 
             string errorMessage = product.Name + " ürün stoku satıştan sonra eskiye düşeceği için satış iptal edildi. Stok ekleyip satışı tekrar yapın!";
-            return new(500, errorMessage);
+            return (500, errorMessage);
         }
 
-        return new(500,"Satış işlemi başarıyla tamamlandı");
+        return "Satış işlemi başarıyla tamamlandı";
     }
 
     public Result<Guid> AddStock(Guid productId, int quantity)
@@ -51,13 +51,13 @@ public class ProductService
         Product? product = products.FirstOrDefault(p => p.Id == productId);
         if (product is null)
         {
-            return new(500,"Ürün bulunamadı!");
+            return (500,"Ürün bulunamadı!");
         }
 
 
         product.Quantity += quantity;
 
-        return new("Ürün adedi başarıyla güncellendi");
+        return "Ürün adedi başarıyla güncellendi";
     }
 
     public Result<List<ProdutReportListDto>> GetProductListForReport()
@@ -67,7 +67,7 @@ public class ProductService
             ProductName = s.Name,
             ProductQuantity = s.Quantity
         }).ToList();
-
-        return new(reportList);
+        
+        return reportList;
     }
 }

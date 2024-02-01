@@ -2,6 +2,7 @@
 
 public class Result<T>
 {//implicit => bunu araştırın
+    
     public Result(T data)
     {
         Data = data;
@@ -27,5 +28,20 @@ public class Result<T>
     public int StatusCode { get; set; } = 200;
     public bool IsSuccess { get; set; } = true;
     public string Message { get; set; } = string.Empty;
-    public List<string> Messages { get; set; } = new();
+    public List<string> Messages { get; set; } = new();   
+
+    public static implicit operator Result<T>(T data)
+    {
+        return new Result<T>(data);
+    }
+
+    public static implicit operator Result<T>(string message)
+    {
+        return new Result<T>(message);
+    }
+
+    public static implicit operator Result<T>((int, string) parameters)
+    {
+        return new Result<T>(parameters.Item1, parameters.Item2);
+    }
 }

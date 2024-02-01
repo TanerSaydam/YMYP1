@@ -1,6 +1,18 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 01.02.2024
+- Implicit Operatörü
+- Result Pattern ile Kullanımı
+- Exception
+- Exception Middleware
+- Json Convert
+- ToString Metodunu Override Etme
+- this IApplicationBuilder
+- HttpContext
+- IMiddleware
+- IExceptionHandler
+
 ## 31.01.2024 
 - Class Yapısı
 - Constructor 
