@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "suXP/OgnD3mxB2qU71PGFrxXDAM44eBhxF7m+Kl8LV8=",
+  "Source": "EntityFrameworkCoreGrup2.Connection.WebAPI",
+  "BasePath": "_content/EntityFrameworkCoreGrup2.Connection.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

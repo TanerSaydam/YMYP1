@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\YMYP1\\09.NET\\DependencyInjectionGrup2\\wwwroot\\users.json",
+      "PackagePath": "staticwebassets\\users.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DependencyInjectionGrup2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DependencyInjectionGrup2.props",
+      "PackagePath": "build\\DependencyInjectionGrup2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DependencyInjectionGrup2.props",
+      "PackagePath": "buildMultiTargeting\\DependencyInjectionGrup2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DependencyInjectionGrup2.props",
+      "PackagePath": "buildTransitive\\DependencyInjectionGrup2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

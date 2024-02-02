@@ -1,6 +1,16 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 02.02.2024
+- Dependecy Injection
+- Kendi Database'imizi Oluşturma
+- ORM Nedir?
+- EF Core Nedir?
+- Linq Metotları Nedir?
+- EF Core ile Connection
+- EF Core Create and Read İşlemi
+- SQL Client ile Create ve Read İşlemi
+
 ## 01.02.2024
 - Implicit Operatörü
 - Result Pattern ile Kullanımı

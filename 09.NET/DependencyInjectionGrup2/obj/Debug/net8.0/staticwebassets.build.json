@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "YECO3jU31yxcivvVNicS9JBEnVRirIg9vBov3JlVG7I=",
+  "Source": "DependencyInjectionGrup2",
+  "BasePath": "_content/DependencyInjectionGrup2",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "DependencyInjectionGrup2\\wwwroot",
+      "Source": "DependencyInjectionGrup2",
+      "ContentRoot": "C:\\YMYP1\\09.NET\\DependencyInjectionGrup2\\wwwroot\\",
+      "BasePath": "_content/DependencyInjectionGrup2",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\YMYP1\\09.NET\\DependencyInjectionGrup2\\wwwroot\\users.json",
+      "SourceId": "DependencyInjectionGrup2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\YMYP1\\09.NET\\DependencyInjectionGrup2\\wwwroot\\",
+      "BasePath": "_content/DependencyInjectionGrup2",
+      "RelativePath": "users.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\users.json"
+    }
+  ]
+}

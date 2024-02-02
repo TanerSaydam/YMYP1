@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EntityFrameworkCoreGrup2.Connection.WebAPI.props" />
+</Project>
