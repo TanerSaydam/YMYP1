@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EntityFrameworkCoreGrup2.Connection.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+908ffa31a8f7bd17ef6ab7bcc5ee9bd651008755")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c216e6ea9037a08991fa4da6c68035b02729e368")]
 [assembly: System.Reflection.AssemblyProductAttribute("EntityFrameworkCoreGrup2.Connection.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EntityFrameworkCoreGrup2.Connection.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\EntityFrameworkCoreGrup2.eCommerce.WebAPI.props" />
+</Project>

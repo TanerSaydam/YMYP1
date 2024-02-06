@@ -1,9 +1,20 @@
+using EntityFrameworkCoreGrup2.Connection.WebAPI.Context;
+using EntityFrameworkCoreGrup2.Connection.WebAPI.Utilities;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
+//builder.Services.AddScoped<ApplicationDbContext>();
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
+});
+
+builder.Services.CreateServiceTool();
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -14,6 +25,11 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+
+using (var scoped = app.Services.CreateScope())
+{
+    
 }
 
 app.UseHttpsRedirection();

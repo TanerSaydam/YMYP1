@@ -1,0 +1,6 @@
+@EntityFrameworkCoreGrup2.DbFirst.WebAPI_HostAddress = http://localhost:5005
+
+GET {{EntityFrameworkCoreGrup2.DbFirst.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

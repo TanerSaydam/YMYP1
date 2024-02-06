@@ -1,6 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 06.02.2024
+- EF Core Connection Yapıları
+- Service Tool
+- appsettings.json
+- DBFirst
+
 ## 02.02.2024
 - Dependecy Injection
 - Kendi Database'imizi Oluşturma

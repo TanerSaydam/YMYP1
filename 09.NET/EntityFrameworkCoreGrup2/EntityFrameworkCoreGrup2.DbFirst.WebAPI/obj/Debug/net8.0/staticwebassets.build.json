@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BI8N5Qk4DO9qS3lFSy8Q/6gxBJjgTtopTyZ5DhgMtgk=",
+  "Source": "EntityFrameworkCoreGrup2.DbFirst.WebAPI",
+  "BasePath": "_content/EntityFrameworkCoreGrup2.DbFirst.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
