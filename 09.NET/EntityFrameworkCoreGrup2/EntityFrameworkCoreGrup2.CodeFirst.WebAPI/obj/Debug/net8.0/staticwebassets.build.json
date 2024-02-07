@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kXJaFI5kqr6DIwJTCIbDDkTcq8WpG+KRW07gfL+aKBU=",
+  "Source": "EntityFrameworkCoreGrup2.CodeFirst.WebAPI",
+  "BasePath": "_content/EntityFrameworkCoreGrup2.CodeFirst.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI.props" />
+</Project>

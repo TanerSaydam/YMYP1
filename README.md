@@ -1,6 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 07.02.2024
+- EF Core DBFirst
+- EF Core Code First
+- EF Bire Çok İlişki
+- EF Çoka Çok İlişki
+- EF Cycle Hatası
+- EF Cycle Hatası Çözümü
+
 ## 06.02.2024
 - EF Core Connection Yapıları
 - Service Tool

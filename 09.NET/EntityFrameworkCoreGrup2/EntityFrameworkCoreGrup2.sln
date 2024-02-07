@@ -5,9 +5,13 @@ VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.Connection.WebAPI", "EntityFrameworkCoreGrup2.Connection.WebAPI\EntityFrameworkCoreGrup2.Connection.WebAPI.csproj", "{CF4FBA16-B196-42A5-A873-28AB605B74DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.eCommerce.WebAPI", "EntityFrameworkCoreGrup2.eCommerce.WebAPI\EntityFrameworkCoreGrup2.eCommerce.WebAPI.csproj", "{E650673F-EC91-407B-AAC1-D7E2BCC0EAA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.eCommerce.WebAPI", "EntityFrameworkCoreGrup2.eCommerce.WebAPI\EntityFrameworkCoreGrup2.eCommerce.WebAPI.csproj", "{E650673F-EC91-407B-AAC1-D7E2BCC0EAA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.DbFirst.WebAPI", "EntityFrameworkCoreGrup2.DbFirst.WebAPI\EntityFrameworkCoreGrup2.DbFirst.WebAPI.csproj", "{22DD7B06-1CA7-45A8-BBA3-6F5A56D65EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.DbFirst.WebAPI", "EntityFrameworkCoreGrup2.DbFirst.WebAPI\EntityFrameworkCoreGrup2.DbFirst.WebAPI.csproj", "{22DD7B06-1CA7-45A8-BBA3-6F5A56D65EBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI", "EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI\EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI.csproj", "{7E8D065B-5420-4494-86F4-A8E982496B90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.CodeFirst.WebAPI", "EntityFrameworkCoreGrup2.CodeFirst.WebAPI\EntityFrameworkCoreGrup2.CodeFirst.WebAPI.csproj", "{6F970CFD-B3D3-495C-8428-33AF6F10875B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{22DD7B06-1CA7-45A8-BBA3-6F5A56D65EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22DD7B06-1CA7-45A8-BBA3-6F5A56D65EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22DD7B06-1CA7-45A8-BBA3-6F5A56D65EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8D065B-5420-4494-86F4-A8E982496B90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8D065B-5420-4494-86F4-A8E982496B90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8D065B-5420-4494-86F4-A8E982496B90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8D065B-5420-4494-86F4-A8E982496B90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
