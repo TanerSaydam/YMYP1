@@ -1,4 +1,5 @@
 ﻿using EntityFrameworkCoreGrup2.CodeFirst.WebAPI.Context;
+using EntityFrameworkCoreGrup2.CodeFirst.WebAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ public class ValuesController(
         //             }).ToList();
 
         var result = context.Lessons.Include(p=> p.Topics).ToList();
+        var result1= context.Set<Lesson>().Include(p=> p.Topics).ToList();
 
         var newResult = result.Select(s => new
         {

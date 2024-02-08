@@ -17,6 +17,10 @@ public sealed class ApplicationDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Category>()
+            .HasIndex(i => i.Name)
+            .IsUnique();
+
         modelBuilder.Entity<Category>().ToTable("Categories");
 
         modelBuilder.Entity<Category>()

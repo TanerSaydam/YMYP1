@@ -1,6 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 08.02.2024
+- EF Core ile Repository Pattern
+- EF Core ile Generic Repository Pattern
+- UnitOfWork
+- Transaction Yönetimi
+- FluentValidation
+- AutoMapper
+
 ## 07.02.2024
 - EF Core DBFirst
 - EF Core Code First

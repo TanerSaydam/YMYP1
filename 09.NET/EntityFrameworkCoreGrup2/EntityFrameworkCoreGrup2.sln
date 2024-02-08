@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.eC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.DbFirst.WebAPI", "EntityFrameworkCoreGrup2.DbFirst.WebAPI\EntityFrameworkCoreGrup2.DbFirst.WebAPI.csproj", "{22DD7B06-1CA7-45A8-BBA3-6F5A56D65EBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI", "EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI\EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI.csproj", "{7E8D065B-5420-4494-86F4-A8E982496B90}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI", "EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI\EntityFrameworkCoreGrup2.DbFirstExample2.WebAPI.csproj", "{7E8D065B-5420-4494-86F4-A8E982496B90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.CodeFirst.WebAPI", "EntityFrameworkCoreGrup2.CodeFirst.WebAPI\EntityFrameworkCoreGrup2.CodeFirst.WebAPI.csproj", "{6F970CFD-B3D3-495C-8428-33AF6F10875B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreGrup2.CodeFirst.WebAPI", "EntityFrameworkCoreGrup2.CodeFirst.WebAPI\EntityFrameworkCoreGrup2.CodeFirst.WebAPI.csproj", "{6F970CFD-B3D3-495C-8428-33AF6F10875B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.Linq.WebAPI", "EntityFrameworkCoreGrup2.Linq.WebAPI\EntityFrameworkCoreGrup2.Linq.WebAPI.csproj", "{377ECE13-1C1A-44CE-8222-33DDC1943055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkCoreGrup2.HashSet.ConsoleApp", "EntityFrameworkCoreGrup2.HashSet.ConsoleApp\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.csproj", "{2140E001-1C57-4E7D-8E6D-E5E9B8234C61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F970CFD-B3D3-495C-8428-33AF6F10875B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377ECE13-1C1A-44CE-8222-33DDC1943055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377ECE13-1C1A-44CE-8222-33DDC1943055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377ECE13-1C1A-44CE-8222-33DDC1943055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377ECE13-1C1A-44CE-8222-33DDC1943055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2140E001-1C57-4E7D-8E6D-E5E9B8234C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2140E001-1C57-4E7D-8E6D-E5E9B8234C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2140E001-1C57-4E7D-8E6D-E5E9B8234C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2140E001-1C57-4E7D-8E6D-E5E9B8234C61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

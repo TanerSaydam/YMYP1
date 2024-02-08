@@ -1,0 +1,15 @@
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\bin\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.exe
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\bin\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.deps.json
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\bin\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.runtimeconfig.json
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\bin\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.dll
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\bin\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.pdb
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.AssemblyInfoInputs.cache
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.AssemblyInfo.cs
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.sourcelink.json
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.dll
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\refint\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.dll
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.pdb
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.genruntimeconfig.cache
+C:\YMYP1\09.NET\EntityFrameworkCoreGrup2\EntityFrameworkCoreGrup2.HashSet.ConsoleApp\obj\Debug\net8.0\ref\EntityFrameworkCoreGrup2.HashSet.ConsoleApp.dll
