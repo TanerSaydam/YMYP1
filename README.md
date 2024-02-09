@@ -1,6 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 09.02.2024
+- N Tier Architecture
+- Katmanlar Neden ve Nasıl Oluşturulur
+- Örnek N katmanlı Mimari
+- Örnek Okul Uygulamasını N Tier Architecture ile Tasarlamaya Başladık
+
 ## 08.02.2024
 - EF Core ile Repository Pattern
 - EF Core ile Generic Repository Pattern

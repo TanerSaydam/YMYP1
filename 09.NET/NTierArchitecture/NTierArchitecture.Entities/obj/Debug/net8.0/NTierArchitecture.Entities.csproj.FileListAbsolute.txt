@@ -1,0 +1,12 @@
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\bin\Debug\net8.0\NTierArchitecture.Entities.deps.json
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\bin\Debug\net8.0\NTierArchitecture.Entities.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\bin\Debug\net8.0\NTierArchitecture.Entities.pdb
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.AssemblyInfoInputs.cache
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.AssemblyInfo.cs
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.csproj.CoreCompileInputs.cache
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.sourcelink.json
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\refint\NTierArchitecture.Entities.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\NTierArchitecture.Entities.pdb
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Entities\obj\Debug\net8.0\ref\NTierArchitecture.Entities.dll
