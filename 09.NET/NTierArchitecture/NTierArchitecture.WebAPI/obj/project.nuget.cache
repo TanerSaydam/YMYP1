@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "3zBDyzbIFI5gyjNc9pe3Wbz31Ru1rspwaJdagoejHLWBG9iIo1nj6U0lr8UYmJnn86aPHJWkFBr3gR3KrbkR2A==",
+  "dgSpecHash": "Il0mY9+JLmcOmya/BNCrGTGlgmtUlKPfgMpcBryPsGXbo1lvMPIyorg56sgjwLpbrkl8sCa7WUthpz1j9ild6Q==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\NTierArchitecture\\NTierArchitecture.WebAPI\\NTierArchitecture.WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

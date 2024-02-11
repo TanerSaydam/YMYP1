@@ -10,4 +10,9 @@ public sealed class ApplicationDbContext : DbContext
 
     public DbSet<Student> Students { get; set; }
     public DbSet<ClassRoom> ClassRooms { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Student>().HasQueryFilter(filter => !filter.IsDeleted);
+    }
 }

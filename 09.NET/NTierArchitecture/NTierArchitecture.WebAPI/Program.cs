@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using NTierArchitecture.Business;
+using NTierArchitecture.Business.Mapping;
 using NTierArchitecture.DataAccess.Context;
 using NTierArchitecture.DataAccess.Repositories;
 
@@ -16,6 +17,7 @@ builder.Services.AddScoped<IStudentRepository, StudentRepository>();
 builder.Services.AddScoped<IClassRoomRepository, ClassRoomRepository>();
 
 builder.Services.AddScoped<IStudentService, StudentManager>();
+builder.Services.AddAutoMapper(typeof(MappingProfile).Assembly);
 
 //Application
 builder.Services.AddControllers();

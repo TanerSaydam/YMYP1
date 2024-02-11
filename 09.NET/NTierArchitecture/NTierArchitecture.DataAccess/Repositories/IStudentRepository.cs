@@ -1,4 +1,5 @@
 ﻿using NTierArchitecture.Entities.Models;
+using System.Linq.Expressions;
 
 namespace NTierArchitecture.DataAccess.Repositories;
 public interface IStudentRepository
@@ -6,7 +7,8 @@ public interface IStudentRepository
     void Create(Student student);
     void Update(Student student);   
     void DeleteById(Guid Id);
-    List<Student> GetAll();
+    IQueryable<Student> GetAll();
     Student? GetStudentById(Guid studentId);
-    bool IsIdentityNumberExists(string IdentityNumber);
+    bool Any(Expression<Func<Student, bool>> predicate);
+    int GetNewStudentNumber();
 }

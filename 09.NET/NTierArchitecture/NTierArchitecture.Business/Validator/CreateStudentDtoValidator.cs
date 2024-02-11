@@ -8,7 +8,6 @@ public sealed class CreateStudentDtoValidator : AbstractValidator<CreateStudentD
     {
         RuleFor(p => p.FirstName).NotEmpty().MinimumLength(3);
         RuleFor(p => p.LastName).NotEmpty().MinimumLength(3);
-        RuleFor(p => p.StudentNumber).NotEmpty().GreaterThan(0);
         RuleFor(p => p.IdentityNumber)
             .NotEmpty()
             .MinimumLength(11)

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9uamFyoWilMC/8R8y/ATrqhZLIXq5u1+PppqWuAG6CdSUTgLUOF5OzFeJILXDQ82GrvK74XornuA3LNorxRH9g==",
+  "dgSpecHash": "dwOe1nZj6OCWyVg756DiLGuy+gfGBAeO8e5yqdCvkG51cKdPUFlXw9MQOEHziX0LZsyWN0f1daOrxWapYIcAOQ==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\NTierArchitecture\\NTierArchitecture.Business\\NTierArchitecture.Business.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",

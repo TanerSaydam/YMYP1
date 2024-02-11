@@ -2,6 +2,5 @@
 public sealed record CreateStudentDto(
     string FirstName,
     string LastName,
-    int StudentNumber,
     string IdentityNumber,
     Guid ClassRoomId);

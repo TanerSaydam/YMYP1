@@ -1,5 +1,7 @@
-﻿using NTierArchitecture.DataAccess.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using NTierArchitecture.DataAccess.Context;
 using NTierArchitecture.Entities.Models;
+using System.Linq.Expressions;
 
 namespace NTierArchitecture.DataAccess.Repositories;
 
@@ -12,34 +14,41 @@ public sealed class StudentRepository
         context.SaveChanges();
     }
 
-    public void DeleteById(Guid Id)
+    public IQueryable<Student> GetAll()
     {
-        Student? student = GetStudentById(Id);
-        if(student is not null)
-        {
-            context.Remove(student);
-            context.SaveChanges();
-        }
-    }
-
-    public List<Student> GetAll()
-    {
-        return context.Students.ToList();
-    }
+        return context.Students.AsNoTracking().AsQueryable();
+    }   
 
     public Student? GetStudentById(Guid studentId)
     {
-        return context.Students.Where(p => p.Id == studentId).FirstOrDefault();
-    }
-
-    public bool IsIdentityNumberExists(string IdentityNumber)
-    {
-        return context.Students.Any(p=> p.IdentityNumber == IdentityNumber);
+        return context.Students.Find(studentId);
     }
 
     public void Update(Student student)
     {
-        context.Update(student);
         context.SaveChanges();
+    }
+    public void DeleteById(Guid Id)
+    {
+        Student? student = GetStudentById(Id);
+        if (student is not null)
+        {
+            student.IsDeleted = true;
+            context.SaveChanges();
+        }
+    }
+
+    public int GetNewStudentNumber()
+    {
+        int lastStudentNumber = context.Students.Max(p => p.StudentNumber);
+        if (lastStudentNumber <= 100) lastStudentNumber = 100;
+        lastStudentNumber++;
+
+        return lastStudentNumber;
+    }    
+
+    public bool Any(Expression<Func<Student, bool>> predicate)
+    {
+        return context.Students.AsNoTracking().Any(predicate);
     }
 }
