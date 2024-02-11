@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using FluentValidation;
 using FluentValidation.Results;
+using NTierArchitecture.Business.Constants;
 using NTierArchitecture.Business.Validator;
 using NTierArchitecture.DataAccess.Repositories;
 using NTierArchitecture.Entities.DTOs;
@@ -26,7 +28,7 @@ public sealed class StudentManager(
 
         if(isIdentityNumberExists)
         {
-            throw new ArgumentException("TC numarası daha önce kaydedilmiş!");
+            throw new ArgumentException(MessageConstants.IdentityNumberAlreadyExists);
         }
 
         int studentNumber = studentRepository.GetNewStudentNumber();
@@ -38,13 +40,13 @@ public sealed class StudentManager(
 
         studentRepository.Create(student);
 
-        return "Kayıt işlemi başarıyla tamamlandı";
+        return MessageConstants.CreateIsSuccessfully;
     }
 
     public string DeleteById(Guid id)
     {
         studentRepository.DeleteById(id);
-        return "Silme işlemi başarıyla tamamlandı";
+        return MessageConstants.DeleteIsSuccessfully;
     }
 
     public List<Student> GetAll()
@@ -60,10 +62,17 @@ public sealed class StudentManager(
 
     public string Update(UpdateStudentDto request)
     {
+        UpdateStudentDtoValidator validator = new();
+        ValidationResult result = validator.Validate(request);
+        if(!result.IsValid)
+        {
+            throw new ValidationException(string.Join(", ",result.Errors.Select(s => s.ErrorMessage).ToList()));
+        }
+
         Student? student = studentRepository.GetStudentById(request.Id);
         if(student is null)
         {
-            throw new ArgumentException("Öğrenci bulunamadı!");
+            throw new ArgumentException(MessageConstants.DataNotFound);
         }
 
         if(student.IdentityNumber != request.IdentityNumber)
@@ -74,7 +83,7 @@ public sealed class StudentManager(
 
             if (isIdentityNumberExists)
             {
-                throw new ArgumentException("TC numarası daha önce kaydedilmiş!");
+                throw new ArgumentException(MessageConstants.IdentityNumberAlreadyExists);
             }
         }        
 
@@ -84,6 +93,6 @@ public sealed class StudentManager(
 
         studentRepository.Update(student);
 
-        return "Update işlemi başarıyla tamamlandı";
+        return MessageConstants.UpdateIsSuccessfully;
     }
 }

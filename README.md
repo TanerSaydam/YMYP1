@@ -1,6 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 11.02.2024
+- Okul Uygulamasını devam ediyoruz
+- Sınıf CRUD İşlemleri
+- Repository Yapısının Kullanımına Dair Örnekler
+- Constants Değerler
+- Ödev (Bu projenin içindeki Readme dosyasonda)
+
 ## 09.02.2024
 - N Tier Architecture
 - Katmanlar Neden ve Nasıl Oluşturulur

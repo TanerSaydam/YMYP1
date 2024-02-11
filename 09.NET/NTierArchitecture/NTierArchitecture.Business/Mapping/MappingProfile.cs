@@ -9,5 +9,8 @@ public sealed class MappingProfile : Profile
     {
         CreateMap<CreateStudentDto, Student>();
         CreateMap<UpdateStudentDto, Student>();
+
+        CreateMap<CreateClassRoomDto, ClassRoom>();
+        CreateMap<UpdateClassRoomDto, ClassRoom>();
     }
 }

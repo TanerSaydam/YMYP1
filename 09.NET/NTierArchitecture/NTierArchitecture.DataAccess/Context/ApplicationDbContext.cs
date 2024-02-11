@@ -14,5 +14,6 @@ public sealed class ApplicationDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Student>().HasQueryFilter(filter => !filter.IsDeleted);
+        modelBuilder.Entity<ClassRoom>().HasQueryFilter(filter => !filter.IsDeleted);
     }
 }
