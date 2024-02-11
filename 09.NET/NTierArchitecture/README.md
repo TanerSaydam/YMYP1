@@ -1,4 +1,4 @@
-## Bu proje i�in verilen �dev
+## Bu proje için verilen Ödev
 - Identity Kütüphanesini dahil edin
 - User classı oluşturup Identity'e bağlayın
 - DbContext ile Identity Kütüphaneini ilişkilendiri
