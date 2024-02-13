@@ -32,6 +32,8 @@ public sealed class ClassRoomManager(
         classRoom.CreatedBy = "Admin";
         classRoom.CreatedDate = DateTime.Now;
 
+        classRoomRepository.Create(classRoom);
+
         return MessageConstants.CreateIsSuccessfully;
     }
 

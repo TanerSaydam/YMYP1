@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NTierArchitecture.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2962002197261e39d7f7e3ab491d16e657a1148e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43b930bfbb333f4f59021b5a1d59beed6bfdbef9")]
 [assembly: System.Reflection.AssemblyProductAttribute("NTierArchitecture.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NTierArchitecture.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

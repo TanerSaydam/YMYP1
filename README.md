@@ -1,6 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 13.02.2024
+- Okul Uygulamasına devam ediyoruz
+- Ödev çözümü
+- Identity Kütüphanesi
+- Login İşlemi
+- JWT 
+- AdminLTE Sayfasını Angular Projesine Giydirme
+- Ödev (Angular projesinde giriş kontrolü)
+
 ## 11.02.2024
 - Okul Uygulamasını devam ediyoruz
 - Sınıf CRUD İşlemleri

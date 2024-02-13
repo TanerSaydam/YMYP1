@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using NTierArchitecture.Business.Services;
 using NTierArchitecture.Entities.DTOs;
 
 namespace NTierArchitecture.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
+[Authorize(AuthenticationSchemes ="Bearer")]
 public sealed class ClassRoomsController    
     (IClassRoomService classRoomService): ControllerBase
 {

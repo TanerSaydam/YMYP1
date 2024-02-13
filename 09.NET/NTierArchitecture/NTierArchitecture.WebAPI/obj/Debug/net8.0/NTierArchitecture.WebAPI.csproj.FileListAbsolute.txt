@@ -59,7 +59,6 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTie
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.AssemblyInfoInputs.cache
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.AssemblyInfo.cs
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.csproj.CoreCompileInputs.cache
-C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.sourcelink.json
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets.build.json
@@ -143,3 +142,11 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\tr\M
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
