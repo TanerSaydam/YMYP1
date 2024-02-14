@@ -60,6 +60,17 @@ public sealed class StudentManager(
         return students;
     }
 
+    public List<Student> GetAllByClassRoomId(Guid classRoomId)
+    {
+        List<Student> students = studentRepository
+                                                .GetAll()
+                                                .Where(p=> p.ClassRoomId == classRoomId)
+                                                .OrderBy(p => p.FirstName)
+                                                .ToList();
+
+        return students;
+    }
+
     public string Update(UpdateStudentDto request)
     {
         UpdateStudentDtoValidator validator = new();

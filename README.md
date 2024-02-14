@@ -1,6 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 14.02.2024
+- Okul Uygulamasına devam ediyoruz
+- Ödev çözümü
+- Angular tarafında Guard ile Authentication
+- Functional Guard
+- Ana Sayfa tarasımı değişikliği ve tabs kullanımı
+- Sınıf ve öğrenci listesinin ana sayfada gösterimi
+- Ödev
+
 ## 13.02.2024
 - Okul Uygulamasına devam ediyoruz
 - Ödev çözümü

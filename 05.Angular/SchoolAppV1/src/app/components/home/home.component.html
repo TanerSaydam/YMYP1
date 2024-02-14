@@ -1,25 +1,21 @@
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Blank Page</h1>
+            <h1>Home Page</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Blank Page</li>
+              <li class="breadcrumb-item"><a>Home</a></li>
             </ol>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
     </section>
 
-    <!-- Main content -->
     <section class="content">
 
-      <!-- Default box -->
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Title</h3>
@@ -34,16 +30,56 @@
           </div>
         </div>
         <div class="card-body">
-          Start creating your amazing application!
+          <button class="btn btn-primary btn-sm mb-1">Add Student</button>
+          <div class="card card-primary card-outline card-outline-tabs">
+            <div class="card-header p-0 border-bottom-0">
+              <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+                @for(room of classRooms;track room){
+                  <li class="nav-item">
+                    <a (click)="getAllStudentsByClassRoomId(room.id)" class="nav-link" [ngClass]="selectedRoomId == room.id ? 'active': ''" id="tabs" data-toggle="pill" href="#students-tab" role="tab">
+                      {{room.name}}
+                    </a>
+                  </li>                            
+                }   
+                <button class="btn btn-primary btn-sm mb-1">Add Class Room</button>   
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content" id="tabs-tabContent">
+                <div class="tab-pane fade active show" id="students-tab" role="tabpanel">
+                  <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Student Name</th>
+                        <th>Student Number</th>
+                        <th>Identity Number</th>
+                        <th>Operations</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @for(student of students; track student){
+                        <tr>
+                          <td>{{$index + 1}}</td>
+                          <td>{{student.fullName}}</td>
+                          <td>{{student.studentNumber}}</td>
+                          <td>{{student.identityNumber}}</td>
+                          <td>
+                            <button class="btn btn-outline-info btn-sm">Update</button>
+                            <button class="btn btn-outline-danger btn-sm ms-1">Remove</button>
+                          </td>
+                        </tr>
+                      }                      
+                    </tbody>
+                  </table>
+                </div>               
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- /.card-body -->
         <div class="card-footer">
-          Footer
         </div>
-        <!-- /.card-footer-->
       </div>
-      <!-- /.card -->
 
     </section>
-    <!-- /.content -->
   </div>

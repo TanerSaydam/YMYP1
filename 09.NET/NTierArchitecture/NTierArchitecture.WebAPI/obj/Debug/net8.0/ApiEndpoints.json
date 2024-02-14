@@ -1,0 +1,160 @@
+[
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NTierArchitecture.Entities.DTOs.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.ClassRoomsController",
+    "Method": "Create",
+    "RelativePath": "api/ClassRooms/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NTierArchitecture.Entities.DTOs.CreateClassRoomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.ClassRoomsController",
+    "Method": "DeleteById",
+    "RelativePath": "api/ClassRooms/DeleteById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.ClassRoomsController",
+    "Method": "GetAll",
+    "RelativePath": "api/ClassRooms/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.ClassRoomsController",
+    "Method": "Update",
+    "RelativePath": "api/ClassRooms/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NTierArchitecture.Entities.DTOs.UpdateClassRoomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.SeedDataController",
+    "Method": "CreateRandomStudents",
+    "RelativePath": "api/SeedData/CreateRandomStudents",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.StudentsController",
+    "Method": "Create",
+    "RelativePath": "api/Students/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NTierArchitecture.Entities.DTOs.CreateStudentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.StudentsController",
+    "Method": "DeleteById",
+    "RelativePath": "api/Students/DeleteById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.StudentsController",
+    "Method": "GetAll",
+    "RelativePath": "api/Students/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.StudentsController",
+    "Method": "GetAllByClassRoomId",
+    "RelativePath": "api/Students/GetAllByClassRoomId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classRoomId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NTierArchitecture.WebAPI.Controllers.StudentsController",
+    "Method": "Update",
+    "RelativePath": "api/Students/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "NTierArchitecture.Entities.DTOs.UpdateStudentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,3 +1,4 @@
+using DefaultCorsPolicyNugetPackage;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,8 @@ using NTierArchitecture.Entities.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDefaultCors();
 
 builder.Services.AddAuthentication().AddJwtBearer(options =>
 {
@@ -97,6 +100,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors();
 
 using (var scoped = app.Services.CreateScope())
 {

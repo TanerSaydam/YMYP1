@@ -69,7 +69,6 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\stat
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.NTierArchitecture.WebAPI.props
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\staticwebassets.pack.json
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\scopedcss\bundle\NTierArchitecture.WebAPI.styles.css
-C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.csproj.CopyComplete
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\refint\NTierArchitecture.WebAPI.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.pdb
@@ -150,3 +149,6 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Micr
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArchitecture.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArc.23AAEAD5.Up2Date
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\DefaultCorsPolicyNugetPackage.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Bogus.dll

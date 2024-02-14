@@ -11,7 +11,7 @@ public sealed class JwtProvider : IJwtProvider
         
         JwtSecurityToken jwtSecurityToken = new(
             issuer: "Taner Saydam",
-            audience: "www.tanersaydam.com",
+            audience: "Taner Saydam",
             claims: null,
             notBefore: DateTime.Now,
             expires: DateTime.Now.AddHours(1),

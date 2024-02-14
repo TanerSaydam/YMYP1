@@ -10,9 +10,9 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.AssemblyInfo.cs
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.csproj.CoreCompileInputs.cache
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.sourcelink.json
-C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.csproj.CopyComplete
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\refint\NTierArchitecture.DataAccess.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.pdb
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArchitecture.DataAccess.genruntimeconfig.cache
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\ref\NTierArchitecture.DataAccess.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.DataAccess\obj\Debug\net8.0\NTierArc.05F439AD.Up2Date

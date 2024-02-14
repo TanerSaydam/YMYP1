@@ -37,4 +37,11 @@ public sealed class StudentsController
         var response = studentService.GetAll();
         return Ok(response);
     }
+    
+    [HttpGet]
+    public IActionResult GetAllByClassRoomId(Guid classRoomId)
+    {
+        var response = studentService.GetAllByClassRoomId(classRoomId);
+        return Ok(response);
+    }
 }

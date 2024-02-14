@@ -11,8 +11,8 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NT
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArchitecture.Business.AssemblyInfo.cs
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArchitecture.Business.csproj.CoreCompileInputs.cache
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArchitecture.Business.sourcelink.json
-C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArchitecture.Business.csproj.CopyComplete
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArchitecture.Business.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\refint\NTierArchitecture.Business.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArchitecture.Business.pdb
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\ref\NTierArchitecture.Business.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.Business\obj\Debug\net8.0\NTierArc.1080D041.Up2Date
