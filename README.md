@@ -1,6 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 15.02.2024
+- Okul uygulamasına devam ediyoruz
+- Ödev çözümü
+- Öğrenci Kayıt
+- Validation Kontrolü
+- Sweet Alert kütüphanesi
+- Ödev
+
 ## 14.02.2024
 - Okul Uygulamasına devam ediyoruz
 - Ödev çözümü

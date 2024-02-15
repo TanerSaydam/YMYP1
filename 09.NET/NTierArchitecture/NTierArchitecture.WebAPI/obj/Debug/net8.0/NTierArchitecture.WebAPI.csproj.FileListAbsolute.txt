@@ -152,3 +152,4 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Micr
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTierArc.23AAEAD5.Up2Date
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\DefaultCorsPolicyNugetPackage.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Bogus.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll

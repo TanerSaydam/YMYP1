@@ -30,7 +30,10 @@
           </div>
         </div>
         <div class="card-body">
-          <button class="btn btn-primary btn-sm mb-1">Add Student</button>
+          <!-- Add Student Btn -->
+          <button class="btn btn-primary btn-sm mb-1" data-toggle="modal" data-target="#studentAddModal">Add Student</button>
+
+          <!-- Card -->
           <div class="card card-primary card-outline card-outline-tabs">
             <div class="card-header p-0 border-bottom-0">
               <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
@@ -41,12 +44,22 @@
                     </a>
                   </li>                            
                 }   
+                <!-- Add Class Room Btn -->
                 <button class="btn btn-primary btn-sm mb-1">Add Class Room</button>   
               </ul>
             </div>
             <div class="card-body">
               <div class="tab-content" id="tabs-tabContent">
-                <div class="tab-pane fade active show" id="students-tab" role="tabpanel">
+                <div class="row">
+                  <div class="col-9">
+
+                  </div>
+                  <div class="col-3">
+                    <i class="fa-solid fa-magnifying-glass text-secondary" style="position: absolute; bottom: 0.3px; left:10px; padding: 10px;"></i>
+                    <input type="search" [(ngModel)]="search" class="form-control" placeholder="Search something..." style="padding-left: 40px;">
+                  </div>
+                </div>
+                <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
                   <table class="table table-bordered table-hover">
                     <thead>
                       <tr>
@@ -58,7 +71,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @for(student of students; track student){
+                      @for(student of students | student: search; track student){
                         <tr>
                           <td>{{$index + 1}}</td>
                           <td>{{student.fullName}}</td>
@@ -83,3 +96,58 @@
 
     </section>
   </div>
+
+
+<!-- Student Add Modal -->
+<div class="modal fade" id="studentAddModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Add Student</h1>
+        <button type="button" class="btn" (click)="clearAddStudentModel()" #studentAddModalCloseBtn data-dismiss="modal" aria-label="Close">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <form formValidate #addStudentForm="ngForm" (ngSubmit)="createStudent(addStudentForm)" autocomplete="off">
+        <div class="modal-body">
+          <!-- Class Room -->
+          <div class="form-group">
+            <label for="classRoomId">Class Room</label>
+            <select class="form-control" [(ngModel)]="addStudentModel.classRoomId" name="classRoomId">
+              <option value="0">Please select...</option>
+              @for(class of classRooms;track class){
+                <option [value]="class.id">
+                  {{class.name}}
+                </option>
+              }              
+            </select>
+          </div>
+
+          <!-- First Name -->
+          <div class="form-group mt-1">
+            <label for="firstName">First Name</label>
+            <input class="form-control" type="text" id="firstName" name="firstName" [(ngModel)]="addStudentModel.firstName" required minlength="3">
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <!-- Last Name -->
+          <div class="form-group mt-1">
+            <label for="lastName">Last Name</label>
+            <input class="form-control" type="text" id="lastName" name="lastName" [(ngModel)]="addStudentModel.lastName" required minlength="3">
+            <div class="invalid-feedback"></div>
+          </div>
+
+          <!-- Identity Number -->
+          <div class="form-group mt-1">
+            <label for="identityNumber">Identity Number</label>
+            <input class="form-control" type="text" id="identityNumber" name="identityNumber" [(ngModel)]="addStudentModel.identityNumber" required minlength="11" maxlength="11">
+            <div class="invalid-feedback"></div>
+          </div>          
+        </div>
+        <div class="modal-footer">        
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
