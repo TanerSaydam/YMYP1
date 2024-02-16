@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cxLIOpCPo1XPYtC6tPCTyZqH3KHzYkDmeANCU8vQEBuHTxbbIDoPaKYD3veZcMYBG2JxMkCHJsBWB4vne97AUg==",
+  "dgSpecHash": "lFhlFyg5q8n290DBA2AvpfvA3fEPFCeOQDRhImMMkk8eWAQcwagwTOUfZxl3IuGbr/cweAvkJhWORVTuMRxNbw==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\NTierArchitecture\\NTierArchitecture.WebAPI\\NTierArchitecture.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\bogus\\35.4.0\\bogus.35.4.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\defaultcorspolicy\\8.0.0\\defaultcorspolicy.8.0.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.pagination\\8.0.0\\entityframeworkcore.pagination.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.2\\microsoft.aspnetcore.authentication.jwtbearer.8.0.2.nupkg.sha512",

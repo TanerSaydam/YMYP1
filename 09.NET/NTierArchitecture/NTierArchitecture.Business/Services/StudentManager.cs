@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EntityFrameworkCorePagination.Nuget.Pagination;
 using FluentValidation;
 using FluentValidation.Results;
 using NTierArchitecture.Business.Constants;
@@ -60,13 +61,22 @@ public sealed class StudentManager(
         return students;
     }
 
-    public List<Student> GetAllByClassRoomId(Guid classRoomId)
+    public async Task<PaginationResult<Student>> GetAllByClassRoomIdAsync(PaginationRequestDto request)
     {
-        List<Student> students = studentRepository
+        PaginationResult<Student> students = await studentRepository
                                                 .GetAll()
-                                                .Where(p=> p.ClassRoomId == classRoomId)
+                                                .Where(p=> p.ClassRoomId == request.Id)
+                                                .Where(search => 
+                                                        search.FirstName
+                                                                .ToLower()
+                                                                .Contains(request.Search.ToLower()) ||
+                                                        search.LastName
+                                                                .ToLower()
+                                                                .Contains(request.Search.ToLower()) ||
+                                                        search.IdentityNumber
+                                                                .Contains(request.Search))
                                                 .OrderBy(p => p.FirstName)
-                                                .ToList();
+                                                .ToPagedListAsync(request.PageNumber, request.PageSize);
 
         return students;
     }

@@ -31,7 +31,13 @@
         </div>
         <div class="card-body">
           <!-- Add Student Btn -->
-          <button class="btn btn-primary btn-sm mb-1" data-toggle="modal" data-target="#studentAddModal">Add Student</button>
+          <button class="btn btn-danger btn-sm mb-1" (click)="getAllStudentsByClassRoomId(request.id)">Get All Students By Class Room</button>
+          <button class="btn btn-primary btn-sm mb-1 ms-1" data-toggle="modal" data-target="#addStudentModal">Add Student</button>
+
+          <div class="form-group mt-1">
+            <h1>{{result}}</h1>
+            <p>Total records: {{response.datas!.length}}</p>
+          </div>
 
           <!-- Card -->
           <div class="card card-primary card-outline card-outline-tabs">
@@ -39,13 +45,13 @@
               <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
                 @for(room of classRooms;track room){
                   <li class="nav-item">
-                    <a (click)="getAllStudentsByClassRoomId(room.id)" class="nav-link" [ngClass]="selectedRoomId == room.id ? 'active': ''" id="tabs" data-toggle="pill" href="#students-tab" role="tab">
+                    <a (click)="getAllStudentsByClassRoomId(room.id)" class="nav-link" [ngClass]="request.id == room.id ? 'active': ''" id="tabs" data-toggle="pill" href="#students-tab" role="tab">
                       {{room.name}}
                     </a>
                   </li>                            
                 }   
                 <!-- Add Class Room Btn -->
-                <button class="btn btn-primary btn-sm mb-1">Add Class Room</button>   
+                <button class="btn btn-primary btn-sm mb-1" data-toggle="modal" data-target="#addClassRoomModal">Add Class Room</button>   
               </ul>
             </div>
             <div class="card-body">
@@ -56,7 +62,7 @@
                   </div>
                   <div class="col-3">
                     <i class="fa-solid fa-magnifying-glass text-secondary" style="position: absolute; bottom: 0.3px; left:10px; padding: 10px;"></i>
-                    <input type="search" [(ngModel)]="search" class="form-control" placeholder="Search something..." style="padding-left: 40px;">
+                    <input type="search" [(ngModel)]="request.search" (keydown.enter)="getAllStudentsByClassRoomId(request.id)" class="form-control" placeholder="Search something..." style="padding-left: 40px;">
                   </div>
                 </div>
                 <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
@@ -71,9 +77,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                      @for(student of students | student: search; track student){
+                      @for(student of response.datas! | student: search; track student){
                         <tr>
-                          <td>{{$index + 1}}</td>
+                          <td>{{(($index + ((request.pageNumber -1) * request.pageSize)) + 1)}}</td>
                           <td>{{student.fullName}}</td>
                           <td>{{student.studentNumber}}</td>
                           <td>{{student.identityNumber}}</td>
@@ -84,7 +90,25 @@
                         </tr>
                       }                      
                     </tbody>
-                  </table>
+                  </table>        
+                  
+                  <div class="mt-1 d-flex justify-content-center">
+                  <nav aria-label="Page navigation example ">
+                    <ul class="pagination">
+                      <li class="page-item" [ngClass]="request.pageNumber === 1 ? 'disabled' : ''"><a (click)="changePage(1)"  class="page-link" href="#">First</a></li>
+                      <li class="page-item" [ngClass]="request.pageNumber === 1 ? 'disabled' : ''"><a (click)="changePage(request.pageNumber -1)"  class="page-link" href="#">Previous</a></li>
+                      @for(number of pageNumbers; track number;){
+                        <li class="page-item" [ngClass]="number == request.pageNumber ? 'active' : ''">
+                          <a (click)="changePage(number)" class="page-link" href="#">
+                            {{number}}
+                          </a>
+                        </li>
+                      }
+                      <li class="page-item"><a (click)="changePage(request.pageNumber +1)" class="page-link" href="#">Next</a></li>
+                      <li class="page-item" [ngClass]="request.pageNumber === response.totalPages ? 'disabled' : ''"><a (click)="changePage(response.totalPages)" class="page-link" href="#">Last</a></li>
+                    </ul>
+                  </nav>
+                </div>
                 </div>               
               </div>
             </div>
@@ -98,13 +122,108 @@
   </div>
 
 
-<!-- Student Add Modal -->
-<div class="modal fade" id="studentAddModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+  <!-- Dev Extreme Data Grid -->
+                  <!-- <dx-data-grid
+                    [dataSource]="students"
+                    [showBorders]="true"
+                    [pager]="{showPageSizeSelector: true, allowedPageSizes: [5,10,20], showInfo: true}"
+                    [paging]="{ enabled: true, pageSize: 10 }"
+                    [filterRow]="{ visible: true, applyFilter: 'auto' }" [headerFilter]="{visible: true}">
+                    <dxi-column dataField="index" caption="#" width="70" alignment="center" visible={false}></dxi-column>
+                    <dxi-column dataField="fullName" caption="Student Name"></dxi-column>
+                    <dxi-column dataField="studentNumber" width="150" alignment="left" caption="Student Number"></dxi-column>
+                    <dxi-column dataField="identityNumber" caption="Identity Number"></dxi-column>
+                    <dxi-column caption="Operations" width="150" alignment="center" cellTemplate="operationTemplate"></dxi-column>
+
+                    <div *dxTemplate="let data of 'operationTemplate'">
+                      <div>
+                        <button class="btn btn-outline-info btn-sm">Update</button>
+                        <button class="btn btn-outline-danger btn-sm ms-1">Remove</button>
+                      </div>
+                    </div>
+                  </dx-data-grid> -->
+
+                  
+                  <!-- Data Table -->
+                  <!-- <table id="myTable" class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Student Name</th>
+                        <th>Student Number</th>
+                        <th>Identity Number</th>
+                        <th>Operations</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @for(student of students; track student){
+                        <tr>
+                          <td>{{$index + 1}}</td>
+                          <td>{{student.fullName}}</td>
+                          <td>{{student.studentNumber}}</td>
+                          <td>{{student.identityNumber}}</td>
+                          <td>
+                            <button class="btn btn-outline-info btn-sm">Update</button>
+                            <button class="btn btn-outline-danger btn-sm ms-1">Remove</button>
+                          </td>
+                        </tr>
+                      }                      
+                    </tbody>
+                  </table>                  -->
+                <!-- Ngx Pagination -->
+                <!-- <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
+                  <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>Student Name</th>
+                        <th>Student Number</th>
+                        <th>Identity Number</th>
+                        <th>Operations</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @for(student of students | student: search | paginate: { itemsPerPage: 10, currentPage: p }; track student){
+                        <tr>
+                          <td>{{$index + 1}}</td>
+                          <td>{{student.fullName}}</td>
+                          <td>{{student.studentNumber}}</td>
+                          <td>{{student.identityNumber}}</td>
+                          <td>
+                            <button class="btn btn-outline-info btn-sm">Update</button>
+                            <button class="btn btn-outline-danger btn-sm ms-1">Remove</button>
+                          </td>
+                        </tr>
+                      }                      
+                    </tbody>
+                  </table>
+                  <div class="form-group mt-1 text-center">
+                  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div> -->
+
+  <!-- <div>  
+    <button (click)="print()"><span>Print</span></button>  
+  </div> 
+  
+   <div>
+      <dx-report-viewer [reportUrl]="reportUrl" height="800px" cssClass='myViewer'>
+          <dxrv-request-options [invokeAction]="invokeAction" [host]="hostUrl"></dxrv-request-options>
+          <dxrv-tabpanel-settings [width]="500" position="Left"></dxrv-tabpanel-settings>
+          <dxrv-export-settings [useSameTab]="false" [useAsynchronousExport]="false"></dxrv-export-settings>
+          <dxrv-search-settings [useAsyncSearch]="false"></dxrv-search-settings>
+          <dxrv-callbacks 
+          (CustomizeMenuActions)="CustomizeMenuActions($event)">
+          </dxrv-callbacks>
+      </dx-report-viewer>
+  </div> -->
+
+<!-- Add Student Modal -->
+<div class="modal fade" id="addStudentModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5">Add Student</h1>
-        <button type="button" class="btn" (click)="clearAddStudentModel()" #studentAddModalCloseBtn data-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn" (click)="clearAddStudentModel()" #addStudentModalCloseBtn data-dismiss="modal" aria-label="Close">
           <i class="fa-solid fa-x"></i>
         </button>
       </div>
@@ -143,6 +262,34 @@
             <input class="form-control" type="text" id="identityNumber" name="identityNumber" [(ngModel)]="addStudentModel.identityNumber" required minlength="11" maxlength="11">
             <div class="invalid-feedback"></div>
           </div>          
+        </div>
+        <div class="modal-footer">        
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- Add Class Room Modal -->
+<div class="modal fade" id="addClassRoomModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5">Add Class Room</h1>
+        <button type="button" class="btn" (click)="clearAddCassRoomModel()" #addClassRoomModalCloseBtn data-dismiss="modal" aria-label="Close">
+          <i class="fa-solid fa-x"></i>
+        </button>
+      </div>
+      <form formValidate #addClassRoomForm="ngForm" (ngSubmit)="createClassRoom(addClassRoomForm)" autocomplete="off">
+        <div class="modal-body">
+          <!-- Name -->
+          <div class="form-group mt-1">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" id="name" name="name" [(ngModel)]="addClassRoomModel.name" required minlength="3">
+            <div class="invalid-feedback"></div>
+          </div>                
         </div>
         <div class="modal-footer">        
           <button type="submit" class="btn btn-primary">Save</button>

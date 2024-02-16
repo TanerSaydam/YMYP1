@@ -153,3 +153,4 @@ C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\obj\Debug\net8.0\NTie
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\DefaultCorsPolicyNugetPackage.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Bogus.dll
 C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\YMYP1\09.NET\NTierArchitecture\NTierArchitecture.WebAPI\bin\Debug\net8.0\EntityFrameworkCorePagination.Nuget.dll

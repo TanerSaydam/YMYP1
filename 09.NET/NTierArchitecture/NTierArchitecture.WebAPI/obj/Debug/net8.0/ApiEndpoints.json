@@ -129,14 +129,14 @@
     "ContainingType": "NTierArchitecture.WebAPI.Controllers.StudentsController",
     "Method": "GetAllByClassRoomId",
     "RelativePath": "api/Students/GetAllByClassRoomId",
-    "HttpMethod": "GET",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "classRoomId",
-        "Type": "System.Guid",
-        "IsRequired": false
+        "Name": "request",
+        "Type": "NTierArchitecture.Entities.DTOs.PaginationRequestDto",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

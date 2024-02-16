@@ -1,13 +1,24 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 16.02.2024
+- Okul uygulamasına devam ediyoruz
+- Ödev Çözümü
+- Çok sayıda veriyi Frontend tarafında işlemeye ait çözümler
+- ngx-pagination
+- Data Tables
+- Devextreme Data Grid
+- Backend Pagination
+- Frontend'de Backend Paginationu İşleme
+- Yeni Ödev
+
 ## 15.02.2024
 - Okul uygulamasına devam ediyoruz
 - Ödev çözümü
 - Öğrenci Kayıt
 - Validation Kontrolü
 - Sweet Alert kütüphanesi
-- Ödev
+- Yeni Ödev
 
 ## 14.02.2024
 - Okul Uygulamasına devam ediyoruz
@@ -16,7 +27,7 @@
 - Functional Guard
 - Ana Sayfa tarasımı değişikliği ve tabs kullanımı
 - Sınıf ve öğrenci listesinin ana sayfada gösterimi
-- Ödev
+- Yeni Ödev
 
 ## 13.02.2024
 - Okul Uygulamasına devam ediyoruz

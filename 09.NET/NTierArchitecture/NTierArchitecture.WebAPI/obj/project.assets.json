@@ -88,6 +88,18 @@
           "lib/net8.0/DefaultCorsPolicyNugetPackage.dll": {}
         }
       },
+      "EntityFrameworkCore.Pagination/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/EntityFrameworkCorePagination.Nuget.dll": {}
+        }
+      },
       "FluentValidation/11.9.0": {
         "type": "package",
         "compile": {
@@ -1809,6 +1821,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "EntityFrameworkCore.Pagination": "8.0.0",
           "FluentValidation": "11.9.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.2",
           "NTierArchitecture.DataAccess": "1.0.0",
@@ -1939,6 +1952,20 @@
         "defaultcorspolicy.nuspec",
         "lib/net8.0/DefaultCorsPolicyNugetPackage.dll",
         "logo.png"
+      ]
+    },
+    "EntityFrameworkCore.Pagination/8.0.0": {
+      "sha512": "oYKNuwJQa43G+vAPW/pAjf7mO+91q0VmTZrif++zlPYMK+AQGSAkmTc1dtijvVwAoaAjLqsj7KJ0/Pb0RJ7PGw==",
+      "type": "package",
+      "path": "entityframeworkcore.pagination/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "entityframeworkcore.pagination.8.0.0.nupkg.sha512",
+        "entityframeworkcore.pagination.nuspec",
+        "icon.jpeg",
+        "lib/net8.0/EntityFrameworkCorePagination.Nuget.dll"
       ]
     },
     "FluentValidation/11.9.0": {
