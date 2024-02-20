@@ -11,4 +11,4 @@
 
 
 ## Ödev
-- Sayfada öğrenci listesi gelirken listenin geldiği table da loader gözükmeli.
+- <del>Sayfada öğrenci listesi gelirken listenin geldiği table da loader gözükmeli.</del> 

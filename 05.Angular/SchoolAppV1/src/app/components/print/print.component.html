@@ -1,0 +1,25 @@
+<table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Student Name</th>
+        <th>Student Number</th>
+        <th>Identity Number</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(student of response?.datas!; track student){
+      <tr>
+        <td>{{(($index + ((request.pageNumber -1) * request.pageSize)) + 1)}}</td>
+        <td>{{student.fullName}}</td>
+        <td>{{student.studentNumber}}</td>
+        <td>{{student.identityNumber}}</td>
+        <td>
+          <button class="btn btn-outline-info btn-sm">Update</button>
+          <button class="btn btn-outline-danger btn-sm ms-1">Remove</button>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>

@@ -1,7 +1,6 @@
-import { AfterContentChecked, AfterContentInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterContentInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ActionId } from 'devexpress-reporting/dx-webdocumentviewer'
 import { ClassRoomModel } from '../../models/class-room.model';
 import { StudentModel } from '../../models/student.model';
 import { HttpService } from '../../services/http.service';
@@ -11,20 +10,21 @@ import { FormValidateDirective } from 'form-validate-angular';
 import { SwalService } from '../../services/swal.service';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { DxDataGridModule } from 'devextreme-angular';
-import { DxReportViewerComponent, DxReportViewerModule } from 'devexpress-reporting-angular';
+import { DxReportViewerModule } from 'devexpress-reporting-angular';
 import { PaginationRequestModel } from '../../models/pagination-request.model';
 import { PaginationResponseModel } from '../../models/pagination-response.model';
+import { RouterLink } from '@angular/router';
 
 declare const $:any;
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, FormsModule, StudentPipe,FormValidateDirective, NgxPaginationModule, DxDataGridModule, DxReportViewerModule ],
+  imports: [CommonModule, FormsModule, StudentPipe,FormValidateDirective, NgxPaginationModule, DxDataGridModule, DxReportViewerModule, RouterLink ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterContentInit {
+export class HomeComponent {
   classRooms: ClassRoomModel[] = [];
   response: PaginationResponseModel<StudentModel[]> = new PaginationResponseModel<StudentModel[]>();
 
@@ -47,44 +47,17 @@ export class HomeComponent implements AfterContentInit {
   result: string = "";
   
   search: string = "";
-  //hostUrl: string = "";
 
-  // @ViewChild(DxReportViewerComponent, { static: false }) viewer: DxReportViewerComponent | any;
-  //   reportUrl: string = "TestReport";
-  //   // The built-in controller in the back-end ASP.NET Core Reporting application.
-  //   invokeAction: string = '/DXXRDV';
+  isLoading: boolean = false;
 
-  //   CustomizeMenuActions(event:any) {
-  //       // Hide the "Print" and "PrintPage" actions. 
-  //       var printAction = event.args.GetById(ActionId.Print);
-  //       if (printAction)
-  //           printAction.visible = false;
-  //       var printPageAction = event.args.GetById(ActionId.PrintPage);
-  //       if (printPageAction)
-  //           printPageAction.visible = false;
-  //   }
-
-  //   print() {
-  //       this.viewer.bindingSender.Print();
-  //   }  
 
   constructor(
-    private http: HttpService,
+    public http: HttpService,
     private swal: SwalService
   ) {
     this.getAllClassRooms();
   }
-  ngAfterContentInit(): void {
-    
-  }
-
-  ngAfterViewChecked() {
-    // Bu metod, görünüm güncellendiğinde her seferinde çağrılır
-    this.viewRenderedTime = performance.now();
-    const loadingDuration = this.viewRenderedTime - this.loadingStartTime;
-    this.result = `Verilerin yüklenmesi ve görünüme yansıtılması ${loadingDuration} milisaniye sürdü.`;
-  }
-
+ 
   changePage(pageNumber: number){
     if(pageNumber < 1){
       this.request.pageNumber = 1;
@@ -112,21 +85,29 @@ export class HomeComponent implements AfterContentInit {
     this.response.datas = [];    
 
     this.loadingStartTime = performance.now();
+    this.isLoading = true;
     this.http.post("Students/GetAllByClassRoomId", this.request, res => {
       this.response = res;
 
-      this.calculatePageNumbers();
+      if(this.response.datas != null){
 
-      this.response.datas = this.response.datas!.map((val, index)=> {
-        const indetityNumberPart1 = val.identityNumber.substring(0,2);
-        const indetityNumberPart2 = val.identityNumber.substring(val.identityNumber.length -6,3);
+        this.calculatePageNumbers();
 
-        const newHashedIdentityNumber = indetityNumberPart1 + "******" +indetityNumberPart2;
+        this.response.datas = this.response.datas!.map((val, index)=> {
+          const indetityNumberPart1 = val.identityNumber.substring(0,2);
+          const indetityNumberPart2 = val.identityNumber.substring(val.identityNumber.length -6,3);
+  
+          const newHashedIdentityNumber = indetityNumberPart1 + "******" +indetityNumberPart2;
+  
+          val.identityNumber = newHashedIdentityNumber;
+          val.index = index + 1;
+          return val;
+        });
+      }
 
-        val.identityNumber = newHashedIdentityNumber;
-        val.index = index + 1;
-        return val;
-      });
+      this.isLoading = false;
+    },()=> {
+      this.isLoading = false;
     });
   }
 

@@ -1,6 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 20.02.2024
+- eHospital projesine başladık
+- Porejimizin Analiz Sürecine başladık
+- Analiz sürecinden çıkan User tablo bilgisi .NET uygulamamızda oluşturduk
+- Database olarak PostgreSQL seçtik ve EFCore kütüphaneleri ona göre kurduk
+- Identity Kütüphanesini kullandık
+- Ödev (Docker üzerinden PostgreSQL'i ayağa kaldırıp Code First ile database'i oluşturun)
+
 ## 16.02.2024
 - Okul uygulamasına devam ediyoruz
 - Ödev Çözümü

@@ -1,83 +1,104 @@
 <div class="content-wrapper">
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Home Page</h1>
-          </div>
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a>Home</a></li>
-            </ol>
-          </div>
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Home Page</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a>Home</a></li>
+          </ol>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="content">
+  <section class="content">
 
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Title</h3>
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">Title</h3>
 
-          <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-              <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
+        <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+            <i class="fas fa-minus"></i>
+          </button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-        <div class="card-body">
-          <!-- Add Student Btn -->
-          <button class="btn btn-danger btn-sm mb-1" (click)="getAllStudentsByClassRoomId(request.id)">Get All Students By Class Room</button>
-          <button class="btn btn-primary btn-sm mb-1 ms-1" data-toggle="modal" data-target="#addStudentModal">Add Student</button>
+      </div>
+      <div class="card-body">
+        <!-- Add Student Btn -->
+        <button class="btn btn-danger btn-sm mb-1" (click)="getAllStudentsByClassRoomId(request.id)">Get All Students By
+          Class Room</button>
+        <button class="btn btn-primary btn-sm mb-1 ms-1" data-toggle="modal" data-target="#addStudentModal">
+          Add Student</button>   
+          <button routerLink="/print/{{request.id}}" class="btn btn-primary btn-sm mb-1 ms-1" data-toggle="modal" data-target="#addStudentModal">
+            Print PDF</button>  
 
-          <div class="form-group mt-1">
-            <h1>{{result}}</h1>
-            <p>Total records: {{response.datas!.length}}</p>
+        <!-- Card -->
+        <div class="card card-primary card-outline card-outline-tabs">
+          <div class="card-header p-0 border-bottom-0">
+            <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
+              @for(room of classRooms;track room){
+              <li class="nav-item">
+                <a (click)="getAllStudentsByClassRoomId(room.id)" class="nav-link"
+                  [ngClass]="request.id == room.id ? 'active': ''" id="tabs" data-toggle="pill" href="#students-tab"
+                  role="tab">
+                  {{room.name}}
+                </a>
+              </li>
+              }
+              <!-- Add Class Room Btn -->
+              <button class="btn btn-primary btn-sm mb-1" data-toggle="modal" data-target="#addClassRoomModal">Add Class
+                Room</button>
+            </ul>
           </div>
-
-          <!-- Card -->
-          <div class="card card-primary card-outline card-outline-tabs">
-            <div class="card-header p-0 border-bottom-0">
-              <ul class="nav nav-tabs" id="custom-tabs-four-tab" role="tablist">
-                @for(room of classRooms;track room){
-                  <li class="nav-item">
-                    <a (click)="getAllStudentsByClassRoomId(room.id)" class="nav-link" [ngClass]="request.id == room.id ? 'active': ''" id="tabs" data-toggle="pill" href="#students-tab" role="tab">
-                      {{room.name}}
-                    </a>
-                  </li>                            
-                }   
-                <!-- Add Class Room Btn -->
-                <button class="btn btn-primary btn-sm mb-1" data-toggle="modal" data-target="#addClassRoomModal">Add Class Room</button>   
-              </ul>
-            </div>
-            <div class="card-body">
-              <div class="tab-content" id="tabs-tabContent">
-                <div class="row">
-                  <div class="col-9">
-
-                  </div>
-                  <div class="col-3">
-                    <i class="fa-solid fa-magnifying-glass text-secondary" style="position: absolute; bottom: 0.3px; left:10px; padding: 10px;"></i>
-                    <input type="search" [(ngModel)]="request.search" (keydown.enter)="getAllStudentsByClassRoomId(request.id)" class="form-control" placeholder="Search something..." style="padding-left: 40px;">
-                  </div>
+          <div class="card-body">
+            <div class="tab-content" id="tabs-tabContent">
+              @if(isLoading){
+                <!-- Loader -->
+              <div class="text-center">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden"></span>
                 </div>
-                <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
-                  <table class="table table-bordered table-hover">
-                    <thead>
-                      <tr>
-                        <th>#</th>
-                        <th>Student Name</th>
-                        <th>Student Number</th>
-                        <th>Identity Number</th>
-                        <th>Operations</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      @for(student of response.datas! | student: search; track student){
+              </div>
+              }@else {
+                @if(response.datas == null){
+                  <div>
+                    <h1 class="alert alert-info">
+                      There is no data...
+                    </h1>
+                  </div>
+                }@else {
+                  <div class="row">
+                    <div class="col-9">
+    
+                    </div>
+                    <div class="col-3">
+                      <i class="fa-solid fa-magnifying-glass text-secondary"
+                        style="position: absolute; bottom: 0.3px; left:10px; padding: 10px;"></i>
+                      <input type="search" [(ngModel)]="request.search"
+                        (keydown.enter)="getAllStudentsByClassRoomId(request.id)" class="form-control"
+                        placeholder="Search something..." style="padding-left: 40px;">
+                    </div>
+                  </div>
+                  <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
+                    <!-- Table -->
+                    <table class="table table-bordered table-hover">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Student Name</th>
+                          <th>Student Number</th>
+                          <th>Identity Number</th>
+                          <th>Operations</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @for(student of response.datas!; track student){
                         <tr>
                           <td>{{(($index + ((request.pageNumber -1) * request.pageSize)) + 1)}}</td>
                           <td>{{student.fullName}}</td>
@@ -88,42 +109,50 @@
                             <button class="btn btn-outline-danger btn-sm ms-1">Remove</button>
                           </td>
                         </tr>
-                      }                      
-                    </tbody>
-                  </table>        
-                  
-                  <div class="mt-1 d-flex justify-content-center">
-                  <nav aria-label="Page navigation example ">
-                    <ul class="pagination">
-                      <li class="page-item" [ngClass]="request.pageNumber === 1 ? 'disabled' : ''"><a (click)="changePage(1)"  class="page-link" href="#">First</a></li>
-                      <li class="page-item" [ngClass]="request.pageNumber === 1 ? 'disabled' : ''"><a (click)="changePage(request.pageNumber -1)"  class="page-link" href="#">Previous</a></li>
-                      @for(number of pageNumbers; track number;){
-                        <li class="page-item" [ngClass]="number == request.pageNumber ? 'active' : ''">
-                          <a (click)="changePage(number)" class="page-link" href="#">
-                            {{number}}
-                          </a>
-                        </li>
-                      }
-                      <li class="page-item"><a (click)="changePage(request.pageNumber +1)" class="page-link" href="#">Next</a></li>
-                      <li class="page-item" [ngClass]="request.pageNumber === response.totalPages ? 'disabled' : ''"><a (click)="changePage(response.totalPages)" class="page-link" href="#">Last</a></li>
-                    </ul>
-                  </nav>
-                </div>
-                </div>               
-              </div>
+                        }
+                      </tbody>
+                    </table>
+    
+                    <!-- Pagination -->
+                    <div class="mt-1 d-flex justify-content-center">
+                      <nav aria-label="Page navigation example ">
+                        <ul class="pagination">
+                          <li class="page-item" [ngClass]="request.pageNumber === 1 ? 'disabled' : ''"><a
+                              (click)="changePage(1)" class="page-link" href="#">First</a></li>
+                          <li class="page-item" [ngClass]="request.pageNumber === 1 ? 'disabled' : ''"><a
+                              (click)="changePage(request.pageNumber -1)" class="page-link" href="#">Previous</a></li>
+                          @for(number of pageNumbers; track number;){
+                          <li class="page-item" [ngClass]="number == request.pageNumber ? 'active' : ''">
+                            <a (click)="changePage(number)" class="page-link" href="#">
+                              {{number}}
+                            </a>
+                          </li>
+                          }
+                          <li class="page-item"><a (click)="changePage(request.pageNumber +1)" class="page-link"
+                              href="#">Next</a></li>
+                          <li class="page-item" [ngClass]="request.pageNumber === response.totalPages ? 'disabled' : ''"><a
+                              (click)="changePage(response.totalPages)" class="page-link" href="#">Last</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                }               
+             
+              }
             </div>
           </div>
         </div>
-        <div class="card-footer">
-        </div>
       </div>
+      <div class="card-footer">
+      </div>
+    </div>
 
-    </section>
-  </div>
+  </section>
+</div>
 
 
-  <!-- Dev Extreme Data Grid -->
-                  <!-- <dx-data-grid
+<!-- Dev Extreme Data Grid -->
+<!-- <dx-data-grid
                     [dataSource]="students"
                     [showBorders]="true"
                     [pager]="{showPageSizeSelector: true, allowedPageSizes: [5,10,20], showInfo: true}"
@@ -143,9 +172,9 @@
                     </div>
                   </dx-data-grid> -->
 
-                  
-                  <!-- Data Table -->
-                  <!-- <table id="myTable" class="table table-bordered table-hover">
+
+<!-- Data Table -->
+<!-- <table id="myTable" class="table table-bordered table-hover">
                     <thead>
                       <tr>
                         <th>#</th>
@@ -170,8 +199,8 @@
                       }                      
                     </tbody>
                   </table>                  -->
-                <!-- Ngx Pagination -->
-                <!-- <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
+<!-- Ngx Pagination -->
+<!-- <div class="tab-pane fade active show mt-1" id="students-tab" role="tabpanel">
                   <table class="table table-bordered table-hover">
                     <thead>
                       <tr>
@@ -201,7 +230,7 @@
                   <pagination-controls (pageChange)="p = $event"></pagination-controls>
                 </div> -->
 
-  <!-- <div>  
+<!-- <div>  
     <button (click)="print()"><span>Print</span></button>  
   </div> 
   
@@ -218,12 +247,14 @@
   </div> -->
 
 <!-- Add Student Modal -->
-<div class="modal fade" id="addStudentModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="addStudentModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5">Add Student</h1>
-        <button type="button" class="btn" (click)="clearAddStudentModel()" #addStudentModalCloseBtn data-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn" (click)="clearAddStudentModel()" #addStudentModalCloseBtn data-dismiss="modal"
+          aria-label="Close">
           <i class="fa-solid fa-x"></i>
         </button>
       </div>
@@ -235,50 +266,55 @@
             <select class="form-control" [(ngModel)]="addStudentModel.classRoomId" name="classRoomId">
               <option value="0">Please select...</option>
               @for(class of classRooms;track class){
-                <option [value]="class.id">
-                  {{class.name}}
-                </option>
-              }              
+              <option [value]="class.id">
+                {{class.name}}
+              </option>
+              }
             </select>
           </div>
 
           <!-- First Name -->
           <div class="form-group mt-1">
             <label for="firstName">First Name</label>
-            <input class="form-control" type="text" id="firstName" name="firstName" [(ngModel)]="addStudentModel.firstName" required minlength="3">
+            <input class="form-control" type="text" id="firstName" name="firstName"
+              [(ngModel)]="addStudentModel.firstName" required minlength="3">
             <div class="invalid-feedback"></div>
           </div>
 
           <!-- Last Name -->
           <div class="form-group mt-1">
             <label for="lastName">Last Name</label>
-            <input class="form-control" type="text" id="lastName" name="lastName" [(ngModel)]="addStudentModel.lastName" required minlength="3">
+            <input class="form-control" type="text" id="lastName" name="lastName" [(ngModel)]="addStudentModel.lastName"
+              required minlength="3">
             <div class="invalid-feedback"></div>
           </div>
 
           <!-- Identity Number -->
           <div class="form-group mt-1">
             <label for="identityNumber">Identity Number</label>
-            <input class="form-control" type="text" id="identityNumber" name="identityNumber" [(ngModel)]="addStudentModel.identityNumber" required minlength="11" maxlength="11">
+            <input class="form-control" type="text" id="identityNumber" name="identityNumber"
+              [(ngModel)]="addStudentModel.identityNumber" required minlength="11" maxlength="11">
             <div class="invalid-feedback"></div>
-          </div>          
+          </div>
         </div>
-        <div class="modal-footer">        
+        <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Save</button>
         </div>
-    </form>
+      </form>
     </div>
   </div>
 </div>
 
 
 <!-- Add Class Room Modal -->
-<div class="modal fade" id="addClassRoomModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+<div class="modal fade" id="addClassRoomModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5">Add Class Room</h1>
-        <button type="button" class="btn" (click)="clearAddCassRoomModel()" #addClassRoomModalCloseBtn data-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn" (click)="clearAddCassRoomModel()" #addClassRoomModalCloseBtn
+          data-dismiss="modal" aria-label="Close">
           <i class="fa-solid fa-x"></i>
         </button>
       </div>
@@ -287,14 +323,15 @@
           <!-- Name -->
           <div class="form-group mt-1">
             <label for="name">Name</label>
-            <input class="form-control" type="text" id="name" name="name" [(ngModel)]="addClassRoomModel.name" required minlength="3">
+            <input class="form-control" type="text" id="name" name="name" [(ngModel)]="addClassRoomModel.name" required
+              minlength="3">
             <div class="invalid-feedback"></div>
-          </div>                
+          </div>
         </div>
-        <div class="modal-footer">        
+        <div class="modal-footer">
           <button type="submit" class="btn btn-primary">Save</button>
         </div>
-    </form>
+      </form>
     </div>
   </div>
 </div>
