@@ -1,6 +1,9 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 21.02.2024
+- İzin Talep Uygulaması Taskı
+
 ## 20.02.2024
 - eHospital projesine başladık
 - Porejimizin Analiz Sürecine başladık

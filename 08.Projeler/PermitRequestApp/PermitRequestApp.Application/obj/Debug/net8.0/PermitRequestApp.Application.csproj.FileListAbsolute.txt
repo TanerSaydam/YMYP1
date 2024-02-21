@@ -1,0 +1,16 @@
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\bin\Debug\net8.0\PermitRequestApp.Application.deps.json
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\bin\Debug\net8.0\PermitRequestApp.Application.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\bin\Debug\net8.0\PermitRequestApp.Application.pdb
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.csproj.AssemblyReference.cache
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.AssemblyInfoInputs.cache
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.AssemblyInfo.cs
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.csproj.CoreCompileInputs.cache
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.sourcelink.json
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\refint\PermitRequestApp.Application.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRequestApp.Application.pdb
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\ref\PermitRequestApp.Application.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\bin\Debug\net8.0\PermitRequestApp.Domain.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\bin\Debug\net8.0\PermitRequestApp.Domain.pdb
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Application\obj\Debug\net8.0\PermitRe.95FEAD18.Up2Date

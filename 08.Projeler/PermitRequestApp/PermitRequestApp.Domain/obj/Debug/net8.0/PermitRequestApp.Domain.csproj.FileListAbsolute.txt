@@ -1,0 +1,12 @@
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\bin\Debug\net8.0\PermitRequestApp.Domain.deps.json
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\bin\Debug\net8.0\PermitRequestApp.Domain.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\bin\Debug\net8.0\PermitRequestApp.Domain.pdb
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.AssemblyInfoInputs.cache
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.AssemblyInfo.cs
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.csproj.CoreCompileInputs.cache
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.sourcelink.json
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\refint\PermitRequestApp.Domain.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.pdb
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\ref\PermitRequestApp.Domain.dll

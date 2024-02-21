@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KiMasi3f5On0DZleKRYaL8yREUV7RaFzxejuSBpXaYA=",
+  "Source": "PermitRequestApp.WebAPI",
+  "BasePath": "_content/PermitRequestApp.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

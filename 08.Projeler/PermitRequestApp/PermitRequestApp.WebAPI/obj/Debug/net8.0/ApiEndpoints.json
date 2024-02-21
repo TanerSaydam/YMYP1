@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "PermitRequestApp.WebAPI.Controllers.ADUsersController",
+    "Method": "GetAll",
+    "RelativePath": "api/ADUsers/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
