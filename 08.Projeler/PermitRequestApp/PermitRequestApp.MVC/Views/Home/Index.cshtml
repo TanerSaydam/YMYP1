@@ -1,0 +1,94 @@
+﻿@using PermitRequestApp.Application.Features.ADUsers.GetAllUsers;
+@using PermitRequestApp.Domain.Shared;
+
+@model List<GetAllUserQueryResponse>
+
+@{
+    string? message = null;
+
+    if (TempData["Message"] is not null)
+    {
+        message = TempData["Message"]!.ToString();
+    }
+
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Permit Request Form</h1>
+
+@if (message is not null){
+    <h4 class="alert alert-success">
+        @message
+    </h4>
+}
+
+<form asp-controller="Home" asp-action="Save" method="post" autocomplete="off">
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-3">
+                        <label>Employee Name</label>
+                    </div>
+                    <div class="col-9">
+                        <select class="form-control" name="employeeId">
+                            <option>Select Employee...</option>
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.Id">
+                                    @item.FullName
+                                </option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt-1">
+                <div class="row">
+                    <div class="col-3">
+                        <label>Start Date</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="date" name="startDate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-3">
+                        <label>Leave Type</label>
+                    </div>
+                    <div class="col-9">
+                        <select class="form-control" name="leaveType">
+                            <option>Select leave Type...</option>
+                            <option value="@LeaveType.AnnualLeave">Annual Leave</option>
+                            <option value="@LeaveType.ExcusedAbsence">Excused Absence</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group mt-1">
+                <div class="row">
+                    <div class="col-3">
+                        <label>End Date</label>
+                    </div>
+                    <div class="col-9">
+                        <input type="date" name="endDate" class="form-control" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group mt-1">
+            <label>Reason</label>
+            <textarea style="width:87.3%; float:right;" class="form-control" name="reason"></textarea>
+        </div>
+
+    </div>
+
+    <div class="form-group mt-1 text-right">
+        <button class="btn btn-primary">Save</button>
+    </div>
+</form>

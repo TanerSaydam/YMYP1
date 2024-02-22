@@ -122,7 +122,6 @@ C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\P
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.AssemblyInfoInputs.cache
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.AssemblyInfo.cs
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.csproj.CoreCompileInputs.cache
-C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.sourcelink.json
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\staticwebassets.build.json
@@ -144,3 +143,4 @@ C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\M
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\PermitRequestApp.Application.dll
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\PermitRequestApp.Application.pdb
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\Ardalis.Result.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\GenericRepository.dll

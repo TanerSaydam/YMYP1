@@ -28,6 +28,17 @@
           }
         }
       },
+      "EntityFrameworkCore.GenericRepository.Nuget/8.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/GenericRepository.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "MediatR/12.2.0": {
         "dependencies": {
           "MediatR.Contracts": "2.0.1",
@@ -167,6 +178,10 @@
         }
       },
       "PermitRequestApp.Domain/1.0.0": {
+        "dependencies": {
+          "EntityFrameworkCore.GenericRepository.Nuget": "8.0.0",
+          "MediatR": "12.2.0"
+        },
         "runtime": {
           "PermitRequestApp.Domain.dll": {}
         }
@@ -185,6 +200,13 @@
       "sha512": "sha512-PPTQqwtpxP6euBZ8pnGtvqZU8delTsIMTS0ENPeTJAdRf78Lp4h2mGeufZnVtIiUd+sXMb3VdcprSxOlHGLHbQ==",
       "path": "ardalis.result/7.2.0",
       "hashPath": "ardalis.result.7.2.0.nupkg.sha512"
+    },
+    "EntityFrameworkCore.GenericRepository.Nuget/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jWAnjJAeaGaNe12wdjJ/Iv16g41EtYH188EBxjog8GqOe8JxT6gg5Tb7EN0I3qRVghkKTmeIPv2f7lwHybcuBg==",
+      "path": "entityframeworkcore.genericrepository.nuget/8.0.0",
+      "hashPath": "entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512"
     },
     "MediatR/12.2.0": {
       "type": "package",

@@ -1,5 +1,7 @@
-﻿namespace PermitRequestApp.Domain.LeaveRequests;
-public interface ILeaveRequestRepository
+﻿using GenericRepository;
+
+namespace PermitRequestApp.Domain.LeaveRequests;
+public interface ILeaveRequestRepository : IRepository<LeaveRequest>
 {
-    LeaveRequest? FindLastFormNumber();
+    int FindLastFormNumber();
 }

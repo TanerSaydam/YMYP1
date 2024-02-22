@@ -112,13 +112,13 @@ namespace PermitRequestApp.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("AssignedUserId")
+                    b.Property<Guid?>("AssignedUserId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("CreatedById")
+                    b.Property<Guid?>("CreatedById")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("EndDate")
@@ -130,15 +130,17 @@ namespace PermitRequestApp.Infrastructure.Migrations
                     b.Property<DateTime?>("LastModifiedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("LastModifiedById")
+                    b.Property<Guid?>("LastModifiedById")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("LeaveType")
                         .HasColumnType("int");
 
                     b.Property<string>("Reason")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("RequestUserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
@@ -153,6 +155,8 @@ namespace PermitRequestApp.Infrastructure.Migrations
                     b.HasIndex("CreatedById");
 
                     b.HasIndex("LastModifiedById");
+
+                    b.HasIndex("RequestUserId");
 
                     b.ToTable("LeaveRequests", (string)null);
                 });
@@ -209,20 +213,22 @@ namespace PermitRequestApp.Infrastructure.Migrations
                 {
                     b.HasOne("PermitRequestApp.Domain.ADUsers.ADUser", "AssignedUser")
                         .WithMany()
-                        .HasForeignKey("AssignedUserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("AssignedUserId");
 
                     b.HasOne("PermitRequestApp.Domain.ADUsers.ADUser", "CreatedBy")
                         .WithMany()
                         .HasForeignKey("CreatedById")
-                        .OnDelete(DeleteBehavior.NoAction)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.HasOne("PermitRequestApp.Domain.ADUsers.ADUser", "LastModifiedBy")
                         .WithMany()
                         .HasForeignKey("LastModifiedById")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("PermitRequestApp.Domain.ADUsers.ADUser", "RequestUser")
+                        .WithMany()
+                        .HasForeignKey("RequestUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("AssignedUser");
@@ -230,6 +236,8 @@ namespace PermitRequestApp.Infrastructure.Migrations
                     b.Navigation("CreatedBy");
 
                     b.Navigation("LastModifiedBy");
+
+                    b.Navigation("RequestUser");
                 });
 
             modelBuilder.Entity("PermitRequestApp.Domain.Notifications.Notification", b =>

@@ -1,6 +1,9 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 22.02.2024
+- İzin Talep Uygulaması Taskı
+
 ## 21.02.2024
 - İzin Talep Uygulaması Taskı
 

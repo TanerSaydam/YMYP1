@@ -29,4 +29,9 @@ public sealed class CumulativeLeaveRequest : Entity
         return new CumulativeLeaveRequest(leaveType, userId, totalHours, year);
     }
 
+    public void ChangeTotalHours(int totalHours)
+    {
+        TotalHours += totalHours;
+    }
+
 }

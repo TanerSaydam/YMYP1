@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "+GvFepVLI4U7v6MuxNRCBgEkBkDOlIcXbb9Bl5hiLH1V5Wr4mF7+gAZ4nbps7eO5sXUQjN6Y1wTiUU0dw3dyvg==",
+  "dgSpecHash": "JXhtl+FeX/QEjQrAYFAgkvqnZedG7o7brbRegMDC97HEq80x8aLKKlEou2JBbYchO99N4yElImrk5Oq7nRh3AQ==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\PermitRequestApp\\PermitRequestApp.WebAPI\\PermitRequestApp.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\ardalis.result\\7.2.0\\ardalis.result.7.2.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.genericrepository.nuget\\8.0.0\\entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

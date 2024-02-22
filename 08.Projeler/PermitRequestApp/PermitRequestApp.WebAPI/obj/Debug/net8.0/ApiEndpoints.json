@@ -8,5 +8,21 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PermitRequestApp.WebAPI.Controllers.LeaveRequestsController",
+    "Method": "Create",
+    "RelativePath": "api/LeaveRequests/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PermitRequestApp.Application.Features.LeaveRequests.CreateLeaveRequest.CreateLeaveRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

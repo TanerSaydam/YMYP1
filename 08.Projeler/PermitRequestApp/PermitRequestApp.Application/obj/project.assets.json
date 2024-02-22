@@ -14,6 +14,18 @@
           "lib/netstandard2.0/Ardalis.Result.dll": {}
         }
       },
+      "EntityFrameworkCore.GenericRepository.Nuget/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/GenericRepository.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/GenericRepository.dll": {}
+        }
+      },
       "MediatR/12.2.0": {
         "type": "package",
         "dependencies": {
@@ -285,6 +297,10 @@
       "PermitRequestApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "EntityFrameworkCore.GenericRepository.Nuget": "8.0.0",
+          "MediatR": "12.2.0"
+        },
         "compile": {
           "bin/placeholder/PermitRequestApp.Domain.dll": {}
         },
@@ -306,6 +322,20 @@
         "ardalis.result.nuspec",
         "icon.png",
         "lib/netstandard2.0/Ardalis.Result.dll"
+      ]
+    },
+    "EntityFrameworkCore.GenericRepository.Nuget/8.0.0": {
+      "sha512": "jWAnjJAeaGaNe12wdjJ/Iv16g41EtYH188EBxjog8GqOe8JxT6gg5Tb7EN0I3qRVghkKTmeIPv2f7lwHybcuBg==",
+      "type": "package",
+      "path": "entityframeworkcore.genericrepository.nuget/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512",
+        "entityframeworkcore.genericrepository.nuget.nuspec",
+        "icon.jpeg",
+        "lib/net8.0/GenericRepository.dll"
       ]
     },
     "MediatR/12.2.0": {
@@ -804,7 +834,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\taner\\.nuget\\packages\\": {}
+    "C:\\Users\\taner\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -815,8 +846,12 @@
       "packagesPath": "C:\\Users\\taner\\.nuget\\packages\\",
       "outputPath": "C:\\YMYP1\\08.Projeler\\PermitRequestApp\\PermitRequestApp.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\taner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

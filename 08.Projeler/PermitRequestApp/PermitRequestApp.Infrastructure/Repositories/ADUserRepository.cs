@@ -10,4 +10,9 @@ internal sealed class ADUserRepository(
     {
         return context.Set<ADUser>().AsNoTracking().AsQueryable();
     }
+
+    public async Task<ADUser?> GetByIdAsync(Guid employeeId, CancellationToken cancellationToken = default)
+    {
+        return await context.Set<ADUser>().FindAsync(employeeId, cancellationToken);
+    }
 }

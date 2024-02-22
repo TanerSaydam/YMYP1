@@ -63,6 +63,17 @@
           }
         }
       },
+      "EntityFrameworkCore.GenericRepository.Nuget/8.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/GenericRepository.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
@@ -943,12 +954,17 @@
         }
       },
       "PermitRequestApp.Domain/1.0.0": {
+        "dependencies": {
+          "EntityFrameworkCore.GenericRepository.Nuget": "8.0.0",
+          "MediatR": "12.2.0"
+        },
         "runtime": {
           "PermitRequestApp.Domain.dll": {}
         }
       },
       "PermitRequestApp.Infrastructure/1.0.0": {
         "dependencies": {
+          "EntityFrameworkCore.GenericRepository.Nuget": "8.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
           "PermitRequestApp.Domain": "1.0.0"
         },
@@ -984,6 +1000,13 @@
       "sha512": "sha512-l1Xm2MWOF2Mzcwuarlw8kWQXLZk3UeB55aQXVyjj23aBfDwOZ3gu5GP2kJ6KlmZeZv2TCzw7x4L3V36iNr3gww==",
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
+    },
+    "EntityFrameworkCore.GenericRepository.Nuget/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jWAnjJAeaGaNe12wdjJ/Iv16g41EtYH188EBxjog8GqOe8JxT6gg5Tb7EN0I3qRVghkKTmeIPv2f7lwHybcuBg==",
+      "path": "entityframeworkcore.genericrepository.nuget/8.0.0",
+      "hashPath": "entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

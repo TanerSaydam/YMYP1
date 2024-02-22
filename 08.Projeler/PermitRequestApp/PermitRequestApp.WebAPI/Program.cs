@@ -22,6 +22,19 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.Use(async (context, next) =>
+{
+	try
+	{
+		await next(context);
+	}
+	catch (Exception ex)
+	{
+
+		throw new ArgumentException(ex.Message);
+	}
+});
+
 app.MapControllers();
 
 app.Run();

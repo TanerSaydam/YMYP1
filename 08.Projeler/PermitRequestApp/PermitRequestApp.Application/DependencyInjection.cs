@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using PermitRequestApp.Domain.CumulativeLeaveRequests;
 using System.Reflection;
 
 namespace PermitRequestApp.Application;
@@ -10,7 +11,9 @@ public static class DependencyInjection
 
         services.AddMediatR(configuration =>
         {
-            configuration.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+            configuration.RegisterServicesFromAssemblies(
+                Assembly.GetExecutingAssembly(),
+                typeof(CumulativeLeaveRequest).Assembly);
         });
 
         return services;

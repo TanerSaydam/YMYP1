@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using GenericRepository;
+using Microsoft.EntityFrameworkCore;
 using PermitRequestApp.Domain.LeaveRequests;
 using System.Reflection;
 
 namespace PermitRequestApp.Infrastructure.Context;
-internal class ApplicationDbContext : DbContext
+internal class ApplicationDbContext : DbContext, Domain.Abstractions.IUnitOfWork
 {
     public ApplicationDbContext(DbContextOptions options) : base(options)
     {

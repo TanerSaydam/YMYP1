@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "s87M4dR35n7e9L56gF646zz8QmIAGbMauiKasZbuYUr+xXNshbjUsh/+pNFtb2AwcXZO1E2N4qDIM2SrECA46Q==",
+  "dgSpecHash": "LiTysjJD89plUoencr5Nwgl7iV5j3siOV0E9b4nUn93Yaffj0aO8zwnZngwOvHnwDwTrEXmH+3ahnkSsg9tZag==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\PermitRequestApp\\PermitRequestApp.Application\\PermitRequestApp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\ardalis.result\\7.2.0\\ardalis.result.7.2.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.genericrepository.nuget\\8.0.0\\entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",

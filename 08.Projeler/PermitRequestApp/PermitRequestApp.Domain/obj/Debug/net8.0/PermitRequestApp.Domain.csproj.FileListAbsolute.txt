@@ -10,3 +10,4 @@ C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\P
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\refint\PermitRequestApp.Domain.dll
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.pdb
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\ref\PermitRequestApp.Domain.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.Domain\obj\Debug\net8.0\PermitRequestApp.Domain.csproj.AssemblyReference.cache
