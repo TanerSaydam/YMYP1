@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PermitRequestApp.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+20b5d8abe6154f0a305841b81043255512cb3442")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2208809ba4e1526e4d6380140a6cf522ae59eec4")]
 [assembly: System.Reflection.AssemblyProductAttribute("PermitRequestApp.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PermitRequestApp.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

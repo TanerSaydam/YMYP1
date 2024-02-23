@@ -1,0 +1,40 @@
+﻿@using PermitRequestApp.Application.Features.CumulativeLeaveRequests.GetAllCumulativeLeaveRequest
+
+@model List<GetAllCumulativeLeaveRequestQueryResponse>
+@{
+   
+}
+
+<h1>Cumulative Leave Requests</h1>
+
+<table id="myTable">
+    <thead>
+        <tr>            
+            <th>Full Name</th>
+            <th>Leave Type</th>
+            <th>Year</th>
+            <th>Total Hours</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>                
+                <td>@item.FullName</td>
+                <td>@item.LeaveType</td>                
+                <td>@item.Year</td>
+                <td>@item.TotalHours</td>                                
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>

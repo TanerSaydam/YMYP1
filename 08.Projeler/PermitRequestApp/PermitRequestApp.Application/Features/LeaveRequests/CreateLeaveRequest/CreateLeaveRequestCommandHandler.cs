@@ -1,17 +1,17 @@
 ﻿using Ardalis.Result;
-using GenericRepository;
 using MediatR;
 using PermitRequestApp.Domain.ADUsers;
+using PermitRequestApp.Domain.CumulativeLeaveRequests;
 using PermitRequestApp.Domain.LeaveRequests;
-using PermitRequestApp.Domain.LeaveRequests.Events;
+using PermitRequestApp.Domain.Shared;
 
 namespace PermitRequestApp.Application.Features.LeaveRequests.CreateLeaveRequest;
 
 internal sealed class CreateLeaveRequestCommandHandler(
     IADUserRepository adUserRepository,
     ILeaveRequestRepository leaveRequestRepository,
-    Domain.Abstractions.IUnitOfWork unitOfWork,
-    IMediator mediator
+    ICumulativeLeaveRequestRepository cumulativeLeaveRequestRepository,
+    Domain.Abstractions.IUnitOfWork unitOfWork
     ): IRequestHandler<CreateLeaveRequestCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(CreateLeaveRequestCommand request, CancellationToken cancellationToken)
@@ -30,7 +30,40 @@ internal sealed class CreateLeaveRequestCommandHandler(
         else
         {
             lastFormNumber++;
+        } 
+
+
+        CumulativeLeaveRequest? cumulativeLeaveRequest = 
+            await cumulativeLeaveRequestRepository
+            .GetByExpressionAsync(p=> p.UserId == request.EmployeeId && p.LeaveType == request.LeaveType, cancellationToken);
+
+
+        Workflow workflow = Workflow.Pending;
+
+        if(cumulativeLeaveRequest is not null)
+        {
+            int currentTotalHours = cumulativeLeaveRequest.TotalHours;
+            int newHours = ((int)(request.EndDate - request.StartDate).TotalDays + 1) * 8;
+
+            int total = currentTotalHours + newHours;
+
+            if(request.LeaveType == LeaveType.AnnualLeave)
+            {
+                if(total > 123)
+                {
+                    workflow = Workflow.Exception;
+                }
+            }
+            else
+            {
+                if(total > 48)
+                {
+                    workflow = Workflow.Exception;
+                }
+            }
+
         }
+
 
         LeaveRequest leaveRequest = LeaveRequest.Create(
             lastFormNumber,
@@ -39,13 +72,12 @@ internal sealed class CreateLeaveRequestCommandHandler(
             request.StartDate,
             request.EndDate,
             user.Id,
-            user.ManagerId);
+            user.ManagerId,
+            workflow);
 
         await leaveRequestRepository.AddAsync(leaveRequest, cancellationToken);
         await unitOfWork.SaveChangesAsync(cancellationToken);
-
-        await mediator.Publish(new LeaveRequestDomainEvent(leaveRequest.Id));
-
+       
         return "Request is successful";
     }
 }

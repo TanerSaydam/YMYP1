@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "t04GXBZ+ACfUdhELHsKnzBENn4QbqTnWlNJ0IdkTZhAX5eMaJbEJQMWtjECzT6oQz6e03Tf8rWKKXUQPWY1NwA==",
+  "dgSpecHash": "rDl6fLeZXBXB783Tyw4Qf9xXwgKsBKRO/TrcBwINv+M1n6+yTwnH7aK2+qBIDyDCox4INHlrJ6M2avTJCGgqeg==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\PermitRequestApp\\PermitRequestApp.MVC\\PermitRequestApp.MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\ardalis.result\\7.2.0\\ardalis.result.7.2.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.genericrepository.nuget\\8.0.0\\entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "JXhtl+FeX/QEjQrAYFAgkvqnZedG7o7brbRegMDC97HEq80x8aLKKlEou2JBbYchO99N4yElImrk5Oq7nRh3AQ==",
+  "dgSpecHash": "ZeKU+9DtOfOFc3OnKlQxDcDTc4pI0bCmzUodrCWxSDsnva5oXB0BqvRTtkwsc72ThA8TRBHUFc3dQw9cHao5Hw==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\PermitRequestApp\\PermitRequestApp.WebAPI\\PermitRequestApp.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\ardalis.result\\7.2.0\\ardalis.result.7.2.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.genericrepository.nuget\\8.0.0\\entityframeworkcore.genericrepository.nuget.8.0.0.nupkg.sha512",

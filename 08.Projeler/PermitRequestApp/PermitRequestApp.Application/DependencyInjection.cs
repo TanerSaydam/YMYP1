@@ -9,6 +9,8 @@ public static class DependencyInjection
         this IServiceCollection services)
     {
 
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
         services.AddMediatR(configuration =>
         {
             configuration.RegisterServicesFromAssemblies(

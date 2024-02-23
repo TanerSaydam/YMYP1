@@ -29,6 +29,17 @@
           }
         }
       },
+      "AutoMapper/13.0.1": {
+        "dependencies": {
+          "Microsoft.Extensions.Options": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.0"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
@@ -945,6 +956,7 @@
       "PermitRequestApp.Application/1.0.0": {
         "dependencies": {
           "Ardalis.Result": "7.2.0",
+          "AutoMapper": "13.0.1",
           "MediatR": "12.2.0",
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "PermitRequestApp.Domain": "1.0.0"
@@ -986,6 +998,13 @@
       "sha512": "sha512-PPTQqwtpxP6euBZ8pnGtvqZU8delTsIMTS0ENPeTJAdRf78Lp4h2mGeufZnVtIiUd+sXMb3VdcprSxOlHGLHbQ==",
       "path": "ardalis.result/7.2.0",
       "hashPath": "ardalis.result.7.2.0.nupkg.sha512"
+    },
+    "AutoMapper/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "path": "automapper/13.0.1",
+      "hashPath": "automapper.13.0.1.nupkg.sha512"
     },
     "Azure.Core/1.35.0": {
       "type": "package",

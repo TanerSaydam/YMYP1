@@ -1,0 +1,92 @@
+﻿@using PermitRequestApp.Domain.LeaveRequests
+@using PermitRequestApp.MVC.DTOs
+
+@model LeaveRequestListDto
+@{
+    string? message = null;
+
+    if (TempData["Message"] is not null)
+    {
+        message = TempData["Message"]!.ToString();
+    }
+
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Leave Requests</h1>
+
+@if (message is not null){
+    <h4 class="alert alert-success">
+        @message
+    </h4>
+}
+
+<div class="form-group row">
+    <div class="col-3">
+        <select class="form-control" onchange="getAllLeaveRequest(event)">
+            <option value="@null">Select Manager...</option>
+            @foreach (var item in Model.Users)
+            {   
+                <option value="@item.Id">@item.FullName</option>
+            }
+        </select>
+    </div>   
+</div>
+
+<script>
+    function getAllLeaveRequest(event) {
+        document.location.href = "/Home/LeaveRequests?managerId=" + event.target.value;
+    }
+</script>
+
+<table id="myTable">
+    <thead>
+        <tr>
+            <th>Request Number</th>
+            <th>Full Name</th>
+            <th>Leave Type</th>
+            <th>Created Date</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Total Hours</th>
+            <th>Workflow</th>
+            <th>
+                Operations
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.LeaveRequests)
+        {
+            <tr>
+                <td>@item.RequestFormNumber</td>
+                <td>@item.FullName</td>
+                <td>@item.LeaveType</td>
+                <td>@item.CreatedDate.ToString("dd.MM.yyyy")</td>
+                <td>@item.StartDate.ToString("dd.MM.yyyy")</td>
+                <td>@item.EndDate.ToString("dd.MM.yyyy")</td>
+                <td>@item.TotalHours</td>
+                <td>@item.WorkFlow</td>
+                <td>
+                    @if(item.WorkFlow == Workflow.Pending)
+                    {
+                        <div class="d-flex" style="flex-direction:column;gap:10px">
+                        <a href="/Home/Answer?id=@item.Id&isAccepted=true&managerId=@Model.ManagerId" class="btn btn-info btn-sm">@Workflow.Approved</a>
+                            <a href="/Home/Answer?id=@item.Id&isAccepted=false&managerId=@Model.ManagerId" class="btn btn-danger btn-sm">@Workflow.Rejected</a>
+                        </div>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>

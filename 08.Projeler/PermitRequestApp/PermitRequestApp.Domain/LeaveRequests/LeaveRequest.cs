@@ -7,7 +7,7 @@ namespace PermitRequestApp.Domain.LeaveRequests;
 public sealed class LeaveRequest : Entity
 {
     private LeaveRequest(int formNumber, LeaveType leaveType, string? reason, DateTime startDate, DateTime endDate,
-        Guid requestUserId, Guid? assignedUserId)
+        Guid requestUserId, Guid? assignedUserId, Workflow workflow)
     {
         FormNumber = formNumber;
         LeaveType = leaveType;
@@ -16,6 +16,7 @@ public sealed class LeaveRequest : Entity
         EndDate = endDate;
         RequestUserId = requestUserId;
         AssignedUserId = assignedUserId;
+        WorkflowStatus = workflow;
     }
 
     private LeaveRequest()
@@ -27,6 +28,7 @@ public sealed class LeaveRequest : Entity
     public string? Reason { get; private set; } = string.Empty;
     public DateTime StartDate { get; private set; }
     public DateTime EndDate { get; private set; }
+    public int TotalHours => (int)((EndDate.Date - StartDate.Date).TotalDays +1) * 8;
     public Workflow WorkflowStatus { get; private set; } = Workflow.Pending;
 
     public Guid RequestUserId { get; private set; }
@@ -40,9 +42,9 @@ public sealed class LeaveRequest : Entity
     public Guid? LastModifiedById { get; private set; }
     public ADUser? LastModifiedBy { get; private set; }
 
-    public static LeaveRequest Create(int formNumber, LeaveType leaveType, string? reason, DateTime startDate, DateTime endDate, Guid requestUserId, Guid? assignedUserId)
+    public static LeaveRequest Create(int formNumber, LeaveType leaveType, string? reason, DateTime startDate, DateTime endDate, Guid requestUserId, Guid? assignedUserId, Workflow workflow)
     {
-        return new(formNumber, leaveType, reason, startDate, endDate, requestUserId,assignedUserId);
+        return new(formNumber, leaveType, reason, startDate, endDate, requestUserId,assignedUserId, workflow);
     }
 
     public void SetCreatedAt()
@@ -53,5 +55,10 @@ public sealed class LeaveRequest : Entity
     public void SetModifiedAt()
     {
         LastModifiedAt = DateTime.Now;
+    }
+
+    public void ChangeWorkflowStatus(bool isAccepted)
+    {
+        WorkflowStatus = isAccepted ? Workflow.Approved : Workflow.Rejected;
     }
 }

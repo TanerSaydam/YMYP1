@@ -41,3 +41,4 @@ C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.MVC\bin\Debug\net8.0\Perm
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.MVC\obj\Debug\net8.0\PermitRequestApp.MVC.csproj.AssemblyReference.cache
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.MVC\obj\Debug\net8.0\PermitRe.A07A478D.Up2Date
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.MVC\bin\Debug\net8.0\GenericRepository.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.MVC\bin\Debug\net8.0\AutoMapper.dll

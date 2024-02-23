@@ -18,6 +18,7 @@ public sealed class ADUser : Entity
     }
     public string FirstName { get; private set; } = string.Empty;
     public string LastName { get; private set; } = string.Empty;
+    public string FullName => string.Join(" ", FirstName, LastName);
     public string Email { get; private set; } = string.Empty;
     public UserType UserType { get; private set; } = UserType.WhiteCollarEmployee;
 

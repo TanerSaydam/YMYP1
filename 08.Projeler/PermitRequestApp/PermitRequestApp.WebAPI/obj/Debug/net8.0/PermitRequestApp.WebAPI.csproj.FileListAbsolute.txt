@@ -144,3 +144,5 @@ C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\P
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\PermitRequestApp.Application.pdb
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\Ardalis.Result.dll
 C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\GenericRepository.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.WebAPI\obj\Debug\net8.0\PermitRequestApp.WebAPI.MvcApplicationPartsAssemblyInfo.cs

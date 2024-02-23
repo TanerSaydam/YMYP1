@@ -18,8 +18,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\YMYP1\08.Projeler\PermitRequestApp\PermitRequestApp.MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/YMYP1/08.Projeler/PermitRequestApp/PermitRequestApp.MVC/Views/Home/CumulativeLeaveRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdW11bGF0aXZlTGVhdmVSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/YMYP1/08.Projeler/PermitRequestApp/PermitRequestApp.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/YMYP1/08.Projeler/PermitRequestApp/PermitRequestApp.MVC/Views/Home/LeaveRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMZWF2ZVJlcXVlc3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/YMYP1/08.Projeler/PermitRequestApp/PermitRequestApp.MVC/Views/Home/Privacy.cshtml]

@@ -10,6 +10,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PermitRequestApp.WebAPI.Controllers.CumulativeLeaveRequestsController",
+    "Method": "GetAll",
+    "RelativePath": "api/CumulativeLeaveRequests/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PermitRequestApp.Application.Features.CumulativeLeaveRequests.GetAllCumulativeLeaveRequest.GetAllCumulativeLeaveRequestQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PermitRequestApp.WebAPI.Controllers.LeaveRequestsController",
+    "Method": "Answer",
+    "RelativePath": "api/LeaveRequests/Answer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PermitRequestApp.Application.Features.LeaveRequests.AnswerLeaveRequest.AnswerLeaveRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PermitRequestApp.WebAPI.Controllers.LeaveRequestsController",
     "Method": "Create",
     "RelativePath": "api/LeaveRequests/Create",
@@ -20,6 +52,22 @@
       {
         "Name": "request",
         "Type": "PermitRequestApp.Application.Features.LeaveRequests.CreateLeaveRequest.CreateLeaveRequestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PermitRequestApp.WebAPI.Controllers.LeaveRequestsController",
+    "Method": "GetAllByManagerId",
+    "RelativePath": "api/LeaveRequests/GetAllByManagerId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PermitRequestApp.Application.Features.LeaveRequests.GetAllLeaveRequestsByManagerId.GetAllLeaveRequestsByManagerIdQuery",
         "IsRequired": true
       }
     ],
