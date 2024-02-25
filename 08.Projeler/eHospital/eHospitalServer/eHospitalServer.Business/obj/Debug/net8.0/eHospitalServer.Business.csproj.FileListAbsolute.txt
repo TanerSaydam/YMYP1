@@ -1,0 +1,16 @@
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\bin\Debug\net8.0\eHospitalServer.Business.deps.json
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\bin\Debug\net8.0\eHospitalServer.Business.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\bin\Debug\net8.0\eHospitalServer.Business.pdb
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\bin\Debug\net8.0\eHospitalServer.Entities.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\bin\Debug\net8.0\eHospitalServer.Entities.pdb
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.csproj.AssemblyReference.cache
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.AssemblyInfoInputs.cache
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.AssemblyInfo.cs
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.csproj.CoreCompileInputs.cache
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.sourcelink.json
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospita.E660D373.Up2Date
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\refint\eHospitalServer.Business.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\eHospitalServer.Business.pdb
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.Business\obj\Debug\net8.0\ref\eHospitalServer.Business.dll

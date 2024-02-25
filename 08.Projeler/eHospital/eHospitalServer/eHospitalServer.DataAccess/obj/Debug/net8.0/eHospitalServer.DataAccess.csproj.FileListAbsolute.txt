@@ -16,3 +16,5 @@ C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.DataAccess\obj\De
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.DataAccess\obj\Debug\net8.0\eHospitalServer.DataAccess.pdb
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.DataAccess\obj\Debug\net8.0\eHospitalServer.DataAccess.genruntimeconfig.cache
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.DataAccess\obj\Debug\net8.0\ref\eHospitalServer.DataAccess.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.DataAccess\bin\Debug\net8.0\eHospitalServer.Business.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.DataAccess\bin\Debug\net8.0\eHospitalServer.Business.pdb

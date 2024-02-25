@@ -1,6 +1,16 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 25.02.2024
+- eHospital projemize devam ediyoruz
+- Docker kurduk
+- PostgreSQL'i docker image ile ayağa kaldırdık
+- Codefirst ile database oluşturduk
+- Admin kullanıcısını otomatik oluşturacak kod yazdık
+- Login metodumuzu yazdık
+- Result Pattern için bir NuGet package yazıp yayımladık
+- Ödev (JWT ve Refresh token yapılarını kurun)
+
 ## 23.02.2024
 - İzin Talep Uygulaması Taskını Tamamladık
 
