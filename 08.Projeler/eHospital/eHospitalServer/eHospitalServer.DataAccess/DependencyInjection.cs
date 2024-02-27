@@ -1,13 +1,16 @@
-﻿using eHospitalServer.Business.Services;
-using eHospitalServer.DataAccess.Context;
+﻿using eHospitalServer.DataAccess.Context;
+using eHospitalServer.DataAccess.Options;
 using eHospitalServer.DataAccess.Services;
 using eHospitalServer.Entities.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using Scrutor;
 using System.Reflection;
+using System.Text;
 
 namespace eHospitalServer.DataAccess;
 public static class DependencyInjection
@@ -39,6 +42,16 @@ public static class DependencyInjection
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
+        //services.ConfigureOptions<JwtOptionsSetup>();
+        services.Configure<JwtOptions>(configuration.GetSection("Jwt"));
+        //var jwt = services.BuildServiceProvider().GetRequiredService<IOptions<JwtOptions>>();
+        services.ConfigureOptions<JwtTokenOptionsSetup>();
+
+        services.AddAuthentication().AddJwtBearer();
+        services.AddAuthorization();
+
+        services.AddScoped<JwtProvider>();
+
         services.Scan(action =>
         {
             action
@@ -46,8 +59,9 @@ public static class DependencyInjection
             .AddClasses(publicOnly: false)
             .UsingRegistrationStrategy(RegistrationStrategy.Skip)
             .AsMatchingInterface()
+            .AsImplementedInterfaces()
             .WithScopedLifetime();
-        });
+        });      
 
         return services;
     }

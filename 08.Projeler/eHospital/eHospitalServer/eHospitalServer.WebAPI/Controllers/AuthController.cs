@@ -1,5 +1,6 @@
 ﻿using eHospitalServer.Business.Services;
 using eHospitalServer.Entities.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TS.Result;
@@ -16,5 +17,13 @@ public class AuthController(
         var response = await authService.LoginAsync(request, cancellationToken);
 
         return StatusCode(response.StatusCode, response);
+    }
+
+    [HttpGet]
+    [Authorize(AuthenticationSchemes = "Bearer")]
+    public IActionResult Get()
+    {
+        
+        return Ok(new { Message = "Ok, I get it..." });
     }
 }

@@ -120,3 +120,11 @@ C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\eHospitalServer.Business.dll
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\eHospitalServer.Business.pdb
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Scrutor.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

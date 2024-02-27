@@ -16,6 +16,9 @@ public sealed class User : IdentityUser<Guid>
     public string? BloodType { get; set; }
     public UserType UserType { get; set; } = UserType.User;
 
+    public string? RefreshToken {  get; set; }
+    public DateTime? RefreshTokenExpires { get; set; }
+
     public Guid? DoctorDetailId { get; set; }
     public DoctorDetail? DoctorDetail { get; set; }
 }
