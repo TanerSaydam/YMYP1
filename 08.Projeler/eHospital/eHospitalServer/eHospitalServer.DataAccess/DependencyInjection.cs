@@ -47,11 +47,14 @@ public static class DependencyInjection
         //var jwt = services.BuildServiceProvider().GetRequiredService<IOptions<JwtOptions>>();
         services.ConfigureOptions<JwtTokenOptionsSetup>();
 
-        services.AddAuthentication().AddJwtBearer();
-        services.AddAuthorization();
+        services.AddAuthentication()
+            .AddJwtBearer();
+        services.AddAuthorizationBuilder();
+
+        //services.AddAuthorization();
 
         services.AddScoped<JwtProvider>();
-
+        
         services.Scan(action =>
         {
             action

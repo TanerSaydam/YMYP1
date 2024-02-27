@@ -1,9 +1,7 @@
 ﻿using eHospitalServer.Business.Services;
 using eHospitalServer.Entities.DTOs;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using TS.Result;
 
 namespace eHospitalServer.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
@@ -12,6 +10,7 @@ public class AuthController(
     IAuthService authService) : ControllerBase
 {
     [HttpPost]
+    [AllowAnonymous]
     public async Task<IActionResult> Login(LoginRequestDto request, CancellationToken cancellationToken)
     {
         var response = await authService.LoginAsync(request, cancellationToken);
@@ -20,7 +19,15 @@ public class AuthController(
     }
 
     [HttpGet]
-    [Authorize(AuthenticationSchemes = "Bearer")]
+    [AllowAnonymous]
+    public async Task<IActionResult> GetTokenByRefreshToken(string refreshToken, CancellationToken cancellationToken)
+    {
+        var response = await authService.GetTokenByRefreshTokenAsync(refreshToken, cancellationToken);
+
+        return StatusCode(response.StatusCode, response);
+    }
+
+    [HttpGet]    
     public IActionResult Get()
     {
         

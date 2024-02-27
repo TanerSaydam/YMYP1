@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
+    "Method": "GetTokenByRefreshToken",
+    "RelativePath": "api/Auth/GetTokenByRefreshToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/Auth/Login",
     "HttpMethod": "POST",

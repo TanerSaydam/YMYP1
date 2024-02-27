@@ -1,6 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 27.02.2024
+- JWT
+- Ödev - Keycloak
+- Authentication
+- Refresh Token
+- Options Pattern
+
 ## 25.02.2024
 - eHospital projemize devam ediyoruz
 - Docker kurduk

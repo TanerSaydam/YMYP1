@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b4ff1434-60ba-41e7-84aa-a3c1e93ba830")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("eHospitalServer.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7594d5c8025cbc2e04b268cb3b9536328b3da4f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b2cd28193edf64d1c2e9446e3f6552e377067a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("eHospitalServer.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eHospitalServer.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
