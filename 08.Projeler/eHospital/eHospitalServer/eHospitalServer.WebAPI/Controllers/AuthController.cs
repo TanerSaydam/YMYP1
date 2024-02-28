@@ -1,13 +1,13 @@
 ﻿using eHospitalServer.Business.Services;
 using eHospitalServer.Entities.DTOs;
+using eHospitalServer.WebAPI.Abstractions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eHospitalServer.WebAPI.Controllers;
-[Route("api/[controller]/[action]")]
-[ApiController]
+
 public class AuthController(
-    IAuthService authService) : ControllerBase
+    IAuthService authService) : ApiController
 {
     [HttpPost]
     [AllowAnonymous]
@@ -25,12 +25,5 @@ public class AuthController(
         var response = await authService.GetTokenByRefreshTokenAsync(refreshToken, cancellationToken);
 
         return StatusCode(response.StatusCode, response);
-    }
-
-    [HttpGet]    
-    public IActionResult Get()
-    {
-        
-        return Ok(new { Message = "Ok, I get it..." });
     }
 }

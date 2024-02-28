@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5c5pCmzDRfsXkPs9usekbujHtNKpY+XDOX98xWq4Ul9tW+ibabQ2qnDRngSBRqFEtv2U/2PX+2FLNduV+WvM/A==",
+  "dgSpecHash": "CmDORK8a4cvGyx6eDIps0BoxRtTCKW2P/83CDvm1lSlMBoxRCICaNYF5+Ll4urv6YaoRqLhUScAfVxnpFM1Pcw==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\efcore.namingconventions\\8.0.3\\efcore.namingconventions.8.0.3.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.2\\microsoft.aspnetcore.authentication.jwtbearer.8.0.2.nupkg.sha512",
@@ -68,7 +69,7 @@
     "C:\\Users\\taner\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.2\\ts.result.8.0.2.nupkg.sha512"
+    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.4\\ts.result.8.0.4.nupkg.sha512"
   ],
   "logs": []
 }

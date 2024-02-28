@@ -100,6 +100,14 @@ namespace eHospitalServer.DataAccess.Migrations
                         .HasColumnType("text")
                         .HasColumnName("email");
 
+                    b.Property<int>("EmailConfirmCode")
+                        .HasColumnType("integer")
+                        .HasColumnName("email_confirm_code");
+
+                    b.Property<DateTime>("EmailConfirmCodeSendDate")
+                        .HasColumnType("timestamp with time zone")
+                        .HasColumnName("email_confirm_code_send_date");
+
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("boolean")
                         .HasColumnName("email_confirmed");
