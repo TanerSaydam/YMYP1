@@ -1,11 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 01.03.2024 (Gelecek Ders)
-- Mail Onaylama işlemi
-- Fluent Validation
+## 03.03.2024 (Gelecek Ders)
 - Şifremi Unuttum
+- Fluent Validation
 - Profil İşlemleri
+
+## 01.03.2024
+- Mail Onaylama işlemi
+- Ödev: Şifremi Unuttum Maili Gönderme
 
 ## 28.02.2024
 - WebAPI ve Angular Projesini Canlıya Alma

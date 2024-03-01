@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
+    "Method": "ConfirmEmail",
+    "RelativePath": "api/Auth/ConfirmEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailConfirmCode",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
     "Method": "GetTokenByRefreshToken",
     "RelativePath": "api/Auth/GetTokenByRefreshToken",
     "HttpMethod": "GET",
@@ -27,6 +43,22 @@
         "Name": "request",
         "Type": "eHospitalServer.Entities.DTOs.LoginRequestDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
+    "Method": "SendConfirmMail",
+    "RelativePath": "api/Auth/SendConfirmMail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

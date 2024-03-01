@@ -129,3 +129,7 @@ C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\obj\Debug\net8.0\eHospitalServer.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\AutoMapper.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\GenericEmailService.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\MailKit.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\MimeKit.dll
