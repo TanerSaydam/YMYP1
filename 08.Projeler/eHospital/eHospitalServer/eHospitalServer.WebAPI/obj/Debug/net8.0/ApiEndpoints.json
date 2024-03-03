@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
+    "Method": "ChangePasswordWithForgotPasswordCode",
+    "RelativePath": "api/Auth/ChangePasswordWithForgotPasswordCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "eHospitalServer.Entities.DTOs.ChangePasswordWithForgotPasswordCodeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
     "Method": "ConfirmEmail",
     "RelativePath": "api/Auth/ConfirmEmail",
     "HttpMethod": "GET",
@@ -57,6 +73,22 @@
     "Parameters": [
       {
         "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
+    "Method": "SendForgotPasswordEmail",
+    "RelativePath": "api/Auth/SendForgotPasswordEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailOrUserName",
         "Type": "System.String",
         "IsRequired": false
       }

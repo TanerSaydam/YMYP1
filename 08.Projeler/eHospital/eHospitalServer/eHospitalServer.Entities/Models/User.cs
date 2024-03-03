@@ -24,4 +24,7 @@ public sealed class User : IdentityUser<Guid>
 
     public Guid? DoctorDetailId { get; set; }
     public DoctorDetail? DoctorDetail { get; set; }
+
+    public int? ForgotPasswordCode { get; set; }
+    public DateTime? ForgotPasswordCodeSendDate { get; set; }
 }
