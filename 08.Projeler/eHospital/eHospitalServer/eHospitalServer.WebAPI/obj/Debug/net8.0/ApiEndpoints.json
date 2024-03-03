@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AppointmentsController",
+    "Method": "CreateAppointment",
+    "RelativePath": "api/Appointments/CreateAppointment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "eHospitalServer.Entities.DTOs.CreateAppointmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AppointmentsController",
+    "Method": "CreatePatient",
+    "RelativePath": "api/Appointments/CreatePatient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "eHospitalServer.Entities.DTOs.CreatePatientDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "eHospitalServer.WebAPI.Controllers.AuthController",
     "Method": "ChangePasswordWithForgotPasswordCode",
     "RelativePath": "api/Auth/ChangePasswordWithForgotPasswordCode",

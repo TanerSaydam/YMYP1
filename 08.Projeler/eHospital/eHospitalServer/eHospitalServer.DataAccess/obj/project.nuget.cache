@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GO1Nu5c7Bayv0LZEm6fnOFs/GWuA/UKWMpp6vnW06uhb8K5mfgxqcPBmxZKAl/L99I0Og4jOtz9514jzpIdGuw==",
+  "dgSpecHash": "53dHYR8eFsYjha2ZXCByjmVMNy3u/v/z369y9usJGF27Y0xCWSbbef0iTpcCY7Na3CWpRWsVglSvJEPAzzbYTg==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\eHospitalServer.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\efcore.namingconventions\\8.0.3\\efcore.namingconventions.8.0.3.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.genericrepository.nuget\\8.0.1\\entityframeworkcore.genericrepository.nuget.8.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\genericemailservice\\8.0.0\\genericemailservice.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mailkit\\4.3.0\\mailkit.4.3.0.nupkg.sha512",
@@ -70,7 +71,7 @@
     "C:\\Users\\taner\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.4\\ts.result.8.0.4.nupkg.sha512"
+    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }

@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "EntityFrameworkCore.GenericRepository.Nuget/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/GenericRepository.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/GenericRepository.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/8.0.2": {
         "type": "package",
         "compile": {
@@ -320,6 +332,20 @@
     }
   },
   "libraries": {
+    "EntityFrameworkCore.GenericRepository.Nuget/8.0.1": {
+      "sha512": "M1itW2bRp28IeWZ1jH4Iw9HhMMNn/j1uvHjjXsQIl0mN2nKwF+pexQRgA65r6tih/SIu659r2T3qUVmxWA9Z2Q==",
+      "type": "package",
+      "path": "entityframeworkcore.genericrepository.nuget/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "entityframeworkcore.genericrepository.nuget.8.0.1.nupkg.sha512",
+        "entityframeworkcore.genericrepository.nuget.nuspec",
+        "icon.jpeg",
+        "lib/net8.0/GenericRepository.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.2": {
       "sha512": "eZecZwgDIIK3QdtDHE2ndH1Yw/Mbo/b4HpyB135eZsIWYVr4dyO4vYa6s/IRIaWEMUdPNT2qU8mILF0MwDl+FQ==",
       "type": "package",
@@ -807,6 +833,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EntityFrameworkCore.GenericRepository.Nuget >= 8.0.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.2"
     ]
   },
@@ -861,6 +888,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "EntityFrameworkCore.GenericRepository.Nuget": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.2, )"

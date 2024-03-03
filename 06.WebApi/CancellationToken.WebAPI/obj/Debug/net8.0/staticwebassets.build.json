@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "WqZzzwKEdY6qOdy+fNZhpu24e3rz1m9mUBcAVQraAPs=",
+  "Source": "CancellationToken.WebAPI",
+  "BasePath": "_content/CancellationToken.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

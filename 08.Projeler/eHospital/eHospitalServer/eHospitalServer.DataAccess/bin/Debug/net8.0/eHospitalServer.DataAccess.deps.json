@@ -10,6 +10,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "EFCore.NamingConventions": "8.0.3",
+          "EntityFrameworkCore.GenericRepository.Nuget": "8.0.1",
           "GenericEmailService": "8.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2",
@@ -53,6 +54,17 @@
           "lib/net8.0/EFCore.NamingConventions.dll": {
             "assemblyVersion": "8.0.3.0",
             "fileVersion": "8.0.3.0"
+          }
+        }
+      },
+      "EntityFrameworkCore.GenericRepository.Nuget/8.0.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/GenericRepository.dll": {
+            "assemblyVersion": "8.0.1.0",
+            "fileVersion": "8.0.1.0"
           }
         }
       },
@@ -761,18 +773,18 @@
         }
       },
       "System.Threading.Channels/6.0.0": {},
-      "TS.Result/8.0.4": {
+      "TS.Result/8.0.5": {
         "runtime": {
           "lib/net8.0/TS.Result.dll": {
-            "assemblyVersion": "8.0.4.0",
-            "fileVersion": "8.0.4.0"
+            "assemblyVersion": "8.0.5.0",
+            "fileVersion": "8.0.5.0"
           }
         }
       },
       "eHospitalServer.Business/1.0.0": {
         "dependencies": {
           "GenericEmailService": "8.0.0",
-          "TS.Result": "8.0.4",
+          "TS.Result": "8.0.5",
           "eHospitalServer.Entities": "1.0.0"
         },
         "runtime": {
@@ -781,6 +793,7 @@
       },
       "eHospitalServer.Entities/1.0.0": {
         "dependencies": {
+          "EntityFrameworkCore.GenericRepository.Nuget": "8.0.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.2"
         },
         "runtime": {
@@ -815,6 +828,13 @@
       "sha512": "sha512-TdDarM6kyIS2oVIhrs3W+r+xL/76ooFJxIXxfhzsNJQu0pB9VdFZwuyKvKJnhoc7OHYFNTBP08AN37kr4CPc+Q==",
       "path": "efcore.namingconventions/8.0.3",
       "hashPath": "efcore.namingconventions.8.0.3.nupkg.sha512"
+    },
+    "EntityFrameworkCore.GenericRepository.Nuget/8.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M1itW2bRp28IeWZ1jH4Iw9HhMMNn/j1uvHjjXsQIl0mN2nKwF+pexQRgA65r6tih/SIu659r2T3qUVmxWA9Z2Q==",
+      "path": "entityframeworkcore.genericrepository.nuget/8.0.1",
+      "hashPath": "entityframeworkcore.genericrepository.nuget.8.0.1.nupkg.sha512"
     },
     "GenericEmailService/8.0.0": {
       "type": "package",
@@ -1257,12 +1277,12 @@
       "path": "system.threading.channels/6.0.0",
       "hashPath": "system.threading.channels.6.0.0.nupkg.sha512"
     },
-    "TS.Result/8.0.4": {
+    "TS.Result/8.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-bnADPdo2pEBSMrhuH/JnJIt1uIiu12+yLUk9jMxnssSe2zCsGS6POmI8xYKjJCQrVrQJR5oOkdoe3WMsA8fIlA==",
-      "path": "ts.result/8.0.4",
-      "hashPath": "ts.result.8.0.4.nupkg.sha512"
+      "sha512": "sha512-0ST1EYnw/C99Lxm62FEDW1jfUBWtWcQ5vVVJtKsCdNFrCnSvOu3xJim6ILy4fKH7KgNAk4KJXom/DZdZ7DL1dQ==",
+      "path": "ts.result/8.0.5",
+      "hashPath": "ts.result.8.0.5.nupkg.sha512"
     },
     "eHospitalServer.Business/1.0.0": {
       "type": "project",

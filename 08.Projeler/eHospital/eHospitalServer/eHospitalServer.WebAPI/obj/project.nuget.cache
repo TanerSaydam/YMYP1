@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "mVOyUZ2CXJmCPmN0D1SIhTDVklGDQSYFEmJYUGcQBZb/K41uppNrdhYFpCw3r8dVnBpdEsl0yHEAiGSrHtB9kw==",
+  "dgSpecHash": "fEtdkCP8FNVVQErOdkCnzKRuZ1ectrNeo4XTNZtu4wgXo85fAmSahXejtzOHfEXTerIW5erYQrAMY2EogXIZdQ==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\efcore.namingconventions\\8.0.3\\efcore.namingconventions.8.0.3.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\entityframeworkcore.genericrepository.nuget\\8.0.1\\entityframeworkcore.genericrepository.nuget.8.0.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\genericemailservice\\8.0.0\\genericemailservice.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mailkit\\4.3.0\\mailkit.4.3.0.nupkg.sha512",
@@ -53,10 +54,10 @@
     "C:\\Users\\taner\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.2\\npgsql.entityframeworkcore.postgresql.8.0.2.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\scrutor\\4.2.2\\scrutor.4.2.2.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.composition\\6.0.0\\system.composition.6.0.0.nupkg.sha512",
@@ -75,7 +76,7 @@
     "C:\\Users\\taner\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
-    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.4\\ts.result.8.0.4.nupkg.sha512"
+    "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512"
   ],
   "logs": []
 }

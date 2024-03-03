@@ -1,10 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 03.03.2024 (Gelecek Ders)
-- Şifremi Unuttum
+## 05.03.2024 (Gelecek Ders)
+- Randevu Tamamlama
 - Fluent Validation
 - Profil İşlemleri
+- Frontend Projesi Oluşturma
+
+## 03.03.2024
+- Şifremi Unuttum
+- Randevu Oluşturma
 
 ## 01.03.2024
 - Mail Onaylama işlemi
