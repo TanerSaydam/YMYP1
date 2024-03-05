@@ -54,6 +54,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "GenericEmailService": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -305,6 +313,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Business\\eHospitalServer.Business.csproj": {
+                "projectPath": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Business\\eHospitalServer.Business.csproj"
+              },
               "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\eHospitalServer.DataAccess.csproj": {
                 "projectPath": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\eHospitalServer.DataAccess.csproj"
               }
@@ -327,6 +338,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "DefaultCorsPolicy": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

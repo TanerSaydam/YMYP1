@@ -1,0 +1,25 @@
+
+
+<div class="form-group mt-2">
+    <select (change)="getDoctorAppointments()" class="form-control" [(ngModel)]="selectedDoctorId">
+        <option value="">Select Doctor...</option>
+        @for(doctor of doctors; track doctor){
+            <option [value]="doctor.id">
+                {{doctor.fullName}}
+            </option>
+        }
+    </select>
+</div>
+
+<div class="form-group mt-2">
+    <dx-scheduler
+    timeZone="Europe/Istanbul"
+    [dataSource]="appointmentsData"
+    [views]="['day', 'week', 'workWeek', 'month']"
+    currentView="week"
+    [currentDate]="currentDate"
+    [startDayHour]="9"
+    [height]="730"
+  >
+  </dx-scheduler>
+</div>

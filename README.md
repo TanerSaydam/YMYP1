@@ -1,10 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 05.03.2024 (Gelecek Ders)
+## 07.03.2024 (Gelecek ders)
+- Clean Architecture
+- CQRS
+- MediatR
+- Behavior
+
+## 05.03.2024
 - Randevu Tamamlama
 - Fluent Validation
-- Profil İşlemleri
 - Frontend Projesi Oluşturma
 
 ## 03.03.2024

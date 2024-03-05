@@ -9,6 +9,7 @@
   </PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="DefaultCorsPolicy" Version="8.0.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,6 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\eHospitalServer.Business\eHospitalServer.Business.csproj" />
 	  <ProjectReference Include="..\eHospitalServer.DataAccess\eHospitalServer.DataAccess.csproj" />
 	</ItemGroup>
 

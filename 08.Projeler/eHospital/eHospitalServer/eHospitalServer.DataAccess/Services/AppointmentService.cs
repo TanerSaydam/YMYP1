@@ -16,7 +16,32 @@ internal sealed class AppointmentService(
     IUnitOfWork unitOfWork,
     IMapper mapper) : IAppointmentService
 {
-    public async Task<Result<string>> CreateAppointmentAsync(CreateAppointmentDto request, CancellationToken cancellationToken)
+    public async Task<Result<string>> CompleteAsync(CompleteAppointmentDto request, CancellationToken cancellationToken)
+    {
+        Appointment? appointment = 
+            await appointmentRepository
+            .GetByExpressionWithTrackingAsync(p => p.Id == request.AppointmentId, cancellationToken);
+
+        if(appointment is null)
+        {
+            return Result<string>.Failure("Appointment not found");
+        }
+
+        if (appointment.IsItFinished)
+        {
+            return Result<string>.Failure("Appointment already finish. You cannot close again");
+        }
+
+        appointment.EpicrisisReport = request.EpicrisisReport;
+        appointment.IsItFinished = true;
+
+        await unitOfWork.SaveChangesAsync(cancellationToken);
+
+        return Result<string>.Succeed("Appointment is completed");
+
+    }
+
+    public async Task<Result<string>> CreateAsync(CreateAppointmentDto request, CancellationToken cancellationToken)
     {
         User? doctor = await userManager.Users.Include(p=> p.DoctorDetail).FirstOrDefaultAsync(p=> p.Id == request.DoctorId);
         if(doctor is null || doctor.UserType is not UserType.Doctor)
@@ -40,19 +65,18 @@ internal sealed class AppointmentService(
 
         bool isDoctorHaveAppointment = true;
 
-        isDoctorHaveAppointment = appointments.Any(p => p.StartDate <= startDate && p.EndDate > startDate);       
-
-        if(isDoctorHaveAppointment)
-        {
-            return Result<string>.Failure("Doctor is not available in that time");
-        }
-
-        isDoctorHaveAppointment = appointments.Any(p => p.StartDate < endDate && p.EndDate >= endDate);
+        isDoctorHaveAppointment = await appointments
+            .AnyAsync(p =>                        
+                        ((p.StartDate < endDate && p.StartDate >= startDate) || // Mevcut randevunun bitişi, diğer randevunun başlangıcıyla çakışıyor
+                        (p.EndDate > startDate && p.EndDate <= endDate) || // Mevcut randevunun başlangıcı, diğer randevunun bitişiyle çakışıyor
+                        (p.StartDate >= startDate && p.EndDate <= endDate) || // Mevcut randevu, diğer randevu içinde tamamen
+                        (p.StartDate <= startDate && p.EndDate >= endDate)), // Mevcut randevu, diğer randevuyu tamamen kapsıyor
+                        cancellationToken);
 
         if (isDoctorHaveAppointment)
         {
             return Result<string>.Failure("Doctor is not available in that time");
-        }
+        }      
 
         Appointment appointment = mapper.Map<Appointment>(request);
 
@@ -60,5 +84,17 @@ internal sealed class AppointmentService(
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
         return Result<string>.Succeed("Create appointment is succedded");
+    }
+
+    public async Task<Result<List<Appointment>>> GetAllByDoctorIdAsync(Guid doctorId, CancellationToken cancellationToken)
+    {
+        List<Appointment> appointments = 
+            await appointmentRepository
+            .GetWhere(p=> p.DoctorId == doctorId)
+            .Include(p=> p.Doctor)
+            .Include(p=> p.Patient)
+            .OrderBy(p=> p.StartDate).ToListAsync();
+
+        return Result<List<Appointment>>.Succeed(appointments);
     }
 }

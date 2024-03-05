@@ -8,31 +8,21 @@ using eHospitalServer.Entities.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Text;
 using TS.Result;
 
 namespace eHospitalServer.DataAccess.Services;
 internal sealed class UserService(
     UserManager<User> userManager,
     IMapper mapper) : IUserService
-{    
+{
     public async Task<Result<string>> CreateUserAsync(CreateUserDto request, CancellationToken cancellationToken)
-    {
+    {        
         if (request.Email is not null)
         {
             bool isEmailExists = await userManager.Users.AnyAsync(p => p.Email == request.Email);
             if (isEmailExists)
             {
                 return Result<string>.Failure(StatusCodes.Status409Conflict, "Email already has taken");
-            }
-        }
-
-        if (request.UserName is not null)
-        {
-            bool isUserNameExists = await userManager.Users.AnyAsync(p => p.UserName == request.UserName);
-            if (isUserNameExists)
-            {
-                return Result<string>.Failure(StatusCodes.Status409Conflict, "User name already has taken");
             }
         }
 
@@ -47,13 +37,19 @@ internal sealed class UserService(
 
         User user = mapper.Map<User>(request);
 
+        bool isUserNameExists = await userManager.Users.AnyAsync(p => p.UserName == user.UserName);
+        if (isUserNameExists)
+        {
+            return Result<string>.Failure(StatusCodes.Status409Conflict, "User name already has taken");
+        }
+
         Random random = new();
 
         bool isEmailConfirmCodeExists = true;
         while (isEmailConfirmCodeExists)
         {
             user.EmailConfirmCode = random.Next(100000, 999999);
-            if(!userManager.Users.Any(p=> p.EmailConfirmCode == user.EmailConfirmCode))
+            if (!userManager.Users.Any(p => p.EmailConfirmCode == user.EmailConfirmCode))
             {
                 isEmailConfirmCodeExists = false;
             }
@@ -83,7 +79,7 @@ internal sealed class UserService(
 
         if (!result.Succeeded)
         {
-            return Result<string>.Failure(500, result.Errors.Select(s => s.Description).ToList());            
+            return Result<string>.Failure(500, result.Errors.Select(s => s.Description).ToList());
         }
 
         return Result<string>.Succeed("User create is successful");
@@ -98,7 +94,7 @@ internal sealed class UserService(
             {
                 return Result<string>.Failure(StatusCodes.Status409Conflict, "Email already has taken");
             }
-        }        
+        }
 
         if (request.IdentityNumber != "11111111111")
         {
@@ -109,8 +105,15 @@ internal sealed class UserService(
             }
         }
 
-        User user = mapper.Map<User>(request);        
+        User user = mapper.Map<User>(request);
         user.UserType = UserType.Patient;
+
+        int number = 0;
+        while (await userManager.Users.AnyAsync(p => p.UserName == user.UserName))
+        {
+            number++;
+            user.UserName += number;
+        }
 
         Random random = new();
 
@@ -125,13 +128,13 @@ internal sealed class UserService(
         }
 
         user.EmailConfirmCodeSendDate = DateTime.UtcNow;
-        
+
 
         IdentityResult result = await userManager.CreateAsync(user);
 
         if (!result.Succeeded)
         {
-            return Result<string>.Failure(500, result.Errors.Select(s => s.Description).ToList());            
+            return Result<string>.Failure(500, result.Errors.Select(s => s.Description).ToList());
         }
 
         return Result<string>.Succeed("User create is successful");
@@ -143,9 +146,22 @@ internal sealed class UserService(
 
         if (user is null)
         {
-            return Result<User>.Failure(500,"User not found");
+            return Result<User>.Failure(500, "User not found");
         }
 
         return user;
+    }
+
+    public async Task<Result<List<User>>> GetAllDoctorsAsync(CancellationToken cancellationToken)
+    {
+        var doctors = 
+            await userManager
+            .Users
+            .Where(p => p.UserType == UserType.Doctor)
+            .Include(p => p.DoctorDetail)
+            .OrderBy(p => p.FirstName)
+            .ToListAsync(cancellationToken);
+
+        return Result<List<User>>.Succeed(doctors);
     }
 }

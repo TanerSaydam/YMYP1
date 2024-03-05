@@ -1,8 +1,24 @@
 [
   {
     "ContainingType": "eHospitalServer.WebAPI.Controllers.AppointmentsController",
-    "Method": "CreateAppointment",
-    "RelativePath": "api/Appointments/CreateAppointment",
+    "Method": "Complete",
+    "RelativePath": "api/Appointments/Complete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "eHospitalServer.Entities.DTOs.CompleteAppointmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AppointmentsController",
+    "Method": "Create",
+    "RelativePath": "api/Appointments/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,6 +43,22 @@
         "Name": "request",
         "Type": "eHospitalServer.Entities.DTOs.CreatePatientDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.AppointmentsController",
+    "Method": "GetAllByDoctorId",
+    "RelativePath": "api/Appointments/GetAllByDoctorId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "doctorId",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -125,6 +157,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eHospitalServer.WebAPI.Controllers.DoctorsController",
+    "Method": "GetAllDoctors",
+    "RelativePath": "api/Doctors/GetAllDoctors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

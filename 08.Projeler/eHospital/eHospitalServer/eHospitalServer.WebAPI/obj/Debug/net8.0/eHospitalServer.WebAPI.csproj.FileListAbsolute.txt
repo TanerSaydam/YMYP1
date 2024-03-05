@@ -134,3 +134,7 @@ C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\MailKit.dll
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\MimeKit.dll
 C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\GenericRepository.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\FluentValidation.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\YMYP1\08.Projeler\eHospital\eHospitalServer\eHospitalServer.WebAPI\bin\Debug\net8.0\DefaultCorsPolicyNugetPackage.dll
