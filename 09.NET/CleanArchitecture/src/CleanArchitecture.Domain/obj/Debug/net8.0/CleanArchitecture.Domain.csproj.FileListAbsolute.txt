@@ -1,0 +1,13 @@
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\bin\Debug\net8.0\CleanArchitecture.Domain.deps.json
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\bin\Debug\net8.0\CleanArchitecture.Domain.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\bin\Debug\net8.0\CleanArchitecture.Domain.pdb
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.csproj.AssemblyReference.cache
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.AssemblyInfoInputs.cache
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.AssemblyInfo.cs
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.csproj.CoreCompileInputs.cache
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.sourcelink.json
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\refint\CleanArchitecture.Domain.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\CleanArchitecture.Domain.pdb
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Domain\obj\Debug\net8.0\ref\CleanArchitecture.Domain.dll

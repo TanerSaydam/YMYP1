@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\YMYP1\\09.NET\\CleanArchitecture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E68E05A5-B311-499F-9815-8D7D5CFCB71A}|src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E68E05A5-B311-499F-9815-8D7D5CFCB71A}|src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj|solutionrelative:src\\cleanarchitecture.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\Migrations\\20240307195945_mg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\CleanArchitecture.Infrastructure\\Migrations\\20240307195945_mg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E68E05A5-B311-499F-9815-8D7D5CFCB71A}|src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E68E05A5-B311-499F-9815-8D7D5CFCB71A}|src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj|solutionrelative:src\\cleanarchitecture.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:src\\cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:src\\cleanarchitecture.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20240307195945_mg2.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\Migrations\\20240307195945_mg2.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Infrastructure\\Migrations\\20240307195945_mg2.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\Migrations\\20240307195945_mg2.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Infrastructure\\Migrations\\20240307195945_mg2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T19:59:45.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T19:59:01.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\DependencyInjection.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T19:56:39.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T19:55:44.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.WebAPI\\Program.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Program.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T19:55:14.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T19:55:06.035Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,11 +1,18 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 07.03.2024 (Gelecek ders)
+## 10.03.2024 (Gelecek ders)
+- Clean Architecture
+- Identity Kütüphanesi Endpoints
+- AutoMapper
+- FluentValidation
+- Behavior
+- Domain Events
+
+## 07.03.2024
 - Clean Architecture
 - CQRS
 - MediatR
-- Behavior
 
 ## 05.03.2024
 - Randevu Tamamlama

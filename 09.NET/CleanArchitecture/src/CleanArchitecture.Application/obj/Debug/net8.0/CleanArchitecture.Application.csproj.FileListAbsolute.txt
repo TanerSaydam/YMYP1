@@ -1,0 +1,16 @@
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.csproj.AssemblyReference.cache
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.AssemblyInfoInputs.cache
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.AssemblyInfo.cs
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.csproj.CoreCompileInputs.cache
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.sourcelink.json
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\bin\Debug\net8.0\CleanArchitecture.Application.deps.json
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\bin\Debug\net8.0\CleanArchitecture.Application.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\bin\Debug\net8.0\CleanArchitecture.Application.pdb
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\bin\Debug\net8.0\CleanArchitecture.Domain.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\bin\Debug\net8.0\CleanArchitecture.Domain.pdb
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArc.03AFA812.Up2Date
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\refint\CleanArchitecture.Application.dll
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\CleanArchitecture.Application.pdb
+C:\YMYP1\09.NET\CleanArchitecture\src\CleanArchitecture.Application\obj\Debug\net8.0\ref\CleanArchitecture.Application.dll
