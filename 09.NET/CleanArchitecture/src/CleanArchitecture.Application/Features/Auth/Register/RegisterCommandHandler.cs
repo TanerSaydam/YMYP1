@@ -1,13 +1,13 @@
-﻿using CleanArchitecture.Application.Services;
-using CleanArchitecture.Domain.Entities;
+﻿using CleanArchitecture.Domain.Entities;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using CleanArchitecture.Application.Utilities;
 using TS.Result;
 
 namespace CleanArchitecture.Application.Features.Auth.Register;
 
-public sealed class RegisterCommandHandler(
+public sealed class RegisterCommandHandler(//
     UserManager<AppUser> userManager) : IRequestHandler<RegisterCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(RegisterCommand request, CancellationToken cancellationToken = default)
@@ -31,7 +31,7 @@ public sealed class RegisterCommandHandler(
             FirstName = request.FirstName.Trim(),
             LastName = request.LastName.Trim(),
             Email = request.Email.ToLower().Trim(),
-            UserName = CommonService.ReplaceAllTurkishCharacters(request.UserName).ToLower().Trim(),
+            UserName = request.UserName.ReplaceAllTurkishCharacters().ToLower().Trim(),
         };
 
         IdentityResult result = await userManager.CreateAsync(user, request.Password);

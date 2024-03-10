@@ -129,6 +129,19 @@ namespace CleanArchitecture.Infrastructure.Migrations
 
                     b.ToTable("UserClaims", (string)null);
                 });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<System.Guid>", b =>
+                {
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("RoleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.ToTable("UserRoles", (string)null);
+                });
 #pragma warning restore 612, 618
         }
     }

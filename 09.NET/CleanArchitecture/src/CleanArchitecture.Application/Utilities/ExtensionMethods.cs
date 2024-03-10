@@ -1,7 +1,7 @@
-﻿namespace CleanArchitecture.Application.Services;
-internal static class CommonService
+﻿namespace CleanArchitecture.Application.Utilities;
+public static class ExtensionMethods
 {
-    public static string ReplaceAllTurkishCharacters(string value)
+    public static string ReplaceAllTurkishCharacters(this string text)
     {
         Dictionary<string, string> keys = new();
 
@@ -18,10 +18,10 @@ internal static class CommonService
 
         foreach (var item in keys)
         {
-            value = value.Replace(item.Key, item.Value);
+            text = text.Replace(item.Key, item.Value);
         }
 
 
-        return value;
+        return text;
     }
 }

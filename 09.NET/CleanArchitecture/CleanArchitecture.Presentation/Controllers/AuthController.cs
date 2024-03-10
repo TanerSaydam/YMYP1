@@ -1,18 +1,20 @@
 ﻿using CleanArchitecture.Application.Features.Auth.Register;
+using CleanArchitecture.Presentation.Abstractions;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CleanArchitecture.WebAPI.Controllers;
-[Route("api/[controller]/[action]")]
-[ApiController]
-public sealed class AuthController(
-    IMediator mediator) : ControllerBase
+namespace CleanArchitecture.Presentation.Controllers;
+
+public sealed class AuthController : ApiController
 {
+    public AuthController(IMediator mediator) : base(mediator)
+    {
+    }
+
     [HttpPost]
     public async Task<IActionResult> Register(RegisterCommand request, CancellationToken cancellationToken)
     {
-        var response = await mediator.Send(request, cancellationToken);
+        var response = await _mediator.Send(request, cancellationToken);
 
         return StatusCode(response.StatusCode, response);
     }

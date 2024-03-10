@@ -7,13 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5FF3E2B5-2F5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F7F063C7-B420-4A68-AA0D-1FFFE0E0C069}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "src\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{9A2E1278-CBBD-4A85-9732-49D532DF7BE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Domain", "src\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{9A2E1278-CBBD-4A85-9732-49D532DF7BE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "src\CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Application", "src\CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.WebAPI", "src\CleanArchitecture.WebAPI\CleanArchitecture.WebAPI.csproj", "{972B5561-5266-4F94-AA03-2EBABD5F5DA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.WebAPI", "src\CleanArchitecture.WebAPI\CleanArchitecture.WebAPI.csproj", "{972B5561-5266-4F94-AA03-2EBABD5F5DA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "src\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{E68E05A5-B311-499F-9815-8D7D5CFCB71A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Infrastructure", "src\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{E68E05A5-B311-499F-9815-8D7D5CFCB71A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Presentation", "CleanArchitecture.Presentation\CleanArchitecture.Presentation.csproj", "{EEF234BC-11B1-4745-95FD-04938B7F22A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +39,10 @@ Global
 		{E68E05A5-B311-499F-9815-8D7D5CFCB71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E68E05A5-B311-499F-9815-8D7D5CFCB71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E68E05A5-B311-499F-9815-8D7D5CFCB71A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF234BC-11B1-4745-95FD-04938B7F22A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF234BC-11B1-4745-95FD-04938B7F22A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF234BC-11B1-4745-95FD-04938B7F22A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF234BC-11B1-4745-95FD-04938B7F22A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF} = {5FF3E2B5-2F5E-4337-BBE8-1E48DD0289BE}
 		{972B5561-5266-4F94-AA03-2EBABD5F5DA6} = {5FF3E2B5-2F5E-4337-BBE8-1E48DD0289BE}
 		{E68E05A5-B311-499F-9815-8D7D5CFCB71A} = {5FF3E2B5-2F5E-4337-BBE8-1E48DD0289BE}
+		{EEF234BC-11B1-4745-95FD-04938B7F22A3} = {5FF3E2B5-2F5E-4337-BBE8-1E48DD0289BE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E44B2259-6C5B-4811-B29B-ACFC8A6EE1EB}
