@@ -1,7 +1,10 @@
 using CleanArchitecture.Application;
+using CleanArchitecture.Application.Options;
 using CleanArchitecture.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.Configure<EmailOptions>(builder.Configuration.GetSection("Email"));
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);

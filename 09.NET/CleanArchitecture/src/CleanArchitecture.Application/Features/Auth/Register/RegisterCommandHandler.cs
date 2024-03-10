@@ -1,29 +1,31 @@
-﻿using CleanArchitecture.Domain.Entities;
+﻿using CleanArchitecture.Application.Utilities;
+using CleanArchitecture.Domain.Entities;
+using CleanArchitecture.Domain.Events;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using CleanArchitecture.Application.Utilities;
 using TS.Result;
+
 
 namespace CleanArchitecture.Application.Features.Auth.Register;
 
-public sealed class RegisterCommandHandler(//
-    UserManager<AppUser> userManager) : IRequestHandler<RegisterCommand, Result<string>>
+public sealed class RegisterCommandHandler(
+    UserManager<AppUser> userManager,
+    IMediator mediator) : IRequestHandler<RegisterCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(RegisterCommand request, CancellationToken cancellationToken = default)
     {
-        bool isEmailExists = await userManager.Users.AnyAsync(p => p.Email == request.Email, cancellationToken);
-
-        if (isEmailExists)
+        Random random = new();
+        int emailConfirmCode = random.Next(111111,999999);
+        bool isEmailConfirmCodeExists = true;
+        while (isEmailConfirmCodeExists)
         {
-            return Result<string>.Failure("Email address already exists");
-        }
+            isEmailConfirmCodeExists = await userManager.Users.AnyAsync(p => p.EmailConfirmCode == emailConfirmCode, cancellationToken);
 
-        bool isUserNameExists = await userManager.Users.AnyAsync(p => p.UserName == request.UserName, cancellationToken);
-
-        if (isUserNameExists)
-        {
-            return Result<string>.Failure("User name already exists");
+            if(isEmailConfirmCodeExists)
+            {
+                emailConfirmCode = random.Next(111111, 999999);
+            }
         }
 
         AppUser user = new()
@@ -32,6 +34,7 @@ public sealed class RegisterCommandHandler(//
             LastName = request.LastName.Trim(),
             Email = request.Email.ToLower().Trim(),
             UserName = request.UserName.ReplaceAllTurkishCharacters().ToLower().Trim(),
+            EmailConfirmCode = emailConfirmCode,
         };
 
         IdentityResult result = await userManager.CreateAsync(user, request.Password);
@@ -41,6 +44,11 @@ public sealed class RegisterCommandHandler(//
             return Result<string>.Failure(errorMessages);
         }
 
+        await mediator.Publish(new AuthDomainEvent(user));
+
+
         return Result<string>.Succeed("User created successfully");
     }
+
+   
 }

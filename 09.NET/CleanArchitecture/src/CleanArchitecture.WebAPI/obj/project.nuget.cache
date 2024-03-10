@@ -1,11 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "yRXYOEneet9krxs++GowF/3p6YX+DzQuoVf1ky3MAVCO/bnxWlWbrh/NEQDBHILiUQd2cUPnWkerqKiXm3jBpQ==",
+  "dgSpecHash": "OmXwafHdlYV3Z2RexERLIl+tBpnzjOJ0D3g59voXoE58M3S5a/a5ZtER99R5a0eZh+tu/Nm/qo6plGOcTV+IfA==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\taner\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\fluentemail.smtp\\3.0.2\\fluentemail.smtp.3.0.2.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

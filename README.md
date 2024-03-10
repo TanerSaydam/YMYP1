@@ -1,13 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 10.03.2024 (Gelecek ders)
+## 12.03.2024 (Gelecek ders)
+- eHospital projesinde kaldığımız yerden devam ediyoruz
+
+## 10.03.2024
 - Clean Architecture
 - Identity Kütüphanesi Endpoints
-- AutoMapper
 - FluentValidation
-- Behavior
-- Domain Events
+- smtp4dev
+- FluentEmail
 
 ## 07.03.2024
 - Clean Architecture

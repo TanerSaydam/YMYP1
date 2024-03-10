@@ -62,6 +62,9 @@ namespace CleanArchitecture.Infrastructure.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("EmailConfirmCode")
+                        .HasColumnType("int");
+
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
