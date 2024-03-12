@@ -98,9 +98,10 @@ namespace eHospitalServer.DataAccess.Migrations
 
             modelBuilder.Entity("eHospitalServer.Entities.Models.DoctorDetail", b =>
                 {
-                    b.Property<Guid>("UserId")
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid")
-                        .HasColumnName("user_id");
+                        .HasColumnName("id");
 
                     b.Property<decimal>("AppointmentPrice")
                         .HasColumnType("money")
@@ -115,7 +116,7 @@ namespace eHospitalServer.DataAccess.Migrations
                         .HasColumnType("text[]")
                         .HasColumnName("working_days");
 
-                    b.HasKey("UserId")
+                    b.HasKey("Id")
                         .HasName("pk_doctor_details");
 
                     b.ToTable("doctor_details", (string)null);
@@ -255,6 +256,9 @@ namespace eHospitalServer.DataAccess.Migrations
                     b.HasKey("Id")
                         .HasName("pk_users");
 
+                    b.HasIndex("DoctorDetailId")
+                        .HasDatabaseName("ix_users_doctor_detail_id");
+
                     b.HasIndex("EmailConfirmCode")
                         .IsUnique()
                         .HasDatabaseName("ix_users_email_confirm_code");
@@ -283,18 +287,13 @@ namespace eHospitalServer.DataAccess.Migrations
                     b.Navigation("Patient");
                 });
 
-            modelBuilder.Entity("eHospitalServer.Entities.Models.DoctorDetail", b =>
-                {
-                    b.HasOne("eHospitalServer.Entities.Models.User", null)
-                        .WithOne("DoctorDetail")
-                        .HasForeignKey("eHospitalServer.Entities.Models.DoctorDetail", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired()
-                        .HasConstraintName("fk_doctor_details_users_user_id");
-                });
-
             modelBuilder.Entity("eHospitalServer.Entities.Models.User", b =>
                 {
+                    b.HasOne("eHospitalServer.Entities.Models.DoctorDetail", "DoctorDetail")
+                        .WithMany()
+                        .HasForeignKey("DoctorDetailId")
+                        .HasConstraintName("fk_users_doctor_details_doctor_detail_id");
+
                     b.Navigation("DoctorDetail");
                 });
 #pragma warning restore 612, 618

@@ -1,8 +1,17 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 12.03.2024 (Gelecek ders)
+## 14.03.2024 (Gelecek ders)
 - eHospital projesinde kaldığımız yerden devam ediyoruz
+- Appointment Delete
+- Authentication
+- Doktorun Randevularını Gördüğü Sayfa
+- Randevu Tamamlama
+- Linkedin Paylaşımı
+
+## 12.03.2024
+- eHospital projesinde kaldığımız yerden devam ediyoruz
+- Frontend Tarafında Appointment Kaydı
 
 ## 10.03.2024
 - Clean Architecture

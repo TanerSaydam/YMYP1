@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\utilities\\validationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|solutionrelative:src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\features\\auth\\register\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|solutionrelative:src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
               "RelativeToolTip": "src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAEwBUAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T10:45:30.478Z",
               "EditorCaption": ""
@@ -53,27 +53,27 @@
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
               "RelativeToolTip": "src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T10:42:48.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\DependencyInjection.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\DependencyInjection.cs",
               "RelativeToolTip": "src\\CleanArchitecture.Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T10:39:43.125Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "RegisterCommandHandler.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
@@ -86,13 +86,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "RegisterCommandValidator.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
               "RelativeToolTip": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-10T10:28:03.686Z",
               "EditorCaption": ""

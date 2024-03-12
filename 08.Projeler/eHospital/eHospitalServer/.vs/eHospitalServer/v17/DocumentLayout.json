@@ -7,24 +7,20 @@
       "RelativeMoniker": "D:0:0:{3877FC28-87F3-457D-AE9F-E968C8C3A963}|eHospitalServer.DataAccess\\eHospitalServer.DataAccess.csproj|solutionrelative:ehospitalserver.dataaccess\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.webapi\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|solutionrelative:ehospitalserver.webapi\\controllers\\appointmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|solutionrelative:ehospitalserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.webapi\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|solutionrelative:ehospitalserver.webapi\\controllers\\doctorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08FA889E-5700-436A-BE24-7BE0816D7F85}|eHospitalServer.Entities\\eHospitalServer.Entities.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.entities\\dtos\\createappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08FA889E-5700-436A-BE24-7BE0816D7F85}|eHospitalServer.Entities\\eHospitalServer.Entities.csproj|solutionrelative:ehospitalserver.entities\\dtos\\createappointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3877FC28-87F3-457D-AE9F-E968C8C3A963}|eHospitalServer.DataAccess\\eHospitalServer.DataAccess.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.dataaccess\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3877FC28-87F3-457D-AE9F-E968C8C3A963}|eHospitalServer.DataAccess\\eHospitalServer.DataAccess.csproj|solutionrelative:ehospitalserver.dataaccess\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5AFAED4F-45E6-4C62-8DCF-8F27F47520DB}|eHospitalServer.WebAPI\\eHospitalServer.WebAPI.csproj|solutionrelative:ehospitalserver.webapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FF4EB76-B005-4AB3-9820-74D07A471020}|eHospitalServer.Business\\eHospitalServer.Business.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.business\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FF4EB76-B005-4AB3-9820-74D07A471020}|eHospitalServer.Business\\eHospitalServer.Business.csproj|solutionrelative:ehospitalserver.business\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FF4EB76-B005-4AB3-9820-74D07A471020}|eHospitalServer.Business\\eHospitalServer.Business.csproj|c:\\ymyp1\\08.projeler\\ehospital\\ehospitalserver\\ehospitalserver.business\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FF4EB76-B005-4AB3-9820-74D07A471020}|eHospitalServer.Business\\eHospitalServer.Business.csproj|solutionrelative:ehospitalserver.business\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +30,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "eHospitalServer.DataAccess\\Services\\UserService.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\Services\\UserService.cs",
+              "RelativeToolTip": "eHospitalServer.DataAccess\\Services\\UserService.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAiwF4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T19:45:35.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Business\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "eHospitalServer.Business\\Services\\IUserService.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Business\\Services\\IUserService.cs",
+              "RelativeToolTip": "eHospitalServer.Business\\Services\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T19:42:50.659Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,93 +66,36 @@
               "RelativeDocumentMoniker": "eHospitalServer.DataAccess\\Services\\AppointmentService.cs",
               "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\Services\\AppointmentService.cs",
               "RelativeToolTip": "eHospitalServer.DataAccess\\Services\\AppointmentService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGQAAAAAAAAA",
+              "ViewState": "AQIAAEsAAAAAAAAAAAD4v2kAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T19:58:57.361Z",
+              "WhenOpened": "2024-03-12T19:42:00.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppointmentsController.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Controllers\\AppointmentsController.cs",
-              "RelativeDocumentMoniker": "eHospitalServer.WebAPI\\Controllers\\AppointmentsController.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Controllers\\AppointmentsController.cs",
-              "RelativeToolTip": "eHospitalServer.WebAPI\\Controllers\\AppointmentsController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAwCsAAAAyAAAA",
+              "Title": "CreateAppointmentDto.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Entities\\DTOs\\CreateAppointmentDto.cs",
+              "RelativeDocumentMoniker": "eHospitalServer.Entities\\DTOs\\CreateAppointmentDto.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Entities\\DTOs\\CreateAppointmentDto.cs",
+              "RelativeToolTip": "eHospitalServer.Entities\\DTOs\\CreateAppointmentDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAEAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T19:58:48.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Program.cs",
-              "RelativeDocumentMoniker": "eHospitalServer.WebAPI\\Program.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Program.cs",
-              "RelativeToolTip": "eHospitalServer.WebAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T19:49:23.849Z",
+              "WhenOpened": "2024-03-12T19:40:43.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "eHospitalServer.DataAccess\\Services\\UserService.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.DataAccess\\Services\\UserService.cs",
-              "RelativeToolTip": "eHospitalServer.DataAccess\\Services\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAKIAAAAsAAAA",
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Business\\Services\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "eHospitalServer.Business\\Services\\IAppointmentService.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.Business\\Services\\IAppointmentService.cs",
+              "RelativeToolTip": "eHospitalServer.Business\\Services\\IAppointmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T19:42:19.771Z",
+              "WhenOpened": "2024-03-12T19:40:38.638Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DoctorsController.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Controllers\\DoctorsController.cs",
-              "RelativeDocumentMoniker": "eHospitalServer.WebAPI\\Controllers\\DoctorsController.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Controllers\\DoctorsController.cs",
-              "RelativeToolTip": "eHospitalServer.WebAPI\\Controllers\\DoctorsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T19:40:37.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "eHospitalServer.WebAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\eHospital\\eHospitalServer\\eHospitalServer.WebAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "eHospitalServer.WebAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T19:40:25.673Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1511,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

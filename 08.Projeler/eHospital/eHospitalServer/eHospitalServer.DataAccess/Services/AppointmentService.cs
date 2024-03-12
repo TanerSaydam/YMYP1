@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using eHospitalServer.Business.Services;
+using eHospitalServer.DataAccess.Extensions;
 using eHospitalServer.Entities.DTOs;
 using eHospitalServer.Entities.Enums;
 using eHospitalServer.Entities.Models;
@@ -7,6 +8,7 @@ using eHospitalServer.Entities.Repositories;
 using GenericRepository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using TS.Result;
 
 namespace eHospitalServer.DataAccess.Services;
@@ -14,6 +16,7 @@ internal sealed class AppointmentService(
     UserManager<User> userManager,
     IAppointmentRepository appointmentRepository,
     IUnitOfWork unitOfWork,
+    IUserService userService,
     IMapper mapper) : IAppointmentService
 {
     public async Task<Result<string>> CompleteAsync(CompleteAppointmentDto request, CancellationToken cancellationToken)
@@ -76,14 +79,40 @@ internal sealed class AppointmentService(
         if (isDoctorHaveAppointment)
         {
             return Result<string>.Failure("Doctor is not available in that time");
-        }      
+        }
 
         Appointment appointment = mapper.Map<Appointment>(request);
+
+        if (request.PatientId is null)
+        {
+            CreatePatientDto createPatientDto = new(
+                request.FirstName,
+                request.LastName,
+                request.IdentityNumber,
+                request.FullAddress,
+                request.Email,
+                request.PhoneNumber,
+                request.DateOfBirth,
+                request.BloodType);
+
+           var createPatientResponse = await userService.CreatePatientAsync(createPatientDto, cancellationToken);
+
+            appointment.PatientId = createPatientResponse.Data;
+        }        
 
         await appointmentRepository.AddAsync(appointment, cancellationToken);
         await unitOfWork.SaveChangesAsync(cancellationToken);
 
         return Result<string>.Succeed("Create appointment is succedded");
+    }
+
+    public async Task<Result<User?>> FindPatientByIdentityNumberAsync(FindPatientDto request, CancellationToken cancellationToken)
+    {
+        User? user =
+            await userManager
+            .FindByIdentityNumber(request.IdentityNumber, cancellationToken);
+
+        return Result<User?>.Succeed(user);
     }
 
     public async Task<Result<List<Appointment>>> GetAllByDoctorIdAsync(Guid doctorId, CancellationToken cancellationToken)
@@ -96,5 +125,18 @@ internal sealed class AppointmentService(
             .OrderBy(p=> p.StartDate).ToListAsync();
 
         return Result<List<Appointment>>.Succeed(appointments);
+    }
+
+    public async Task<Result<List<User>>> GetAllDoctorsAsync(CancellationToken cancellationToken)
+    {
+        var doctors =
+            await userManager
+            .Users
+            .Where(p => p.UserType == UserType.Doctor)
+            .Include(p => p.DoctorDetail)
+            .OrderBy(p => p.FirstName)
+            .ToListAsync(cancellationToken);
+
+        return Result<List<User>>.Succeed(doctors);
     }
 }

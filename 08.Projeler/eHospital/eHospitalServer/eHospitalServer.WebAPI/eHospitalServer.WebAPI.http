@@ -22,3 +22,29 @@ Accept: application/json
 
 
 ###
+22:25 görüþelim
+POST https://localhost:7169/api/Users/Create
+Content-Type: application/json
+
+{
+  "firstName": "Taner",
+  "lastName": "Saydam",
+  "identityNumber": "11144466612",
+  "fullAddress": "Kayseri",
+  "email": "tanersaydam@gmail.com",
+  "userName": "tsaydam",
+  "password": "Password12*",
+  "phoneNumber": "5546548006",
+  "dateOfBirth": "1989-09-03",
+  "bloodType": "0rh+",
+  "userType": 1,
+  "specialty": 7,
+  "workingDays": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ]
+}
+###

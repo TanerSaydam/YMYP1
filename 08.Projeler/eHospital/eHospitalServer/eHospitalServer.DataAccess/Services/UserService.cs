@@ -85,14 +85,14 @@ internal sealed class UserService(
         return Result<string>.Succeed("User create is successful");
     }
 
-    public async Task<Result<string>> CreatePatientAsync(CreatePatientDto request, CancellationToken cancellationToken)
+    public async Task<Result<Guid>> CreatePatientAsync(CreatePatientDto request, CancellationToken cancellationToken)
     {
         if (request.Email is not null)
         {
             bool isEmailExists = await userManager.Users.AnyAsync(p => p.Email == request.Email);
             if (isEmailExists)
             {
-                return Result<string>.Failure(StatusCodes.Status409Conflict, "Email already has taken");
+                return Result<Guid>.Failure(StatusCodes.Status409Conflict, "Email already has taken");
             }
         }
 
@@ -101,7 +101,7 @@ internal sealed class UserService(
             bool isIdentityNumberExists = await userManager.Users.AnyAsync(p => p.IdentityNumber == request.IdentityNumber);
             if (isIdentityNumberExists)
             {
-                return Result<string>.Failure(StatusCodes.Status409Conflict, "Identity number already exists");
+                return Result<Guid>.Failure(StatusCodes.Status409Conflict, "Identity number already exists");
             }
         }
 
@@ -134,34 +134,10 @@ internal sealed class UserService(
 
         if (!result.Succeeded)
         {
-            return Result<string>.Failure(500, result.Errors.Select(s => s.Description).ToList());
+            return Result<Guid>.Failure(500, result.Errors.Select(s => s.Description).ToList());
         }
 
-        return Result<string>.Succeed("User create is successful");
-    }
-
-    public async Task<Result<User>> FindPatientWithIdentityNumberAsync(string identityNumber, CancellationToken cancellationToken)
-    {
-        User? user = await userManager.FindByIdentityNumber(identityNumber);
-
-        if (user is null)
-        {
-            return Result<User>.Failure(500, "User not found");
-        }
-
-        return user;
-    }
-
-    public async Task<Result<List<User>>> GetAllDoctorsAsync(CancellationToken cancellationToken)
-    {
-        var doctors = 
-            await userManager
-            .Users
-            .Where(p => p.UserType == UserType.Doctor)
-            .Include(p => p.DoctorDetail)
-            .OrderBy(p => p.FirstName)
-            .ToListAsync(cancellationToken);
-
-        return Result<List<User>>.Succeed(doctors);
-    }
+        return Result<Guid>.Succeed(user.Id);
+    }   
+   
 }
