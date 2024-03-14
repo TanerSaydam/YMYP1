@@ -1,13 +1,18 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 14.03.2024 (Gelecek ders)
+## 15.03.2024 (Gelecek ders)
+- Enes Task Çözümü Denemesi
+- Mehmet Can Ünaldu Task Çözümü Denemesi
+- Mülakat Soruları Cevapları
+
+## 14.03.2024
 - eHospital projesinde kaldığımız yerden devam ediyoruz
 - Appointment Delete
 - Authentication
 - Doktorun Randevularını Gördüğü Sayfa
-- Randevu Tamamlama
-- Linkedin Paylaşımı
+- Gaye Task Çözümü Denemesi
+
 
 ## 12.03.2024
 - eHospital projesinde kaldığımız yerden devam ediyoruz

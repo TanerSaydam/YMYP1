@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using TS.Result;
 
 namespace eHospitalServer.DataAccess.Services;
-internal class AuthService(
+public class AuthService(
     UserManager<User> userManager,
     SignInManager<User> signInManager,
     JwtProvider jwtProvider

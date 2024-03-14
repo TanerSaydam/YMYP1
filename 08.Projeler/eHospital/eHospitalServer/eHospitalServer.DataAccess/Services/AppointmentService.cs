@@ -106,6 +106,20 @@ internal sealed class AppointmentService(
         return Result<string>.Succeed("Create appointment is succedded");
     }
 
+    public async Task<Result<string>> DeleteByIdAsync(Guid id, CancellationToken cancellationToken)
+    {
+        Appointment? appointment = await appointmentRepository.GetByExpressionAsync(p => p.Id == id, cancellationToken);
+        if(appointment is null)
+        {
+            return Result<string>.Failure("Appointment not found");
+        }
+
+        appointmentRepository.Delete(appointment);
+        await unitOfWork.SaveChangesAsync(cancellationToken);
+
+        return Result<string>.Succeed("Appointment delete is successful");
+    }
+
     public async Task<Result<User?>> FindPatientByIdentityNumberAsync(FindPatientDto request, CancellationToken cancellationToken)
     {
         User? user =

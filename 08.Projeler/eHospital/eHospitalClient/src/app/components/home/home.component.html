@@ -1,15 +1,17 @@
 
 
-<div class="form-group mt-2">
-    <select (change)="getDoctorAppointments()" class="form-control" [(ngModel)]="selectedDoctorId">
-        <option value="">Select Doctor...</option>
-        @for(doctor of doctors; track doctor){
-            <option [value]="doctor.id">
-                {{doctor.fullName}} - {{doctor.doctorDetail?.specialtyName}}
-            </option>
-        }
-    </select>
-</div>
+@if(!loginUserIsDoctor){
+    <div class="form-group mt-2">
+        <select (change)="getDoctorAppointments()" class="form-control" [(ngModel)]="selectedDoctorId">
+            <option value="">Select Doctor...</option>
+            @for(doctor of doctors; track doctor){
+                <option [value]="doctor.id">
+                    {{doctor.fullName}} - {{doctor.doctorDetail?.specialtyName}}
+                </option>
+            }
+        </select>
+    </div>
+}
 
 @if(selectedDoctorId){
     <div class="form-group mt-2">
@@ -22,6 +24,7 @@
         [startDayHour]="9"
         [height]="730"    
         (onAppointmentFormOpening)="onAppointmentFormOpening($event)"
+        (onAppointmentDeleting)="onAppointmentDeleting($event)"
       >
       </dx-scheduler>
     </div>

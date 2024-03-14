@@ -1,8 +1,10 @@
 ﻿using eHospitalServer.Business.Services;
+using eHospitalServer.DataAccess.Services;
 using eHospitalServer.Entities.DTOs;
 using eHospitalServer.WebAPI.Abstractions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace eHospitalServer.WebAPI.Controllers;
 
@@ -21,7 +23,7 @@ public class AuthController(
     [HttpGet]
     [AllowAnonymous]
     public async Task<IActionResult> GetTokenByRefreshToken(string refreshToken, CancellationToken cancellationToken)
-    {
+    {        
         var response = await authService.GetTokenByRefreshTokenAsync(refreshToken, cancellationToken);
 
         return StatusCode(response.StatusCode, response);

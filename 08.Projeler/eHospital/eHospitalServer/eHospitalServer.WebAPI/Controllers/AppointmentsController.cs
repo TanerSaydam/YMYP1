@@ -28,7 +28,7 @@ public sealed class AppointmentsController(
         var response = await appointmentService.CreateAsync(request, cancellationToken);
 
         return StatusCode(response.StatusCode, response);
-    } //22:15 görüşelim
+    }
 
     [HttpPost]
     [AllowAnonymous]
@@ -62,6 +62,15 @@ public sealed class AppointmentsController(
     public async Task<IActionResult> GetAllDoctors(CancellationToken cancellationToken)
     {
         Result<List<User>> response = await appointmentService.GetAllDoctorsAsync(cancellationToken);
+
+        return StatusCode(response.StatusCode, response);
+    }
+
+    [HttpGet]
+    [AllowAnonymous]
+    public async Task<IActionResult> DeleteById(Guid id, CancellationToken cancellationToken)
+    {
+        var response = await appointmentService.DeleteByIdAsync(id, cancellationToken);
 
         return StatusCode(response.StatusCode, response);
     }

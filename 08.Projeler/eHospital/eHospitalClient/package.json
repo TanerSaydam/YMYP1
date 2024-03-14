@@ -22,6 +22,7 @@
     "devextreme-angular": "^23.2.4",
     "form-validate-angular": "^17.0.1",
     "i": "^0.3.7",
+    "jwt-decode": "^4.0.0",
     "npm": "^10.5.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

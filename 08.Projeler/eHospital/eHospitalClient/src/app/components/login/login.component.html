@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="d-flex justify-content-center align-items-center" style="height: 98vh;">
+        <div class="col-xl-4 col-lg-5 col-md-8 col-8">
+            <div class="card">
+                <div class="card-header">
+                    <h1>Sign In</h1>
+                    <p>Please fill your information to sign in</p>
+                </div>
+                <div class="card-body">
+                    <form #loginForm="ngForm" formValidate (ngSubmit)="login(loginForm)">
+                        <div class="form-group">
+                            <label>Email or UserName</label>
+                            <input type="text" class="form-control" [(ngModel)]="loginModel.emailOrUserName" name="emailOrUserName" required minlength="3">
+                            <div class="invalid-feedback"></div>
+                        </div>
+                        <div class="form-group mt-1" style="position: relative;">
+                            <label>Password</label>
+                            <input type="password" #password class="form-control" [(ngModel)]="loginModel.password" name="password" required>
+                            <div class="invalid-feedback"></div>
+                            @if(isShowPassword){
+                                <i (click)="showOrHidePassword()" class="fa-solid fa-eye-slash eye"></i>
+                            }@else{
+                                <i (click)="showOrHidePassword()" class="fa-solid fa-eye eye"></i>
+                            }
+                        </div>
+                        <div class="form-group mt-2">
+                            <button type="submit" class="btn btn-dark" style="float: right;">
+                                <i class="fa-solid fa-lock"></i>
+                                Sign In
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+</div>

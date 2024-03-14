@@ -1,13 +1,16 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { DxSchedulerModule } from 'devextreme-angular';
-import { UserModel } from '../../models/user.model';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule, NgForm } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { DxSchedulerModule } from 'devextreme-angular';
+import { FormValidateDirective } from 'form-validate-angular';
+
+import { UserModel } from '../../models/user.model';
 import { AppointmentModel } from '../../models/appointment.model';
 import { ResultModel } from '../../models/result.model';
-import { FormValidateDirective } from 'form-validate-angular';
 import { AppointmentDataModel } from '../../models/appointment-data.model';
-import { CommonModule } from '@angular/common';
+import { AuthService } from '../../services/auth.service';
+
 declare const $: any;
 
 @Component({
@@ -31,12 +34,26 @@ export class HomeComponent implements OnInit {
   addModel: AppointmentModel = new AppointmentModel();
   appointmentData: AppointmentDataModel = new AppointmentDataModel();
 
+  loginUserIsDoctor: boolean = false;
+
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private auth: AuthService
   ) { }
 
   ngOnInit(): void {
-    this.getAllDoctors();
+    if(this.auth.user.userType === "Doctor"){
+      this.loginUserIsDoctor = true;
+      this.selectedDoctorId = this.auth.user.userId;
+      this.getDoctorAppointments();
+    }
+    else if(this.auth.user.userType === "Patient"){
+      
+    }
+    else{
+      this.getAllDoctors();
+    }
+   
   }
 
   getAllDoctors() {
@@ -54,6 +71,7 @@ export class HomeComponent implements OnInit {
 
       const data = res.data.map((val: any, i: number) => {
         return {
+          id: val.id,
           text: val.patient.fullName,
           startDate: new Date(val.startDate),
           endDate: new Date(val.endDate)
@@ -64,8 +82,7 @@ export class HomeComponent implements OnInit {
     })
   }
 
-  onAppointmentFormOpening(event: any) {
-    console.log(event);  
+  onAppointmentFormOpening(event: any) {    
     this.appointmentData = event.appointmentData;
     const doctorName = this.doctors.find(p=> p.id == this.selectedDoctorId)?.fullName;
     const specialtyName = this.doctors.find(p=> p.id == this.selectedDoctorId)?.doctorDetail?.specialtyName;
@@ -111,5 +128,17 @@ export class HomeComponent implements OnInit {
             this.addModel.patient = res.data;
           }
         });
+  }
+
+  onAppointmentDeleting(event: any) {
+    event.cancel = true;
+    const result = confirm("You want to delete this appointment?");
+
+    if(result){
+      const id = event.appointmentData.id;
+      this.http.get(`https://localhost:7169/api/Appointments/DeleteById?id=${id}`).subscribe(res=> {
+        this.getDoctorAppointments();
+      });
+    }
   }
 }

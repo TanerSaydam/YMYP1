@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eHospitalServer.WebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4461406c35e558b90eab5daada9115144ba9f004")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+154ca6b695c3e24714707b54c216afb92b22c9fe")]
 [assembly: System.Reflection.AssemblyProductAttribute("eHospitalServer.WebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eHospitalServer.WebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
