@@ -1,7 +1,16 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 15.03.2024 (Gelecek ders)
+## 21.03.2024 (Gelecek ders)
+- Çağla ile Gaye'nin Reposunda Ortak Task Çözüm Devamı
+
+## 19.03.2024 (Gelecek ders)
+- Behavior (MediatR)
+- Cache (Memory ve Redis)
+- Log (Serilog ve Manuel)
+- SmartEnum
+
+## 17.03.2024
 - Enes Task Çözümü Denemesi
 - Mehmet Can Ünaldu Task Çözümü Denemesi
 - Mülakat Soruları Cevapları
@@ -12,7 +21,6 @@
 - Authentication
 - Doktorun Randevularını Gördüğü Sayfa
 - Gaye Task Çözümü Denemesi
-
 
 ## 12.03.2024
 - eHospital projesinde kaldığımız yerden devam ediyoruz
