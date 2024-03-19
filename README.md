@@ -3,12 +3,12 @@
 
 ## 21.03.2024 (Gelecek ders)
 - Çağla ile Gaye'nin Reposunda Ortak Task Çözüm Devamı
+- SmartEnum
+- Log (Serilog ve Manuel)
 
-## 19.03.2024 (Gelecek ders)
+## 19.03.2024
 - Behavior (MediatR)
 - Cache (Memory ve Redis)
-- Log (Serilog ve Manuel)
-- SmartEnum
 
 ## 17.03.2024
 - Enes Task Çözümü Denemesi

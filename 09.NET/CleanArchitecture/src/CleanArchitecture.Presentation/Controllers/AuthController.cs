@@ -19,7 +19,7 @@ public sealed class AuthController : ApiController
     }
 
     [HttpPost]
-    [Validation<RegisterCommandValidator>]
+    //[Validation<RegisterCommandValidator>]
     public async Task<IActionResult> Register(RegisterCommand request, CancellationToken cancellationToken)
     {
         var response = await _mediator.Send(request, cancellationToken);

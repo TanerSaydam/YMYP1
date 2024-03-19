@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OmXwafHdlYV3Z2RexERLIl+tBpnzjOJ0D3g59voXoE58M3S5a/a5ZtER99R5a0eZh+tu/Nm/qo6plGOcTV+IfA==",
+  "dgSpecHash": "rSGduhnowVkJ8rRUKbsZ8ngVn8bsFayc0QamHvcT8oK3S7qPpsT2xgrUEsbJ9CpvgUxpoJJmHpEXS1Jb98crHg==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj",
   "expectedPackageFiles": [

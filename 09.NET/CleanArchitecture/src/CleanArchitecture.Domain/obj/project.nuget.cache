@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "net5B0yg+bgBpHdwHfCR0yLmQf5hDwW+GBNa/i2lYS7n1x+v1uFnIES9gyYdiIiYMXJslOd1giYSt8pg335G5Q==",
+  "dgSpecHash": "HqRU8cRNypc6xMsSh8CaT7FdFMMmVkyTBBiz4aYycaZqSeZGpFpofINUvQLV7jDJmJtvYwT2mfoxYKmP7etsJA==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
   "expectedPackageFiles": [

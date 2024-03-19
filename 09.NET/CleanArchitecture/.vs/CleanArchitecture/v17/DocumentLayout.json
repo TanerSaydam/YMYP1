@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "C:\\YMYP1\\09.NET\\CleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.application\\utilities\\validationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\utilities\\validationattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|c:\\ymyp1\\09.net\\cleanarchitecture\\src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:src\\cleanarchitecture.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.webapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:src\\cleanarchitecture.webapi\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.presentation\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|solutionrelative:src\\cleanarchitecture.presentation\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\behaviors\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\behaviors\\validationbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.webapi\\middlewares\\testmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:src\\cleanarchitecture.webapi\\middlewares\\testmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\features\\test\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\features\\test\\testcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E68E05A5-B311-499F-9815-8D7D5CFCB71A}|src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E68E05A5-B311-499F-9815-8D7D5CFCB71A}|src\\CleanArchitecture.Infrastructure\\CleanArchitecture.Infrastructure.csproj|solutionrelative:src\\cleanarchitecture.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\features\\auth\\register\\registercommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|solutionrelative:src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\behaviors\\testbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\behaviors\\testbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\features\\auth\\register\\registercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\features\\auth\\register\\registercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.presentation\\filters\\testfilter1attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|solutionrelative:src\\cleanarchitecture.presentation\\filters\\testfilter1attribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FB82E45-9D42-4D8A-BCA3-4C63DAABD965}|src\\CleanArchitecture.Presentation\\CleanArchitecture.Presentation.csproj|solutionrelative:src\\cleanarchitecture.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9A2E1278-CBBD-4A85-9732-49D532DF7BE0}|src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.domain\\cleanarchitecture.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9A2E1278-CBBD-4A85-9732-49D532DF7BE0}|src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj|solutionrelative:src\\cleanarchitecture.domain\\cleanarchitecture.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.application\\cleanarchitecture.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FDF6FE4C-807C-454E-9A69-9EAE8B7FB7FF}|src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj|solutionrelative:src\\cleanarchitecture.application\\cleanarchitecture.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\cleanarchitecture.webapi\\cleanarchitecture.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{972B5561-5266-4F94-AA03-2EBABD5F5DA6}|src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj|solutionrelative:src\\cleanarchitecture.webapi\\cleanarchitecture.webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +78,212 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAABAAAA",
+              "DocumentIndex": 3,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Presentation\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\TestController.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Presentation\\Controllers\\TestController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T10:45:30.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T17:19:29.647Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.WebAPI\\Program.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Program.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.WebAPI\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:18:11.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:34:30.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ValidationBehavior.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Behaviors\\ValidationBehavior.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Behaviors\\ValidationBehavior.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\Behaviors\\ValidationBehavior.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAwCwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:35:57.326Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ValidationAttribute.cs",
-              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
-              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
-              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
-              "RelativeToolTip": "src\\CleanArchitecture.Application\\Utilities\\ValidationAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T10:42:48.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\DependencyInjection.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\DependencyInjection.cs",
               "RelativeToolTip": "src\\CleanArchitecture.Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T10:39:43.125Z",
+              "WhenOpened": "2024-03-19T17:31:23.508Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestMiddleware.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Middlewares\\TestMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.WebAPI\\Middlewares\\TestMiddleware.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Middlewares\\TestMiddleware.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.WebAPI\\Middlewares\\TestMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:42:54.309Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterCommandHandler.cs",
-              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
-              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
-              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
-              "RelativeToolTip": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.WebAPI\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T10:30:16.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T17:52:47.999Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "RegisterCommandValidator.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
               "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
               "RelativeToolTip": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T10:28:03.686Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-19T17:21:07.43Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TestCommand.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Test\\TestCommand.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Test\\TestCommand.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Test\\TestCommand.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\Features\\Test\\TestCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:58:23.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestBehavior.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Behaviors\\TestBehavior.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Behaviors\\TestBehavior.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Behaviors\\TestBehavior.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\Behaviors\\TestBehavior.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:29:45.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:19:20.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterCommand.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommand.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommand.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommand.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:37:29.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CleanArchitecture.Domain",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+              "RelativeToolTip": "src\\CleanArchitecture.Domain\\CleanArchitecture.Domain.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-19T17:34:24.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RegisterCommandHandler.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\Features\\Auth\\Register\\RegisterCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:21:07.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TestFilter1Attribute.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Filters\\TestFilter1Attribute.cs",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Presentation\\Filters\\TestFilter1Attribute.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Presentation\\Filters\\TestFilter1Attribute.cs",
+              "RelativeToolTip": "src\\CleanArchitecture.Presentation\\Filters\\TestFilter1Attribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T17:20:28.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CleanArchitecture.Application",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+              "RelativeToolTip": "src\\CleanArchitecture.Application\\CleanArchitecture.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-19T17:28:00.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CleanArchitecture.WebAPI",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj",
+              "RelativeDocumentMoniker": "src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj",
+              "ToolTip": "C:\\YMYP1\\09.NET\\CleanArchitecture\\src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj",
+              "RelativeToolTip": "src\\CleanArchitecture.WebAPI\\CleanArchitecture.WebAPI.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-19T17:18:14.047Z"
             }
           ]
         }
