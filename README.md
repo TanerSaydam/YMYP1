@@ -1,10 +1,22 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 21.03.2024 (Gelecek ders)
-- Çağla ile Gaye'nin Reposunda Ortak Task Çözüm Devamı
+## 24.03.2024 (Gelecek ders)
+- Ödev
+    * Grup Lideri seçin
+    * Grup lideri bir repo oluştursun ve herkese özgü branch eklesin
+    * Grup lideri repoyu arkadaşlarıyla paylaşsın
+    * Herkesn kendi üzerine düşen kodlama görevini yapıp pushlasın
+    * Grup lideri pushlamaları kontrol edip ana repoya alsın ve test etsin
+    * Görev: Clean Architecture ve CQRS ile Login işlemi
+    * Fake bir register işlemini IoC container de otomatik yaptırın
+    * Derste de GitHub reposu ve programın çalışıp çalışmadığı kontrol edilecek
+    
 - SmartEnum
 - Log (Serilog ve Manuel)
+
+## 21.03.2024 (Gelecek ders)
+- Çağla ile Gaye'nin Reposunda Ortak Task Çözüm Devamı
 
 ## 19.03.2024
 - Behavior (MediatR)
