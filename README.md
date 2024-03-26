@@ -1,7 +1,11 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 24.03.2024 (Gelecek ders)
+## 28.03.2024 (Gelecek Ders)
+- Loglamaya Devam
+- SeriLog
+
+## 26.03.2024
 - Ödev
     * Grup Lideri seçin
     * Grup lideri bir repo oluştursun ve herkese özgü branch eklesin
@@ -15,7 +19,7 @@
 - SmartEnum
 - Log (Serilog ve Manuel)
 
-## 21.03.2024 (Gelecek ders)
+## 21.03.2024
 - Çağla ile Gaye'nin Reposunda Ortak Task Çözüm Devamı
 
 ## 19.03.2024

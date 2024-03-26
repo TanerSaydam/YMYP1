@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kko+Wgkm4WQ/QCCMgJgUihjxAjBuSaCoFVi9KrykNG2pUSmqokrrY0t2UElwMPT8Ceh8Lpj0Sqsw8bLmBAKItQ==",
+  "success": true,
+  "projectFilePath": "C:\\YMYP1\\09.NET\\SmartEnum.ConsoleApp\\SmartEnum.ConsoleApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
