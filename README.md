@@ -1,9 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 28.03.2024 (Gelecek Ders)
+## 31.03.2024 (Gelecek Ders)
+- RabbitMQ
+- SignalR
+- Chart.js
+
+## 28.03.2024
 - Loglamaya Devam
-- SeriLog
+- SeriLog - Manuel Loglama - Error Loglama
 
 ## 26.03.2024
 - Ödev

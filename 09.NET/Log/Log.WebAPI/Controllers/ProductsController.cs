@@ -1,44 +1,63 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Log.WebAPI.Context;
+using Log.WebAPI.DTOs;
+using Log.WebAPI.Filters;
+using Log.WebAPI.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Serilog;
+using System.Security.Claims;
+using System.Text.Json;
 
 namespace Log.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
-public sealed class ProductsController: ControllerBase
+public sealed class ProductsController(ApplicationDbContext context): ControllerBase
 {
-    [HttpGet]
-    public IActionResult Create(string name)
-    {
-        Serilog.Log.Information("Starting creating...");
-        //Kayıt
-        Serilog.Log.Information("Creating is finish");
+    [HttpPost]
+    [LogFilter]
+    public IActionResult Create(ProductDto request)
+    {        
+        Product product = new()
+        {
+            Name = request.Name,
+            Price = request.Price
+        };      
 
-        return NoContent();
+        context.Add(product);
+        context.SaveChanges();
+
+        return Ok();
     }
 
     [HttpGet]
-    public IActionResult Update(int id, string name)
+    public IActionResult Update(int id, string name, decimal price)
     {
+        Product? product = context.Products.Find(id);
+        if (product is not null)
+        {
+            product.Name = name;
+            product.Price = price;
 
-        //Update
-
+            context.SaveChanges();
+        }
         return NoContent();
     }
 
     [HttpGet]
     public IActionResult DeleteByıd(int id)
     {
-        //Delete
-
+        Product? product = context.Products.Find(id);
+        if(product is not null)
+        {
+            context.Remove(product);
+            context.SaveChanges();
+        }        
         return NoContent();
     }
 
     [HttpGet]
     public IActionResult GetAll()
-    {
-        //GetAll
-
-        return Ok();
+    {        
+        return Ok(context.Products.ToList());
     }
 }
