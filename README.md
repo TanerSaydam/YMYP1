@@ -1,10 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 31.03.2024 (Gelecek Ders)
+## 02.04.2024 (Gelecek Ders)
+- RabbitMQ ile Örnek Proje
+- Aws SQS, SNS (Amazon Servisleri)
+
+## 31.03.2024
 - RabbitMQ
-- SignalR
-- Chart.js
 
 ## 28.03.2024
 - Loglamaya Devam

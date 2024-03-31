@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.HelloWorld", "1.HelloWorld", "{94F243B1-4654-4874-928A-A1C50F0DFDF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Send", "1.HelloWorld\Send\Send.csproj", "{9F826408-93D7-42F7-81E2-1338BA02BE1F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F4070ADE-45EB-43BD-A4E9-C4C830F4BE35}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Receive", "1.HelloWorld\Receive\Receive.csproj", "{099A32BE-4807-4BDE-8946-43646B42930F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.WorkQueues", "2.WorkQueues", "{9439A9A8-0805-4DBF-8E03-E52863959BFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewTask", "2.WorkQueues\NewTask\NewTask.csproj", "{C5C3671A-E794-4CD4-9F6D-28FB55A7DEA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Worker", "2.WorkQueues\Worker\Worker.csproj", "{10C13294-1825-47E9-BBE4-B185521FCA5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.PublishSubscribe", "3.PublishSubscribe", "{34221F15-5083-453C-9095-D772E14963C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLog", "3.PublishSubscribe\EmitLog\EmitLog.csproj", "{EBA4F79C-E7F7-4743-BD87-0C9E1E42BCC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogs", "3.PublishSubscribe\ReceiveLogs\ReceiveLogs.csproj", "{89B5A8F1-6FBB-47FA-B639-A7AC6C2C219A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Routing", "4.Routing", "{EA27DA97-DE9F-4897-AB4A-F192AFFD6733}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitLogDirect", "4.Routing\EmitLogDirect\EmitLogDirect.csproj", "{D1C091FD-7AB5-4BAC-BD94-09A5A7A0DC8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReceiveLogsDirect", "4.Routing\ReceiveLogsDirect\ReceiveLogsDirect.csproj", "{D49F4075-23BD-4FAF-98E4-E76F82023BFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F826408-93D7-42F7-81E2-1338BA02BE1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F826408-93D7-42F7-81E2-1338BA02BE1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F826408-93D7-42F7-81E2-1338BA02BE1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F826408-93D7-42F7-81E2-1338BA02BE1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{099A32BE-4807-4BDE-8946-43646B42930F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{099A32BE-4807-4BDE-8946-43646B42930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{099A32BE-4807-4BDE-8946-43646B42930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{099A32BE-4807-4BDE-8946-43646B42930F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5C3671A-E794-4CD4-9F6D-28FB55A7DEA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5C3671A-E794-4CD4-9F6D-28FB55A7DEA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5C3671A-E794-4CD4-9F6D-28FB55A7DEA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5C3671A-E794-4CD4-9F6D-28FB55A7DEA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C13294-1825-47E9-BBE4-B185521FCA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C13294-1825-47E9-BBE4-B185521FCA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C13294-1825-47E9-BBE4-B185521FCA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C13294-1825-47E9-BBE4-B185521FCA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA4F79C-E7F7-4743-BD87-0C9E1E42BCC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA4F79C-E7F7-4743-BD87-0C9E1E42BCC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA4F79C-E7F7-4743-BD87-0C9E1E42BCC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA4F79C-E7F7-4743-BD87-0C9E1E42BCC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89B5A8F1-6FBB-47FA-B639-A7AC6C2C219A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89B5A8F1-6FBB-47FA-B639-A7AC6C2C219A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89B5A8F1-6FBB-47FA-B639-A7AC6C2C219A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89B5A8F1-6FBB-47FA-B639-A7AC6C2C219A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1C091FD-7AB5-4BAC-BD94-09A5A7A0DC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C091FD-7AB5-4BAC-BD94-09A5A7A0DC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C091FD-7AB5-4BAC-BD94-09A5A7A0DC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C091FD-7AB5-4BAC-BD94-09A5A7A0DC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D49F4075-23BD-4FAF-98E4-E76F82023BFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49F4075-23BD-4FAF-98E4-E76F82023BFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49F4075-23BD-4FAF-98E4-E76F82023BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49F4075-23BD-4FAF-98E4-E76F82023BFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F826408-93D7-42F7-81E2-1338BA02BE1F} = {94F243B1-4654-4874-928A-A1C50F0DFDF7}
+		{099A32BE-4807-4BDE-8946-43646B42930F} = {94F243B1-4654-4874-928A-A1C50F0DFDF7}
+		{C5C3671A-E794-4CD4-9F6D-28FB55A7DEA5} = {9439A9A8-0805-4DBF-8E03-E52863959BFF}
+		{10C13294-1825-47E9-BBE4-B185521FCA5B} = {9439A9A8-0805-4DBF-8E03-E52863959BFF}
+		{EBA4F79C-E7F7-4743-BD87-0C9E1E42BCC1} = {34221F15-5083-453C-9095-D772E14963C8}
+		{89B5A8F1-6FBB-47FA-B639-A7AC6C2C219A} = {34221F15-5083-453C-9095-D772E14963C8}
+		{D1C091FD-7AB5-4BAC-BD94-09A5A7A0DC8D} = {EA27DA97-DE9F-4897-AB4A-F192AFFD6733}
+		{D49F4075-23BD-4FAF-98E4-E76F82023BFA} = {EA27DA97-DE9F-4897-AB4A-F192AFFD6733}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {633A09E1-8625-4EF6-9104-3C2067C04C0E}
+	EndGlobalSection
+EndGlobal
