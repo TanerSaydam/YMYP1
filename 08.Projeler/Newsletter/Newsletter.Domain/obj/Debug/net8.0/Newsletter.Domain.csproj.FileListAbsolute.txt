@@ -1,0 +1,13 @@
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\bin\Debug\net8.0\Newsletter.Domain.deps.json
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\bin\Debug\net8.0\Newsletter.Domain.dll
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\bin\Debug\net8.0\Newsletter.Domain.pdb
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.csproj.AssemblyReference.cache
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.AssemblyInfoInputs.cache
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.AssemblyInfo.cs
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.csproj.CoreCompileInputs.cache
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.sourcelink.json
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.dll
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\refint\Newsletter.Domain.dll
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\Newsletter.Domain.pdb
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Domain\obj\Debug\net8.0\ref\Newsletter.Domain.dll

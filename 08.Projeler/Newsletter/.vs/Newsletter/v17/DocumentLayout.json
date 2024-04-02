@@ -3,31 +3,51 @@
   "WorkspaceRootPath": "C:\\YMYP1\\08.Projeler\\Newsletter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.application\\features\\blogs\\createblog\\createblogcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\blogs\\createblog\\createblogcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.infrastructure\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\repositories\\blogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.infrastructure\\repositories\\subscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\repositories\\subscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.infrastructure\\newsletter.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\newsletter.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\features\\blogs\\createblog\\createblogcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\blogs\\createblog\\createblogcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\features\\blogs\\createblog\\createblogcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.application\\features\\blogs\\createblog\\createblogcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\blogs\\createblog\\createblogcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\extensions\\commonextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.application\\extensions\\commonextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\extensions\\commonextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|solutionrelative:newsletter.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,8 +66,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SubscribeRepository.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Repositories\\SubscribeRepository.cs",
+              "RelativeDocumentMoniker": "Newsletter.Infrastructure\\Repositories\\SubscribeRepository.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Repositories\\SubscribeRepository.cs",
+              "RelativeToolTip": "Newsletter.Infrastructure\\Repositories\\SubscribeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T20:06:23.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BlogRepository.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Repositories\\BlogRepository.cs",
+              "RelativeDocumentMoniker": "Newsletter.Infrastructure\\Repositories\\BlogRepository.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Repositories\\BlogRepository.cs",
+              "RelativeToolTip": "Newsletter.Infrastructure\\Repositories\\BlogRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T19:52:01.804Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -70,33 +116,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Profiles\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "Newsletter.Application\\Profiles\\MappingProfile.cs",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Profiles\\MappingProfile.cs",
-              "RelativeToolTip": "Newsletter.Application\\Profiles\\MappingProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Newsletter.Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Newsletter.Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T18:58:34.673Z",
+              "WhenOpened": "2024-04-02T19:30:54.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Newsletter.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Newsletter.Infrastructure\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T19:23:41.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "CreateBlogCommandHandler.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
               "RelativeDocumentMoniker": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
               "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
               "RelativeToolTip": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T18:57:47.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "Newsletter.Infrastructure",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj",
+              "RelativeToolTip": "Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-02T19:30:43.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "RelativeToolTip": "Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:58:34.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "CommonExtensions.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Extensions\\CommonExtensions.cs",
               "RelativeDocumentMoniker": "Newsletter.Application\\Extensions\\CommonExtensions.cs",
@@ -109,7 +194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Blog.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Entities\\Blog.cs",
               "RelativeDocumentMoniker": "Newsletter.Domain\\Entities\\Blog.cs",
@@ -122,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "CreateBlogCommand.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommand.cs",
               "RelativeDocumentMoniker": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommand.cs",
@@ -135,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "LoginCommand.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Auth\\Login\\LoginCommand.cs",
               "RelativeDocumentMoniker": "Newsletter.Application\\Features\\Auth\\Login\\LoginCommand.cs",
@@ -148,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "IBlogRepository.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Repositories\\IBlogRepository.cs",
               "RelativeDocumentMoniker": "Newsletter.Domain\\Repositories\\IBlogRepository.cs",
@@ -161,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "ISubscribeRepository.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Repositories\\ISubscribeRepository.cs",
               "RelativeDocumentMoniker": "Newsletter.Domain\\Repositories\\ISubscribeRepository.cs",
@@ -174,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Newsletter.Application\\DependencyInjection.cs",

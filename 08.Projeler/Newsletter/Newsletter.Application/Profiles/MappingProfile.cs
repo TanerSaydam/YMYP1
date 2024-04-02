@@ -7,6 +7,6 @@ public sealed class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<CreateBlogCommand, Blog>();
-    } //22:20 görüşelim
+        CreateMap<CreateBlogCommand, Blog>().ReverseMap();
+    }
 }
