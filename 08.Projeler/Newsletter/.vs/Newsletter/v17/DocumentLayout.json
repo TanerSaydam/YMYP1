@@ -3,15 +3,39 @@
   "WorkspaceRootPath": "C:\\YMYP1\\08.Projeler\\Newsletter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\features\\blogs\\createblog\\createblogcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\blogs\\createblog\\createblogcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\features\\blogs\\createblog\\createblogcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\blogs\\createblog\\createblogcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\extensions\\commonextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\extensions\\commonextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|solutionrelative:newsletter.domain\\entities\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.domain\\repositories\\isubscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB769AFE-2622-465A-8178-095ADA732759}|Newsletter.Application\\Newsletter.Application.csproj|solutionrelative:newsletter.application\\features\\auth\\login\\logincommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.domain\\repositories\\isubscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|solutionrelative:newsletter.domain\\repositories\\isubscriberepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.domain\\repositories\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.domain\\repositories\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B06081D-163D-4F7E-9AD8-258C3F7A573D}|Newsletter.Domain\\Newsletter.Domain.csproj|solutionrelative:newsletter.domain\\repositories\\iblogrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +70,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "RelativeToolTip": "Newsletter.Application\\Profiles\\MappingProfile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:58:34.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateBlogCommandHandler.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
+              "RelativeDocumentMoniker": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
+              "RelativeToolTip": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:57:47.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CommonExtensions.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Extensions\\CommonExtensions.cs",
+              "RelativeDocumentMoniker": "Newsletter.Application\\Extensions\\CommonExtensions.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Extensions\\CommonExtensions.cs",
+              "RelativeToolTip": "Newsletter.Application\\Extensions\\CommonExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAIwBIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:53:17.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Entities\\Blog.cs",
+              "RelativeDocumentMoniker": "Newsletter.Domain\\Entities\\Blog.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Entities\\Blog.cs",
+              "RelativeToolTip": "Newsletter.Domain\\Entities\\Blog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:35:17.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CreateBlogCommand.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommand.cs",
+              "RelativeDocumentMoniker": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommand.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommand.cs",
+              "RelativeToolTip": "Newsletter.Application\\Features\\Blogs\\CreateBlog\\CreateBlogCommand.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:32:40.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginCommand.cs",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Auth\\Login\\LoginCommand.cs",
+              "RelativeDocumentMoniker": "Newsletter.Application\\Features\\Auth\\Login\\LoginCommand.cs",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Features\\Auth\\Login\\LoginCommand.cs",
+              "RelativeToolTip": "Newsletter.Application\\Features\\Auth\\Login\\LoginCommand.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T18:21:33.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "IBlogRepository.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Repositories\\IBlogRepository.cs",
               "RelativeDocumentMoniker": "Newsletter.Domain\\Repositories\\IBlogRepository.cs",
@@ -59,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "ISubscribeRepository.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Domain\\Repositories\\ISubscribeRepository.cs",
               "RelativeDocumentMoniker": "Newsletter.Domain\\Repositories\\ISubscribeRepository.cs",
@@ -72,13 +174,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Newsletter.Application\\DependencyInjection.cs",
               "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\DependencyInjection.cs",
               "RelativeToolTip": "Newsletter.Application\\DependencyInjection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T17:54:14.332Z",
               "EditorCaption": ""

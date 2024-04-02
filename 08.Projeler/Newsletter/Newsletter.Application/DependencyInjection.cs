@@ -10,6 +10,8 @@ public static class DependencyInjection
             configuration.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
         });
 
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
         return services;
     }
 }
