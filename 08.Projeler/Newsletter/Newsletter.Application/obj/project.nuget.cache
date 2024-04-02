@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "X69OqRP/UTTUH9ytku5kpee/K2I8RiRtepk6gXgRnkFlPkflSY6aJVLWYCbNJazR4z0TSi3e7o0llJY0MtPKNg==",
+  "success": true,
+  "projectFilePath": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Newsletter.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\taner\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
