@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Newsletter.Domain.Entities;
 using Newsletter.Domain.Repositories;
 using Newsletter.Infrastructure.Context;
+using Newsletter.Infrastructure.Repositories;
 using Scrutor;
 
 namespace Newsletter.Infrastructure;
@@ -23,13 +24,16 @@ public static class DependencyInjection
 
         services.AddScoped<IUnitOfWork>(srv => srv.GetRequiredService<ApplicationDbContext>());
 
-        services.Scan(action =>
-            action
-            .FromAssemblies(AppDomain.CurrentDomain.GetAssemblies())
-            .AddClasses(publicOnly: false)
-            .UsingRegistrationStrategy(RegistrationStrategy.Skip)
-            .AsImplementedInterfaces()
-            .WithScopedLifetime());
+        services.AddScoped<IBlogRepository, BlogRepository>();
+        services.AddScoped<ISubscribeRepository, SubscribeRepository>();
+
+        //services.Scan(action =>
+        //    action
+        //    .FromAssemblies(AppDomain.CurrentDomain.GetAssemblies())
+        //    .AddClasses(publicOnly: false)
+        //    .UsingRegistrationStrategy(RegistrationStrategy.Skip)
+        //    .AsImplementedInterfaces()
+        //    .WithScopedLifetime());
 
 
         return services;        
