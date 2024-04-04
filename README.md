@@ -1,7 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 04.04.2024 (Gelecek Ders)
+## 07.04.2024 (Gelecek Ders)
+- Newsletter Projesine Devam Ediyoruz
+
+## 04.04.2024 
 - Newsletter Projesine Devam Ediyoruz
 
 ## 02.04.2024

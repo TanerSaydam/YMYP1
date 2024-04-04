@@ -3,31 +3,39 @@
   "WorkspaceRootPath": "C:\\YMYP1\\08.Projeler\\Newsletter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\taner\\AppData\\Roaming\\Microsoft\\UserSecrets\\bc03eac8-3147-4d1c-9f17-cbb77e06bcfa\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\views\\newsletters\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\views\\newsletters\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|c:\\ymyp1\\08.projeler\\newsletter\\newsletter.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{906DCEA7-9466-4C77-B04C-802ABD947CE2}|Newsletter.MVC\\Newsletter.MVC.csproj|solutionrelative:newsletter.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\taner\\AppData\\Roaming\\Microsoft\\UserSecrets\\bc03eac8-3147-4d1c-9f17-cbb77e06bcfa\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|C:\\YMYP1\\08.Projeler\\Newsletter\\newsletter.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}|Newsletter.Infrastructure\\Newsletter.Infrastructure.csproj|solutionrelative:newsletter.infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 267,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,20 +69,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Newsletters\\Index.cshtml",
+              "RelativeDocumentMoniker": "Newsletter.MVC\\Views\\Newsletters\\Index.cshtml",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Newsletters\\Index.cshtml",
+              "RelativeToolTip": "Newsletter.MVC\\Views\\Newsletters\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T19:53:14.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "Newsletter.MVC\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "Newsletter.MVC\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-04T18:47:26.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Newsletter.MVC\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Newsletter.MVC\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwAcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T18:59:04.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\appsettings.json",
               "RelativeDocumentMoniker": "Newsletter.MVC\\appsettings.json",
@@ -87,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "secrets.json",
               "DocumentMoniker": "C:\\Users\\taner\\AppData\\Roaming\\Microsoft\\UserSecrets\\bc03eac8-3147-4d1c-9f17-cbb77e06bcfa\\secrets.json",
               "RelativeDocumentMoniker": "..\\..\\..\\Users\\taner\\AppData\\Roaming\\Microsoft\\UserSecrets\\bc03eac8-3147-4d1c-9f17-cbb77e06bcfa\\secrets.json",
@@ -100,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Infrastructure\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Newsletter.Infrastructure\\DependencyInjection.cs",
@@ -108,18 +142,17 @@
               "RelativeToolTip": "Newsletter.Infrastructure\\DependencyInjection.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T18:54:04.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T18:54:04.205Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Program.cs",
               "RelativeDocumentMoniker": "Newsletter.MVC\\Program.cs",
               "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Program.cs",
               "RelativeToolTip": "Newsletter.MVC\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T18:53:46.237Z",
               "EditorCaption": ""
@@ -127,22 +160,16 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Auth\\Login.cshtml",
-              "RelativeDocumentMoniker": "Newsletter.MVC\\Views\\Auth\\Login.cshtml",
-              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Auth\\Login.cshtml",
-              "RelativeToolTip": "Newsletter.MVC\\Views\\Auth\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Newsletter.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Newsletter.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-04T18:47:26.508Z",
+              "WhenOpened": "2024-04-04T19:46:57.802Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedHeight": 133,
-          "SelectedChildIndex": 0,
-          "Children": [
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -151,9 +178,9 @@
               "RelativeDocumentMoniker": "Newsletter.MVC\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.MVC\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Newsletter.MVC\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAqwBUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T18:45:33.422Z",
+              "WhenOpened": "2024-04-04T19:25:51.046Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@{
+    HttpContextAccessor httpContextAccessor = new();
+    
+    bool isAuthenticated = httpContextAccessor.HttpContext!.User.Claims.Any();
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -26,12 +32,18 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Newsletters" asp-action="Index">Newsletters</a>
                         </li>
                     </ul>
-                    <a class="btn btn-outline-dark" asp-controller="Auth" asp-action="Login">
-                        <i class="fa-solid fa-lock"></i>
-                    </a>
-                    <a class="btn btn-outline-danger" asp-controller="Auth" asp-action="Login">
-                        <i class="fa-solid fa-power-off"></i>
-                    </a>
+                    @if (!isAuthenticated)
+                    {
+                        <a class="btn btn-outline-dark" asp-controller="Auth" asp-action="Login">
+                            <i class="fa-solid fa-lock"></i>
+                        </a>
+                    }else{
+                        <a class="btn btn-outline-danger" asp-controller="Auth" asp-action="LogOut">
+                            <i class="fa-solid fa-power-off"></i>
+                        </a>
+                    }
+                   
+                    
                 </div>
             </div>
         </nav>

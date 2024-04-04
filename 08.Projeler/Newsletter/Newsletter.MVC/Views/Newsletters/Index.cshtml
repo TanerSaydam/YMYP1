@@ -1,12 +1,18 @@
 ﻿@{
+    HttpContextAccessor httpContextAccessor = new();
+
+    bool isAuthenticated = httpContextAccessor.HttpContext!.User.Claims.Any();
 }
 
 <div class="row">
     <div class="col-9">
-        <button class="btn btn-dark">
-            <i class="fa-solid fa-plus"></i>
-            Add Newsletter
-        </button>
+        @if (isAuthenticated)
+        {
+            <button class="btn btn-dark">
+                <i class="fa-solid fa-plus"></i>
+                Add Newsletter
+            </button>
+        }        
     </div>
 
     <div class="col-3">
