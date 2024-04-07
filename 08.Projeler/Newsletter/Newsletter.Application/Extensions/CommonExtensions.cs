@@ -12,7 +12,8 @@ public static class CommonExtensions
             { "ö", "o" },
             { "ç", "c" },
             { "ğ", "g" },
-            { "#", "sharp" }
+            { "#", "sharp" },
+            { "?", "" }
         };
 
 

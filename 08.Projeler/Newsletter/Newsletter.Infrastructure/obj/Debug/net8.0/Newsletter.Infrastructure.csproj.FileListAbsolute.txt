@@ -16,3 +16,5 @@ C:\YMYP1\08.Projeler\Newsletter\Newsletter.Infrastructure\obj\Debug\net8.0\Newsl
 C:\YMYP1\08.Projeler\Newsletter\Newsletter.Infrastructure\obj\Debug\net8.0\refint\Newsletter.Infrastructure.dll
 C:\YMYP1\08.Projeler\Newsletter\Newsletter.Infrastructure\obj\Debug\net8.0\Newsletter.Infrastructure.pdb
 C:\YMYP1\08.Projeler\Newsletter\Newsletter.Infrastructure\obj\Debug\net8.0\ref\Newsletter.Infrastructure.dll
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Infrastructure\bin\Debug\net8.0\Newsletter.Infrastructure.runtimeconfig.json
+C:\YMYP1\08.Projeler\Newsletter\Newsletter.Infrastructure\obj\Debug\net8.0\Newsletter.Infrastructure.genruntimeconfig.cache

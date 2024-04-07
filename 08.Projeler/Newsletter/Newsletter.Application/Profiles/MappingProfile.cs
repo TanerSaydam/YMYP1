@@ -7,6 +7,9 @@ public sealed class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        CreateMap<CreateBlogCommand, Blog>().ReverseMap();
+        CreateMap<CreateBlogCommand, Blog>().ForMember(p=> p.IsPublish, options=>
+        {
+            options.MapFrom(p => p.IsPublish == "on");
+        }).ReverseMap();
     }
 }

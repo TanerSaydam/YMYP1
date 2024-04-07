@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Newsletter.Domain.Entities
+@model List<Blog>?;
+@{
     HttpContextAccessor httpContextAccessor = new();
 
     bool isAuthenticated = httpContextAccessor.HttpContext!.User.Claims.Any();
@@ -8,25 +10,54 @@
     <div class="col-9">
         @if (isAuthenticated)
         {
-            <button class="btn btn-dark">
+            <a asp-controller="Newsletters" asp-action="Create" class="btn btn-dark">
                 <i class="fa-solid fa-plus"></i>
                 Add Newsletter
-            </button>
+            </a>
         }        
     </div>
 
-    <div class="col-3">
-        <input class="form-control" type="search" placeholder="Search...">
+    <div class="col-3 position-relative">
+        <input class="form-control" type="search" placeholder="Search..." style="padding-left:35px;" onkeydown="search(event)">
+        <i class="fa-solid fa-magnifying-glass position-absolute" style="top:12px;left:25px;"></i>
     </div>
 </div>
-<div class="card mt-2">
-    <div class="row">
-        <div class="col-2">
-            <img src="/blog.jpeg" alt="" style="width: 100%; height: 150px; object-fit: cover;">
+
+@if(Model is not null)
+{
+    @foreach (var blog in Model)
+    {
+        <div class="card mt-2">
+            <div class="row">
+                <div class="col-2">
+                    <img src="/blog.jpeg" alt="" style="width: 100%; height: 150px; object-fit: cover;">
+                </div>
+                <div class="col-10">
+                    <h2>@blog.Title</h2>
+                    <p>@blog.Summary</p>
+                    <p>
+                        @if (blog.IsPublish)
+                        {
+                            <span class="text-success" style="font-size:small;">Published</span>
+                            <span class="ms-2" style="font-size:small;">Publish Date: @blog.PublishDate</span>
+                        }else
+                        {
+                            <span class="text-danger" style="font-size:small;">Not Published</span>
+                        }
+
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-10">
-            <h2>What is the C#</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque totam sit, aliquam qui aperiam sapiente ut, perspiciatis a nostrum accusantium voluptatem esse illum officiis inventore nam deserunt ipsam facilis exercitationem?</p>           
-        </div>
-    </div>
-</div>
+    }
+}
+
+
+<script>
+    function search(event) {
+        if (event.keyCode === 13) {
+            const value = event.target.value;
+            window.location.href = "/Newsletters/Index?search=" + value;
+        }        
+    }
+</script>

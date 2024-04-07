@@ -1,7 +1,11 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 07.04.2024 (Gelecek Ders)
+## 09.04.2024 (Gelecek Ders)
+- Newsletter Projesine Devam Ediyoruz
+- AWS ile Queue (SQS)
+
+## 07.04.2024
 - Newsletter Projesine Devam Ediyoruz
 
 ## 04.04.2024 

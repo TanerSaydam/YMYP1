@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DU6geCBoZnnacP7zhgigulQVPdA5esZv4JRn3IYDtFvfgRImH5o3f1v0iJ1CGz/h9zsUKFWTRNZnv6420+qkIA==",
+  "dgSpecHash": "Y1shcb/fM8XddjFn7JFMKdm6HVG20+dpaHsdDnc9276yRlik9Vrfhq4cVKTQt0yBTHJN+T4c1W5kcVuKA39nXA==",
   "success": true,
   "projectFilePath": "C:\\YMYP1\\08.Projeler\\Newsletter\\Newsletter.Application\\Newsletter.Application.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,9 @@
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\taner\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\ts.entityframeworkcore.genericrepository\\8.0.0\\ts.entityframeworkcore.genericrepository.8.0.0.nupkg.sha512",
     "C:\\Users\\taner\\.nuget\\packages\\ts.result\\8.0.5\\ts.result.8.0.5.nupkg.sha512"
   ],

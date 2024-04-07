@@ -17,7 +17,8 @@ public static class DependencyInjection
     {
         services.AddDbContext<ApplicationDbContext>(options =>
         {
-            options.UseInMemoryDatabase(configuration.GetConnectionString("InMemory") ?? "");
+            //options.UseInMemoryDatabase(configuration.GetConnectionString("InMemory") ?? "");
+            options.UseSqlServer(configuration.GetConnectionString("SqlServer"));
         });
 
         services.AddIdentityCore<AppUser>().AddEntityFrameworkStores<ApplicationDbContext>();

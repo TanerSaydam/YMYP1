@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Newsletter.Domain.Entities;
 
 namespace Newsletter.Application;
 public static class DependencyInjection
@@ -7,7 +8,7 @@ public static class DependencyInjection
     {
         services.AddMediatR(configuration =>
         {
-            configuration.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
+            configuration.RegisterServicesFromAssemblies(typeof(DependencyInjection).Assembly,typeof(Blog).Assembly);            
         });
 
         services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

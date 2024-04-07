@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsletter.Application", "N
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsletter.Infrastructure", "Newsletter.Infrastructure\Newsletter.Infrastructure.csproj", "{B14325BC-15EC-4C2F-8BB4-B2AF7DB8BA9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsletter.MVC", "Newsletter.MVC\Newsletter.MVC.csproj", "{906DCEA7-9466-4C77-B04C-802ABD947CE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsletter.MVC", "Newsletter.MVC\Newsletter.MVC.csproj", "{906DCEA7-9466-4C77-B04C-802ABD947CE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsletter.Consumer", "Newsletter.Consumer\Newsletter.Consumer.csproj", "{EE9A8284-3BD2-42DD-81EA-C4EE55E7B05A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{906DCEA7-9466-4C77-B04C-802ABD947CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{906DCEA7-9466-4C77-B04C-802ABD947CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{906DCEA7-9466-4C77-B04C-802ABD947CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE9A8284-3BD2-42DD-81EA-C4EE55E7B05A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE9A8284-3BD2-42DD-81EA-C4EE55E7B05A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE9A8284-3BD2-42DD-81EA-C4EE55E7B05A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE9A8284-3BD2-42DD-81EA-C4EE55E7B05A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
