@@ -15,7 +15,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 {
     configure.Cookie.Name = "Newsletters.Auth";
     configure.LoginPath = "/Auth/Login";
-    configure.LogoutPath = "/Auth/Login";     
+    configure.LogoutPath = "/Auth/Login";
+    configure.AccessDeniedPath = "/Auth/Login";
 });
 builder.Services.AddAuthorization();
 
@@ -32,7 +33,11 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+
 app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 using (var scoped = app.Services.CreateScope())
 {

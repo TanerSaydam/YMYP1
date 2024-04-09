@@ -14,7 +14,7 @@
                 <i class="fa-solid fa-plus"></i>
                 Add Newsletter
             </a>
-        }        
+        }
     </div>
 
     <div class="col-3 position-relative">
@@ -23,7 +23,7 @@
     </div>
 </div>
 
-@if(Model is not null)
+@if (Model is not null)
 {
     @foreach (var blog in Model)
     {
@@ -38,12 +38,21 @@
                     <p>
                         @if (blog.IsPublish)
                         {
-                            <span class="text-success" style="font-size:small;">Published</span>
-                            <span class="ms-2" style="font-size:small;">Publish Date: @blog.PublishDate</span>
-                        }else
-                        {
-                            <span class="text-danger" style="font-size:small;">Not Published</span>
+                            <input type="checkbox" onchange="changeStatus('@blog.Id')" checked />
                         }
+                        else
+                        {
+                            <input type="checkbox" onchange="changeStatus('@blog.Id')"  />
+                        }
+
+                        @* @if (blog.IsPublish)
+                {
+                <span class="text-success" style="font-size:small;">Published</span>
+                <span class="ms-2" style="font-size:small;">Publish Date: @blog.PublishDate</span>
+                }else
+                {
+                <span class="text-danger" style="font-size:small;">Not Published</span>
+                } *@
 
                     </p>
                 </div>
@@ -58,6 +67,13 @@
         if (event.keyCode === 13) {
             const value = event.target.value;
             window.location.href = "/Newsletters/Index?search=" + value;
-        }        
+        }
+    }
+
+    function changeStatus(id) {
+        fetch("/Newsletters/ChangeStatus?id=" + id)
+        .then(()=> {
+            document.location.reload();
+        });        
     }
 </script>
