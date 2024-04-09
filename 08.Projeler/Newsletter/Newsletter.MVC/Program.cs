@@ -2,12 +2,14 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Newsletter.Application;
 using Newsletter.Domain.Entities;
+using Newsletter.Domain.Repositories;
+using Newsletter.Domain.Utilities;
 using Newsletter.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
 
 builder.Services.AddHttpContextAccessor();
 
@@ -21,6 +23,8 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.CreateServiceTool();
 
 var app = builder.Build();
 

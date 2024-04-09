@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newsletter.Domain.Entities;
 using Newsletter.Domain.Repositories;
+using Newsletter.Domain.Utilities;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
@@ -15,6 +16,9 @@ public sealed class BlogBackgroundService : BackgroundService
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
         Console.WriteLine("Background service is working...");
+
+        var blogRepository = ServiceTool.ServiceProvider.GetRequiredService<IBlogRepository>();
+       
 
         var factory = new ConnectionFactory { HostName = "localhost" };
         using var connection = factory.CreateConnection();
@@ -30,20 +34,16 @@ public sealed class BlogBackgroundService : BackgroundService
         Console.WriteLine(" [*] Waiting for messages...");
 
         var consumer = new EventingBasicConsumer(channel);
-        consumer.Received += (model, ea) =>
+        consumer.Received += async (model, ea) =>
         {
+            var fluentEmail = ServiceTool.ServiceProvider.GetRequiredService<IFluentEmail>();
             var body = ea.Body.ToArray();
             var message = Encoding.UTF8.GetString(body);
             BlogQueueResponseDto? response = JsonSerializer.Deserialize<BlogQueueResponseDto>(message);
             if (response is null)
             {
                 Console.WriteLine("Response is empty or null");
-            }
-
-            var services = new ServiceCollection();
-            var scoped = services.BuildServiceProvider();
-            var blogRepository = scoped.GetRequiredService<IBlogRepository>();
-            var fluentEmail = scoped.GetRequiredService<IFluentEmail>();
+            }           
 
             Blog? blog = blogRepository.GetByExpression(p => p.Id == response!.BlogId);
 
@@ -62,9 +62,15 @@ public sealed class BlogBackgroundService : BackgroundService
             {
                 Console.WriteLine($" [*] {response.Email} blogs sended");
             }
+            
         };
 
-        await Task.CompletedTask;
+        channel.BasicConsume(queue: "newsletter", autoAck:true, consumer: consumer);
+
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            await Task.Delay(1000, stoppingToken); 
+        }
     }
 }
 
