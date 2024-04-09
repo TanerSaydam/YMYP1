@@ -9,7 +9,9 @@
       "Newsletter.Application/1.0.0": {
         "dependencies": {
           "AutoMapper": "13.0.1",
+          "FluentEmail.Smtp": "3.0.2",
           "MediatR": "12.2.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
           "Newsletter.Domain": "1.0.0",
           "TS.Result": "8.0.5"
         },
@@ -25,6 +27,28 @@
           "lib/net6.0/AutoMapper.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.1.0"
+          }
+        }
+      },
+      "FluentEmail.Core/3.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentEmail.Core.dll": {
+            "assemblyVersion": "3.0.2.0",
+            "fileVersion": "3.0.2.0"
+          }
+        }
+      },
+      "FluentEmail.Smtp/3.0.2": {
+        "dependencies": {
+          "FluentEmail.Core": "3.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentEmail.Smtp.dll": {
+            "assemblyVersion": "3.0.2.0",
+            "fileVersion": "3.0.2.0"
           }
         }
       },
@@ -170,6 +194,45 @@
           }
         }
       },
+      "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Options": "8.0.2",
+          "System.Diagnostics.DiagnosticSource": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Diagnostics.Abstractions": "8.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "8.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Microsoft.Extensions.Identity.Core/8.0.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": "8.0.3",
@@ -252,6 +315,7 @@
           }
         }
       },
+      "System.Diagnostics.DiagnosticSource/8.0.0": {},
       "System.Memory/4.5.5": {},
       "System.Threading.Channels/7.0.0": {},
       "TS.EntityFrameworkCore.GenericRepository/8.0.0": {
@@ -298,6 +362,20 @@
       "sha512": "sha512-/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
       "path": "automapper/13.0.1",
       "hashPath": "automapper.13.0.1.nupkg.sha512"
+    },
+    "FluentEmail.Core/3.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uQFFbJgMhhCFUti7pfMi429fMNi7fLGMj+7uDtD7POlQzLxlhXJ6tmt4Y1SI51sZsA36GO5b7+o29eY/dKiICQ==",
+      "path": "fluentemail.core/3.0.2",
+      "hashPath": "fluentemail.core.3.0.2.nupkg.sha512"
+    },
+    "FluentEmail.Smtp/3.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y5pZKS/mXSl7D5WJWecvfo1kpIMDc6U0VRU6wRbE9wEv2IqMH3cQXa/97Pwi+m31COepIqc6dMhGMtAJ2Qh7rw==",
+      "path": "fluentemail.smtp/3.0.2",
+      "hashPath": "fluentemail.smtp.3.0.2.nupkg.sha512"
     },
     "MediatR/12.2.0": {
       "type": "package",
@@ -397,6 +475,27 @@
       "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
     },
+    "Microsoft.Extensions.Diagnostics.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JHYCQG7HmugNYUhOl368g+NMxYE/N/AiclCYRNlgCY9eVyiBkOHMwK4x60RYMxv9EL3+rmj1mqHvdCiPpC+D4Q==",
+      "path": "microsoft.extensions.diagnostics.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.diagnostics.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZbaMlhJlpisjuWbvXr4LdAst/1XxH3vZ6A0BsgTphZ2L4PGuxRLz7Jr/S7mkAAnOn78Vu0fKhEgNF5JO3zfjqQ==",
+      "path": "microsoft.extensions.fileproviders.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Hosting.Abstractions/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AG7HWwVRdCHlaA++1oKDxLsXIBxmDpMPb3VoyOoAghEWnkUvEAdYQUwnV4jJbAaa/nMYNiEh5ByoLauZBEiovg==",
+      "path": "microsoft.extensions.hosting.abstractions/8.0.0",
+      "hashPath": "microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Identity.Core/8.0.3": {
       "type": "package",
       "serviceable": true,
@@ -445,6 +544,13 @@
       "sha512": "sha512-jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
       "path": "rabbitmq.client/6.8.1",
       "hashPath": "rabbitmq.client.6.8.1.nupkg.sha512"
+    },
+    "System.Diagnostics.DiagnosticSource/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c9xLpVz6PL9lp/djOWtk5KPDZq3cSYpmXoJQY524EOtuFl5z9ZtsotpsyrDW40U1DRnQSYvcPKEUV0X//u6gkQ==",
+      "path": "system.diagnostics.diagnosticsource/8.0.0",
+      "hashPath": "system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512"
     },
     "System.Memory/4.5.5": {
       "type": "package",

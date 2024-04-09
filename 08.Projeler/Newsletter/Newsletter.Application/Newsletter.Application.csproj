@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentEmail.Smtp" Version="3.0.2" />
     <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
     <PackageReference Include="TS.Result" Version="8.0.5" />
   </ItemGroup>
 

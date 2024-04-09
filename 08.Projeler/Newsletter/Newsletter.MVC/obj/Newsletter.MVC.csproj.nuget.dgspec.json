@@ -58,9 +58,17 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "FluentEmail.Smtp": {
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "TS.Result": {
               "target": "Package",
