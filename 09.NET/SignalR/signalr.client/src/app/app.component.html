@@ -1,0 +1,8 @@
+<h1>SignalR</h1>
+<input [(ngModel)]="message"/>
+<button (click)="send()">Send</button>
+<ul>
+  @for(m of signalR.messages;track m){
+  <li>{{m}}</li>
+  }
+</ul>

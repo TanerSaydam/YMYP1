@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\YMYP1\\10.AWS\\SQS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD6908E-9C21-4AA9-AE80-67B7FCB019EA}|SQS.Publisher.ConsoleApp\\SQS.Publisher.ConsoleApp.csproj|c:\\ymyp1\\10.aws\\sqs\\sqs.publisher.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD6908E-9C21-4AA9-AE80-67B7FCB019EA}|SQS.Publisher.ConsoleApp\\SQS.Publisher.ConsoleApp.csproj|solutionrelative:sqs.publisher.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0781F730-BDCF-4515-9928-1F75CD772DB7}|SQS.Consumer.ConsoleApp\\SQS.Consumer.ConsoleApp.csproj|c:\\ymyp1\\10.aws\\sqs\\sqs.consumer.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0781F730-BDCF-4515-9928-1F75CD772DB7}|SQS.Consumer.ConsoleApp\\SQS.Consumer.ConsoleApp.csproj|solutionrelative:sqs.consumer.consoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 267,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\YMYP1\\10.AWS\\SQS\\SQS.Publisher.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "SQS.Publisher.ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\YMYP1\\10.AWS\\SQS\\SQS.Publisher.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "SQS.Publisher.ConsoleApp\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwBoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T09:33:30.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\YMYP1\\10.AWS\\SQS\\SQS.Consumer.ConsoleApp\\Program.cs",
+              "RelativeDocumentMoniker": "SQS.Consumer.ConsoleApp\\Program.cs",
+              "ToolTip": "C:\\YMYP1\\10.AWS\\SQS\\SQS.Consumer.ConsoleApp\\Program.cs",
+              "RelativeToolTip": "SQS.Consumer.ConsoleApp\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAwwBgAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T09:31:22.233Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

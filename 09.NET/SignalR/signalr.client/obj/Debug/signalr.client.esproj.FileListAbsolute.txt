@@ -1,0 +1,1 @@
+C:\YMYP1\09.NET\SignalR\signalr.client\obj\Debug\signalr.client.esproj.CoreCompileInputs.cache

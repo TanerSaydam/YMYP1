@@ -1,10 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 14.04.2024 (Gelecek ders)
+## 16.04.2024 (Gelecek ders)
+- SignalR Devam
+
+## 14.04.2024
 - AWS SQS
-- Newsletter Projemize SQS Kuyruğunu bağlayacağız
-- SignalR
+- SignalR Başladık
 
 ## 09.04.2024
 - Newsletter Projesine Devam Ediyoruz

@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\YMYP1\\09.NET\\SignalR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|c:\\ymyp1\\09.net\\signalr\\signalr.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|solutionrelative:signalr.client\\src\\app\\app.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|c:\\ymyp1\\09.net\\signalr\\signalr.server\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|solutionrelative:signalr.server\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|c:\\ymyp1\\09.net\\signalr\\signalr.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|solutionrelative:signalr.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|c:\\ymyp1\\09.net\\signalr\\signalr.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|solutionrelative:signalr.client\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|c:\\ymyp1\\09.net\\signalr\\signalr.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|solutionrelative:signalr.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|c:\\ymyp1\\09.net\\signalr\\signalr.client\\src\\app\\services\\signalr.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|solutionrelative:signalr.client\\src\\app\\services\\signalr.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|c:\\ymyp1\\09.net\\signalr\\signalr.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|solutionrelative:signalr.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|c:\\ymyp1\\09.net\\signalr\\signalr.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|solutionrelative:signalr.server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|c:\\ymyp1\\09.net\\signalr\\signalr.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AEF8838B-B1D4-4831-B859-4A12D87310E9}|signalr.client\\signalr.client.esproj|solutionrelative:signalr.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|c:\\ymyp1\\09.net\\signalr\\signalr.server\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9B242C7-446D-4B3F-8511-0E60A39E39C6}|SignalR.Server\\SignalR.Server.csproj|solutionrelative:signalr.server\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 267,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "signalr.client\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.component.ts",
+              "RelativeToolTip": "signalr.client\\src\\app\\app.component.ts",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBwAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-14T10:45:35.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "app.component.html",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.component.html",
+              "RelativeDocumentMoniker": "signalr.client\\src\\app\\app.component.html",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.component.html",
+              "RelativeToolTip": "signalr.client\\src\\app\\app.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-14T10:45:34.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "signalr.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "signalr.client\\src\\app\\app.module.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-14T10:54:07.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.component.spec.ts",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.component.spec.ts",
+              "RelativeDocumentMoniker": "signalr.client\\src\\app\\app.component.spec.ts",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\app.component.spec.ts",
+              "RelativeToolTip": "signalr.client\\src\\app\\app.component.spec.ts",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-14T10:45:35.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "signalr.service.ts",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\services\\signalr.service.ts",
+              "RelativeDocumentMoniker": "signalr.client\\src\\app\\services\\signalr.service.ts",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\src\\app\\services\\signalr.service.ts",
+              "RelativeToolTip": "signalr.client\\src\\app\\services\\signalr.service.ts",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwAgAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-04-14T10:39:41.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\package.json",
+              "RelativeDocumentMoniker": "signalr.client\\package.json",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\signalr.client\\package.json",
+              "RelativeToolTip": "signalr.client\\package.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T10:34:55.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "SignalR.Server\\Controllers\\ValuesController.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "SignalR.Server\\Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T10:31:31.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Program.cs",
+              "RelativeDocumentMoniker": "SignalR.Server\\Program.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Program.cs",
+              "RelativeToolTip": "SignalR.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T10:29:42.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SignalR.Server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SignalR.Server\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-14T10:30:23.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "SignalR.Server\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\SignalR.Server\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "SignalR.Server\\Hubs\\ChatHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-14T10:28:44.782Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
