@@ -1,7 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 16.04.2024 (Gelecek ders)
+## 18.04.2024 (Gelecek ders)
+- SignalR Devam (Group chat, bireysel chat)
+
+## 16.04.2024
 - SignalR Devam
 
 ## 14.04.2024
