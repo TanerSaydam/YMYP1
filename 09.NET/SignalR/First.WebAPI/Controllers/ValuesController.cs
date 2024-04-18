@@ -19,7 +19,8 @@ public sealed class ValuesController(IHubContext<ChatHub> hub) : ControllerBase
     [HttpGet]
     public async Task<IActionResult> SendGroup(string groupName,string name,string message)
     {
-        await hub.Clients.Group(groupName).SendAsync("receiveGroup", new Chat(name, message));
+        await hub.Clients.Group(groupName).SendAsync("receiveGroup", new Chat(name, message));        
+
         return NoContent();
     }
 }

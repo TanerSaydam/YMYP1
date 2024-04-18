@@ -14,11 +14,19 @@ public sealed class ChatHub : Hub
     }
 
     public async Task JoinGroup(string groupName,string user)
-    {
+    {        
         await Groups.AddToGroupAsync(Context.ConnectionId, groupName);
         GroupUsers.Add(new(Context.ConnectionId, groupName, user));
         await Clients.Group(groupName).SendAsync("groupUsers", 
                     GroupUsers.Where(p=> p.GroupName == groupName).Select(s=> s.UserName));
+    }
+
+    public async Task LeaveGroup(string groupName)
+    {
+        await Groups.RemoveFromGroupAsync(Context.ConnectionId, groupName);
+        GroupUsers.RemoveWhere(p=> p.ConnectionId == Context.ConnectionId && p.GroupName == groupName);
+        await Clients.Group(groupName).SendAsync("groupUsers",
+                   GroupUsers.Where(p => p.GroupName == groupName).Select(s => s.UserName));
     }
 
     public override async Task OnDisconnectedAsync(Exception? exception)

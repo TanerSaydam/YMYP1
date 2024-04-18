@@ -29,6 +29,7 @@ import * as signalR from '@microsoft/signalr';
     <div style="float:left;">
       @if(groupName){
         <p>Grup Adı: {{groupName}}</p>
+        <button (click)="leave()">Gruptan Çık</button>
       }
       <p>Kullanıcı: {{name}}</p>
       <p>Mesajlar</p>
@@ -48,9 +49,7 @@ import * as signalR from '@microsoft/signalr';
       </ul>
     </div>
   </div>
-  } 
-  
-
+  }
   `
 })
 export class AppComponent {
@@ -113,5 +112,10 @@ export class AppComponent {
         
       })
       .catch((err: any) => console.log(err));
+  }
+
+  leave(){
+    this.hub?.invoke("LeaveGroup", this.groupName);    
+    this.showChat = false;
   }
 }

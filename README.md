@@ -1,8 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 18.04.2024 (Gelecek ders)
-- SignalR Devam (Group chat, bireysel chat)
+## 21.04.2024 (Gelecek ders)
+- Chart.js ile canlı veri gösterme denemesi
+- SignalR ile Chart.js kullanımı
+- SignalR bireysel sohbet
+
+## 18.04.2024
+- SignalR Devam (Group chat)
+- Chart.js
+- Chart.js ile canlı veri gösterme denemesi
 
 ## 16.04.2024
 - SignalR Devam
