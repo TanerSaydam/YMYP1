@@ -11,7 +11,13 @@ import * as signalR from '@microsoft/signalr';
   template: `
   <h1>SignalR Application</h1>
   @if(!showChat){
-    <div>
+  <div>
+    <select [(ngModel)]="groupName">
+      <option value="">Grup seçin...</option>
+      <option value="Muhasebe">Muhasebe Grubu</option>
+      <option value="Yazılım">Yazılım Grubu</option>
+      <option value="IT">IT Grubu</option>
+    </select>
     <input type="text" [(ngModel)]="name" placeholder="Adınız...">
     <button (click)="startConnection()">Sohbete Başla</button>
   </div>
@@ -21,6 +27,10 @@ import * as signalR from '@microsoft/signalr';
     <button (click)="send()">Gönder</button>
     <hr>
     <div style="float:left;">
+      @if(groupName){
+        <p>Grup Adı: {{groupName}}</p>
+      }
+      <p>Kullanıcı: {{name}}</p>
       <p>Mesajlar</p>
       <ul>
         @for(chat of chats; track chat){
@@ -49,15 +59,23 @@ export class AppComponent {
   name: string = "";
   users:string[] = [];
   showChat: boolean = false;
+  groupName:string = "";
 
   hub: signalR.HubConnection | undefined;
 
   constructor(private http: HttpClient) {}
 
   send() {
-    this.http
+    if(this.groupName){
+      this.http
+      .get(`https://localhost:7047/api/Values/SendGroup?groupName=${this.groupName}&name=${this.name}&message=${this.message}`)
+      .subscribe(() => this.message = "");
+    }else{
+      this.http
       .get(`https://localhost:7047/api/Values/Send?name=${this.name}&message=${this.message}`)
       .subscribe(() => this.message = "");
+    }
+    
   }
 
   startConnection() {
@@ -71,15 +89,28 @@ export class AppComponent {
         this.showChat = true;
         console.log("Connection started");
 
-        this.hub?.invoke("Join", this.name);
+        if(this.groupName === ""){
+          this.hub?.invoke("Join", this.name);
 
-        this.hub?.on("users", (res:any[])=> {
-          this.users = res
-        });
+          this.hub?.on("users", (res:any[])=> {
+            this.users = res
+          });
+  
+          this.hub?.on("receive", (res: any) => {          
+            this.chats.push(res);
+          });
+        }else{
+          this.hub?.invoke("JoinGroup", this.groupName, this.name);
 
-        this.hub?.on("receive", (res: any) => {          
-          this.chats.push(res);
-        })
+          this.hub?.on("receiveGroup",(res:any)=> {
+            this.chats.push(res);
+          });
+
+          this.hub?.on("groupUsers", (res:any[])=> {
+            this.users = res;
+          });
+        }
+        
       })
       .catch((err: any) => console.log(err));
   }
