@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DovizTakipServer.Application", "DovizTakipServer.Application\DovizTakipServer.Application.csproj", "{231AFE08-39F8-4A1F-85A2-C6B091DA2199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DovizTakipServer.Domain", "DovizTakipServer.Domain\DovizTakipServer.Domain.csproj", "{DDB4637B-1775-4E19-AF63-5E4FA8ADB0BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DovizTakipServer.Infrastructure", "DovizTakipServer.Infrastructure\DovizTakipServer.Infrastructure.csproj", "{6A676EE9-7A8F-4F86-87CE-F331E4206A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DovizTakipServer.WebAPI", "DovizTakipServer.WebAPI\DovizTakipServer.WebAPI.csproj", "{80F808C6-FBFD-4DE6-937D-D71FC779B819}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{231AFE08-39F8-4A1F-85A2-C6B091DA2199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{231AFE08-39F8-4A1F-85A2-C6B091DA2199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{231AFE08-39F8-4A1F-85A2-C6B091DA2199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{231AFE08-39F8-4A1F-85A2-C6B091DA2199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB4637B-1775-4E19-AF63-5E4FA8ADB0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB4637B-1775-4E19-AF63-5E4FA8ADB0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB4637B-1775-4E19-AF63-5E4FA8ADB0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB4637B-1775-4E19-AF63-5E4FA8ADB0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A676EE9-7A8F-4F86-87CE-F331E4206A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A676EE9-7A8F-4F86-87CE-F331E4206A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A676EE9-7A8F-4F86-87CE-F331E4206A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A676EE9-7A8F-4F86-87CE-F331E4206A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F808C6-FBFD-4DE6-937D-D71FC779B819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F808C6-FBFD-4DE6-937D-D71FC779B819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F808C6-FBFD-4DE6-937D-D71FC779B819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F808C6-FBFD-4DE6-937D-D71FC779B819}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {608A2610-8380-4F27-A14C-2D3B5C54456F}
+	EndGlobalSection
+EndGlobal

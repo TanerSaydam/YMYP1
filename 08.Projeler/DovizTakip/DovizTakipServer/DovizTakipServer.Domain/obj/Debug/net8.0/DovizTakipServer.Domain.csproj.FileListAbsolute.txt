@@ -1,0 +1,13 @@
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\bin\Debug\net8.0\DovizTakipServer.Domain.deps.json
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\bin\Debug\net8.0\DovizTakipServer.Domain.dll
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\bin\Debug\net8.0\DovizTakipServer.Domain.pdb
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.csproj.AssemblyReference.cache
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.AssemblyInfoInputs.cache
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.AssemblyInfo.cs
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.csproj.CoreCompileInputs.cache
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.sourcelink.json
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.dll
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\refint\DovizTakipServer.Domain.dll
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\DovizTakipServer.Domain.pdb
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.Domain\obj\Debug\net8.0\ref\DovizTakipServer.Domain.dll

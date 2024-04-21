@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PJDWP/OY1zmngnJaWBRNPPKVPCV8GZVjOT62Cy9MDD4=",
+  "Source": "DovizTakipServer.WebAPI",
+  "BasePath": "_content/DovizTakipServer.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

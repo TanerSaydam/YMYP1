@@ -1,10 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 21.04.2024
-- Chart.js ile canlı veri gösterme denemesi
+## 23.04.2024 (Gelecek ders)
+- Döviz Takip uygulaması frontend
 - SignalR ile Chart.js kullanımı
 - SignalR bireysel sohbet
+
+## 21.04.2024
+- Döviz Takip uygulaması için backend
+- Clean Architecture template düzeltmeleri
 
 ## 18.04.2024
 - SignalR Devam (Group chat)
