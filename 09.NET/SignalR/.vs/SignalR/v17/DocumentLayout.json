@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|solutionrelative:first.webapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|c:\\ymyp1\\09.net\\signalr\\first.webapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|c:\\ymyp1\\09.net\\signalr\\first.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|solutionrelative:first.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|C:\\YMYP1\\09.NET\\SignalR\\first.webapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|solutionrelative:first.webapi\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|C:\\YMYP1\\09.NET\\SignalR\\first.webapi\\dtos\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|solutionrelative:first.webapi\\dtos\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|C:\\YMYP1\\09.NET\\SignalR\\first.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0414AE1B-A91A-4162-9F73-805E00389F69}|First.WebAPI\\First.WebAPI.csproj|solutionrelative:first.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Group.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\First.WebAPI\\DTOs\\Group.cs",
               "RelativeDocumentMoniker": "First.WebAPI\\DTOs\\Group.cs",
@@ -66,7 +66,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Chat.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\First.WebAPI\\DTOs\\Chat.cs",
               "RelativeDocumentMoniker": "First.WebAPI\\DTOs\\Chat.cs",
@@ -84,14 +84,14 @@
               "RelativeDocumentMoniker": "First.WebAPI\\Controllers\\ValuesController.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\First.WebAPI\\Controllers\\ValuesController.cs",
               "RelativeToolTip": "First.WebAPI\\Controllers\\ValuesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-16T18:28:31.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\First.WebAPI\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "First.WebAPI\\Hubs\\ChatHub.cs",
@@ -99,20 +99,20 @@
               "RelativeToolTip": "First.WebAPI\\Hubs\\ChatHub.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAmwAgAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T17:46:46.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-16T17:46:46.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\YMYP1\\09.NET\\SignalR\\First.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "First.WebAPI\\Program.cs",
               "ToolTip": "C:\\YMYP1\\09.NET\\SignalR\\First.WebAPI\\Program.cs",
               "RelativeToolTip": "First.WebAPI\\Program.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAcwCQAAAATAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowCQAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T17:46:01.075Z"
+              "WhenOpened": "2024-04-16T17:46:01.075Z",
+              "EditorCaption": ""
             }
           ]
         }
