@@ -1,10 +1,15 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 23.04.2024 (Gelecek ders)
+## 28.04.2024 (Gelecek ders) 
+- Unit Test
+
+## 25.04.2024 (Gelecek ders) 
+- SignalR bireysel sohbet
+
+## 23.04.2024
 - Döviz Takip uygulaması frontend
 - SignalR ile Chart.js kullanımı
-- SignalR bireysel sohbet
 
 ## 21.04.2024
 - Döviz Takip uygulaması için backend

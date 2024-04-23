@@ -1,0 +1,68 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="/assets/index3.html" class="brand-link">
+      <img src="/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">TS ERP</span>
+    </a>
+
+    <div class="sidebar">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="https://www.transparentpng.com/download/user/gray-user-profile-icon-png-fP8Q1P.png" class="img-circle elevation-2" alt="User Image" style="background-color: white;">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">{{ auth.user.name }}</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group">
+          <input class="form-control form-control-sidebar" [(ngModel)]="search" type="search" placeholder="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">   
+          @for(menu of menus |menu:search; track menu){
+            @if(menu.isTitle){
+              <li class="nav-header">{{menu.name}}</li>
+            }@else if(menu.subMenus.length > 0){
+              <li class="nav-item">
+                <a class="nav-link">
+                  <i class="nav-icon {{menu.icon}}"></i>
+                  <p>
+                    {{menu.name}}
+                    <i class="right fas fa-angle-left"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  @for(subMenu of menu.subMenus; track subMenu){
+                    <li class="nav-item">
+                      <a [routerLink]="subMenu.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-link">
+                        <i class="{{subMenu.icon}} me-2"></i>
+                        <p>{{subMenu.name}}</p>
+                      </a>
+                    </li>  
+                  }                                 
+                </ul>
+              </li>
+            }@else {
+              <li class="nav-item">
+                <a [routerLink]="menu.url" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-link">
+                  <i class="nav-icon {{menu.icon}}"></i>
+                  <p>
+                    {{menu.name}}
+                  </p>
+                </a>
+              </li>    
+            }
+          }     
+        </ul>
+      </nav>
+    </div>
+  </aside>

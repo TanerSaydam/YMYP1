@@ -75,6 +75,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "TS.Result": {
               "target": "Package",
               "version": "[8.0.6, )"

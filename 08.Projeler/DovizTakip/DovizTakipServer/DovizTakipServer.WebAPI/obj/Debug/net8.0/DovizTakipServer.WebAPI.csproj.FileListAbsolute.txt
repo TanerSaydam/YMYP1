@@ -159,3 +159,4 @@ C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.WebAPI\obj\Deb
 C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.WebAPI\obj\Debug\net8.0\DovizTakipServer.WebAPI.pdb
 C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.WebAPI\obj\Debug\net8.0\DovizTakipServer.WebAPI.genruntimeconfig.cache
 C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.WebAPI\obj\Debug\net8.0\ref\DovizTakipServer.WebAPI.dll
+C:\YMYP1\08.Projeler\DovizTakip\DovizTakipServer\DovizTakipServer.WebAPI\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll

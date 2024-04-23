@@ -1,10 +1,12 @@
 ﻿using DovizTakipServer.Application.Features.Currencies.CreateCurrency;
 using DovizTakipServer.WebAPI.Abstractions;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DovizTakipServer.WebAPI.Controllers;
 
+[AllowAnonymous]
 public sealed class CurrenciesController : ApiController
 {
     public CurrenciesController(IMediator mediator) : base(mediator)

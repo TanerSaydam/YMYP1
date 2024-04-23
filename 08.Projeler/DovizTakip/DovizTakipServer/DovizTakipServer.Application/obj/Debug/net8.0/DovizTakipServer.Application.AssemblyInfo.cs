@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DovizTakipServer.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5a99979d5d046bae02f0fb8d638cf8c25f43889")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+018287344e2d2dd4565bab7a9bb1fb8e9d1942dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("DovizTakipServer.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DovizTakipServer.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

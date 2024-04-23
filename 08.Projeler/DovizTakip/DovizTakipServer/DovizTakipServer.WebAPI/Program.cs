@@ -1,11 +1,14 @@
 using DefaultCorsPolicyNugetPackage;
 using DovizTakipServer.Application;
+using DovizTakipServer.Application.Hubs;
 using DovizTakipServer.Infrastructure;
 using DovizTakipServer.WebAPI.Middlewares;
+using DovizTakipServer.WebAPI.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddDefaultCors();
 builder.Services.AddApplication();
@@ -42,6 +45,10 @@ builder.Services.AddSwaggerGen(setup =>
                 });
 });
 
+builder.Services.AddSignalR();
+
+builder.Services.AddHostedService<AutoDovizBackgroundService>();
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
@@ -59,5 +66,7 @@ app.UseExceptionHandler();
 app.MapControllers();
 
 ExtensionsMiddleware.CreateFirstUser(app);
+
+app.MapHub<TakipHub>("/takip-hub");
 
 app.Run();
