@@ -4,7 +4,7 @@
 ## 28.04.2024 (Gelecek ders) 
 - Unit Test
 
-## 25.04.2024 (Gelecek ders) 
+## 25.04.2024
 - SignalR bireysel sohbet
 
 ## 23.04.2024

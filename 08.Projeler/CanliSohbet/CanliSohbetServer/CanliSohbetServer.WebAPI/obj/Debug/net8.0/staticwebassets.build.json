@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "DTe1OMsN0dwXl1LctOmWNv/t2PvOTLeFKZlRGIWTaVQ=",
+  "Source": "CanliSohbetServer.WebAPI",
+  "BasePath": "_content/CanliSohbetServer.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
