@@ -1,7 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 28.04.2024 (Gelecek ders) 
+## 02.05.2024 (Gelecek ders)
+- Unit Test
+
+## 30.04.2024 (Gelecek ders)
+- Unit Test
+
+## 28.04.2024
 - Unit Test
 
 ## 25.04.2024
