@@ -52,19 +52,70 @@ public class ValueSamplesTests
         user.Should().BeEquivalentTo(expedtedUser); 
     }
 
-    //out ref
-    //public void TestMethod()
-    //{
-    //    int a = 10;
-    //    Test2(ref a);
+    [Fact]
+    public void EnumerableObjectAssertionExample()
+    {
+        //Arrange
+        var expected = new User
+        {
+            Fullname = "Taner Saydam",
+            Age = 34,
+            DateOfBirth = new(1989, 09, 03)
+        };
 
-    //    Console.WriteLine(a);
-    //}
+        //Act
+        var users = _sut.Users.As<User[]>();
 
-    //public void Test2(ref int x)
-    //{
-    //    x += 10;
-    //}
+        //Assert
+        users.Should().ContainEquivalentOf(expected);
+        users.Should().HaveCount(3);
+        users.Should().Contain(x => x.Fullname.StartsWith("Tahir") && x.Age > 5);
+    }
+
+    [Fact]
+    public void EnumerableNumberAssertionExample()
+    {
+        //Act
+        var numbers = _sut.Numbers.As<int[]>();
+
+        //Assert
+        numbers.Should().Contain(5);
+    }
+
+
+    [Fact]
+    public void ExceptionThrownAssertionExample()
+    {
+        //Act 
+        Action result = () => _sut.Divide(1,0);
+
+        //Assert
+        result.Should().Throw<DivideByZeroException>();
+            //.WithMessage("Attempted to divide by zero.");
+    }
+
+    [Fact]
+    public void EventRaisedAssertionExample()
+    {
+        //Arrange
+        var monitorSubject = _sut.Monitor();
+
+        //Act
+        _sut.RaiseExampleEvent();
+
+        //Assert
+        monitorSubject.Should().Raise("ExampleEvent");
+    }
+
+    [Fact]
+    public void TestingInternalMembersExample()
+    {
+        //Act
+        var number = _sut.InternalSecretNumber;
+
+        //Assert
+        number.Should().Be(42);
+    }
 }
 
 
