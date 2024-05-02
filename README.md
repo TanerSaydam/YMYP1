@@ -1,10 +1,14 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 02.05.2024 (Gelecek ders)
-- Unit Test
+## 02.05.2024
+- SignalR ile Chat Application
 
-## 30.04.2024 (Gelecek ders)
+## 01.05.2024
+- SignalR ile Chat Application
+
+
+## 30.04.2024
 - Unit Test
 
 ## 28.04.2024
