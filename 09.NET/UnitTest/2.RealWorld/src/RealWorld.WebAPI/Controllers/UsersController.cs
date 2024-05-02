@@ -28,4 +28,16 @@ public sealed class UsersController(
         return BadRequest(new {Message = "Kullanıcı kaydı sırasında bir hatayla karşılaştık"});
         
     }
+
+    [HttpGet]
+    public async Task<IActionResult> DeleteById(int id, CancellationToken cancellationToken)
+    {
+        var result = await userService.DeleteByIdAsync(id, cancellationToken);
+        if (result)
+        {
+            return Ok(new { Message = "Kullanıcı başarıyla silindi" });
+        }
+
+        return BadRequest(new { Message = "Kullanıcı silerken bir hatayla karşılaştık" });
+    }
 }

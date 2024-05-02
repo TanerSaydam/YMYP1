@@ -2,6 +2,7 @@ using FluentAssertions;
 using FluentValidation;
 using NSubstitute;
 using NSubstitute.ExceptionExtensions;
+using NSubstitute.ReturnsExtensions;
 using RealWorld.WebAPI.Dtos;
 using RealWorld.WebAPI.Logging;
 using RealWorld.WebAPI.Models;
@@ -168,6 +169,113 @@ public class UserServiceTests
         logger.Received(1).LogInformation(
             Arg.Is("User Id: {0} olan kullanýcý {1}ms de oluþturuldu"),
             Arg.Any<int>(),
-            Arg.Any<long>());//10:17 görüþelim
+            Arg.Any<long>());
+    }
+
+    [Fact]
+    public async Task CreateAsync_ShouldLogMessagesAndException_WhenExceptionIsThrown()
+    {
+        //Arrange
+        var exception = new ArgumentException("Kullanýcý kaydý esnasýnda bir hatayla karþýlaþtým");
+        userRepository.CreateAsync(Arg.Any<User>()).Throws(exception);
+
+        //Act
+        var action = async () => await _sut.CreateAsync(createUserDto);
+
+        //Assert
+        await action.Should()
+            .ThrowAsync<ArgumentException>();
+
+        logger.Received(1).LogError(Arg.Is(exception), Arg.Is("Kullanýcý kaydý esnasýnda bir hatayla karþýlaþtým"));
+    }
+
+    [Fact]
+    public async Task DeleteByIdAsync_ShouldThrownAnError_WhenUserNotExist()
+    {
+        //Arrange
+        int userId = 1;
+        userRepository.GetByIdAsync(userId).ReturnsNull();
+
+        //Act
+        var action = async ()=> await _sut.DeleteByIdAsync(userId);
+
+        //Assert
+        await action.Should().ThrowAsync<ArgumentException>();
+    }
+
+    [Fact]
+    public async Task DeleteByIdAsync_ShouldDeleteUser_WhenUserExist()
+    {
+        //Arrange
+        int userId = 1;
+        User user = new()
+        {
+            Id = userId,
+            Name = "Taner Saydam",
+            Age = 34,
+            DateOfBirth = new(1989, 09, 03)
+        };
+        userRepository.GetByIdAsync(userId).Returns(user);
+        userRepository.DeleteAsync(user).Returns(true);
+
+        //Act
+        var result = await _sut.DeleteByIdAsync(userId);
+
+        //Assert
+        result.Should().BeTrue();
+    }
+
+    [Fact]
+    public async Task DeleteByIdAsync_ShouldLogMessages_WhenInvoked()
+    {
+        //Arrange
+        int userId = 1;
+        var user = new User()
+        {
+            Id = userId,
+            DateOfBirth = new(1989, 09, 03),
+            Name = "Taner Saydam",
+            Age = 34
+        };
+        userRepository.GetByIdAsync(userId).Returns(user);
+        userRepository.DeleteAsync(user).Returns(true);
+
+        //Act
+        await _sut.DeleteByIdAsync(userId);
+
+        //Assert
+        logger.Received(1).LogInformation(
+            Arg.Is("{0} id numarasýna sahip kullanýcý siliniyor..."),
+            Arg.Is(userId));
+
+        logger.Received(1).LogInformation(
+            Arg.Is("Kullanýcý id'si {0} olan kullanýcý kaydý {1}ms de silindi"),
+            Arg.Is(userId),
+            Arg.Any<long>());
+    }
+
+    [Fact]
+    public async Task DeleteByIdAsync_ShouldLogMessagesAndException_WhenExceptionIsThrown()
+    {
+        //Arrange
+        int userId = 1;
+        var user = new User()
+        {
+            Id = userId,
+            Name = "Taner Saydam",
+            Age = 34,
+            DateOfBirth = new(1989, 09, 03)
+        };
+        userRepository.GetByIdAsync(userId).Returns(user);
+        var exception = new ArgumentException("Kullanýcý kaydý silinirken bir hatayla karþýlaþtýk");
+        userRepository.DeleteAsync(user).Throws(exception);
+
+        //Act
+        var action = async()=> await _sut.DeleteByIdAsync(userId);
+
+        //Assert
+        await action.Should().ThrowAsync<ArgumentException>();
+
+        logger.Received(1).LogError(Arg.Is(exception), Arg.Is("Kullanýcý kaydý silinirken bir hatayla karþýlaþtýk"));
     }
 }

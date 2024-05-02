@@ -1,6 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 03.05.2024 (Gelecek ders)
+- Unit Test
+- Domain-Driven Design
+
 ## 02.05.2024
 - Unit Test
 

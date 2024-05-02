@@ -73,4 +73,30 @@ public sealed class UserService(
             Age = request.Age,
         };
     }
+
+    public async Task<bool> DeleteByIdAsync(int id, CancellationToken cancellationToken = default)
+    {
+        User? user = await userRepository.GetByIdAsync(id, cancellationToken);
+        if(user is null)
+        {
+            throw new ArgumentException("Kullanıcı bulunamadı");
+        }
+
+        logger.LogInformation("{0} id numarasına sahip kullanıcı siliniyor...",id);
+        var stopWatch = Stopwatch.StartNew();
+        try
+        {
+            return await userRepository.DeleteAsync(user, cancellationToken);
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Kullanıcı kaydı silinirken bir hatayla karşılaştık");
+            throw;
+        }
+        finally
+        {
+            stopWatch.Stop();
+            logger.LogInformation("Kullanıcı id'si {0} olan kullanıcı kaydı {1}ms de silindi", user.Id, stopWatch.ElapsedMilliseconds);
+        }
+    }
 }
