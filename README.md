@@ -2,11 +2,10 @@
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
 ## 02.05.2024
-- SignalR ile Chat Application
+- Unit Test
 
 ## 01.05.2024
-- SignalR ile Chat Application
-
+- Unit Test
 
 ## 30.04.2024
 - Unit Test
