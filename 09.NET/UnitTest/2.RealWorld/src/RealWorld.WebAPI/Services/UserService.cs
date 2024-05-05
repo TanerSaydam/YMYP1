@@ -99,4 +99,57 @@ public sealed class UserService(
             logger.LogInformation("Kullanıcı id'si {0} olan kullanıcı kaydı {1}ms de silindi", user.Id, stopWatch.ElapsedMilliseconds);
         }
     }
+
+    public async Task<bool> UpdateAsync(UpdateUserDto request, CancellationToken cancellationToken = default)
+    {
+        User? user = await userRepository.GetByIdAsync(request.Id, cancellationToken);
+
+        if(user is null)
+        {
+            throw new ArgumentException("Kullanıcı bulunamadı");
+        }
+
+        UpdateUserDtoValidator validator = new();
+        var result = validator.Validate(request);
+        if(!result.IsValid)
+        {
+            throw new ValidationException(string.Join("\n", result.Errors.Select(s=> s.ErrorMessage)));
+        }
+
+        if(request.Name != user.Name)
+        {
+            var nameIsExist = await userRepository.NameIsExists(request.Name, cancellationToken);
+            if(nameIsExist)
+            {
+                throw new ArgumentException("Bu isim daha önce kaydedilmiş");
+            }
+        }
+
+        CreateUpdateUserObject(ref user, request);
+
+        logger.LogInformation("{0} kullanıcın güncelleme işlemi yapılmaya başlandı", request.Name);
+        var stopWatch = Stopwatch.StartNew();
+        try
+        {
+            return await userRepository.UpdateAsync(user, cancellationToken);
+        }
+        catch (Exception ex)
+        {
+            logger.LogError(ex, "Kullanıcı güncelleme esnasında bir hatayla karşılaştım");
+            throw;
+        }
+        finally
+        {
+            stopWatch.Stop();
+            logger.LogInformation("{0} Id'li kullanıcının güncelleme işlemi {1}ms de başarıyla tamamlandı", user.Id, stopWatch.ElapsedMilliseconds);
+        }
+
+    }
+
+    public void CreateUpdateUserObject(ref User user, UpdateUserDto request)
+    {
+        user.Name = request.Name;
+        user.Age = request.Age;
+        user.DateOfBirth = request.DateOfBirth;
+    }
 }

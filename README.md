@@ -1,9 +1,22 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 03.05.2024 (Gelecek ders)
+## 07.05.2024
+- Domain-Driven Desig devam
+-- **Tactical Pattern**
+--- Entity
+--- Value Object
+--- Aggragate
+--- Repository
+--- Factory
+--- Domain Event
+--- Service
+
+## 05.05.2024
 - Unit Test
 - Domain-Driven Design
+-- **Tactical Pattern**
+--- Entity
 
 ## 02.05.2024
 - Unit Test
