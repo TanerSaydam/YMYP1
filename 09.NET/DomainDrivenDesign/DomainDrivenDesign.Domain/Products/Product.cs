@@ -1,8 +1,29 @@
-﻿namespace DomainDrivenDesign.Domain.Products;
+﻿using DomainDrivenDesign.Domain.Abstractions;
 
-public sealed class Product
+namespace DomainDrivenDesign.Domain.Products;
+
+public sealed class Product : Entity
 {
-    public Guid Id { get; set; }
-    public string Name { get; set; } = string.Empty;
-    public decimal Price { get; set; }
+    public Product(Name name, Description description, Money money)
+    {
+        //ekstra kontroller        
+
+        Name = name;
+        Description = description;
+        Price = money;
+    }
+    public Name Name { get; private set; }
+    public Description Description { get; private set; }
+    public Money Price { get; private set; }
+
+    public void ChangeName(string name)
+    {
+        Name = new(name);
+    }
+}
+
+public interface IProductRepository
+{
+    Task CreateAsync(CreateProductDto request, CancellationToken cancellationToken = default);
+    Task<List<Product>> GetAllAsync(CancellationToken cancellationToken = default);
 }

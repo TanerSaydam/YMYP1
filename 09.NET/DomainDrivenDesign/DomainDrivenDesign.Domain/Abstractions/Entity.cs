@@ -1,6 +1,6 @@
 ﻿namespace DomainDrivenDesign.Domain.Abstractions;
 
-public abstract class Entity
+public abstract class Entity : IEquatable<Entity>
 {
     public Guid Id { get; set; }
     protected Entity()
@@ -24,7 +24,26 @@ public abstract class Entity
         return Id.GetHashCode();
     }
 
+    public bool Equals(Entity? other)
+    {
+        if (other is null) return false;
 
+        if (other is not Entity entity) return false;
+
+        if (other.GetType() != typeof(Entity)) return false;
+
+        return entity.Id == Id;
+    }
+
+    public static bool operator ==(Entity entity1, Entity entity2)
+    {
+        return entity1.Equals(entity2);
+    }
+
+    public static bool operator !=(Entity entity1, Entity entity2)
+    {
+        return !entity1.Equals(entity2);
+    }
 }
 
 //public class Test: Entity
