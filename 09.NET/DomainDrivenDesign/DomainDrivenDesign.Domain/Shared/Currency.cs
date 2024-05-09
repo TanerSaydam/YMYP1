@@ -1,4 +1,4 @@
-﻿namespace DomainDrivenDesign.Domain.Products;
+﻿namespace DomainDrivenDesign.Domain.Shared;
 
 public sealed record Currency
 {

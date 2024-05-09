@@ -304,6 +304,7 @@ public class UserServiceTests
     public async Task UpdateAsync_ShouldThrownAnError_WhenUserUpdateDetailAreNotValid()
     {
         //Arrange
+        UpdateUserDto updateUserDto = new(1, "", 18, new DateOnly(1989, 09, 03));
         userRepository.GetByIdAsync(updateUserDto.Id).Returns(user);
 
         //Act

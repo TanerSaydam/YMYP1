@@ -1,4 +1,6 @@
-﻿namespace DomainDrivenDesign.Domain.Products;
+﻿using DomainDrivenDesign.Domain.Shared;
+
+namespace DomainDrivenDesign.Domain.Products;
 
 public sealed record CreateProductDto(
     string Name, 

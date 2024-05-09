@@ -1,4 +1,4 @@
-﻿namespace DomainDrivenDesign.Domain.Products;
+﻿namespace DomainDrivenDesign.Domain.Shared;
 
 public sealed record Name
 {
@@ -9,7 +9,7 @@ public sealed record Name
             throw new ArgumentException("İsim alanı boş olamaz");
         }
 
-        if(value.Length < 3)
+        if (value.Length < 3)
         {
             throw new ArgumentException("İsim alanı en az 3 karakter olmalıdır");
         }

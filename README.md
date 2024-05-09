@@ -1,11 +1,17 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 09.05.2024 (Gelecek ders)
---- Aggragate
---- Factory
---- Domain Event
---- Service
+## 12.05.2024 (Gelecek ders)
+-- Domain Event
+-- Service
+-- Aplication Katmanı
+-- Infrastructure Katmanı
+-- WebAPI Katmanı
+-- Projemizi çalıştırıp test edelim
+
+## 09.05.2024
+-- Aggragate
+-- Factory
 
 ## 07.05.2024
 - Domain-Driven Desig devam
