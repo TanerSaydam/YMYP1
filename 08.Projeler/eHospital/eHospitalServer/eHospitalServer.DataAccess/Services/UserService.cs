@@ -106,6 +106,7 @@ internal sealed class UserService(
         }
 
         User user = mapper.Map<User>(request);
+        user.UserName = user.UserName!.Replace("ü", "u");
         user.UserType = UserType.Patient;
 
         int number = 0;

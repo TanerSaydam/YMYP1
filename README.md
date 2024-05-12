@@ -1,7 +1,17 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 12.05.2024 (Gelecek ders)
+## 14.05.2024 (Gelecek ders)
+-- Ödev: Tüm exceptionlar Result pattern ile dönsün
+-- User GetAll
+-- Product Create
+-- Product GetAll
+-- Order Create 
+-- Order GetAll
+-- Authentication yapısı
+-- Login işlemi
+
+## 12.05.2024
 -- Domain Event
 -- Service
 -- Aplication Katmanı

@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\YMYP1\\08.Projeler\\CanliSohbet\\CanliSohbetServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\canlisohbet\\canlisohbetserver\\canlisohbetserver.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|solutionrelative:canlisohbetserver.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\canlisohbet\\canlisohbetserver\\canlisohbetserver.webapi\\hubs\\sohbethub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|solutionrelative:canlisohbetserver.webapi\\hubs\\sohbethub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|c:\\ymyp1\\08.projeler\\canlisohbet\\canlisohbetserver\\canlisohbetserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|C:\\YMYP1\\08.Projeler\\CanliSohbet\\CanliSohbetServer\\canlisohbetserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF7B8004-0156-47C2-9FD9-997A878F2CF9}|CanliSohbetServer.WebAPI\\CanliSohbetServer.WebAPI.csproj|solutionrelative:canlisohbetserver.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\CanliSohbet\\CanliSohbetServer\\CanliSohbetServer.WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "CanliSohbetServer.WebAPI\\appsettings.json",
+              "ToolTip": "C:\\YMYP1\\08.Projeler\\CanliSohbet\\CanliSohbetServer\\CanliSohbetServer.WebAPI\\appsettings.json",
+              "RelativeToolTip": "CanliSohbetServer.WebAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-10T21:32:21.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\CanliSohbet\\CanliSohbetServer\\CanliSohbetServer.WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "CanliSohbetServer.WebAPI\\Program.cs",
@@ -50,12 +67,11 @@
               "RelativeToolTip": "CanliSohbetServer.WebAPI\\Program.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAQwCcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T17:46:14.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-25T17:46:14.946Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SohbetHub.cs",
               "DocumentMoniker": "C:\\YMYP1\\08.Projeler\\CanliSohbet\\CanliSohbetServer\\CanliSohbetServer.WebAPI\\Hubs\\SohbetHub.cs",
               "RelativeDocumentMoniker": "CanliSohbetServer.WebAPI\\Hubs\\SohbetHub.cs",

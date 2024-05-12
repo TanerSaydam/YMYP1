@@ -30,6 +30,20 @@ app.UseCors();
 
 ExtensionsMiddleware.CreateFirstUser(app);
 
+
+app.Use(async (context, next) =>
+{
+    try
+    {
+        await next(context);
+    }
+    catch (Exception ex)
+    {
+        await Console.Out.WriteLineAsync(ex.Message);
+        throw;
+    }
+});
+
 app.UseHttpsRedirection();
 
 app.MapControllers()
