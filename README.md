@@ -1,40 +1,33 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 14.05.2024 (Gelecek ders)
--- Ödev: Tüm exceptionlar Result pattern ile dönsün
--- User GetAll
--- Product Create
--- Product GetAll
--- Order Create 
--- Order GetAll
--- Authentication yapısı
--- Login işlemi
+## 04.06.2024
+- Fatura Uygulaması
 
 ## 12.05.2024
--- Domain Event
--- Service
--- Aplication Katmanı
--- Infrastructure Katmanı
--- WebAPI Katmanı
--- Projemizi çalıştırıp test edelim
+- Domain Event
+- Service
+- Aplication Katmanı
+- Infrastructure Katmanı
+- WebAPI Katmanı
+- Projemizi çalıştırıp test edelim
 
 ## 09.05.2024
--- Aggragate
--- Factory
+- Aggragate
+- Factory
 
 ## 07.05.2024
 - Domain-Driven Desig devam
--- **Tactical Pattern**
---- Entity
---- Value Object
---- Repository
+- **Tactical Pattern**
+- Entity
+- Value Object
+- Repository
 
 ## 05.05.2024
 - Unit Test
 - Domain-Driven Design
--- **Tactical Pattern**
---- Entity
+- **Tactical Pattern**
+- Entity
 
 ## 02.05.2024
 - Unit Test

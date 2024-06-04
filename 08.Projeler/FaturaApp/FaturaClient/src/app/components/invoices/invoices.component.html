@@ -1,0 +1,180 @@
+<h1>22:18 görüşelim</h1>
+<div class="form-group">
+    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#createInvoiceModal">Fatura Ekle</button>
+</div>
+
+<div class="form-group mt-2">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Fatura Tarihi</th>
+                <th>Fatura Numarası</th>
+                <th>Cari</th>
+                <th>Toplam Tutar</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(data of invoices; track data){
+            <tr>
+                <td>{{$index + 1}}</td>
+                <td>{{data.date | date: 'dd.MM.yyyy'}}</td>
+                <td>{{data.number}}</td>
+                <td>{{data.customer}}</td>
+                <td>{{data.total}}</td>
+                <td>
+                    <button class="btn btn-outline-danger btn-sm">Sil</button>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<!-- Fatura Ekleme Modal -->
+<div class="modal fade" id="createInvoiceModal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Alış Faturası</h1>
+                <button type="button" #createInvoiceModalCloseBtn class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Fatura Üst Bilgileri -->
+                <div class="form-group">
+                    <table class="table">
+                        <tr>
+                            <th>
+                                <div class="form-group">
+                                    <label>Fatura Tarihi</label>
+                                    <input [(ngModel)]="invoice.date" name="date" type="date" class="form-control">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="form-group">
+                                    <label>Fatura Numarası</label>
+                                    <input [(ngModel)]="invoice.number" name="number" type="text" class="form-control">
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="form-group">
+                                    <label>Cari</label>
+                                    <input type="text" [(ngModel)]="invoice.customer" name="customer"
+                                        class="form-control">
+                                </div>
+                            </th>
+                            <th>
+                                <div class="form-group">
+                                    <button class="btn btn-dark" data-bs-toggle="modal"
+                                        data-bs-target="#ordersModal">Sipariş Seç</button>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Fatura Detayları -->
+                <div class="form-group mt-2">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ürün Adı</th>
+                                <th>Adedi</th>
+                                <th>Sipariş Numarası</th>
+                                <th>İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for(data of invoice.details; track data){
+                            <tr>
+                                <td>{{$index + 1}}</td>
+                                <td>{{data.productName}}</td>
+                                <td>{{data.quantity}}</td>
+                                <td>{{data.orderNumber}}</td>
+                                <td>
+                                    <button class="btn btn-outline-danger btn-sm">Sil</button>
+                                </td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark w-100">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Sipariş Modalı -->
+<div class="modal fade" id="ordersModal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5">Siparişler</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Siparişler -->
+                <div class="form-group">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Sipariş Numarası</th>
+                                <th>Sipariş Tarihi</th>
+                                <th>Toplam Kalem Sayısı</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for(data of orders;track data){
+                            <tr (click)="showOrderDetail($index)">
+                                <td>{{$index + 1}}</td>
+                                <td>{{data.number}}</td>
+                                <td>{{data.date | date:'dd.MM.yyyy'}}</td>
+                                <td>{{data.totalCount}}</td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Sipariş Detayları -->
+                @if(orderDetails.length > 0){
+                <div class="form-group mt-2">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Ürün Adı</th>
+                                <th>Adedi</th>
+                                <th>Gelen Adet</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for(data of orderDetails; track data){
+                            <tr>
+                                <td>{{$index + 1}}</td>
+                                <td>{{data.productName}}</td>
+                                <td>{{data.quantity}}</td>
+                                <td><input type="number" [(ngModel)]="data.incomingCount" name="incomingCount"
+                                        class="form-control"></td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#createInvoiceModal"
+                        class="btn btn-dark w-100" (click)="addInvoiceDetail()">Ekle</button>
+                </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
