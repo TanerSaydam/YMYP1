@@ -1,6 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
+## 20.06.2024 (sonraki ders)
+- .NET OData ve Angular Kendo Grid incelemesi devam
+
+## 18.06.2024
+- Agular 18 Zoneless incelemesi
+- .NET OData ve Angular Kendo Grid incelemesi
+
 ## 04.06.2024
 - Fatura Uygulaması
 

@@ -1,0 +1,6 @@
+
+GET http://localhost:5152/api/personels/getall?$count=true&$orderby=id&$select=firstName,id&$top=10&$skip=10
+
+Accept: application/json
+
+###
