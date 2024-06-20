@@ -2,30 +2,47 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { GridModule } from "@progress/kendo-angular-grid";
+import { KendoGridComponent } from './kendo-grid/kendo-grid.component';
+import { AgGridComponent } from './ag-grid/ag-grid.component';
+import { GenericGridComponent } from './generic-grid/generic-grid.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, GridModule],
+  imports: [RouterOutlet, KendoGridComponent, AgGridComponent, GenericGridComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  result: any = {data: [], total: 40};
-  pageSize: number = 10;
-  skip: number = 0;
+  data = [
+    {
+      firstName:"Taner",
+      lastName: "Saydam"
+    },
+    {
+      firstName:"Toprak",
+      lastName: "Saydam"
+    }
+  ]
 
-  constructor(
-    private http: HttpClient
-  ){
-    this.getAll();
-  }
-
-  getAll(){
-    let endPoint = `https://localhost:7120/api/personels/getall`;
-    endPoint += `?$top=${this.pageSize}&$skip=${this.skip}`
-    this.http.get(endPoint).subscribe((res:any)=> {
-      this.result.data = res;
-    })
-  }
+  columns:{field: string, title: string,value: any, filter: boolean}[] = [
+    {
+      field: "firstName",
+      title: "First Name",
+      value: "",
+      filter: true
+    },
+    {
+      field: "lastName",
+      title: "LastName",
+      value: "",
+      filter: true
+    },
+    {
+      field: "",
+      title: "Age",
+      value: 10,
+      filter: false
+    }
+  ]
 }

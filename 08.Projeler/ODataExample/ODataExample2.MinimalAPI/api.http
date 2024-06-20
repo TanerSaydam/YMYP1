@@ -1,0 +1,5 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+GET https://localhost:7043/api/personels/getall?$top=3&$orderby=FirstName&$select=firstName
+
+
+//

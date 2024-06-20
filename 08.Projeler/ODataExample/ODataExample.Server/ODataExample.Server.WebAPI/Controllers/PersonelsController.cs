@@ -1,6 +1,6 @@
 ﻿using Bogus;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData.Query;
+using ODataExample.Server.WebAPI.AOP;
 using ODataExample.Server.WebAPI.Context;
 using ODataExample.Server.WebAPI.Models;
 
@@ -10,7 +10,7 @@ namespace ODataExample.Server.WebAPI.Controllers;
 public sealed class PersonelsController : ControllerBase
 {
     [HttpGet]
-    [EnableQuery]
+    [EnableQueryWithMetadata] //Cross cutting concerns / aspect oriented programming
     public IActionResult GetAll()
     {
         ApplicationDbContext context = new();

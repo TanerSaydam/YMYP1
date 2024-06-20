@@ -1,0 +1,31 @@
+<table>
+    <thead>
+        <tr>
+            @for(h of columns; track h){
+                <th>
+                    <span style="display: flex; flex-direction: column;">
+                    {{h.title}}                    
+                    @if(h.filter){
+                        <input (keyup)="change($event,h.field)"/>
+                    }     
+                </span>               
+                </th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @for(d of data; track d){
+            <tr>
+                @for(h of columns; track h){
+                    @if(h.field){
+                        <th>{{d[h.field]}}</th>
+                    }@else {
+                        <th>{{h.value}}</th>
+                    }
+                    
+                }
+            </tr>
+        }
+        
+    </tbody>
+</table>

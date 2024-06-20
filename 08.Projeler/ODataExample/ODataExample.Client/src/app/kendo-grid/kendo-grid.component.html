@@ -1,0 +1,17 @@
+<kendo-grid 
+[data]="result"
+[pageSize]="pageSize"
+[pageable]="true"
+[filterable]="true"
+[sortable]="true"
+[skip]="skip"
+(pageChange)="pageChange($event)"
+(filterChange)="filterChange($event)"
+(sortChange)="sortChange($event)"
+>
+  <kendo-grid-column field="id" [width]="100" title="Id"> </kendo-grid-column>
+  <kendo-grid-column field="firstName" title="First Name"> </kendo-grid-column>
+  <kendo-grid-column field="lastName" title="Last Name">
+  </kendo-grid-column>
+  <kendo-grid-column field="dateOfBirth" [filter]="'date'" title="Date Of Birth"> </kendo-grid-column>
+</kendo-grid>

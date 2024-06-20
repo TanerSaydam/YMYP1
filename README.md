@@ -1,7 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 20.06.2024 (sonraki ders)
+## 23.06.2024 (Sonraki ders)
+- Elastic Search
+
+## 20.06.2024
 - .NET OData ve Angular Kendo Grid incelemesi devam
 
 ## 18.06.2024
