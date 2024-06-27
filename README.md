@@ -1,7 +1,13 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 23.06.2024 (Sonraki ders)
+## 29.06.2024 (Sonraki ders)
+- Yeni full projeye başlıyoruz
+
+## 27.06.2024
+- Elastic Search
+
+## 23.06.2024
 - Elastic Search
 
 ## 20.06.2024
