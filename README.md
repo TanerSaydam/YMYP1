@@ -1,8 +1,11 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 29.06.2024 (Sonraki ders)
-- Yeni full projeye başlıyoruz
+## 02.07.2024 (Sonraki ders)
+- Quiz uygulamasını kodlamaya devam ediyoruz
+
+## 30.06.2024
+- Yeni full projeye başlıyoruz (Quiz Uygulaması aynı Kahoot gibi)
 
 ## 27.06.2024
 - Elastic Search
