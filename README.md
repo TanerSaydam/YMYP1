@@ -1,7 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 02.07.2024 (Sonraki ders)
+## 04.07.2024 (Sonraki ders)
+- Quiz uygulamasını kodlamaya devam ediyoruz
+
+## 02.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz
 
 ## 30.06.2024
@@ -37,7 +40,7 @@
 
 ## 07.05.2024
 - Domain-Driven Desig devam
-- **Tactical Pattern**
+- Tactical Pattern
 - Entity
 - Value Object
 - Repository

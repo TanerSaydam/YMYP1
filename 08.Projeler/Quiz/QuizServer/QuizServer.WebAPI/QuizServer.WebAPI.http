@@ -1,6 +1,36 @@
-@QuizServer.WebAPI_HostAddress = http://localhost:5247
+POST https://localhost:7076/api/QuizParticipants/Join
+Content-Type: application/json
 
-GET {{QuizServer.WebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
+{
+  "roomNumber": 703876,
+  "userName": "taner",
+  "email": "tanersaydam@gmail.com"
+}
+###
 
+POST https://localhost:7076/api/Auth/Login
+Content-Type: application/json
+
+{
+  "userName": "taner",
+  "password": "1"
+}
+###
+
+
+
+POST https://localhost:7076/api/Quizzes/Create
+Content-Type: application/json
+
+{
+  "title": "Test2"
+}
+###
+
+
+POST https://localhost:7076/api/Quizzes/GetAll
+Content-Type: application/json
+
+{
+}
 ###
