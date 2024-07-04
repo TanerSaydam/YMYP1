@@ -17,6 +17,11 @@ internal sealed class JoinQuizCommandHandler(
             return Result<string>.Failure("Quiz not found");
         }
 
+        Participant participant = new(request.UserName, request.Email);
+        Participants participants = new(request.RoomNumber, participant);
+        Shared.Participants.Add(participants);
+
+
         //signalR ile katılımcı bilgisini FrontEnd'e göndereceğiz
 
         return "Join is successful";

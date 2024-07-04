@@ -1,0 +1,31 @@
+<div>
+    <div>
+        <div>
+            <label>Title</label>
+            <input type="text" [(ngModel)]="addModel().title">
+        </div>
+        <div>
+            <button (click)="create()">Save</button>
+        </div>
+    </div>
+
+    <div>
+        <flexi-grid
+        [data]="quizzes()"
+        [showCaption]="true"
+        captionTitle="Quiz List"
+        [showRefreshData]="false"
+        >
+        <flexi-grid-column field="id.value" title="Id"></flexi-grid-column>
+        <flexi-grid-column field="title.value" title="Title"></flexi-grid-column>
+        <flexi-grid-column field="roomNumber.value" title="Room Number"></flexi-grid-column>
+        <flexi-grid-column title="Options" [columnTemplate]="optionsColumnTemplate">            
+        </flexi-grid-column>
+
+        <ng-template #optionsColumnTemplate let-item="item">
+            <button routerLink="/admin/room/{{item.roomNumber.value}}">Go to room</button>
+        </ng-template>
+
+        </flexi-grid>
+    </div>
+</div>

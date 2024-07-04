@@ -3,6 +3,8 @@ using QuizServer.Infrastructure;
 using QuizServer.WebAPI.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors();
+
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
@@ -21,6 +23,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+app.UseCors(x => x.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
 app.UseAuthorization();
 

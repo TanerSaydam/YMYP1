@@ -1,7 +1,10 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 04.07.2024 (Sonraki ders)
+## 07.07.2024 (Sonraki ders)
+- Quiz uygulamasını kodlamaya devam ediyoruz
+
+## 04.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz
 
 ## 02.07.2024

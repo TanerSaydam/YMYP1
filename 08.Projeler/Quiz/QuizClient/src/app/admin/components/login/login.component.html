@@ -1,0 +1,16 @@
+<div>
+    <div>
+        <h1>Login Page</h1>
+    </div>
+    <div>
+        <label>UserName</label>
+        <input [(ngModel)]="model().userName" type="text">
+    </div>
+    <div>
+        <label>Password</label>
+        <input [(ngModel)]="model().password" type="text">
+    </div>
+    <div>
+        <button (click)="signIn()">Sign In</button>
+    </div>
+</div>
