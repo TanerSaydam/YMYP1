@@ -18,7 +18,9 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
-    "flexi-grid": "^18.5.5",
+    "@microsoft/signalr": "^8.0.0",
+    "flexi-grid": "^18.6.4",
+    "flexi-toast": "^18.0.8",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

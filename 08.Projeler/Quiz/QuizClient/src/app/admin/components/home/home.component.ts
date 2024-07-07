@@ -3,7 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { FlexiGridModule } from 'flexi-grid';
 import { QuizModel } from '../../models/quiz.model';
 import { HttpService } from '../../../common/services/http.service';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { FlexiToastService } from 'flexi-toast';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +18,16 @@ export default class HomeComponent {
   addModel = signal<QuizModel>(new QuizModel());
   updateModel = signal<QuizModel>(new QuizModel());
 
-  constructor(private http: HttpService){
-    this.getAll();    
+  constructor(
+    private http: HttpService,
+    private router: Router,
+    private toast: FlexiToastService
+  ){
+    this.getAll();
+  }
+
+  gotoRoom(roomNumber: number){
+    this.router.navigateByUrl(`/admin/room/${roomNumber}`)
   }
 
   getAll(){
@@ -31,6 +40,7 @@ export default class HomeComponent {
     this.http.post<string>("Quizzes/Create", this.addModel(), (res)=> {
       this.addModel.set(new QuizModel());
       this.getAll();
+      this.toast.showToast("Success","Quiz create is successful","success");
     });
   }
 }

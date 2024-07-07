@@ -23,7 +23,7 @@
         </flexi-grid-column>
 
         <ng-template #optionsColumnTemplate let-item="item">
-            <button routerLink="/admin/room/{{item.roomNumber.value}}">Go to room</button>
+            <button (click)="gotoRoom(item.roomNumber.value)">Go to room</button>
         </ng-template>
 
         </flexi-grid>
