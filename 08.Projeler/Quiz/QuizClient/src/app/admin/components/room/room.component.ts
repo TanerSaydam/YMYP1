@@ -24,6 +24,18 @@ export class RoomComponent implements OnDestroy {
       this.roomNumber.set(res["roomNumber"]);  
       this.signalr.startConnection().then(()=> {
         this.signalr.hubConnection!.invoke("JoinQuizRoomAsync",this.roomNumber().toString());
+
+
+        this.signalr.hubConnection!.on("JoinQuizRoom",(res)=> {          
+          this.participants.update(prev => [...prev, res]);          
+        });
+
+        this.signalr.hubConnection!.on("LeaveQuizRoom",(res)=> {
+          const index = this.participants().findIndex(p=> p.email === res);
+          if(index >= 0){
+            this.participants.set(this.participants().filter(p=> p.email !== res));            
+          } 
+        });
       });
       this.getParticipants();
     });

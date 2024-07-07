@@ -12,7 +12,7 @@ export const routes: Routes = [
         component: UIHomeComponent
     },
     {
-        path: "quiz/:roomNumber",
+        path: "quiz/:roomNumber/:email",
         component: UIQuizComponent
     },
     {

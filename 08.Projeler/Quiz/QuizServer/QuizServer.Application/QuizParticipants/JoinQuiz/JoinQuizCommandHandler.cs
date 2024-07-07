@@ -1,11 +1,14 @@
 ﻿using MediatR;
+using QuizServer.Application.Services;
 using QuizServer.Domain.Quizes;
 using TS.Result;
 
 namespace QuizServer.Application.QuizParticipants.JoinQuiz;
 
 internal sealed class JoinQuizCommandHandler(
-    IQuizRepository quizRepository) : IRequestHandler<JoinQuizCommand, Result<string>>
+    IQuizRepository quizRepository,
+    ISignalRService signalRService
+    ) : IRequestHandler<JoinQuizCommand, Result<string>>
 {
     public async Task<Result<string>> Handle(JoinQuizCommand request, CancellationToken cancellationToken)
     {
@@ -22,7 +25,7 @@ internal sealed class JoinQuizCommandHandler(
         Shared.Participants.Add(participants);
 
 
-        //signalR ile katılımcı bilgisini FrontEnd'e göndereceğiz
+        await signalRService.JoinQuizRoom(request.RoomNumber.ToString(), participant);
 
         return "Join is successful";
     }
