@@ -1,7 +1,15 @@
-<h1>Room Number: {{ roomNumber()}}</h1>
-<h1>Participants</h1>
-<ul>
-    @for(p of participants(); track $index){
-        <li>{{p.userName}}</li>
-    }
-</ul>
+<div class="room-number-title">
+    <h1>Room Number: {{ roomNumber()}}</h1>
+</div>
+
+<div class="participant-title">
+    <h2>Participants: {{count()}}</h2>    
+</div>
+
+<div class="participant-part">
+    <ul>
+        @for(p of participants(); track $index){
+            <li>{{p.userName}}</li>
+        }
+    </ul>
+</div>

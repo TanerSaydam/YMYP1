@@ -1,31 +1,29 @@
-<div>
-    <div>
-        <div>
+<div class="div-group">
+    <flexi-grid
+    [data]="quizzes()"
+    [showCaption]="true"
+    captionTitle="Quiz List"
+    [showRefreshData]="false"
+    themeClass="dark"
+    [useMinWidth]="false"  
+    [captionTemplate]="captionTemplate"      
+    >
+    <ng-template #captionTemplate>
+        <div class="form-group">
             <label>Title</label>
             <input type="text" [(ngModel)]="addModel().title">
+            <button (click)="create()">Save</button>                
         </div>
-        <div>
-            <button (click)="create()">Save</button>
-        </div>
-    </div>
+    </ng-template>
+    <flexi-grid-column field="id.value" title="Id"></flexi-grid-column>
+    <flexi-grid-column field="title.value" title="Title"></flexi-grid-column>
+    <flexi-grid-column field="roomNumber.value" title="Room Number"></flexi-grid-column>
+    <flexi-grid-column title="Options" [columnTemplate]="optionsColumnTemplate">            
+    </flexi-grid-column>
 
-    <div>
-        <flexi-grid
-        [data]="quizzes()"
-        [showCaption]="true"
-        captionTitle="Quiz List"
-        [showRefreshData]="false"
-        >
-        <flexi-grid-column field="id.value" title="Id"></flexi-grid-column>
-        <flexi-grid-column field="title.value" title="Title"></flexi-grid-column>
-        <flexi-grid-column field="roomNumber.value" title="Room Number"></flexi-grid-column>
-        <flexi-grid-column title="Options" [columnTemplate]="optionsColumnTemplate">            
-        </flexi-grid-column>
+    <ng-template #optionsColumnTemplate let-item="item">
+        <button (click)="gotoRoom(item.roomNumber.value)">Go to room</button>
+    </ng-template>
 
-        <ng-template #optionsColumnTemplate let-item="item">
-            <button (click)="gotoRoom(item.roomNumber.value)">Go to room</button>
-        </ng-template>
-
-        </flexi-grid>
-    </div>
+    </flexi-grid>
 </div>

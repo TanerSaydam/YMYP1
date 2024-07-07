@@ -1,1 +1,124 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background-color: cadetblue;
+    padding: 0px 10px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    cursor: pointer;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.room-number-title{
+    margin-top: 20px;    
+    text-align: center;
+}
+
+.participant-part{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.participant-part ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.participant-part ul li{
+    border: 1px solid #0000002f;
+    padding: 30px;
+    border-radius: 80px;
+    font-size: 27px;
+    background-color: cornflowerblue;
+}
+
+button{
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #ccc;
+}
+
+.form-group{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    padding: 4px;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.div-group{
+    margin-top: 10px;
+}
+
+.participant-home-container{            
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-100{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.participant-quiz-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.return-btn{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;   
+    cursor: pointer; 
+    fill: 000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
