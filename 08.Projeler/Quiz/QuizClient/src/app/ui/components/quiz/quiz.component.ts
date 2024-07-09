@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnDestroy, signal } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { SignalrService } from '../../../common/services/signalr.service';
 
@@ -9,7 +9,7 @@ import { SignalrService } from '../../../common/services/signalr.service';
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css'
 })
-export default class QuizComponent {
+export default class QuizComponent implements OnDestroy {
   roomNumber = signal<number>(0);
   email = signal<string>("");
 
@@ -24,5 +24,9 @@ export default class QuizComponent {
         this.signalr.hubConnection!.invoke("JoinQuizRoomByParticipant",this.roomNumber().toString(), this.email());
       });
     })
+  }
+
+  ngOnDestroy(): void {
+    this.signalr.hubConnection!.invoke("LeaveQuizRoomByParticipant",this.roomNumber().toString(), this.email());
   }
 }

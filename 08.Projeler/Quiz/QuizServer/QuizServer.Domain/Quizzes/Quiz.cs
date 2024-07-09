@@ -1,4 +1,5 @@
-﻿using QuizServer.Domain.Shared;
+﻿using QuizServer.Domain.QuizDetails;
+using QuizServer.Domain.Shared;
 
 namespace QuizServer.Domain.Quizes;
 public sealed class Quiz : Entity
@@ -10,7 +11,7 @@ public sealed class Quiz : Entity
     }
     public Title Title { get; private set; }
     public RoomNumber RoomNumber { get; private set; }
-
+    public IReadOnlyCollection<QuizDetail> Details { get; private set; } = default!;
     public void ChangeTitle(Title title)
     {
         Title = title;

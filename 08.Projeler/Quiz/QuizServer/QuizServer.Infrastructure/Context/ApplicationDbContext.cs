@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using QuizServer.Domain.QuizDetails;
 using QuizServer.Domain.Quizes;
 using QuizServer.Domain.Users;
 
@@ -10,7 +11,7 @@ internal sealed class ApplicationDbContext : DbContext
 
     public DbSet<User> Users { get; set; }
     public DbSet<Quiz> Quizzes { get; set; }
-
+    public DbSet<QuizDetail> QuizDetails { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(DependencyInjection).Assembly);

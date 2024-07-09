@@ -12,7 +12,7 @@ internal sealed class QuizConfiguration : IEntityTypeConfiguration<Quiz>
             .HasConversion(id => id.Value, value => new Id(value));
 
         builder.Property(p => p.Title)
-            .HasConversion(title => title.Value, value => new Title(value))
+            .HasConversion(title => title.Value, value => Title.Create(value))
             .HasColumnType("varchar(200)");
 
         builder.Property(p => p.RoomNumber)

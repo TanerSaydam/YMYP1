@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using QuizServer.Infrastructure.Context;
 using QuizServer.Infrastructure.Options;
 using Scrutor;
@@ -28,6 +29,11 @@ public static class DependencyInjection
             .AsImplementedInterfaces()
             .WithScopedLifetime();
         });
+
+        services.AddHealthChecks()
+        .AddCheck("health-check", () => HealthCheckResult.Healthy())
+        .AddDbContextCheck<ApplicationDbContext>()
+        ;
 
         return services;
     }

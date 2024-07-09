@@ -5,12 +5,14 @@ using TS.Result;
 namespace QuizServer.Application.Quizzes.GetAllQuiz;
 
 internal sealed class GetAllQuizQueryHandler(
-    IQuizRepository quizRepository) : IRequestHandler<GetAllQuizQuery, Result<List<Quiz>>>
+    IQuizRepository quizRepository) : IRequestHandler<GetAllQuizQuery, Result<List<GetAllQuizQueryResponse>>>
 {
-    public async Task<Result<List<Quiz>>> Handle(GetAllQuizQuery request, CancellationToken cancellationToken)
+    public async Task<Result<List<GetAllQuizQueryResponse>>> Handle(GetAllQuizQuery request, CancellationToken cancellationToken)
     {
         var result = await quizRepository.GetAllAsync(cancellationToken);
 
-        return result;
+        var response = result.Select(s => new GetAllQuizQueryResponse(s.Id.Value, s.Title.Value, s.RoomNumber.Value)).ToList();
+
+        return response;
     }
 }
