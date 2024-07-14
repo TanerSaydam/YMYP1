@@ -1,0 +1,10 @@
+services:
+
+  api:
+    build:
+       context: .
+       dockerfile: MyDockerImageProject.WebAPI/Dockerfile
+    image: api
+    container_name: my-api
+    ports:
+     - 32400:8080
