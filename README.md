@@ -1,8 +1,12 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 16.07.204 (Sonraki ders)
+## 18.07.2024 (Sonraki ders)
 - Quiz uygulamasını kodlamaya devam ediyoruz
+
+## 16.07.204
+- VS Extensions
+- Angular ile Chess tahtası denemesi 
 
 ## 14.07.2024
 - MultitenantDb

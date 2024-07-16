@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+	
+  <Commands package="VSIXProject1">
+	  
+    <Groups>
+      <Group guid="VSIXProject1" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="VSMainMenu" id="ItemNode"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="VSIXProject1" id="MyCommand" priority="0x0100" type="Button">
+        <Parent guid="VSIXProject1" id="MyMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="DebugTemplate" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Create a new Test.cs</ButtonText>
+          <LocCanonicalName>.VSIXProject1.MyCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="VSIXProject1" value="{42acb079-c745-4ae5-b038-c65e374e285d}">
+      <IDSymbol name="MyMenuGroup" value="0x0001" />
+      <IDSymbol name="MyCommand" value="0x0100" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>

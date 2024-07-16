@@ -1,0 +1,9 @@
+<div class="body">
+  <div class="main">
+    @for(s of board.squares; track s){
+      <div class="row" (click)="selectOrMove($index)" [@pieceMove]="isSelected($index) ? 'selected' : 'default'">
+        {{s.type}}
+      </div>
+    }
+  </div>
+</div>
