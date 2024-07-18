@@ -24,7 +24,7 @@ internal sealed class QuizRepository(
         return await context.Quizzes.ToListAsync(cancellationToken);
     }
 
-    public async Task<Quiz?> GetByIdAsync(Id id, CancellationToken cancellationToken = default)
+    public async Task<Quiz?> GetByIdAsync(Identity id, CancellationToken cancellationToken = default)
     {
         return await context.Quizzes.FindAsync(id, cancellationToken);
     }

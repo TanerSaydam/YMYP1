@@ -1,0 +1,150 @@
+<div style="margin-top: 20px;">
+    <flexi-grid 
+    [data]="quizDetails()"
+    [showIndex]="true"
+    [showCaption]="true"
+    captionTitle="Quiz Detail List"
+    [pageable]="true"
+    [sortable]="true"
+    [draggable]="true"
+    [resizable]="true"
+    [captionTemplate]="captionTemplate"
+    >
+        <ng-template #captionTemplate>
+            <button (click)="showModal.set(true)"><i class="fa-solid fa-plus"></i></button>
+        </ng-template>
+        <flexi-grid-column field="title" title="Question" [columnTemplate]="titleColumnTemplate">
+            <ng-template #titleColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].title">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.title}}</span>
+                }                
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column field="answerA" title="Answer A" [columnTemplate]="answerAColumnTemplate">
+            <ng-template #answerAColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].answerA">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.answerA}}</span>
+                } 
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column field="answerB" title="Answer B" [columnTemplate]="answerBColumnTemplate">
+            <ng-template #answerBColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].answerB">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.answerB}}</span>
+                } 
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column field="answerC" title="Answer C" [columnTemplate]="answerCColumnTemplate">
+            <ng-template #answerCColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].answerC">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.answerC}}</span>
+                } 
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column field="answerD" title="Answer D" [columnTemplate]="answerDColumnTemplate">
+            <ng-template #answerDColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].answerD">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.answerD}}</span>
+                } 
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column field="correctAnswer" title="Correct Answer" [columnTemplate]="correctAnswerColumnTemplate">
+            <ng-template #correctAnswerColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].correctAnswer">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.correctAnswer}}</span>
+                } 
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column field="timeOut" title="Time Out" [columnTemplate]="timeOutColumnTemplate">
+            <ng-template #timeOutColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <input class="grid-input" type="text" [(ngModel)]="updateQuizDetails()[index].timeOut">
+                }@else {
+                    <span (dblclick)="get(item)">{{item.timeOut}}</span>
+                } 
+            </ng-template>
+        </flexi-grid-column>
+        <flexi-grid-column title="Operations" [columnTemplate]="operationsColumnTemplate">
+            <ng-template #operationsColumnTemplate let-item="item" let-index="index">
+                @if(item.isUpdate){
+                    <button class="me-1" (click)="update(index)">
+                        <i class="fa-solid fa-edit"></i>
+                    </button>
+                    <button (click)="cancelUpdate(item)">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                }@else {
+                    <button class="me-1" (click)="get(item)">
+                        <i class="fa-solid fa-edit"></i>
+                    </button>
+                    <button (click)="deleteById(item.id)">
+                        <i class="fa-solid fa-trash text-danger"></i>
+                    </button>
+                }
+            </ng-template>
+        </flexi-grid-column>
+    </flexi-grid>
+</div>
+
+
+<div class="modal" [ngStyle]="{'display': showModal() ? 'flex' : 'none'}">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Add Quiz Detail Modal</h1>            
+            <p>You can add quiz detail here</p>
+            <div class="modal-close-btn" (click)="showModal.set(false)">x</div>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label>Question</label>
+                <textarea [(ngModel)]="addModel().title">
+
+                </textarea>
+            </div>
+            <div class="form-group">
+                <label>Answer A</label>
+                <input [(ngModel)]="addModel().answerA" type="text">
+            </div>
+            <div class="form-group">
+                <label>Answer B</label>
+                <input [(ngModel)]="addModel().answerB" type="text">
+            </div>
+            <div class="form-group">
+                <label>Answer C</label>
+                <input [(ngModel)]="addModel().answerC" type="text">
+            </div>
+            <div class="form-group">
+                <label>Answer D</label>
+                <input [(ngModel)]="addModel().answerD" type="text">
+            </div>
+            <div class="form-group">
+                <label>Correct Answer</label>
+                <select [(ngModel)]="addModel().correctAnswer">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Time Out (in seconds)</label>
+                <input [(ngModel)]="addModel().timeOut" type="number">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button (click)="create()">Save</button>
+        </div>
+    </div>
+</div>

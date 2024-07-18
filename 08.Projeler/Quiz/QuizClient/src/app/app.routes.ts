@@ -1,38 +1,36 @@
 import { Routes } from '@angular/router';
-import UIQuizComponent from './ui/components/quiz/quiz.component';
-import UIHomeComponent from './ui/components/home/home.component';
-import AdminHomeComponent from './admin/components/home/home.component';
-import { LayoutComponent } from './admin/components/layout/layout.component';
-import { LoginComponent } from './admin/components/login/login.component';
-import { RoomComponent } from './admin/components/room/room.component';
 
 export const routes: Routes = [
     {
         path: "",
-        component: UIHomeComponent
+        loadComponent: ()=> import("./ui/components/home/home.component")
     },
     {
         path: "quiz/:roomNumber/:email",
-        component: UIQuizComponent
+        loadComponent: ()=> import("./ui/components/quiz/quiz.component")
     },
     {
         path: "admin",
         children: [
             {
                 path: "login",
-                component: LoginComponent
+                loadComponent: ()=> import("./admin/components/login/login.component")
             },
             {
                 path: "",
-                component: LayoutComponent,
+                loadComponent: ()=> import("./admin/components/layout/layout.component"),
                 children: [
                     {
                         path: "",
-                        component: AdminHomeComponent
+                        loadComponent: ()=> import("./admin/components/home/home.component")
                     },
                     {
                         path:"room/:roomNumber",
-                        component: RoomComponent
+                        loadComponent: ()=> import("./admin/components/room/room.component")
+                    },
+                    {
+                        path: "quiz-detail/:id",
+                        loadComponent: ()=> import("./admin/components/quiz-details/quiz-details.component")
                     }
                 ]
             }

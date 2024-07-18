@@ -10,10 +10,10 @@ internal sealed class QuizDetailConfiguration : IEntityTypeConfiguration<QuizDet
     public void Configure(EntityTypeBuilder<QuizDetail> builder)
     {
         builder.Property(p => p.Id)
-            .HasConversion(id => id.Value, value => new Id(value));
+            .HasConversion(id => id.Value, value => new Identity(value));
 
         builder.Property(p => p.QuizId)
-            .HasConversion(id => id.Value, value => new Id(value));
+            .HasConversion(id => id.Value, value => new Identity(value));
 
         builder.Property(p => p.Title)
             .HasConversion(title => title.Value, value => Title.Create(value))

@@ -10,7 +10,7 @@ internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
     {
         builder
             .Property(p => p.Id)
-            .HasConversion(id => id.Value, value => new Id(value));
+            .HasConversion(id => id.Value, value => new Identity(value));
 
         builder
             .Property(p => p.UserName)

@@ -8,7 +8,7 @@ public interface IQuizRepository
     Task UpdateAsync(Quiz quiz, CancellationToken cancellationToken = default);
     Task DeleteAsync(Quiz quiz, CancellationToken cancellationToken = default);
     Task<List<Quiz>> GetAllAsync(CancellationToken cancellationToken = default);
-    Task<Quiz?> GetByIdAsync(Id id, CancellationToken cancellationToken = default);
+    Task<Quiz?> GetByIdAsync(Identity id, CancellationToken cancellationToken = default);
     Task<Quiz?> GetByRoomNumberAsync(RoomNumber roomNumber, CancellationToken cancellationToken = default);
     Task<bool> IsRoomNumberExists(RoomNumber roomNumber, CancellationToken cancellationToken = default);
 }

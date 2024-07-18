@@ -11,7 +11,7 @@ internal sealed class CreateQuizDetailCommandHandler(
 {
     public async Task<Result<string>> Handle(CreateQuizDetailCommand request, CancellationToken cancellationToken)
     {
-        Id quizId = new(request.QuizId);
+        Identity quizId = new(request.QuizId);
         Title title = Title.Create(request.Title);
         Answer answerA = new(request.AnswerA);
         Answer answerB = new(request.AnswerB);

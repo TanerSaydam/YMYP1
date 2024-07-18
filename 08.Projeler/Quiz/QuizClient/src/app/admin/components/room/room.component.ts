@@ -11,7 +11,7 @@ import { SignalrService } from '../../../common/services/signalr.service';
   templateUrl: './room.component.html',
   styleUrl: './room.component.css'
 })
-export class RoomComponent implements OnDestroy {
+export default class RoomComponent implements OnDestroy {
   roomNumber = signal<number>(0);
   participants = signal<ParticipantModel[]>([]);
   count = computed(()=> this.participants().length);

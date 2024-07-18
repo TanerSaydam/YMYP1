@@ -9,7 +9,7 @@ internal sealed class QuizConfiguration : IEntityTypeConfiguration<Quiz>
     public void Configure(EntityTypeBuilder<Quiz> builder)
     {
         builder.Property(p => p.Id)
-            .HasConversion(id => id.Value, value => new Id(value));
+            .HasConversion(id => id.Value, value => new Identity(value));
 
         builder.Property(p => p.Title)
             .HasConversion(title => title.Value, value => Title.Create(value))

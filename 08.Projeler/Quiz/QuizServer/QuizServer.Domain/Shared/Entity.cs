@@ -3,7 +3,7 @@ public abstract class Entity
 {
     protected Entity()
     {
-        Id = new Id(Guid.NewGuid());
+        Id = new Identity(Guid.NewGuid());
     }
-    public Id Id { get; set; }
+    public Identity Id { get; set; }
 }

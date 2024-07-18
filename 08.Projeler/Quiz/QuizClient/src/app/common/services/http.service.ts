@@ -2,6 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable, signal } from '@angular/core';
 import { ResultModel } from '../models/result.model';
 import { FlexiToastService } from 'flexi-toast';
+import { ErrorService } from './error.service';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,8 @@ export class HttpService {
 
   constructor(
     private http: HttpClient,
-    private toast: FlexiToastService
+    private toast: FlexiToastService,
+    private error: ErrorService
   ) { 
     this.toast.options.autoClose=true;
   }
@@ -25,6 +27,8 @@ export class HttpService {
         if(errorCallback !== null && errorCallback !== undefined){
           errorCallback(err);
         }
+
+        this.error.errorHandler(err);
       }
     })
   }
@@ -39,12 +43,7 @@ export class HttpService {
           errorCallback(err);          
         }
 
-        console.log(err);
-        
-
-        if(err.status === 500){
-          this.toast.showToast("Error",err.error.errorMessages[0],"error")
-        }
+        this.error.errorHandler(err);
       }
     })
   } 

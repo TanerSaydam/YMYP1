@@ -1,35 +1,35 @@
 <div class="div-group">
-    <!--Todo: Bunu kaldır buraya card ekle -->
-    <div class="card">
-        <h1>Deneme</h1>
-        <h3>800385</h3>
-        <button>Goto Room</button>
+    <button (click)="showModal.set(true)">Add Quiz</button>    
+    <div class="row">
+        @for(quiz of quizzes(); track quiz.id){
+            <div class="card">
+                <h1>{{quiz.title}}</h1>
+                <h3>{{quiz.roomNumber}}</h3>
+                <button routerLink="/admin/room/{{quiz.roomNumber}}">Goto Room</button>
+                <i routerLink="/admin/quiz-detail/{{quiz.id}}" class="fa-solid fa-edit card-edit-btn">
+                </i>
+                <i (click)="delete(quiz.id)" class="fa-solid fa-trash card-remove-btn">
+                </i>
+            </div>
+        }
     </div>
-    <!-- <flexi-grid
-    [data]="quizzes()"
-    [showCaption]="true"
-    captionTitle="Quiz List"
-    [showRefreshData]="false"
-    themeClass="light"
-    [useMinWidth]="false"  
-    [captionTemplate]="captionTemplate"      
-    >
-    <ng-template #captionTemplate>
-        <div class="form-group">
-            <label>Title</label>
-            <input type="text" [(ngModel)]="addModel().title">
-            <button (click)="create()">Save</button>                
+</div>
+
+<div class="modal" [ngStyle]="{'display': showModal() ? 'flex' : 'none'}">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1>Add Quiz Modal</h1>            
+            <p>You can add quiz here</p>
+            <div class="modal-close-btn" (click)="showModal.set(false)">x</div>
         </div>
-    </ng-template>
-    <flexi-grid-column field="id" title="Id"></flexi-grid-column>
-    <flexi-grid-column field="title" title="Title"></flexi-grid-column>
-    <flexi-grid-column field="roomNumber" title="Room Number"></flexi-grid-column>
-    <flexi-grid-column title="Operations" [columnTemplate]="operationsColumnTemplate">            
-    </flexi-grid-column>
-
-    <ng-template #operationsColumnTemplate let-item="item">
-        <button (click)="gotoRoom(item.roomNumber.value)">Go to room</button>
-    </ng-template>
-
-    </flexi-grid> -->
+        <div class="modal-body">
+            <div>
+                <label>Quiz Name</label>
+                <input [(ngModel)]="addModel().title" type="text">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button (click)="create()">Save</button>
+        </div>
+    </div>
 </div>

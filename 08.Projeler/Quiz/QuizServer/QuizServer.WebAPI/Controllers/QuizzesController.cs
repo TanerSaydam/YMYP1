@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using QuizServer.Application.Quizzes.CreateQuiz;
+using QuizServer.Application.Quizzes.DeleteQuizById;
 using QuizServer.Application.Quizzes.GetAllQuiz;
 using QuizServer.Application.Quizzes.GetParticipantsByRoomNumber;
 
@@ -20,6 +21,13 @@ public sealed class QuizzesController(IMediator mediator) : ControllerBase
     public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
     {
         GetAllQuizQuery request = new();
+        var response = await mediator.Send(request, cancellationToken);
+        return StatusCode(response.StatusCode, response);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteById(DeleteQuizByIdCommand request, CancellationToken cancellationToken)
+    {
         var response = await mediator.Send(request, cancellationToken);
         return StatusCode(response.StatusCode, response);
     }
