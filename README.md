@@ -4,6 +4,17 @@
 ## 23.07.2024 (Sonraki ders)
 - Quiz uygulamasını kodlamaya devam ediyoruz
 - Todo: Kullanıcı quiz sayfasındayken geri tuşuna basınca admin room sayfasından düşmüyor
+- Geriye kalanlar:
+-- Puanı süreye göre hesaplamalı
+-- Soru cevabında bilip bilmediğini ekranda göstermeli
+-- Sonraki soruya geçiş
+-- Son soru bittikten sonra puan durumunda sınav bitmiştir başa dön ya da başka odaya geç butonu çıkmalı
+
+- Düzeltilecekler
+-- Oda da sınav gösterilmeye başlandığında başkası odaya katılamamalı
+-- Soruyu işaretleyenlerin sayısını Admin rooma gönder
+-- Soruyu cevaplayan bir verdiği cevap da admin rooma gitmeli
+-- Admin sayfasına kullanıcı girişi ve kaydı yapabilmeli, ayrıca quizleri de kullanıcı bazlı ayırmamız gerekiyor
 
 ## 21.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz
