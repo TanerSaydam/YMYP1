@@ -1,15 +1,30 @@
-<div class="room-number-title">
-    <h1>Room Number: {{ roomNumber()}}</h1>
-</div>
-
-<div class="participant-title">
-    <h2>Participants: {{count()}}</h2>    
-</div>
-
-<div class="participant-part">
-    <ul>
-        @for(p of participants(); track $index){
-            <li>{{p.userName}}</li>
+@if(!showPoint()){
+    @if(time() !== 0){
+    <div style="position: relative;">
+        <div class="room-number-title">
+            <h1>Room Number: {{ roomNumber()}}</h1>
+        </div>
+        
+        <div class="participant-title">
+            <h2>Participants: {{count()}}</h2>    
+        </div>
+        
+        <div class="participant-part">
+            <ul>
+                @for(p of participants(); track $index){
+                    <li>{{p.userName}}</li>
+                }
+            </ul>
+        </div>
+    
+        @if(time() >= 0){
+            <span class="time">{{time()}}</span>
         }
-    </ul>
-</div>
+    </div>
+    }
+    @else{
+        <app-quiz-page [roomNumber]="roomNumber()" (endOfTheQuestionTimeEvent)="showPoint.set($event)"></app-quiz-page>
+    }
+}@else {
+    <app-points [participants]="participants()"></app-points>
+}

@@ -11,4 +11,9 @@ internal sealed class SignalRService(
     {
         await hubContext.Clients.Group(roomNumber).SendAsync("JoinQuizRoom", participant);
     }
+
+    public async Task SendParticipantInformationToWhoListener(string roomNumber, Participant participant)
+    {
+        await hubContext.Clients.Group(roomNumber).SendAsync("GetParticipantInformation", participant);
+    }
 }

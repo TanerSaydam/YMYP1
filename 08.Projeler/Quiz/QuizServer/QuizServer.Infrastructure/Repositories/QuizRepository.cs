@@ -31,7 +31,7 @@ internal sealed class QuizRepository(
 
     public async Task<Quiz?> GetByRoomNumberAsync(RoomNumber roomNumber, CancellationToken cancellationToken = default)
     {
-        return await context.Quizzes.FirstOrDefaultAsync(p => p.RoomNumber == roomNumber, cancellationToken);
+        return await context.Quizzes.Include(p => p.Details).FirstOrDefaultAsync(p => p.RoomNumber == roomNumber, cancellationToken);
     }
 
     public async Task<bool> IsRoomNumberExists(RoomNumber roomNumber, CancellationToken cancellationToken = default)

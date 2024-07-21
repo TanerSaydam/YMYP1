@@ -6,6 +6,7 @@ import { FlexiGridModule } from 'flexi-grid';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { FlexiToastService } from 'flexi-toast';
+import { QuizModel } from '../../models/quiz.model';
 
 @Component({
   selector: 'app-quiz-details',
@@ -19,7 +20,7 @@ export default class QuizDetailsComponent {
   quizDetails = signal<QuizDetailModel[]>([]);
   updateQuizDetails = signal<QuizDetailModel[]>([]);
   showModal = signal<boolean>(false);
-
+  quiz = signal<QuizModel>(new QuizModel());
   addModel = signal<QuizDetailModel>(new QuizDetailModel());
 
   constructor(
@@ -29,8 +30,15 @@ export default class QuizDetailsComponent {
   ){
     this.activated.params.subscribe(res=> {
       this.quizId.set(res["id"]);
+      this.getQuizById();
       this.addModel().quizId = this.quizId();
       this.getAll();
+    });
+  }
+
+  getQuizById(){
+    this.http.get<QuizModel>(`Quizzes/GetById?id=${this.quizId()}`,(res)=> {
+      this.quiz.set(res);
     });
   }
 
@@ -50,6 +58,7 @@ export default class QuizDetailsComponent {
       this.getAll();
       this.addModel.set(new QuizDetailModel());
       this.addModel().quizId = this.quizId();
+
       this.showModal.set(false);
     });
   }
@@ -76,6 +85,12 @@ export default class QuizDetailsComponent {
     this.http.post<string>("QuizDetails/Update",data, (res)=> {
       this.toast.showToast("Info", res, "info");
       this.quizDetails()[index] = {...data};
+    });
+  }
+
+  changeQuizTitle(){
+    this.http.post<string>(`Quizzes/ChangeTitle`, this.quiz(),(res)=> {
+      this.toast.showToast("Info",res,"info");      
     });
   }
 }

@@ -1,7 +1,11 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 21.07.2024 (Sonraki ders)
+## 23.07.2024 (Sonraki ders)
+- Quiz uygulamasını kodlamaya devam ediyoruz
+- Todo: Kullanıcı quiz sayfasındayken geri tuşuna basınca admin room sayfasından düşmüyor
+
+## 21.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz
 
 ## 18.07.2024 

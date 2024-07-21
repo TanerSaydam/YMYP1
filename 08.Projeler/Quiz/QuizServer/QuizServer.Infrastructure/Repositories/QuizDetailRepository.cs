@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using QuizServer.Domain.QuizDetails;
+using QuizServer.Domain.Quizes;
 using QuizServer.Domain.Shared;
 using QuizServer.Infrastructure.Context;
 
@@ -33,5 +34,13 @@ internal sealed class QuizDetailRepository(
     public async Task<QuizDetail?> GetByIdAsync(Identity id, CancellationToken cancellationToken = default)
     {
         return await context.QuizDetails.FirstAsync(p => p.Id == id, cancellationToken);
+    }
+
+    public async Task<QuizDetail> GetQuizDetailByQuestionNumber(RoomNumber roomNumber, int questionNumber, CancellationToken cancellationToken = default)
+    {
+        Quiz quiz = await context.Quizzes.FirstAsync(p => p.RoomNumber == roomNumber, cancellationToken);
+        QuizDetail[] quizDetails = await context.QuizDetails.Where(p => p.QuizId == quiz.Id).ToArrayAsync(cancellationToken);
+
+        return quizDetails[questionNumber];
     }
 }

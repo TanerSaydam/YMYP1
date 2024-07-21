@@ -1,0 +1,8 @@
+<div class="flex">
+    <h1>Points</h1>
+    <ul>
+        @for(item of participants(); track item.email){
+            <li>{{item.userName}}: {{item.point}}</li>
+        }
+    </ul>
+</div>

@@ -1,9 +1,9 @@
-<div class="div-group">
+<div class="div-group">    
     <button (click)="showModal.set(true)">Add Quiz</button>    
     <div class="row">
         @for(quiz of quizzes(); track quiz.id){
             <div class="card">
-                <h1>{{quiz.title}}</h1>
+                <h3>{{quiz.title}}</h3>
                 <h3>{{quiz.roomNumber}}</h3>
                 <button routerLink="/admin/room/{{quiz.roomNumber}}">Goto Room</button>
                 <i routerLink="/admin/quiz-detail/{{quiz.id}}" class="fa-solid fa-edit card-edit-btn">

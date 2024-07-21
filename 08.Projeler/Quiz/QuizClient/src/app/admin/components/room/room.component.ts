@@ -3,11 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { HttpService } from '../../../common/services/http.service';
 import { ParticipantModel } from '../../../ui/models/participant.model';
 import { SignalrService } from '../../../common/services/signalr.service';
+import { QuizPageComponent } from '../../../common/components/quiz-page/quiz-page.component';
+import { PointsComponent } from '../../../common/components/points/points.component';
 
 @Component({
   selector: 'app-room',
   standalone: true,
-  imports: [],
+  imports: [QuizPageComponent, PointsComponent],
   templateUrl: './room.component.html',
   styleUrl: './room.component.css'
 })
@@ -15,6 +17,9 @@ export default class RoomComponent implements OnDestroy {
   roomNumber = signal<number>(0);
   participants = signal<ParticipantModel[]>([]);
   count = computed(()=> this.participants().length);
+  time = signal<number>(-1);
+  interval: any;  
+  showPoint = signal<boolean>(false);
 
   constructor(
     private activated: ActivatedRoute,
@@ -23,20 +28,38 @@ export default class RoomComponent implements OnDestroy {
   ){     
     this.activated.params.subscribe(res=> {
       this.roomNumber.set(res["roomNumber"]);  
+      this.roomNumber.set(this.roomNumber());
       this.signalr.startConnection().then(()=> {
-        this.signalr.hubConnection!.invoke("JoinQuizRoomAsync",this.roomNumber().toString());
-
+        this.signalr.hubConnection!.invoke("JoinQuizRoomAsync",this.roomNumber().toString());      
 
         this.signalr.hubConnection!.on("JoinQuizRoom",(res)=> {          
           this.participants.update(prev => [...prev, res]);
+          this.signalr.hubConnection!.invoke("SetTimeByRoomNumber", this.roomNumber());
         });
-
+    
         this.signalr.hubConnection!.on("LeaveQuizRoom",(res)=> {
           const index = this.participants().findIndex(p=> p.email === res);
           if(index >= 0){
             this.participants.set(this.participants().filter(p=> p.email !== res));
           } 
         });
+    
+        this.signalr.hubConnection!.on("GetParticipantInformation", (res:ParticipantModel)=> {
+          const par:ParticipantModel = this.participants().find(p=> p.email == res.email)!;
+          par.point = res.point;
+        });
+
+        this.signalr.hubConnection!.on("Time", (res)=> {          
+          this.time.set(res);
+          clearInterval(this.interval);
+          this.interval = setInterval(()=> {
+            this.time.update(prev => prev - 1);
+            if(this.time() === 0){
+              clearInterval(this.interval);              
+              this.signalr.hubConnection!.invoke("SetQuestionTime",this.roomNumber(), '3');
+            }
+          },1000);
+        })
       });
       this.getParticipants();
     });

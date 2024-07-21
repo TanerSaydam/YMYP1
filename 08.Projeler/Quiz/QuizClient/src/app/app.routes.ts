@@ -6,7 +6,7 @@ export const routes: Routes = [
         loadComponent: ()=> import("./ui/components/home/home.component")
     },
     {
-        path: "quiz/:roomNumber/:email",
+        path: "quiz/:roomNumber/:email/:userName",
         loadComponent: ()=> import("./ui/components/quiz/quiz.component")
     },
     {

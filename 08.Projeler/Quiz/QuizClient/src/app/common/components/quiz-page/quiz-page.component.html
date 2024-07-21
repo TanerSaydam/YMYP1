@@ -1,0 +1,27 @@
+@if(!showQuestion()){
+    <div class="flex">
+        <h3>Here your question</h3>
+        <h1 class="question-title">{{questionTitle()}}</h1>
+        @if(time() >= 0){
+            <span class="time2">{{time()}}</span>
+        }
+    </div>
+}@else {
+    <div class="flex" style="position: relative;">
+        <h1 style="text-align: center;">{{question().title}}</h1>
+        
+        <div class="answer-btn-group">
+            <button [disabled]="answer()" class="answer-btn" (click)="answerQuestion('A')" [ngClass]="answer() === 'A' ? 'select' : ''">A) {{question().answerA}}</button>
+            <button [disabled]="answer()" class="answer-btn" (click)="answerQuestion('B')" [ngClass]="answer() === 'B' ? 'select' : ''">B) {{question().answerB}}</button>
+        </div>
+        <div class="answer-btn-group">
+            <button [disabled]="answer()" class="answer-btn" (click)="answerQuestion('C')" [ngClass]="answer() === 'C' ? 'select' : ''">C) {{question().answerC}}</button>
+            <button [disabled]="answer()" class="answer-btn" (click)="answerQuestion('D')" [ngClass]="answer() === 'D' ? 'select' : ''">D) {{question().answerD}}</button>
+        </div>
+        @if(time() >= 0){
+            <span class="time2">{{time()}}</span>
+        }
+    </div>
+}
+
+

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using QuizServer.Domain.Dtos;
 using QuizServer.Domain.QuizDetails;
 using QuizServer.Domain.Shared;
 using TS.Result;
@@ -6,13 +7,13 @@ using TS.Result;
 namespace QuizServer.Application.QuizDetails.GetAllQuizDetailByQuizId;
 
 internal sealed class GetAllQuizDetailByQuizIdQueryHandler(
-    IQuizDetailRepository quizDetailRepository) : IRequestHandler<GetAllQuizDetailByQuizIdQuery, Result<List<GetAllQuizDetailByQuizIdResponse>>>
+    IQuizDetailRepository quizDetailRepository) : IRequestHandler<GetAllQuizDetailByQuizIdQuery, Result<List<QuizDetailDto>>>
 {
-    public async Task<Result<List<GetAllQuizDetailByQuizIdResponse>>> Handle(GetAllQuizDetailByQuizIdQuery request, CancellationToken cancellationToken)
+    public async Task<Result<List<QuizDetailDto>>> Handle(GetAllQuizDetailByQuizIdQuery request, CancellationToken cancellationToken)
     {
         Identity quizId = new(request.QuizId);
         var quizDetails = await quizDetailRepository.GetAllByQuizIdAsync(quizId, cancellationToken);
-        var response = quizDetails.Select(s => new GetAllQuizDetailByQuizIdResponse(
+        var response = quizDetails.Select(s => new QuizDetailDto(
             s.Id.Value,
             s.Title.Value,
             s.AnswerA.Value,

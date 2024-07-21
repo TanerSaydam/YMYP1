@@ -6,9 +6,41 @@ namespace QuizServer.Infrastructure.Hubs;
 public class CreateRoomHub : Hub
 {
     public static HashSet<QuizParticipant> QuizParticipants = new();
-    public void JoinQuizRoomByParticipant(string roomNumber, string email)
+    public static HashSet<QuizTime> QuizTimes = new();
+    public async Task JoinQuizRoomByParticipant(string roomNumber, string email, string userName)
     {
         QuizParticipants.Add(new(Context.ConnectionId, roomNumber, email));
+        await Groups.AddToGroupAsync(Context.ConnectionId, roomNumber.ToString());
+
+        Participant participant = new(userName, email);
+        Participants participants = new(Convert.ToInt32(roomNumber), participant);
+        Shared.Participants.Add(participants);
+
+        await Clients.Group(roomNumber).SendAsync("JoinQuizRoom", participant);
+    }
+
+    public async Task SetQuestionTime(string roomNumber, string time)
+    {
+        int numberTime = Convert.ToInt32(time);
+        await Task.Delay(500);
+        await Clients.Group(roomNumber).SendAsync("QuestionTime", numberTime);
+    }
+
+    public async Task SetTimeByRoomNumber(string roomNumber)
+    {
+        await Task.Delay(500);
+        QuizTime? quizTime = QuizTimes.FirstOrDefault(p => p.RoomNumber == roomNumber);
+        if (quizTime is null)
+        {
+            quizTime = new(roomNumber, 3);
+            QuizTimes.Add(quizTime);
+        }
+        else
+        {
+            quizTime.Time = 3;
+        }
+
+        await Clients.Group(roomNumber).SendAsync("Time", quizTime.Time);
     }
 
     public async Task LeaveQuizRoomByParticipant(string roomNumber, string email)

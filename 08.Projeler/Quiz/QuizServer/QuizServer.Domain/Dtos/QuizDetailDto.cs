@@ -1,6 +1,5 @@
-﻿namespace QuizServer.Application.QuizDetails.GetAllQuizDetailByQuizId;
-
-public sealed record GetAllQuizDetailByQuizIdResponse(
+﻿namespace QuizServer.Domain.Dtos;
+public sealed record QuizDetailDto(
     Guid Id,
     string Title,
     string AnswerA,
