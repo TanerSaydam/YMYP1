@@ -14,6 +14,18 @@ body {
 
 table {
     overflow: hidden !important;
+    min-width: 90%;    
+    border-collapse: collapse;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+}
+
+table, th, td{
+    border: 1px solid;
+    border-radius: 10px;
 }
 
 nav {
@@ -22,6 +34,7 @@ nav {
     padding: 15px;
     background-color: #ccc;
     color: 000;
+    gap: 10px;
 }
 
 nav ul {
@@ -297,9 +310,75 @@ textarea {
     display: flex;
     justify-content: space-between;
     width: 60vw;
+    gap: 10px;
 }
 
 .select{
-    background-color: yellow !important;
-    color: black !important;
+    background-color: yellow;
+    color: black;
+}
+
+.correct{
+    background-color: aquamarine !important;    
+}
+
+.not-correct{
+    background-color: red !important;
+    color: white;
+}
+
+.my-alert{
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+.alert-success{
+    background-color: aquamarine;
+}
+
+.alert-danger{
+    background-color: red;
+    color: white;
+}
+
+.part-1{
+    width: 70%;
+    float: left;
+}
+
+.part-2{   
+    width: 29%;
+    float: right;
+}
+
+.login-form-group{
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    justify-content: center;
+    width: 90%;
+}
+
+.mt-1{
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1350px) {
+    .part-1{
+        width: 50%;
+    }
+
+    .part-2{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .part-1{
+        display: none !important;
+    }
+
+    .part-2{
+        width: 99%;
+    }
 }

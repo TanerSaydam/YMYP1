@@ -15,13 +15,13 @@ internal sealed class ChangeQuizTitleCommandHandler(
         Quiz? quiz = await quizRepository.GetByIdAsync(id, cancellationToken);
         if (quiz is null)
         {
-            return Result<string>.Failure("Quiz not found");
+            return Result<string>.Failure("Quiz bulunamadı");
         }
 
         Title title = Title.Create(request.Title);
         quiz.ChangeTitle(title);
 
         await quizRepository.UpdateAsync(quiz);
-        return "Update title is successful";
+        return "Quiz başlığı başarıyla değiştirildi";
     }
 }

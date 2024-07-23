@@ -9,14 +9,22 @@ public class CreateRoomHub : Hub
     public static HashSet<QuizTime> QuizTimes = new();
     public async Task JoinQuizRoomByParticipant(string roomNumber, string email, string userName)
     {
-        QuizParticipants.Add(new(Context.ConnectionId, roomNumber, email));
-        await Groups.AddToGroupAsync(Context.ConnectionId, roomNumber.ToString());
+        QuizParticipant? quizParticipant = QuizParticipants.FirstOrDefault(p => p.RoomNumber == roomNumber && p.Email == email);
+        if (quizParticipant is null)
+        {
+            QuizParticipants.Add(new(Context.ConnectionId, roomNumber, email));
+            await Groups.AddToGroupAsync(Context.ConnectionId, roomNumber.ToString());
+            Participant participant = new(userName, email);
+            Participants participants = new(Convert.ToInt32(roomNumber), participant);
+            Shared.Participants.Add(participants);
 
-        Participant participant = new(userName, email);
-        Participants participants = new(Convert.ToInt32(roomNumber), participant);
-        Shared.Participants.Add(participants);
+            await Clients.Group(roomNumber).SendAsync("JoinQuizRoom", participant);
+        }
+        else
+        {
+            quizParticipant.ConnectionId = Context.ConnectionId;
+        }
 
-        await Clients.Group(roomNumber).SendAsync("JoinQuizRoom", participant);
     }
 
     public async Task SetQuestionTime(string roomNumber, string time)

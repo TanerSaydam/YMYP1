@@ -15,7 +15,7 @@ export class ErrorService {
     console.log(err);
     switch (err.status) {
       case 500:
-        for(let message of err.error.ErrorMessages){
+        for(let message of err.error.errorMessages){
           this.toast.showToast("Error", message,"error");
         }
         break;

@@ -17,9 +17,9 @@
         </div>
         }
         @else{
-            <app-quiz-page [roomNumber]="roomNumber()" [email]="this.email()" (endOfTheQuestionTimeEvent)="getParticipants()"></app-quiz-page>
+            <app-quiz-page [roomNumber]="roomNumber()" [email]="this.email()" (endOfTheQuestionTimeEvent)="getParticipants($event)"></app-quiz-page>
         }
 }@else{
-    <app-points [participants]="participants()"></app-points>
+    <app-points [isLastQuestion]="isLastQuestion()" [participants]="participants()" (showNewQuestionEvent)="showNewQuestion()"></app-points>
 }
 

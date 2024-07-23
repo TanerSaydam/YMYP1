@@ -16,16 +16,16 @@ internal sealed class RegisterCommandHandler(
 
         if (isUserNameExists)
         {
-            return Result<string>.Failure("User name already exists");
+            return Result<string>.Failure("Kullanıcı adı daha önce alınmış");
         }
 
         User user = new(userName, password);
         bool result = await userRepository.CreateAsync(user, cancellationToken);
         if (!result)
         {
-            return Result<string>.Failure("Something went wrong");
+            return Result<string>.Failure("Bir sorun oluştu");
         }
 
-        return "User create is successful";
+        return "Kullanıcı kaydı başarıyla tamamlandı";
     }
 }

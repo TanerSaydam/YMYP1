@@ -21,7 +21,8 @@ internal sealed class GetAllQuizDetailByQuizIdQueryHandler(
             s.AnswerC.Value,
             s.AnswerD.Value,
             s.CorrectAnswer.Name,
-            s.TimeOut.Value
+            s.TimeOut.Value,
+            false
             )).ToList();
 
         return response;

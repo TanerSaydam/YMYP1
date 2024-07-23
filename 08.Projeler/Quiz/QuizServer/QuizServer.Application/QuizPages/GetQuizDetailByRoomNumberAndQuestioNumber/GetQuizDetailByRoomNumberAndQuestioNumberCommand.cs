@@ -15,7 +15,9 @@ internal sealed class GetQuizByRoomNumberAndQuestioNumberCommandHandler
     public async Task<Result<QuizDetailDto>> Handle(GetQuizDetailByRoomNumberAndQuestioNumberCommand request, CancellationToken cancellationToken)
     {
         RoomNumber roomNumber = new(request.RoomNumber);
-        QuizDetail quizDetail = await quizDetailRepository.GetQuizDetailByQuestionNumber(roomNumber, request.QuestionNumber, cancellationToken);
+        QuizDetail quizDetail = await quizDetailRepository.GetQuizDetailByQuestionNumberAsync(roomNumber, request.QuestionNumber, cancellationToken);
+
+        int totalQuestion = await quizDetailRepository.GetQuizDetailCountByRoomNumberAsync(roomNumber, cancellationToken);
 
         var response = new QuizDetailDto(
            quizDetail.Id.Value,
@@ -25,7 +27,8 @@ internal sealed class GetQuizByRoomNumberAndQuestioNumberCommandHandler
            quizDetail.AnswerC.Value,
            quizDetail.AnswerD.Value,
            "",
-           quizDetail.TimeOut.Value
+           quizDetail.TimeOut.Value,
+           totalQuestion == request.QuestionNumber
            );
 
         return response;

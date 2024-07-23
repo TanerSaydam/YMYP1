@@ -17,7 +17,7 @@ internal sealed class LoginCommandHandler(
         User? user = await userRepository.GetByUserNameAndPasswordAsync(userName, password, cancellationToken);
         if (user is null)
         {
-            return Result<string>.Failure("User not found");
+            return Result<string>.Failure("Kullanıcı bulunamadı");
         }
 
         return jwtProvider.CreateToken(user);

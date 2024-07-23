@@ -10,5 +10,7 @@ public interface IQuizDetailRepository
     Task DeleteAsync(QuizDetail quizDetail, CancellationToken cancellationToken = default);
     Task<List<QuizDetail>> GetAllByQuizIdAsync(Identity quizId, CancellationToken cancellationToken = default);
 
-    Task<QuizDetail> GetQuizDetailByQuestionNumber(RoomNumber roomNumber, int questionNumber, CancellationToken cancellationToken = default);
+    Task<QuizDetail> GetQuizDetailByQuestionNumberAsync(RoomNumber roomNumber, int questionNumber, CancellationToken cancellationToken = default);
+
+    Task<int> GetQuizDetailCountByRoomNumberAsync(RoomNumber roomNumber, CancellationToken cancellationToken = default);
 }

@@ -14,11 +14,11 @@ internal sealed class DeleteQuizDetailByIdHandler(
         QuizDetail? quizDetail = await quizDetailRepository.GetByIdAsync(id, cancellationToken);
         if (quizDetail is null)
         {
-            return Result<string>.Failure("Quiz detail not found");
+            return Result<string>.Failure("Quiz detay bulunamadı");
         }
 
         await quizDetailRepository.DeleteAsync(quizDetail, cancellationToken);
 
-        return "Delete is successful";
+        return "Silme işlemi başarılı";
     }
 }

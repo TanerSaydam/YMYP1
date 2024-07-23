@@ -24,6 +24,6 @@ internal sealed class CreateQuizDetailCommandHandler(
 
         await quizDetailRepository.CreateAsync(quizDetail, cancellationToken);
 
-        return "Create is successful";
+        return "Kayıt işlemi başarılı";
     }
 }

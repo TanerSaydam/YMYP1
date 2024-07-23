@@ -6,5 +6,6 @@ public sealed record AnswerQuestionCommand(
     int RoomNumber,
     int QuestionNumber,
     string Email,
-    string Answer
-    ) : IRequest<Result<string>>;
+    string Answer,
+    int Time
+    ) : IRequest<Result<bool>>;

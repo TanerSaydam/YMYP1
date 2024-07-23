@@ -20,6 +20,7 @@ export default class RoomComponent implements OnDestroy {
   time = signal<number>(-1);
   interval: any;  
   showPoint = signal<boolean>(false);
+  isLastQuestion = signal<boolean>(false);
 
   constructor(
     private activated: ActivatedRoute,
@@ -32,16 +33,21 @@ export default class RoomComponent implements OnDestroy {
       this.signalr.startConnection().then(()=> {
         this.signalr.hubConnection!.invoke("JoinQuizRoomAsync",this.roomNumber().toString());      
 
-        this.signalr.hubConnection!.on("JoinQuizRoom",(res)=> {          
-          this.participants.update(prev => [...prev, res]);
+        this.signalr.hubConnection!.on("JoinQuizRoom",(res)=> {
+          const participant = this.participants().find(p=> p.email == res.email)
+          if(!participant){
+            this.participants.update(prev => [...prev, res]);            
+          }
           this.signalr.hubConnection!.invoke("SetTimeByRoomNumber", this.roomNumber());
         });
     
         this.signalr.hubConnection!.on("LeaveQuizRoom",(res)=> {
-          const index = this.participants().findIndex(p=> p.email === res);
-          if(index >= 0){
-            this.participants.set(this.participants().filter(p=> p.email !== res));
-          } 
+          const newParticipants = this.participants().filter(p=> p.email !== res);
+          this.participants.set([...newParticipants]);
+          
+          if(this.participants().length === 0){
+            location.reload();
+          }
         });
     
         this.signalr.hubConnection!.on("GetParticipantInformation", (res:ParticipantModel)=> {
@@ -75,4 +81,13 @@ export default class RoomComponent implements OnDestroy {
     });
   }
 
+  showNewQuestion(){
+    this.showPoint.set(false);
+    this.signalr.hubConnection!.invoke("SetQuestionTime",this.roomNumber(), '3');
+  }
+
+  onEndOfTheQuestionTime(istLastQuestion: boolean){
+    this.showPoint.set(true);
+    this.isLastQuestion.set(istLastQuestion);
+  }
 }

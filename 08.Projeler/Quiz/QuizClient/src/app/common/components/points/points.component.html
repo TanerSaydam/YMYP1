@@ -1,8 +1,25 @@
 <div class="flex">
-    <h1>Points</h1>
-    <ul>
-        @for(item of participants(); track item.email){
-            <li>{{item.userName}}: {{item.point}}</li>
-        }
-    </ul>
+    @if(isLastQuestion()){
+        <h1>Quiz tamamlandı. Tebrikler</h1>
+        <p>Birazdan geri odaya geri yönlendirileceksiniz...</p>
+    }
+    <table>        
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Kullanıcı Adı</th>
+                <th>Puan</th>
+            </tr>            
+        </thead>
+        <tbody>
+            @for(item of participants(); track item.email){
+                <tr>
+                    <td>{{$index}}</td>
+                    <td>{{item.userName}}</td>
+                    <td>{{item.point}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <span class="time2">{{time()}}</span>
 </div>

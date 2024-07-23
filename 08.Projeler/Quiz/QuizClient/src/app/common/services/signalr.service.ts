@@ -14,9 +14,24 @@ export class SignalrService {
       .withUrl("https://localhost:7076/create-room")
       .build();
 
+      this.hubConnection.onclose(() => {
+        console.log("Connection closed. Retrying...");
+        setTimeout(() => {
+          this.startConnection();
+        }, 3000);
+      });
+
       return this.hubConnection
       .start()
-      .then(()=>console.log("Connection started"))
-      .catch((err: any)=> console.log(err));    
+      .then(()=>{
+        console.log("Connection started");
+      })
+      .catch((err: any)=> {
+        console.log(err);
+        console.log("Connection closed. Retrying...");
+        setTimeout(()=> {
+          this.startConnection();
+        },3000);
+      });    
   }
 }

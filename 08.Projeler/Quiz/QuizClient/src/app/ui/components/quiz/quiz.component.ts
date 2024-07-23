@@ -5,6 +5,7 @@ import { QuizPageComponent } from '../../../common/components/quiz-page/quiz-pag
 import { PointsComponent } from '../../../common/components/points/points.component';
 import { HttpService } from '../../../common/services/http.service';
 import { ParticipantModel } from '../../models/participant.model';
+import { QuestionService } from '../../../common/services/question.service';
 
 @Component({
   selector: 'app-quiz',
@@ -21,11 +22,13 @@ export default class QuizComponent implements OnDestroy {
   interval: any;
   showPoint = signal<boolean>(false);
   participants = signal<ParticipantModel[]>([]);
+  isLastQuestion = signal<boolean>(false);
 
   constructor(
     private activated: ActivatedRoute,
     private http: HttpService,
-    private signalr: SignalrService
+    private signalr: SignalrService,
+    private question: QuestionService
   ){
     this.activated.params.subscribe(res=> {
       this.roomNumber.set(res["roomNumber"]);
@@ -50,12 +53,21 @@ export default class QuizComponent implements OnDestroy {
 
   ngOnDestroy(): void {
     this.signalr.hubConnection!.invoke("LeaveQuizRoomByParticipant",this.roomNumber().toString(), this.email());
+    const questionNumber = this.question.questionNumbers().find(p=> p.roomNumber == this.roomNumber());
+    if(questionNumber){
+      questionNumber.questionNumber = -1;
+    }
   }
 
-  getParticipants(){
+  getParticipants(istLastQuestion: boolean){
+    this.isLastQuestion.set(istLastQuestion);
       this.http.post<ParticipantModel[]>(`QuizPages/GetParticipants`,{roomNumber: this.roomNumber()}, res=> {
         this.showPoint.set(true);
         this.participants.set(res);
       })
+  }
+
+  showNewQuestion(){
+    this.showPoint.set(false);
   }
 }

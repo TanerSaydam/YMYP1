@@ -15,7 +15,7 @@ internal sealed class UpdateQuizDetailCommandHandler(
         QuizDetail? quizDetail = await quizDetailRepository.GetByIdAsync(identity, cancellationToken);
         if (quizDetail is null)
         {
-            return Result<string>.Failure("Quiz detail not found");
+            return Result<string>.Failure("Quiz detay bulunamadı");
         }
 
         Title title = Title.Create(request.Title);
@@ -36,7 +36,7 @@ internal sealed class UpdateQuizDetailCommandHandler(
 
         await quizDetailRepository.UpdateAsync(quizDetail, cancellationToken);
 
-        return "Update is successful";
+        return "Güncelleme işlemi başarılı";
     }
 }
 

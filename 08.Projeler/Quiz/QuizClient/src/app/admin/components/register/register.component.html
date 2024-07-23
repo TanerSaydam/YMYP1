@@ -5,7 +5,7 @@
     <div class="part-2">
         <div class="login-form-group">
             <div class="mt-1">
-                <h1>Admin Giriş Sayfası</h1>
+                <h1>Admin Kayıt Sayfası</h1>
             </div>
             <div class="mt-1">
                 <label>Kullanıcı Adı</label>
@@ -16,8 +16,8 @@
                 <input [(ngModel)]="model().password" type="text">
             </div>
             <div class="mt-1" style="display: flex; justify-content: space-between;">
-                <button (click)="signIn()">Giriş Yap</button>
-                <a routerLink="/admin/register">Hesabınız yok mu? Ücretsiz kayıt ol</a>
+                <button (click)="signIn()">Kayıt ol</button>
+                <a routerLink="/admin/login">Zaten hesabınız var mı? Giriş yap</a>
             </div>
             
         </div>

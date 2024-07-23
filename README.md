@@ -1,20 +1,26 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 23.07.2024 (Sonraki ders)
+## 25.07.2024 (Sonraki ders)
 - Quiz uygulamasını kodlamaya devam ediyoruz
-- Todo: Kullanıcı quiz sayfasındayken geri tuşuna basınca admin room sayfasından düşmüyor
-- Geriye kalanlar:
--- Puanı süreye göre hesaplamalı
--- Soru cevabında bilip bilmediğini ekranda göstermeli
--- Sonraki soruya geçiş
--- Son soru bittikten sonra puan durumunda sınav bitmiştir başa dön ya da başka odaya geç butonu çıkmalı
-
-- Düzeltilecekler
+-- Quizleri de kullanıcı bazlı ayırmamız gerekiyor
 -- Oda da sınav gösterilmeye başlandığında başkası odaya katılamamalı
 -- Soruyu işaretleyenlerin sayısını Admin rooma gönder
--- Soruyu cevaplayan bir verdiği cevap da admin rooma gitmeli
--- Admin sayfasına kullanıcı girişi ve kaydı yapabilmeli, ayrıca quizleri de kullanıcı bazlı ayırmamız gerekiyor
+-- Eğer tüm katılımcılar işaretleme yaptıysa soru süresini sıfırla
+-- Verilen cevaplar Admin rooma gitmeli ve puan durumunda verilen cevaplar a şu kadar bu şu kadar tarzı gösterilmeli
+-- Canlıya al ve test et
+
+## 23.07.2024
+- Quiz uygulamasını kodlamaya devam ediyoruz
+- Todo: Kullanıcı quiz sayfasındayken geri tuşuna basınca admin room sayfasından düşmüyor -- Çözüldü
+- Geriye kalanlar:
+-- Puanı süreye göre hesaplamalı -- Çözüldü
+-- Soru cevabında bilip bilmediğini ekranda göstermeli -- Çözüldü
+-- Sonraki soruya geçiş -- Çözüldü
+-- Son soru bittikten sonra puan durumunda sınav bitmiştir başa dön ya da başka odaya geç butonu çıkmalı -- Çözüldü ama son sorudan sonra otomatik odaya atıyor
+
+- Düzeltilecekler
+-- Admin sayfasına kullanıcı girişi ve kaydı yapabilmeli -- Çözüldü
 
 ## 21.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz

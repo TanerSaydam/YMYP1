@@ -7,5 +7,6 @@ public sealed record QuizDetailDto(
     string AnswerC,
     string AnswerD,
     string CorrectAnswer,
-    sbyte TimeOut
+    sbyte TimeOut,
+    bool IsLastQuestion
     );

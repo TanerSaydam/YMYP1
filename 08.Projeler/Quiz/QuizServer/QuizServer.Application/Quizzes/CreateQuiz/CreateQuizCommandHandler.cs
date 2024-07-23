@@ -22,6 +22,6 @@ internal sealed class CreateQuizCommandHandler(
         Quiz quiz = new(title, roomNumber);
         await quizRepository.CreateAsync(quiz, cancellationToken);
 
-        return "Quiz create is successful";
+        return "Quiz başarıyla oluşturuldu";
     }
 }

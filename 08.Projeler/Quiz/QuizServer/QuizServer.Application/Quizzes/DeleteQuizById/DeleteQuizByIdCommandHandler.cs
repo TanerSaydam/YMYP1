@@ -14,10 +14,10 @@ internal sealed class DeleteQuizByIdCommandHandler(
         Quiz? quiz = await quizRepository.GetByIdAsync(id);
         if (quiz is null)
         {
-            return Result<string>.Failure("Quiz not found");
+            return Result<string>.Failure("Quiz bulunamadı");
         }
         await quizRepository.DeleteAsync(quiz, cancellationToken);
 
-        return "Delete is successful";
+        return "Quiz başarıyla silindi";
     }
 }

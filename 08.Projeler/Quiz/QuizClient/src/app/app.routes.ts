@@ -17,6 +17,10 @@ export const routes: Routes = [
                 loadComponent: ()=> import("./admin/components/login/login.component")
             },
             {
+                path: "register",
+                loadComponent: ()=> import("./admin/components/register/register.component")
+            },
+            {
                 path: "",
                 loadComponent: ()=> import("./admin/components/layout/layout.component"),
                 children: [
