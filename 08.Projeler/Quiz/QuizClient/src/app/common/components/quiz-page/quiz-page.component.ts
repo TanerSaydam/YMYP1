@@ -85,8 +85,7 @@ export class QuizPageComponent implements AfterViewInit {
     this.http.post<QuizDetailModel>(`QuizPages/GetQuizDetailByRoomNumberAndQuestioNumber`, data, (res) => {
       this.question.set(res);
       this.showQuestion.set(true);
-      this.time.set(-1);
-      res.timeOut = 3;
+      this.time.set(-1);      
       this.signalr.hubConnection!.invoke("SetQuestionTime", this.roomNumber(), res.timeOut.toString());
     });
   }

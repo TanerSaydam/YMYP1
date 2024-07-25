@@ -21,8 +21,6 @@ export default class HomeComponent {
 
   join(){
     this.model().roomNumber = +this.model().roomNumber;
-    this.http.post("QuizParticipants/Join", this.model(),(res)=> {
-      this.router.navigateByUrl(`/quiz/${this.model().roomNumber}/${this.model().email}/${this.model().userName}`);
-    })
+    this.router.navigateByUrl(`/quiz/${this.model().roomNumber}/${this.model().email}/${this.model().userName}`);    
   }
 }

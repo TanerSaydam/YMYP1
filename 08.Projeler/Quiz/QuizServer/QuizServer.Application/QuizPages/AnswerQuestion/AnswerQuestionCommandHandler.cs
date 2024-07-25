@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using QuizServer.Application.Services;
+using QuizServer.Domain.Dtos;
 using QuizServer.Domain.QuizDetails;
 using QuizServer.Domain.Quizes;
 using TS.Result;
@@ -16,9 +17,9 @@ internal sealed class AnswerQuestionCommandHandler(
         RoomNumber roomNumber = new(request.RoomNumber);
         QuizDetail quizDetail = await quizDetailRepository.GetQuizDetailByQuestionNumberAsync(roomNumber, request.QuestionNumber, cancellationToken);
 
-        var participants = Shared.Participants.Where(p => p.RoomNumber == request.RoomNumber).Select(s => s.Participant).ToList();
+        var participants = Shared.QuizParticipants.Where(p => p.RoomNumber == request.RoomNumber.ToString()).ToList();
 
-        Participant participant = participants.Where(p => p.Email == request.Email).First();
+        QuizParticipant participant = participants.Where(p => p.Email == request.Email).First();
 
 
         bool response = false;
@@ -26,9 +27,7 @@ internal sealed class AnswerQuestionCommandHandler(
         CorrectAnswer correctAnswer = CorrectAnswer.FromName(request.Answer);
         if (quizDetail.CorrectAnswer == correctAnswer)
         {
-            participant.Point += 1000 - (1000 / ((quizDetail.TimeOut.Value - request.Time + 2) * 10));
-            if (participant.Point > 1000) participant.Point = 1000;
-            if (participant.Point < 0) participant.Point = 0;
+            participant.Point += 1000 - (1000 / ((request.Time - quizDetail.TimeOut.Value + 2) * 10));
             response = true;
         }
 

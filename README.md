@@ -1,14 +1,20 @@
 # YMYP 1.Eğitim
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
-## 25.07.2024 (Sonraki ders)
+## 30.07.2024 (Sonraki ders)
+- Microservice
+
+## 28.07.2024 (Sonraki ders)
+- Microservice
+
+## 25.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz
-- Quizleri de kullanıcı bazlı ayırmamız gerekiyor
-- Oda da sınav gösterilmeye başlandığında başkası odaya katılamamalı
-- Soruyu işaretleyenlerin sayısını Admin rooma gönder
-- Eğer tüm katılımcılar işaretleme yaptıysa soru süresini sıfırla
-- Verilen cevaplar Admin rooma gitmeli ve puan durumunda verilen cevaplar a şu kadar bu şu kadar tarzı gösterilmeli
-- Canlıya al ve test et
+- Quizleri de kullanıcı bazlı ayırmamız gerekiyor -- Çözüldü
+- Oda da sınav gösterilmeye başlandığında başkası odaya katılamamalı -- Çözüldü
+- Soruyu işaretleyenlerin sayısını Admin rooma gönder -- Ödev
+- Eğer tüm katılımcılar işaretleme yaptıysa soru süresini sıfırla -- Ödev
+- Verilen cevaplar Admin rooma gitmeli ve puan durumunda verilen cevaplar a şu kadar bu şu kadar tarzı gösterilmeli -- Ödev
+- Canlıya al ve test et -- Yapıldı
 
 ## 23.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz

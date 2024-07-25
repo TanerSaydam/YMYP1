@@ -47,13 +47,15 @@ app.UseHttpsRedirection();
 
 app.UseCors(x => x.AllowAnyHeader().AllowCredentials().AllowAnyMethod().SetIsOriginAllowed(x => true));
 
+app.UseAuthentication();
+
 app.UseAuthorization();
 
 app.MapControllers().RequireRateLimiting("fixed");
 
 app.UseExceptionHandler();
 
-app.MapHub<CreateRoomHub>("/create-room");
+app.MapHub<QuizHub>("/create-room");
 
 app.MapHealthChecks("/health-check", new HealthCheckOptions
 {

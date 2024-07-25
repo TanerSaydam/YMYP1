@@ -26,5 +26,5 @@
         <app-quiz-page [roomNumber]="roomNumber()" (endOfTheQuestionTimeEvent)="onEndOfTheQuestionTime($event)"></app-quiz-page>
     }
 }@else {
-    <app-points [isLastQuestion]="isLastQuestion()" [participants]="participants()" (showNewQuestionEvent)="showNewQuestion()"></app-points>
+    <app-points url="/admin"  [isLastQuestion]="isLastQuestion()" [participants]="participants()" (showNewQuestionEvent)="showNewQuestion()"></app-points>
 }

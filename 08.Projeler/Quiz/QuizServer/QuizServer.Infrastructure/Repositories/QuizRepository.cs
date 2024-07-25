@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using QuizServer.Application.Services;
 using QuizServer.Domain.Quizes;
 using QuizServer.Domain.Shared;
 using QuizServer.Infrastructure.Context;
 
 namespace QuizServer.Infrastructure.Repositories;
 internal sealed class QuizRepository(
+    IUserContext userContext,
     ApplicationDbContext context) : IQuizRepository
 {
     public async Task CreateAsync(Quiz quiz, CancellationToken cancellationToken = default)
@@ -21,7 +23,7 @@ internal sealed class QuizRepository(
 
     public async Task<List<Quiz>> GetAllAsync(CancellationToken cancellationToken = default)
     {
-        return await context.Quizzes.ToListAsync(cancellationToken);
+        return await context.Quizzes.Where(p => p.UserId == userContext.GetUserId()).ToListAsync(cancellationToken);
     }
 
     public async Task<Quiz?> GetByIdAsync(Identity id, CancellationToken cancellationToken = default)

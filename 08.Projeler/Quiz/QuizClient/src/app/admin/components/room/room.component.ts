@@ -1,5 +1,5 @@
 import { Component, computed, OnDestroy, signal } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpService } from '../../../common/services/http.service';
 import { ParticipantModel } from '../../../ui/models/participant.model';
 import { SignalrService } from '../../../common/services/signalr.service';
@@ -25,7 +25,8 @@ export default class RoomComponent implements OnDestroy {
   constructor(
     private activated: ActivatedRoute,
     private http: HttpService,
-    private signalr: SignalrService
+    private signalr: SignalrService,
+    private router: Router
   ){     
     this.activated.params.subscribe(res=> {
       this.roomNumber.set(res["roomNumber"]);  
@@ -41,18 +42,20 @@ export default class RoomComponent implements OnDestroy {
           this.signalr.hubConnection!.invoke("SetTimeByRoomNumber", this.roomNumber());
         });
     
-        this.signalr.hubConnection!.on("LeaveQuizRoom",(res)=> {
+        this.signalr.hubConnection!.on("LeaveQuizRoom",(res)=> {          
           const newParticipants = this.participants().filter(p=> p.email !== res);
           this.participants.set([...newParticipants]);
           
           if(this.participants().length === 0){
-            location.reload();
+            location.reload();            
           }
         });
     
         this.signalr.hubConnection!.on("GetParticipantInformation", (res:ParticipantModel)=> {
           const par:ParticipantModel = this.participants().find(p=> p.email == res.email)!;
           par.point = res.point;
+
+          this.participants().sort((a, b) => b.point - a.point);
         });
 
         this.signalr.hubConnection!.on("Time", (res)=> {          
@@ -62,12 +65,13 @@ export default class RoomComponent implements OnDestroy {
             this.time.update(prev => prev - 1);
             if(this.time() === 0){
               clearInterval(this.interval);              
-              this.signalr.hubConnection!.invoke("SetQuestionTime",this.roomNumber(), '3');
+              this.signalr.hubConnection!.invoke("SetQuestionTime",this.roomNumber(), '10');
             }
           },1000);
         })
       });
       this.getParticipants();
+      this.changeQuizIsStart();
     });
   }
 
@@ -79,6 +83,10 @@ export default class RoomComponent implements OnDestroy {
     this.http.get<ParticipantModel[]>(`Quizzes/GetParticipantsByRoomNumber?roomNumber=${this.roomNumber()}`,(res)=> {
       this.participants.set(res);
     });
+  }
+
+  changeQuizIsStart(){
+    this.http.get<string>(`Quizzes/ChangeIsStart?roomNumber=${this.roomNumber()}`,(res)=> {});
   }
 
   showNewQuestion(){

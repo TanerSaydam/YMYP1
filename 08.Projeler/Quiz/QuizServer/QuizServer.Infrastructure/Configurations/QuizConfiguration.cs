@@ -18,5 +18,12 @@ internal sealed class QuizConfiguration : IEntityTypeConfiguration<Quiz>
         builder.Property(p => p.RoomNumber)
             .HasConversion(roomNumber => roomNumber.Value, value => new RoomNumber(value))
             .HasMaxLength(6);
+
+        builder.Property(p => p.UserId)
+            .HasConversion(userId => userId.Value, value => new Identity(value));
+
+        builder.Property(p => p.IsStart)
+            .HasConversion(isStart => isStart.Value, value => new IsStart(value));
+
     }
 }

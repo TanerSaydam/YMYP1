@@ -3,28 +3,24 @@ using QuizServer.Application;
 using QuizServer.Domain.Dtos;
 
 namespace QuizServer.Infrastructure.Hubs;
-public class CreateRoomHub : Hub
+public class QuizHub : Hub
 {
-    public static HashSet<QuizParticipant> QuizParticipants = new();
     public static HashSet<QuizTime> QuizTimes = new();
     public async Task JoinQuizRoomByParticipant(string roomNumber, string email, string userName)
     {
-        QuizParticipant? quizParticipant = QuizParticipants.FirstOrDefault(p => p.RoomNumber == roomNumber && p.Email == email);
+        await Groups.AddToGroupAsync(Context.ConnectionId, roomNumber.ToString());
+        QuizParticipant? quizParticipant = Shared.QuizParticipants.FirstOrDefault(p => p.RoomNumber == roomNumber && p.Email == email);
         if (quizParticipant is null)
         {
-            QuizParticipants.Add(new(Context.ConnectionId, roomNumber, email));
-            await Groups.AddToGroupAsync(Context.ConnectionId, roomNumber.ToString());
-            Participant participant = new(userName, email);
-            Participants participants = new(Convert.ToInt32(roomNumber), participant);
-            Shared.Participants.Add(participants);
-
-            await Clients.Group(roomNumber).SendAsync("JoinQuizRoom", participant);
+            quizParticipant = new(Context.ConnectionId, roomNumber, email, userName);
+            Shared.QuizParticipants.Add(quizParticipant);
         }
         else
         {
             quizParticipant.ConnectionId = Context.ConnectionId;
         }
 
+        await Clients.Group(roomNumber).SendAsync("JoinQuizRoom", quizParticipant);
     }
 
     public async Task SetQuestionTime(string roomNumber, string time)
@@ -40,12 +36,12 @@ public class CreateRoomHub : Hub
         QuizTime? quizTime = QuizTimes.FirstOrDefault(p => p.RoomNumber == roomNumber);
         if (quizTime is null)
         {
-            quizTime = new(roomNumber, 3);
+            quizTime = new(roomNumber, 15);
             QuizTimes.Add(quizTime);
         }
         else
         {
-            quizTime.Time = 3;
+            quizTime.Time = 15;
         }
 
         await Clients.Group(roomNumber).SendAsync("Time", quizTime.Time);
@@ -53,30 +49,20 @@ public class CreateRoomHub : Hub
 
     public async Task LeaveQuizRoomByParticipant(string roomNumber, string email)
     {
-        QuizParticipants.RemoveWhere(p => p.RoomNumber == roomNumber && p.Email == email);
+        Shared.QuizParticipants.RemoveWhere(p => p.Email == email && p.RoomNumber == roomNumber);
         await Clients.Group(roomNumber).SendAsync("LeaveQuizRoom", email);
-        var participant = Shared.Participants.Where(p => p.Participant.Email == email && p.RoomNumber.ToString() == roomNumber).FirstOrDefault();
-        if (participant is not null)
-        {
-            Shared.Participants.Remove(participant);
-        }
     }
 
     public async override Task OnDisconnectedAsync(Exception? exception)
     {
-        List<QuizParticipant> participants = QuizParticipants.Where(p => p.ConnectionId == Context.ConnectionId).ToList();
+        List<QuizParticipant> participants = Shared.QuizParticipants.Where(p => p.ConnectionId == Context.ConnectionId).ToList();
 
         foreach (var item in participants)
         {
             await Clients.Group(item.RoomNumber).SendAsync("LeaveQuizRoom", item.Email);
-            var participant = Shared.Participants.Where(p => p.Participant.Email == item.Email && p.RoomNumber.ToString() == item.RoomNumber).FirstOrDefault();
-            if (participant is not null)
-            {
-                Shared.Participants.Remove(participant);
-            }
         }
 
-        QuizParticipants.RemoveWhere(p => p.ConnectionId == Context.ConnectionId);
+        Shared.QuizParticipants.RemoveWhere(p => p.ConnectionId == Context.ConnectionId);
     }
     public async Task JoinQuizRoomAsync(string roomNumber)
     {

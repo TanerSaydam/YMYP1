@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { HttpService } from '../../../common/services/http.service';
 
 @Component({
   selector: 'app-layout',
@@ -9,5 +10,13 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './layout.component.css'
 })
 export default class LayoutComponent {
+  constructor(
+    private router: Router,
+    public http: HttpService
+  ){}
 
+  logout(){
+    localStorage.removeItem("my-token");
+    this.router.navigateByUrl("/admin/login");
+  }
 }

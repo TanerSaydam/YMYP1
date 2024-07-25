@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuizServer.Application.QuizDetails.CreateQuizDetail;
 using QuizServer.Application.QuizDetails.DeleteQuizDetailById;
@@ -8,6 +9,7 @@ using QuizServer.Application.QuizDetails.UpdateQuizDetail;
 namespace QuizServer.WebAPI.Controllers;
 [Route("api/[controller]/[action]")]
 [ApiController]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public sealed class QuizDetailsController(IMediator mediator) : ControllerBase
 {
     [HttpPost]

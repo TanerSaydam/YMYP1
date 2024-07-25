@@ -1,0 +1,1 @@
+export const api: string = "https://quiz.webapi.ecnorow.com"

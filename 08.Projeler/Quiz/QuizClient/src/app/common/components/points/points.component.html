@@ -1,7 +1,7 @@
 <div class="flex">
     @if(isLastQuestion()){
         <h1>Quiz tamamlandı. Tebrikler</h1>
-        <p>Birazdan geri odaya geri yönlendirileceksiniz...</p>
+        <button [routerLink]="url()">Oda ekranına dönmek için tıklayın</button>
     }
     <table>        
         <thead>
@@ -21,5 +21,7 @@
             }
         </tbody>
     </table>
-    <span class="time2">{{time()}}</span>
+    @if(!isLastQuestion()){
+        <span class="time2">{{time()}}</span>
+    }
 </div>

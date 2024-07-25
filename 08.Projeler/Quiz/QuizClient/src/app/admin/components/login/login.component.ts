@@ -21,7 +21,9 @@ export default class LoginComponent {
 
   signIn(){
     this.http.post<string>("Auth/Login", this.model(), (res)=> {
-      localStorage.setItem("my-token",res);
+      localStorage.setItem("my-token",res);      
+      this.http.token.set(localStorage.getItem("my-token")!);
+      this.http.decodeToken();
       this.router.navigateByUrl("/admin")
     });
   }

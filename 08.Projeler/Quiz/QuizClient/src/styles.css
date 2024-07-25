@@ -363,6 +363,10 @@ textarea {
     margin-top: 10px;
 }
 
+th, td{
+    font-size: 20px !important;
+}
+
 @media screen and (max-width:1350px) {
     .part-1{
         width: 50%;

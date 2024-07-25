@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as signalR from '@microsoft/signalr';
+import { api } from '../../constants';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +12,7 @@ export class SignalrService {
   startConnection():Promise<void>{
     this.hubConnection = 
       new signalR.HubConnectionBuilder()
-      .withUrl("https://localhost:7076/create-room")
+      .withUrl(`${api}/create-room`)
       .build();
 
       this.hubConnection.onclose(() => {

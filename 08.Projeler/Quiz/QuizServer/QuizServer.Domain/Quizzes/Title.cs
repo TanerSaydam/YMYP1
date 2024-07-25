@@ -12,12 +12,12 @@ public sealed record Title
     {
         if (value.Length < 5)
         {
-            throw new ArgumentException("Title must be greater than 5 chracters");
+            throw new ArgumentException("Quiz başlığı 5 karakterden büyük olmalıdır");
         }
 
         if (value.Length > 200)
         {
-            throw new ArgumentException("Title must be less than 200 chracters");
+            throw new ArgumentException("Quiz başlığı 200 karakterden küçük olmalıdır");
         }
 
         Title title = new(value);
