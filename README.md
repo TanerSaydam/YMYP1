@@ -2,10 +2,11 @@
 ### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
 
 ## 30.07.2024 (Sonraki ders)
-- Microservice
+- Microservice ile örnek bir proje yapıp öğrendiğimizi pekiştirelim
 
-## 28.07.2024 (Sonraki ders)
-- Microservice
+## 28.07.2024
+- Microservice ile ilk porjemizi oluşturalım
+- Gateway için YARP kullanalım
 
 ## 25.07.2024
 - Quiz uygulamasını kodlamaya devam ediyoruz
