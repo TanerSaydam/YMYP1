@@ -1,8 +1,6 @@
 # YMYP 1.Eğitim
-### Kendime Not: Mention Kütüphanesini Sosyal Meyda Projesinde Deneyeceğiz. 
-
-## 30.07.2024 (Sonraki ders)
-- Microservice ile örnek bir proje yapıp öğrendiğimizi pekiştirelim
+## 30.07.2024
+- CI/CD süresi - GitHub Actions
 
 ## 28.07.2024
 - Microservice ile ilk porjemizi oluşturalım
